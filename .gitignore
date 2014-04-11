@@ -1,0 +1,8 @@
+media/
+static/
+.env
+fabfile.py
+*.pyc
+venv
+*.log
+*.db

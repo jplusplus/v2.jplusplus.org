@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load cms_tags staticfiles sekizai_tags menu_tags %}
+
+{% block content %}
+<div class="jumbotron">
+  <img src="{% static "logos/JPP_Logo.png" %}"/>
+  {% placeholder "intro" %}
+</div>
+<div>
+  {% placeholder "what we do" %}
+</div>
+
+<div>
+  {% placeholder "our work" %}
+</div>
+
+<div>
+  {% placeholder "who we are" %}
+</div>
+
+<div>
+  {% placeholder "lets talk" %}
+</div>
+
+{% endblock content %}

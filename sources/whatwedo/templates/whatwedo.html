@@ -1,0 +1,8 @@
+{% load i18n %}
+
+{% for item in items %}
+	<div>
+		<h3>{{ item.title }}</h3> 
+		<div class="description">{{ item.description }}</div>
+	</div>
+{% endfor %}
