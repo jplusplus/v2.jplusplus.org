@@ -1,5 +1,5 @@
 media/
-static/
+staticfiles/
 .env
 fabfile.py
 *.pyc

@@ -16,7 +16,7 @@ from django.utils.translation import ugettext_lazy as _
 gettext = lambda s: _(s)
 # gettext = lambda s: s
 
-BASE_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)))
+BASE_DIR = os.path.dirname(__file__)
 # Django settings for jplusplus project.
 
 DEBUG = True
@@ -68,7 +68,7 @@ MEDIA_URL = '/media/'
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/var/www/example.com/static/"
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # URL prefix for static files.
 # Example: "http://example.com/static/", "http://static.example.com/"
@@ -77,7 +77,7 @@ STATIC_URL = '/static/'
 # Additional locations of static files
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'webapp', 'static'),
+    os.path.join(BASE_DIR, 'static'),
 )
 
 # List of finder classes that know how to find static files in
@@ -93,10 +93,10 @@ SECRET_KEY = '9%4-c*t!%g06@=#l5xqt*+a)m2w&r@-q(5sn)50v!x0!-krf7%'
 
 # List of callables that know how to import templates from various sources.
 
-ROOT_URLCONF = 'webapp.urls'
+ROOT_URLCONF = 'urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'webapp.wsgi.application'
+WSGI_APPLICATION = 'wsgi.application'
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'
 
@@ -165,7 +165,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 )
 
 TEMPLATE_DIRS = (
-    os.path.join(BASE_DIR, 'webapp', 'templates'),
+    os.path.join(BASE_DIR, 'templates'),
 )
 
 INSTALLED_APPS = (
@@ -196,7 +196,6 @@ INSTALLED_APPS = (
     'djangocms_teaser',
     'djangocms_video',
     'reversion',
-    'webapp',
     'whatwedo',
 )
 
