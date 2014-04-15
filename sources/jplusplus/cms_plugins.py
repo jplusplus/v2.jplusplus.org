@@ -17,7 +17,7 @@ from .models import WhatWeDo, Project, ProjectPluginModel
 
 class WhatWeDoPlugin(CMSPluginBase):
     name            = _("What we do")
-    render_template = "whatwedo.html"
+    render_template = "jplusplus/whatwedo.html"
 
     def render(self, context, instance, placeholder):
         items = WhatWeDo.objects.all()
@@ -30,7 +30,7 @@ class WhatWeDoPlugin(CMSPluginBase):
 class ProjectsPlugin(CMSPluginBase):
     model           = ProjectPluginModel
     name            = _("J++ Projects")
-    render_template = "projects.html"
+    render_template = "jplusplus/projects.html"
 
     def render(self, context, instance, placeholder):
     	# filter projects by offices, retrieve with translations
@@ -43,7 +43,7 @@ class ProjectsPlugin(CMSPluginBase):
         # add to context
         context.update({
             'instance' : instance,
-            'items'    : items,
+            'projects' : items,
         })
         return context
  

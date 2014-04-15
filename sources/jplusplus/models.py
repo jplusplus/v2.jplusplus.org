@@ -49,18 +49,21 @@ class Project(TranslatableModel):
     """
     Project Model
     """
+    # TODO: set tags
     class Meta:
         ordering = ('order',)
 
+    translations = TranslatedFields(
+        title       = models.CharField(_('title'), max_length=255),
+        description = models.TextField(_('description'), blank=True, null=True),
+    )
+    slug         = models.SlugField()
     offices      = models.ManyToManyField(Office)
     date         = models.DateField(blank=True, null=True)
     image        = models.ImageField(_("image"), upload_to="projects", blank=True, null=True)
     order        = models.PositiveIntegerField(default=0, blank=False, null=False)
     highlighted  = models.BooleanField(_("highlighted"))
-    translations = TranslatedFields(
-        title       = models.CharField(_('title'), max_length=255),
-        description = models.TextField(_('description'), blank=True, null=True),
-    )
+    link         = models.CharField(_('link'), max_length=255, blank=True, null=True)
 
     def __unicode__(self):
         return self.title

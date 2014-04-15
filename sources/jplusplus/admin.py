@@ -23,7 +23,11 @@ class OfficeAdmin(admin.ModelAdmin):
     pass
 
 class ProjectAdmin(SortableAdminMixin, TranslatableAdmin):
-    pass
+    def __init__(self, *args, **kwargs):
+    	# for prepopulate fields
+    	# See : https://github.com/KristianOellegaard/django-hvad/issues/10#issuecomment-5572524
+        super(ProjectAdmin, self).__init__(*args, **kwargs)
+        self.prepopulated_fields = {'slug': ('title',)}
 
 admin.site.register(WhatWeDo, WhatWeDoAdmin)
 admin.site.register(Office, OfficeAdmin)
