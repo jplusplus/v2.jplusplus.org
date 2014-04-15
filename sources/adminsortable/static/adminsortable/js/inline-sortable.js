@@ -1,0 +1,42 @@
+// make tabular- and stacked inlines sortable
+jQuery(function($) {
+	$('div.inline-group.sortable').each(function() {
+		var default_order_field = $(this).nextUntil('div.default_order_field').next().attr('default_order_field');
+		var order_input_field = 'input[name$="' + default_order_field + '"]';
+		// tabluar inlines
+		var tabular_inlines = $(this).find('div.tabular table');
+		tabular_inlines.sortable({
+			items: 'tr.form-row',
+			axis: 'y',
+			scroll: true,
+			cursor: 'ns-resize',
+			containment: $('tbody'),
+			stop: function(event, dragged_rows) {
+				var $result_list = $(this);
+				$result_list.find('tbody tr').each(function(index) {
+					$(this).removeClass('row1 row2').addClass(index % 2 ? 'row2' : 'row1');
+				});
+				$result_list.find('tbody tr').each(function(index) {
+					$(this).find(order_input_field).val(index + 1);
+				});
+			}
+		});
+		if (tabular_inlines.length)
+			return true;
+		// else, try with stacked inlines
+		$(this).sortable({
+			handle: 'h3',
+			items: 'div.inline-related',
+			axis: 'y',
+			scroll: true,
+			cursor: 'ns-resize',
+			containment: $(this),
+			stop: function(event, dragged_rows) {
+				var $result_list = $(this);
+				$result_list.find('div.inline-related').each(function(index) {
+					$(this).find(order_input_field).val(index + 1);
+				});
+			}
+		});
+	});
+});

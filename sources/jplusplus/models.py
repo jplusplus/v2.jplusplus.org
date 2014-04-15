@@ -15,15 +15,20 @@ from django.utils.translation import ugettext_lazy as _
 from hvad.models import TranslatableModel, TranslatedFields
 
 class WhatWeDo(TranslatableModel):
+    """
+    What we Do Model
+    """
     class Meta:
         verbose_name_plural = "What we do"
+        ordering = ('order',)
 
+    image = models.ImageField(_("image"), upload_to="whatwedo", blank=True, null=True)
+    url   = models.CharField(_("link"), max_length=255, blank=True, null=True, help_text=_("If present image will be clickable."))
+    order = models.PositiveIntegerField(default=0, blank=False, null=False)
     translations = TranslatedFields(
         title       = models.CharField('title', max_length=255),
         description = models.CharField('description', max_length=255),
     )
-    image       = models.ImageField(_("image"), upload_to="whatwedo", blank=True, null=True)
-    url         = models.CharField(_("link"), max_length=255, blank=True, null=True, help_text=_("If present image will be clickable."))
 
     search_fields = ('description', 'title')
 

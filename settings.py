@@ -159,7 +159,8 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.media',
     'django.core.context_processors.csrf',
     'django.core.context_processors.tz',
-    'cms.context_processors.media',
+    # 'cms.context_processors.media',
+    'cms.context_processors.cms_settings',
     'sekizai.context_processors.sekizai',
     'django.core.context_processors.static'
 )
@@ -185,6 +186,7 @@ INSTALLED_APPS = (
     'south',
     'sekizai',
     'hvad',
+    'adminsortable',
     'djangocms_style',
     'djangocms_column',
     'djangocms_file',

@@ -14,8 +14,9 @@
 from django.contrib import admin
 from hvad.admin import TranslatableAdmin
 from .models import WhatWeDo
+from adminsortable.admin import SortableAdminMixin
 
-class WhatWeDoAdmin(TranslatableAdmin):
+class WhatWeDoAdmin(SortableAdminMixin, TranslatableAdmin):
     pass
 
 admin.site.register(WhatWeDo, WhatWeDoAdmin)
