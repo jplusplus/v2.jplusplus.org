@@ -13,12 +13,20 @@
 
 from django.contrib import admin
 from hvad.admin import TranslatableAdmin
-from .models import WhatWeDo
+from .models import WhatWeDo, Office, Project
 from adminsortable.admin import SortableAdminMixin
 
 class WhatWeDoAdmin(SortableAdminMixin, TranslatableAdmin):
     pass
 
+class OfficeAdmin(admin.ModelAdmin):
+    pass
+
+class ProjectAdmin(SortableAdminMixin, TranslatableAdmin):
+    pass
+
 admin.site.register(WhatWeDo, WhatWeDoAdmin)
+admin.site.register(Office, OfficeAdmin)
+admin.site.register(Project, ProjectAdmin)
 
 # EOF

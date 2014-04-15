@@ -13,6 +13,7 @@
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 from hvad.models import TranslatableModel, TranslatedFields
+from cms.models.pluginmodel import CMSPlugin
 
 class WhatWeDo(TranslatableModel):
     """
@@ -26,13 +27,45 @@ class WhatWeDo(TranslatableModel):
     url   = models.CharField(_("link"), max_length=255, blank=True, null=True, help_text=_("If present image will be clickable."))
     order = models.PositiveIntegerField(default=0, blank=False, null=False)
     translations = TranslatedFields(
-        title       = models.CharField('title', max_length=255),
-        description = models.CharField('description', max_length=255),
+        title       = models.CharField(_('title'), max_length=255),
+        description = models.TextField(_('description')),
     )
 
     search_fields = ('description', 'title')
 
     def __unicode__(self):
         return self.title
+
+class Office(models.Model):
+    """
+    Office Model
+    """
+    title = models.CharField(_('title'), max_length=255)
+
+    def __unicode__(self):
+        return self.title
+
+class Project(TranslatableModel):
+    """
+    Project Model
+    """
+    class Meta:
+        ordering = ('order',)
+
+    offices      = models.ManyToManyField(Office)
+    date         = models.DateField(blank=True, null=True)
+    image        = models.ImageField(_("image"), upload_to="projects", blank=True, null=True)
+    order        = models.PositiveIntegerField(default=0, blank=False, null=False)
+    highlighted  = models.BooleanField(_("highlighted"))
+    translations = TranslatedFields(
+        title       = models.CharField(_('title'), max_length=255),
+        description = models.TextField(_('description'), blank=True, null=True),
+    )
+
+    def __unicode__(self):
+        return self.title
+
+class ProjectPluginModel(CMSPlugin):
+    offices = models.ManyToManyField(Office, verbose_name=_("filter by office"), blank=True, null=True)
 
 # EOF

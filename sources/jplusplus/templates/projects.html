@@ -1,0 +1,6 @@
+{% load i18n jpp_tags %}
+
+<script type="text/javascript">
+	var projects = JSON.parse("{{ items | jsonify | escapejs }}");
+	console.log("Projects (sources/jplusplus/templates/projects.html)", projects);
+</script>
