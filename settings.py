@@ -196,7 +196,7 @@ INSTALLED_APPS = (
     'djangocms_teaser',
     'djangocms_video',
     'reversion',
-    'whatwedo',
+    'jplusplus',
 )
 
 LANGUAGES = (

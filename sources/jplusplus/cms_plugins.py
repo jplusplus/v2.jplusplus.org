@@ -10,14 +10,23 @@
 # Creation : 14-Apr-2014
 # Last mod : 14-Apr-2014
 # -----------------------------------------------------------------------------
+from django.utils.translation import ugettext_lazy as _
+from cms.plugin_base import CMSPluginBase
+from cms.plugin_pool import plugin_pool
+from .models import WhatWeDo
 
-from django.contrib import admin
-from hvad.admin import TranslatableAdmin
-from .models import Item
+class WhatWeDoPlugin(CMSPluginBase):
+    name            = _("What we do")
+    render_template = "whatwedo.html"
 
-class ItemAdmin(TranslatableAdmin):
-    pass
-
-admin.site.register(Item, ItemAdmin)
+    def render(self, context, instance, placeholder):
+        items = WhatWeDo.objects.all()
+        context.update({
+            'instance' : instance,
+            'items'    : items,
+        })
+        return context 
+ 
+plugin_pool.register_plugin(WhatWeDoPlugin)
 
 # EOF

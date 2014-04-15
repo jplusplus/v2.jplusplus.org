@@ -10,23 +10,24 @@
 # Creation : 14-Apr-2014
 # Last mod : 14-Apr-2014
 # -----------------------------------------------------------------------------
+from django.db import models
 from django.utils.translation import ugettext_lazy as _
-from cms.plugin_base import CMSPluginBase
-from cms.plugin_pool import plugin_pool
-from .models import Item
+from hvad.models import TranslatableModel, TranslatedFields
 
-class WhatWeDoPlugin(CMSPluginBase):
-    name            = _("What we do")
-    render_template = "whatwedo.html"
+class WhatWeDo(TranslatableModel):
+    class Meta:
+        verbose_name_plural = "What we do"
 
-    def render(self, context, instance, placeholder):
-        items = Item.objects.all()
-        context.update({
-            'instance' : instance,
-            'items'    : items,
-        })
-        return context 
- 
-plugin_pool.register_plugin(WhatWeDoPlugin)
+    translations = TranslatedFields(
+        title       = models.CharField('title', max_length=255),
+        description = models.CharField('description', max_length=255),
+    )
+    image       = models.ImageField(_("image"), upload_to="whatwedo", blank=True, null=True)
+    url         = models.CharField(_("link"), max_length=255, blank=True, null=True, help_text=_("If present image will be clickable."))
+
+    search_fields = ('description', 'title')
+
+    def __unicode__(self):
+        return self.title
 
 # EOF
