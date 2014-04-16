@@ -36,9 +36,9 @@ def jsonify(object):
                 obj_dict = obj.__dict__
                 for field in fields:
                     obj_dict[field] = obj.safe_translation_getter(field)
-                del obj_dict["_translated_field_names_cache"]
-                del obj_dict["_state"]
-                del obj_dict["translations_cache"]
+                obj_dict.pop("_translated_field_names_cache", None)
+                obj_dict.pop("_state", None)
+                obj_dict.pop("translations_cache", None)
                 results.append(obj_dict)
             return json.dumps(results, cls = JsonEncoder)
         return serialize('json', object)
