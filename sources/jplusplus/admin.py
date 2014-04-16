@@ -26,6 +26,8 @@ class OfficeAdmin(admin.ModelAdmin):
         super(OfficeAdmin, self).__init__(*args, **kwargs)
         self.prepopulated_fields = {'slug': ('title',)}
 
+    list_display = ("title", "slug")
+
 class ProjectAdmin(SortableAdminMixin, TranslatableAdmin):
     def __init__(self, *args, **kwargs):
         # for prepopulate fields

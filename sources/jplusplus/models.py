@@ -21,7 +21,7 @@ class Office(models.Model):
     Office Model
     """
     title = models.CharField(_('title'), max_length=255)
-    slug  = models.SlugField(unique=True)
+    slug  = models.SlugField(_('slug'), help_text=_("should be the same that the office page"), unique=True)
 
     def __unicode__(self):
         return self.title
