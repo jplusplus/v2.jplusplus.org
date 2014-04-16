@@ -265,6 +265,210 @@
 },
 {
     "pk": 1, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-16T12:46:32.074Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-16T12:25:16.239Z", 
+        "lft": 1, 
+        "tree_id": 1, 
+        "position": 1, 
+        "placeholder": 4, 
+        "plugin_type": "ProjectsPlugin"
+    }
+},
+{
+    "pk": 2, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-16T12:25:44.158Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-16T12:25:30.156Z", 
+        "lft": 1, 
+        "tree_id": 2, 
+        "position": 0, 
+        "placeholder": 3, 
+        "plugin_type": "WhatWeDoPlugin"
+    }
+},
+{
+    "pk": 3, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-16T12:46:59.719Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-16T12:46:16.073Z", 
+        "lft": 1, 
+        "tree_id": 3, 
+        "position": 0, 
+        "placeholder": 4, 
+        "plugin_type": "TextPlugin"
+    }
+},
+{
+    "pk": 4, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-16T12:47:08.309Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-16T12:25:30.156Z", 
+        "lft": 1, 
+        "tree_id": 4, 
+        "position": 0, 
+        "placeholder": 8, 
+        "plugin_type": "WhatWeDoPlugin"
+    }
+},
+{
+    "pk": 5, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-16T12:47:08.325Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-16T12:25:16.239Z", 
+        "lft": 1, 
+        "tree_id": 5, 
+        "position": 1, 
+        "placeholder": 9, 
+        "plugin_type": "ProjectsPlugin"
+    }
+},
+{
+    "pk": 6, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-16T12:47:08.378Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-16T12:46:16.073Z", 
+        "lft": 1, 
+        "tree_id": 6, 
+        "position": 0, 
+        "placeholder": 9, 
+        "plugin_type": "TextPlugin"
+    }
+},
+{
+    "pk": 7, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-16T13:00:43.046Z", 
+        "parent": null, 
+        "language": "de", 
+        "level": 0, 
+        "creation_date": "2014-04-16T12:25:30.156Z", 
+        "lft": 1, 
+        "tree_id": 7, 
+        "position": 0, 
+        "placeholder": 3, 
+        "plugin_type": "WhatWeDoPlugin"
+    }
+},
+{
+    "pk": 8, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-16T13:00:43.061Z", 
+        "parent": null, 
+        "language": "de", 
+        "level": 0, 
+        "creation_date": "2014-04-16T12:25:16.239Z", 
+        "lft": 1, 
+        "tree_id": 8, 
+        "position": 1, 
+        "placeholder": 4, 
+        "plugin_type": "ProjectsPlugin"
+    }
+},
+{
+    "pk": 9, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-16T13:00:43.099Z", 
+        "parent": null, 
+        "language": "de", 
+        "level": 0, 
+        "creation_date": "2014-04-16T12:46:16.073Z", 
+        "lft": 1, 
+        "tree_id": 9, 
+        "position": 0, 
+        "placeholder": 4, 
+        "plugin_type": "TextPlugin"
+    }
+},
+{
+    "pk": 10, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-16T13:00:56.570Z", 
+        "parent": null, 
+        "language": "de", 
+        "level": 0, 
+        "creation_date": "2014-04-16T12:25:30.156Z", 
+        "lft": 1, 
+        "tree_id": 10, 
+        "position": 0, 
+        "placeholder": 8, 
+        "plugin_type": "WhatWeDoPlugin"
+    }
+},
+{
+    "pk": 11, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-16T13:00:56.583Z", 
+        "parent": null, 
+        "language": "de", 
+        "level": 0, 
+        "creation_date": "2014-04-16T12:25:16.239Z", 
+        "lft": 1, 
+        "tree_id": 11, 
+        "position": 1, 
+        "placeholder": 9, 
+        "plugin_type": "ProjectsPlugin"
+    }
+},
+{
+    "pk": 12, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-16T13:00:56.624Z", 
+        "parent": null, 
+        "language": "de", 
+        "level": 0, 
+        "creation_date": "2014-04-16T12:46:16.073Z", 
+        "lft": 1, 
+        "tree_id": 12, 
+        "position": 0, 
+        "placeholder": 9, 
+        "plugin_type": "TextPlugin"
+    }
+},
+{
+    "pk": 1, 
     "model": "cms.page", 
     "fields": {
         "rght": 2, 
@@ -287,7 +491,7 @@
             5, 
             6
         ], 
-        "changed_date": "2014-04-16T10:31:12.644Z", 
+        "changed_date": "2014-04-16T13:00:56.806Z", 
         "limit_visibility_in_menu": null, 
         "parent": null, 
         "soft_root": false, 
@@ -327,7 +531,7 @@
             10, 
             11
         ], 
-        "changed_date": "2014-04-16T10:31:12.595Z", 
+        "changed_date": "2014-04-16T13:00:56.674Z", 
         "limit_visibility_in_menu": null, 
         "parent": null, 
         "soft_root": false, 
@@ -539,7 +743,7 @@
         "page": 2, 
         "published": true, 
         "path": "", 
-        "publisher_state": 0, 
+        "publisher_state": 1, 
         "creation_date": "2014-04-16T09:52:57.706Z", 
         "slug": "home", 
         "publisher_public": 1
@@ -665,7 +869,7 @@
         "page": 2, 
         "published": true, 
         "path": "", 
-        "publisher_state": 0, 
+        "publisher_state": 1, 
         "creation_date": "2014-04-16T09:53:05.417Z", 
         "slug": "home", 
         "publisher_public": 3
@@ -1851,12 +2055,20 @@
     }
 },
 {
+    "pk": 2, 
+    "model": "jplusplus.office", 
+    "fields": {
+        "slug": "cologne", 
+        "title": "Cologne"
+    }
+},
+{
     "pk": 1, 
     "model": "jplusplus.projecttranslation", 
     "fields": {
         "language_code": "fr", 
         "master": 1, 
-        "description": "Spending Stories est un proj\u00e9 de l'[Open Knowledge Foundation](http://fr.okfn.org/\u200e) visant \u00e0 am\u00e9liorer la compr\u00e9hension des donn\u00e9es budg\u00e9taires mondiales [en savoir plus](http://blog.okfn.org/category/okf-projects/spending-stories/).Ce projet est financ\u00e9 par la Knight Foundation.\r\n\r\nCette partie du projet \"Spending Stories\" permet aux utilisateurs de mettre des donn\u00e9es mon\u00e9taires en perspective et d'obtenir un contexte. N'importe quel montant dans n'importe quelle devise peut-\u00eatre entr\u00e9 et compar\u00e9 \u00e0 de vraies d\u00e9penses.\r\nLes r\u00e9sultats prennent en compte l'inflation dans le pays dans lequel la d\u00e9pense a \u00e9t\u00e9 r\u00e9alis\u00e9e ainsi que le taux de change entre deux monnaies diff\u00e9rentes, afin de pouvoir les comparer.\r\n\r\nCe projet est [open source](https://github.com/jplusplus/okf-spending-stories) et peut-\u00eatre install\u00e9 sur vos propres serveurs afin de pouvoir utiliser les d\u00e9penses budg\u00e9taires de votre choix dans votre base de donn\u00e9es.\r\n\r\n**L'Open Knowledge foundation a fait appel \u00e0 la partie de Journalism++ bas\u00e9e \u00e0 Paris et Berlin pour r\u00e9aliser cette application.\r\nCe projet a \u00e9t\u00e9 g\u00e9r\u00e9 par [Anne-Lise Bouyer](twitter.com/annelisebouyer) et d\u00e9velopp\u00e9 par [Pierre Bellon](twitter.com/toutenrab), [Edouard Richard](twitter.com/vied12), [Paul Joannon](twitter.com/paulloz) et [Pierre Romera.](twitter.com/pirhoo).**", 
+        "description": "<p>Spending Stories est un proj&eacute; de l&#39;[Open Knowledge Foundation](http://fr.okfn.org/&lrm;) visant &agrave; am&eacute;liorer la compr&eacute;hension des donn&eacute;es budg&eacute;taires mondiales [en savoir plus](http://blog.okfn.org/category/okf-projects/spending-stories/).Ce projet est financ&eacute; par la Knight Foundation. <strong>Cette partie</strong> du projet &quot;Spending Stories&quot; permet aux utilisateurs de mettre des donn&eacute;es mon&eacute;taires en perspective et d&#39;obtenir un contexte. N&#39;importe quel montant dans n&#39;importe quelle devise peut-&ecirc;tre entr&eacute; et compar&eacute; &agrave; de vraies d&eacute;penses. Les r&eacute;sultats prennent en compte l&#39;inflation dans le pays dans lequel la d&eacute;pense a &eacute;t&eacute; r&eacute;alis&eacute;e ainsi que le taux de change entre deux monnaies diff&eacute;rentes, afin de pouvoir les comparer. Ce projet est [open source](https://github.com/jplusplus/okf-spending-stories) et peut-&ecirc;tre install&eacute; sur vos propres serveurs afin de pouvoir utiliser les d&eacute;penses budg&eacute;taires de votre choix dans votre base de donn&eacute;es. **L&#39;Open Knowledge foundation a fait appel &agrave; la partie de Journalism++ bas&eacute;e &agrave; Paris et Berlin pour r&eacute;aliser cette application. Ce projet a &eacute;t&eacute; g&eacute;r&eacute; par [Anne-Lise Bouyer](twitter.com/annelisebouyer) et d&eacute;velopp&eacute; par [Pierre Bellon](twitter.com/toutenrab), [Edouard Richard](twitter.com/vied12), [Paul Joannon](twitter.com/paulloz) et [Pierre Romera.](twitter.com/pirhoo).**</p>\r\n", 
         "title": "Spending Stories"
     }
 },
@@ -1901,11 +2113,41 @@
     }
 },
 {
+    "pk": 6, 
+    "model": "jplusplus.projecttranslation", 
+    "fields": {
+        "language_code": "fr", 
+        "master": 3, 
+        "description": "<p>Journalism++ participe au projet [Datawrapper](http://datawrapper.de/), initi&eacute; par Mirko Lorenz pour le compte de [ABZV](http://abzv.de/), un organisme de formation continue pour journalistes. L&rsquo;objectif est de permettre &agrave; tous les journalistes de cr&eacute;er des diagrammes simples et corrects en quelques secondes, afin de les int&eacute;grer ensuite &agrave; leurs articles.</p>\r\n\r\n<p>Les journalistes apr&eacute;cient la simplicit&eacute; du produit et la justesse des visualisations produites, qui se fondent sur les enseignement de [Dona Wong](http://www.amazon.com/Street-Journal-Guide-Information-Graphics/dp/0393072959), du Wall Street Journal. Datawrapper permet &agrave; tout m&eacute;dia de personnaliser facilement le design de l&rsquo;outil en fonction de ses besoins.</p>\r\n\r\n<p>[@nicolaskb](https://twitter.com/#%21/nicolaskb/) a r&eacute;alis&eacute; le prototype de Datawrapper et la version 1.0 est maintenant cod&eacute;e principalement par [@driven_by_data](https://twitter.com/driven_by_data). Datawrapper est utilis&eacute; par [The Guardian](http://www.guardian.co.uk/), [Ruhr Nachrichten](http://www.ruhrnachrichten.de/) (Dortmund), [L&rsquo;Avenir](http://www.lavenir.net/) (Belgique) et [RTL.nl](http://www.rtl.nl/experience/rtlnl/), entre autres.</p>\r\n", 
+        "title": "Datawrapper: des\u00a0visualisations en\u00a0quelques secondes"
+    }
+},
+{
+    "pk": 7, 
+    "model": "jplusplus.projecttranslation", 
+    "fields": {
+        "language_code": "de", 
+        "master": 3, 
+        "description": "<p>Journalism++ ist sehr stolz, am Datawrapper-Projekt teilzunehmen. Das Projekt wurde von Mirko Lorenz gestartet und wird von der [ABZV](http://abzv.de/) finanziert. Das Ziel ist, dass Journalisten einfache und korrekte Diagramme, die dann in Artikel eingebettet werden k&ouml;nnen, in Sekunden selbst bauen k&ouml;nnen.</p>\r\n\r\n<p>Journalisten lieben die Einfachheit des Produktes und die Tatsache, dass Datawrapper sie daran hindert, falscher Charts zu ver&ouml;ffentlichen. Das Charts Design folgt der Lehre von [Dona Wong](http://www.amazon.com/Street-Journal-Guide-Information-Graphics/dp/0393072959) vom Wall Street Journal. Datawrapper funktioniert so, dass jede Redaktion es einfach und schnell installieren und personalisieren kann.</p>\r\n\r\n<p>[@nicolaskb](https://twitter.com/#%21/nicolaskb/) hat den Prototyp f&uuml;r Datawrapper codiert. Version 1.0 wird jetzt von [@driven_by_data](https://twitter.com/driven_by_data) entwickelt. Datawrapper wird regelm&auml;&szlig;ig von [The Guardian](http://www.guardian.co.uk/), [Ruhr Nachrichten](http://www.ruhrnachrichten.de/) (Dortmund), [L&rsquo;Avenir](http://www.lavenir.net/) (Belgien) und [RTL.nl](http://www.rtl.nl/experience/rtlnl/) u.a. verwendet.</p>\r\n", 
+        "title": "Datawrapper: Open Source Datenvisualisierung"
+    }
+},
+{
+    "pk": 8, 
+    "model": "jplusplus.projecttranslation", 
+    "fields": {
+        "language_code": "en", 
+        "master": 3, 
+        "description": "<p>Journalism++ is very proud to take part in [Datawrapper](http://datawrapper.de/). The project was started by Mirko Lorenz and is financed by [ABZV](http://abzv.de/), a German training institute for journalists. The goal is to let any journalist build simple and correct charts in seconds that can then be embedded in articles.</p>\r\n\r\n<p>Journalists love the simplicity of the product and the fact that Datawrapper prevents them from publishing wrong charts. The charts design follows the teaching of The Wall Street Journal&rsquo;s [Dona Wong](http://www.amazon.com/Street-Journal-Guide-Information-Graphics/dp/0393072959). Datawrapper is built in such a way that any media organization can install and customize it quickly.</p>\r\n\r\n<p>[@nicolaskb](https://twitter.com/#%21/nicolaskb/) coded the prototype for Datawrapper. Version 1.0 is now developed by [@driven_by_data](https://twitter.com/driven_by_data). Datawrapper is used regularly by [The Guardian](http://www.guardian.co.uk/), [Ruhr Nachrichten](http://www.ruhrnachrichten.de/) (Dortmund), [L&rsquo;Avenir](http://www.lavenir.net/) (Belgium) and [RTL.nl](http://www.rtl.nl/experience/rtlnl/) among others.</p>\r\n", 
+        "title": "Datawrapper: Build charts\u00a0in seconds"
+    }
+},
+{
     "pk": 1, 
     "model": "jplusplus.project", 
     "fields": {
         "image": "projects/spending-stories.png", 
-        "order": 1, 
+        "order": 2, 
         "highlighted": false, 
         "link": "http://okf-spendingstories.herokuapp.com", 
         "date": "2013-11-13", 
@@ -1920,7 +2162,7 @@
     "model": "jplusplus.project", 
     "fields": {
         "image": "projects/contre-histoire-internets.png", 
-        "order": 2, 
+        "order": 3, 
         "highlighted": false, 
         "link": "http://lesinternets.arte.tv", 
         "date": "2013-08-16", 
@@ -1928,6 +2170,49 @@
             1
         ], 
         "slug": "une-contre-histoire-des-internets"
+    }
+},
+{
+    "pk": 3, 
+    "model": "jplusplus.project", 
+    "fields": {
+        "image": "projects/dw.png", 
+        "order": 1, 
+        "highlighted": true, 
+        "link": "http://datawrapper.de", 
+        "date": "2012-06-09", 
+        "offices": [
+            2
+        ], 
+        "slug": "datawrapper"
+    }
+},
+{
+    "pk": 1, 
+    "model": "jplusplus.projectpluginmodel", 
+    "fields": {
+        "offices": []
+    }
+},
+{
+    "pk": 5, 
+    "model": "jplusplus.projectpluginmodel", 
+    "fields": {
+        "offices": []
+    }
+},
+{
+    "pk": 8, 
+    "model": "jplusplus.projectpluginmodel", 
+    "fields": {
+        "offices": []
+    }
+},
+{
+    "pk": 11, 
+    "model": "jplusplus.projectpluginmodel", 
+    "fields": {
+        "offices": []
     }
 },
 {
