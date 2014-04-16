@@ -1,0 +1,1942 @@
+[
+{
+    "pk": 1, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "clipboard", 
+        "default_width": null
+    }
+},
+{
+    "pk": 2, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "intro", 
+        "default_width": null
+    }
+},
+{
+    "pk": 3, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "what we do", 
+        "default_width": null
+    }
+},
+{
+    "pk": 4, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "our work", 
+        "default_width": null
+    }
+},
+{
+    "pk": 5, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "who we are", 
+        "default_width": null
+    }
+},
+{
+    "pk": 6, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "lets talk", 
+        "default_width": null
+    }
+},
+{
+    "pk": 7, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "intro", 
+        "default_width": null
+    }
+},
+{
+    "pk": 8, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "what we do", 
+        "default_width": null
+    }
+},
+{
+    "pk": 9, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "our work", 
+        "default_width": null
+    }
+},
+{
+    "pk": 10, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "who we are", 
+        "default_width": null
+    }
+},
+{
+    "pk": 11, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "lets talk", 
+        "default_width": null
+    }
+},
+{
+    "pk": 12, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "footer", 
+        "default_width": null
+    }
+},
+{
+    "pk": 13, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "footer", 
+        "default_width": null
+    }
+},
+{
+    "pk": 14, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "intro", 
+        "default_width": null
+    }
+},
+{
+    "pk": 15, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "what we do", 
+        "default_width": null
+    }
+},
+{
+    "pk": 16, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "our work", 
+        "default_width": null
+    }
+},
+{
+    "pk": 17, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "who we are", 
+        "default_width": null
+    }
+},
+{
+    "pk": 18, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "lets talk", 
+        "default_width": null
+    }
+},
+{
+    "pk": 19, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "intro", 
+        "default_width": null
+    }
+},
+{
+    "pk": 20, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "what we do", 
+        "default_width": null
+    }
+},
+{
+    "pk": 21, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "our work", 
+        "default_width": null
+    }
+},
+{
+    "pk": 22, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "who we are", 
+        "default_width": null
+    }
+},
+{
+    "pk": 23, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "lets talk", 
+        "default_width": null
+    }
+},
+{
+    "pk": 24, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "intro", 
+        "default_width": null
+    }
+},
+{
+    "pk": 25, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "what we do", 
+        "default_width": null
+    }
+},
+{
+    "pk": 26, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "our work", 
+        "default_width": null
+    }
+},
+{
+    "pk": 27, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "who we are", 
+        "default_width": null
+    }
+},
+{
+    "pk": 28, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "lets talk", 
+        "default_width": null
+    }
+},
+{
+    "pk": 29, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "intro", 
+        "default_width": null
+    }
+},
+{
+    "pk": 30, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "what we do", 
+        "default_width": null
+    }
+},
+{
+    "pk": 31, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "our work", 
+        "default_width": null
+    }
+},
+{
+    "pk": 32, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "who we are", 
+        "default_width": null
+    }
+},
+{
+    "pk": 33, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "lets talk", 
+        "default_width": null
+    }
+},
+{
+    "pk": 1, 
+    "model": "cms.page", 
+    "fields": {
+        "rght": 2, 
+        "navigation_extenders": "", 
+        "site": 1, 
+        "application_namespace": null, 
+        "lft": 1, 
+        "in_navigation": true, 
+        "reverse_id": null, 
+        "login_required": false, 
+        "created_by": "root", 
+        "languages": "fr,de,en", 
+        "publication_end_date": null, 
+        "template": "INHERIT", 
+        "tree_id": 1, 
+        "placeholders": [
+            2, 
+            3, 
+            4, 
+            5, 
+            6
+        ], 
+        "changed_date": "2014-04-16T10:31:12.644Z", 
+        "limit_visibility_in_menu": null, 
+        "parent": null, 
+        "soft_root": false, 
+        "is_home": true, 
+        "publication_date": "2014-04-16T09:52:57.711Z", 
+        "creation_date": "2014-04-16T09:52:57.671Z", 
+        "publisher_public": 2, 
+        "level": 0, 
+        "changed_by": "root", 
+        "application_urls": "JppHook", 
+        "publisher_is_draft": true, 
+        "xframe_options": 0, 
+        "revision_id": 0
+    }
+},
+{
+    "pk": 2, 
+    "model": "cms.page", 
+    "fields": {
+        "rght": 2, 
+        "navigation_extenders": "", 
+        "site": 1, 
+        "application_namespace": null, 
+        "lft": 1, 
+        "in_navigation": true, 
+        "reverse_id": null, 
+        "login_required": false, 
+        "created_by": "root", 
+        "languages": "fr,de,en", 
+        "publication_end_date": null, 
+        "template": "INHERIT", 
+        "tree_id": 2, 
+        "placeholders": [
+            7, 
+            8, 
+            9, 
+            10, 
+            11
+        ], 
+        "changed_date": "2014-04-16T10:31:12.595Z", 
+        "limit_visibility_in_menu": null, 
+        "parent": null, 
+        "soft_root": false, 
+        "is_home": true, 
+        "publication_date": "2014-04-16T09:52:57.711Z", 
+        "creation_date": "2014-04-16T09:52:57.716Z", 
+        "publisher_public": 1, 
+        "level": 0, 
+        "changed_by": "root", 
+        "application_urls": "JppHook", 
+        "publisher_is_draft": false, 
+        "xframe_options": 0, 
+        "revision_id": 0
+    }
+},
+{
+    "pk": 3, 
+    "model": "cms.page", 
+    "fields": {
+        "rght": 2, 
+        "navigation_extenders": null, 
+        "site": 1, 
+        "application_namespace": null, 
+        "lft": 1, 
+        "in_navigation": true, 
+        "reverse_id": null, 
+        "login_required": false, 
+        "created_by": "root", 
+        "languages": "fr", 
+        "publication_end_date": null, 
+        "template": "INHERIT", 
+        "tree_id": 3, 
+        "placeholders": [
+            14, 
+            15, 
+            16, 
+            17, 
+            18
+        ], 
+        "changed_date": "2014-04-16T10:02:14.841Z", 
+        "limit_visibility_in_menu": null, 
+        "parent": null, 
+        "soft_root": false, 
+        "is_home": false, 
+        "publication_date": "2014-04-16T09:54:49.529Z", 
+        "creation_date": "2014-04-16T09:54:38.501Z", 
+        "publisher_public": 4, 
+        "level": 0, 
+        "changed_by": "root", 
+        "application_urls": null, 
+        "publisher_is_draft": true, 
+        "xframe_options": 0, 
+        "revision_id": 0
+    }
+},
+{
+    "pk": 4, 
+    "model": "cms.page", 
+    "fields": {
+        "rght": 2, 
+        "navigation_extenders": null, 
+        "site": 1, 
+        "application_namespace": null, 
+        "lft": 1, 
+        "in_navigation": true, 
+        "reverse_id": null, 
+        "login_required": false, 
+        "created_by": "root", 
+        "languages": "fr", 
+        "publication_end_date": null, 
+        "template": "INHERIT", 
+        "tree_id": 4, 
+        "placeholders": [
+            19, 
+            20, 
+            21, 
+            22, 
+            23
+        ], 
+        "changed_date": "2014-04-16T10:02:14.761Z", 
+        "limit_visibility_in_menu": null, 
+        "parent": null, 
+        "soft_root": false, 
+        "is_home": false, 
+        "publication_date": "2014-04-16T09:54:49.529Z", 
+        "creation_date": "2014-04-16T09:54:49.543Z", 
+        "publisher_public": 3, 
+        "level": 0, 
+        "changed_by": "root", 
+        "application_urls": null, 
+        "publisher_is_draft": false, 
+        "xframe_options": 0, 
+        "revision_id": 0
+    }
+},
+{
+    "pk": 5, 
+    "model": "cms.page", 
+    "fields": {
+        "rght": 2, 
+        "navigation_extenders": null, 
+        "site": 1, 
+        "application_namespace": null, 
+        "lft": 1, 
+        "in_navigation": true, 
+        "reverse_id": null, 
+        "login_required": false, 
+        "created_by": "root", 
+        "languages": "fr", 
+        "publication_end_date": null, 
+        "template": "INHERIT", 
+        "tree_id": 5, 
+        "placeholders": [
+            24, 
+            25, 
+            26, 
+            27, 
+            28
+        ], 
+        "changed_date": "2014-04-16T10:01:10.637Z", 
+        "limit_visibility_in_menu": null, 
+        "parent": null, 
+        "soft_root": false, 
+        "is_home": false, 
+        "publication_date": "2014-04-16T10:01:10.415Z", 
+        "creation_date": "2014-04-16T10:01:01.134Z", 
+        "publisher_public": 6, 
+        "level": 0, 
+        "changed_by": "root", 
+        "application_urls": null, 
+        "publisher_is_draft": true, 
+        "xframe_options": 0, 
+        "revision_id": 0
+    }
+},
+{
+    "pk": 6, 
+    "model": "cms.page", 
+    "fields": {
+        "rght": 2, 
+        "navigation_extenders": null, 
+        "site": 1, 
+        "application_namespace": null, 
+        "lft": 1, 
+        "in_navigation": true, 
+        "reverse_id": null, 
+        "login_required": false, 
+        "created_by": "root", 
+        "languages": "fr", 
+        "publication_end_date": null, 
+        "template": "INHERIT", 
+        "tree_id": 6, 
+        "placeholders": [
+            29, 
+            30, 
+            31, 
+            32, 
+            33
+        ], 
+        "changed_date": "2014-04-16T10:01:10.551Z", 
+        "limit_visibility_in_menu": null, 
+        "parent": null, 
+        "soft_root": false, 
+        "is_home": false, 
+        "publication_date": "2014-04-16T10:01:10.415Z", 
+        "creation_date": "2014-04-16T10:01:10.432Z", 
+        "publisher_public": 5, 
+        "level": 0, 
+        "changed_by": "root", 
+        "application_urls": null, 
+        "publisher_is_draft": false, 
+        "xframe_options": 0, 
+        "revision_id": 0
+    }
+},
+{
+    "pk": 1, 
+    "model": "cms.title", 
+    "fields": {
+        "menu_title": "", 
+        "meta_description": "", 
+        "page_title": "Journalism++", 
+        "language": "fr", 
+        "title": "Home", 
+        "has_url_overwrite": false, 
+        "redirect": "", 
+        "publisher_is_draft": true, 
+        "page": 1, 
+        "published": true, 
+        "path": "", 
+        "publisher_state": 0, 
+        "creation_date": "2014-04-16T09:52:57.706Z", 
+        "slug": "home", 
+        "publisher_public": 2
+    }
+},
+{
+    "pk": 2, 
+    "model": "cms.title", 
+    "fields": {
+        "menu_title": "", 
+        "meta_description": "", 
+        "page_title": "Journalism++", 
+        "language": "fr", 
+        "title": "Home", 
+        "has_url_overwrite": false, 
+        "redirect": "", 
+        "publisher_is_draft": false, 
+        "page": 2, 
+        "published": true, 
+        "path": "", 
+        "publisher_state": 0, 
+        "creation_date": "2014-04-16T09:52:57.706Z", 
+        "slug": "home", 
+        "publisher_public": 1
+    }
+},
+{
+    "pk": 3, 
+    "model": "cms.title", 
+    "fields": {
+        "menu_title": "", 
+        "meta_description": "", 
+        "page_title": "", 
+        "language": "de", 
+        "title": "Home", 
+        "has_url_overwrite": false, 
+        "redirect": "", 
+        "publisher_is_draft": true, 
+        "page": 1, 
+        "published": true, 
+        "path": "", 
+        "publisher_state": 0, 
+        "creation_date": "2014-04-16T09:53:05.417Z", 
+        "slug": "home", 
+        "publisher_public": 8
+    }
+},
+{
+    "pk": 4, 
+    "model": "cms.title", 
+    "fields": {
+        "menu_title": "", 
+        "meta_description": "", 
+        "page_title": "Paris / Berlin", 
+        "language": "fr", 
+        "title": "Paris/Berlin", 
+        "has_url_overwrite": false, 
+        "redirect": null, 
+        "publisher_is_draft": true, 
+        "page": 3, 
+        "published": true, 
+        "path": "paris-berlin", 
+        "publisher_state": 0, 
+        "creation_date": "2014-04-16T09:54:38.530Z", 
+        "slug": "paris-berlin", 
+        "publisher_public": 5
+    }
+},
+{
+    "pk": 5, 
+    "model": "cms.title", 
+    "fields": {
+        "menu_title": "", 
+        "meta_description": "", 
+        "page_title": "Paris / Berlin", 
+        "language": "fr", 
+        "title": "Paris/Berlin", 
+        "has_url_overwrite": false, 
+        "redirect": null, 
+        "publisher_is_draft": false, 
+        "page": 4, 
+        "published": true, 
+        "path": "paris-berlin", 
+        "publisher_state": 0, 
+        "creation_date": "2014-04-16T09:54:38.530Z", 
+        "slug": "paris-berlin", 
+        "publisher_public": 4
+    }
+},
+{
+    "pk": 6, 
+    "model": "cms.title", 
+    "fields": {
+        "menu_title": "", 
+        "meta_description": "", 
+        "page_title": "", 
+        "language": "fr", 
+        "title": "Cologne", 
+        "has_url_overwrite": false, 
+        "redirect": null, 
+        "publisher_is_draft": true, 
+        "page": 5, 
+        "published": true, 
+        "path": "cologne", 
+        "publisher_state": 0, 
+        "creation_date": "2014-04-16T10:01:01.169Z", 
+        "slug": "cologne", 
+        "publisher_public": 7
+    }
+},
+{
+    "pk": 7, 
+    "model": "cms.title", 
+    "fields": {
+        "menu_title": "", 
+        "meta_description": "", 
+        "page_title": "", 
+        "language": "fr", 
+        "title": "Cologne", 
+        "has_url_overwrite": false, 
+        "redirect": null, 
+        "publisher_is_draft": false, 
+        "page": 6, 
+        "published": true, 
+        "path": "cologne", 
+        "publisher_state": 0, 
+        "creation_date": "2014-04-16T10:01:01.169Z", 
+        "slug": "cologne", 
+        "publisher_public": 6
+    }
+},
+{
+    "pk": 8, 
+    "model": "cms.title", 
+    "fields": {
+        "menu_title": "", 
+        "meta_description": "", 
+        "page_title": "", 
+        "language": "de", 
+        "title": "Home", 
+        "has_url_overwrite": false, 
+        "redirect": "", 
+        "publisher_is_draft": false, 
+        "page": 2, 
+        "published": true, 
+        "path": "", 
+        "publisher_state": 0, 
+        "creation_date": "2014-04-16T09:53:05.417Z", 
+        "slug": "home", 
+        "publisher_public": 3
+    }
+},
+{
+    "pk": 9, 
+    "model": "cms.title", 
+    "fields": {
+        "menu_title": "", 
+        "meta_description": "", 
+        "page_title": "", 
+        "language": "en", 
+        "title": "Home", 
+        "has_url_overwrite": false, 
+        "redirect": null, 
+        "publisher_is_draft": true, 
+        "page": 1, 
+        "published": true, 
+        "path": "", 
+        "publisher_state": 0, 
+        "creation_date": "2014-04-16T10:31:04.754Z", 
+        "slug": "home", 
+        "publisher_public": 10
+    }
+},
+{
+    "pk": 10, 
+    "model": "cms.title", 
+    "fields": {
+        "menu_title": "", 
+        "meta_description": "", 
+        "page_title": "", 
+        "language": "en", 
+        "title": "Home", 
+        "has_url_overwrite": false, 
+        "redirect": null, 
+        "publisher_is_draft": false, 
+        "page": 2, 
+        "published": true, 
+        "path": "", 
+        "publisher_state": 0, 
+        "creation_date": "2014-04-16T10:31:04.754Z", 
+        "slug": "home", 
+        "publisher_public": 9
+    }
+},
+{
+    "pk": 1, 
+    "model": "cms.staticplaceholder", 
+    "fields": {
+        "code": "footer", 
+        "name": "footer", 
+        "creation_method": "template", 
+        "site": null, 
+        "draft": 12, 
+        "dirty": false, 
+        "public": 13
+    }
+},
+{
+    "pk": 1, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_permission", 
+        "name": "Can add permission", 
+        "content_type": 1
+    }
+},
+{
+    "pk": 2, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_permission", 
+        "name": "Can change permission", 
+        "content_type": 1
+    }
+},
+{
+    "pk": 3, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_permission", 
+        "name": "Can delete permission", 
+        "content_type": 1
+    }
+},
+{
+    "pk": 4, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_group", 
+        "name": "Can add group", 
+        "content_type": 2
+    }
+},
+{
+    "pk": 5, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_group", 
+        "name": "Can change group", 
+        "content_type": 2
+    }
+},
+{
+    "pk": 6, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_group", 
+        "name": "Can delete group", 
+        "content_type": 2
+    }
+},
+{
+    "pk": 7, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_user", 
+        "name": "Can add user", 
+        "content_type": 3
+    }
+},
+{
+    "pk": 8, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_user", 
+        "name": "Can change user", 
+        "content_type": 3
+    }
+},
+{
+    "pk": 9, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_user", 
+        "name": "Can delete user", 
+        "content_type": 3
+    }
+},
+{
+    "pk": 10, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_contenttype", 
+        "name": "Can add content type", 
+        "content_type": 4
+    }
+},
+{
+    "pk": 11, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_contenttype", 
+        "name": "Can change content type", 
+        "content_type": 4
+    }
+},
+{
+    "pk": 12, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_contenttype", 
+        "name": "Can delete content type", 
+        "content_type": 4
+    }
+},
+{
+    "pk": 13, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_session", 
+        "name": "Can add session", 
+        "content_type": 5
+    }
+},
+{
+    "pk": 14, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_session", 
+        "name": "Can change session", 
+        "content_type": 5
+    }
+},
+{
+    "pk": 15, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_session", 
+        "name": "Can delete session", 
+        "content_type": 5
+    }
+},
+{
+    "pk": 16, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_logentry", 
+        "name": "Can add log entry", 
+        "content_type": 6
+    }
+},
+{
+    "pk": 17, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_logentry", 
+        "name": "Can change log entry", 
+        "content_type": 6
+    }
+},
+{
+    "pk": 18, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_logentry", 
+        "name": "Can delete log entry", 
+        "content_type": 6
+    }
+},
+{
+    "pk": 19, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_site", 
+        "name": "Can add site", 
+        "content_type": 7
+    }
+},
+{
+    "pk": 20, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_site", 
+        "name": "Can change site", 
+        "content_type": 7
+    }
+},
+{
+    "pk": 21, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_site", 
+        "name": "Can delete site", 
+        "content_type": 7
+    }
+},
+{
+    "pk": 22, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_migrationhistory", 
+        "name": "Can add migration history", 
+        "content_type": 8
+    }
+},
+{
+    "pk": 23, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_migrationhistory", 
+        "name": "Can change migration history", 
+        "content_type": 8
+    }
+},
+{
+    "pk": 24, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_migrationhistory", 
+        "name": "Can delete migration history", 
+        "content_type": 8
+    }
+},
+{
+    "pk": 25, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_usersettings", 
+        "name": "Can add user setting", 
+        "content_type": 9
+    }
+},
+{
+    "pk": 26, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_usersettings", 
+        "name": "Can change user setting", 
+        "content_type": 9
+    }
+},
+{
+    "pk": 27, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_usersettings", 
+        "name": "Can delete user setting", 
+        "content_type": 9
+    }
+},
+{
+    "pk": 28, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_placeholder", 
+        "name": "Can add placeholder", 
+        "content_type": 10
+    }
+},
+{
+    "pk": 29, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_placeholder", 
+        "name": "Can change placeholder", 
+        "content_type": 10
+    }
+},
+{
+    "pk": 30, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_placeholder", 
+        "name": "Can delete placeholder", 
+        "content_type": 10
+    }
+},
+{
+    "pk": 31, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_cmsplugin", 
+        "name": "Can add cms plugin", 
+        "content_type": 11
+    }
+},
+{
+    "pk": 32, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_cmsplugin", 
+        "name": "Can change cms plugin", 
+        "content_type": 11
+    }
+},
+{
+    "pk": 33, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_cmsplugin", 
+        "name": "Can delete cms plugin", 
+        "content_type": 11
+    }
+},
+{
+    "pk": 34, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_page", 
+        "name": "Can add page", 
+        "content_type": 12
+    }
+},
+{
+    "pk": 35, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_page", 
+        "name": "Can change page", 
+        "content_type": 12
+    }
+},
+{
+    "pk": 36, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_page", 
+        "name": "Can delete page", 
+        "content_type": 12
+    }
+},
+{
+    "pk": 37, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "view_page", 
+        "name": "Can view page", 
+        "content_type": 12
+    }
+},
+{
+    "pk": 38, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "publish_page", 
+        "name": "Can publish page", 
+        "content_type": 12
+    }
+},
+{
+    "pk": 39, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_globalpagepermission", 
+        "name": "Can add Page global permission", 
+        "content_type": 13
+    }
+},
+{
+    "pk": 40, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_globalpagepermission", 
+        "name": "Can change Page global permission", 
+        "content_type": 13
+    }
+},
+{
+    "pk": 41, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_globalpagepermission", 
+        "name": "Can delete Page global permission", 
+        "content_type": 13
+    }
+},
+{
+    "pk": 42, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_pagepermission", 
+        "name": "Can add Page permission", 
+        "content_type": 14
+    }
+},
+{
+    "pk": 43, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_pagepermission", 
+        "name": "Can change Page permission", 
+        "content_type": 14
+    }
+},
+{
+    "pk": 44, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_pagepermission", 
+        "name": "Can delete Page permission", 
+        "content_type": 14
+    }
+},
+{
+    "pk": 45, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_pageuser", 
+        "name": "Can add User (page)", 
+        "content_type": 15
+    }
+},
+{
+    "pk": 46, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_pageuser", 
+        "name": "Can change User (page)", 
+        "content_type": 15
+    }
+},
+{
+    "pk": 47, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_pageuser", 
+        "name": "Can delete User (page)", 
+        "content_type": 15
+    }
+},
+{
+    "pk": 48, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_pageusergroup", 
+        "name": "Can add User group (page)", 
+        "content_type": 16
+    }
+},
+{
+    "pk": 49, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_pageusergroup", 
+        "name": "Can change User group (page)", 
+        "content_type": 16
+    }
+},
+{
+    "pk": 50, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_pageusergroup", 
+        "name": "Can delete User group (page)", 
+        "content_type": 16
+    }
+},
+{
+    "pk": 51, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_title", 
+        "name": "Can add title", 
+        "content_type": 17
+    }
+},
+{
+    "pk": 52, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_title", 
+        "name": "Can change title", 
+        "content_type": 17
+    }
+},
+{
+    "pk": 53, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_title", 
+        "name": "Can delete title", 
+        "content_type": 17
+    }
+},
+{
+    "pk": 54, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_placeholderreference", 
+        "name": "Can add placeholder reference", 
+        "content_type": 18
+    }
+},
+{
+    "pk": 55, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_placeholderreference", 
+        "name": "Can change placeholder reference", 
+        "content_type": 18
+    }
+},
+{
+    "pk": 56, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_placeholderreference", 
+        "name": "Can delete placeholder reference", 
+        "content_type": 18
+    }
+},
+{
+    "pk": 57, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_staticplaceholder", 
+        "name": "Can add static placeholder", 
+        "content_type": 19
+    }
+},
+{
+    "pk": 58, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_staticplaceholder", 
+        "name": "Can change static placeholder", 
+        "content_type": 19
+    }
+},
+{
+    "pk": 59, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_staticplaceholder", 
+        "name": "Can delete static placeholder", 
+        "content_type": 19
+    }
+},
+{
+    "pk": 60, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_text", 
+        "name": "Can add text", 
+        "content_type": 20
+    }
+},
+{
+    "pk": 61, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_text", 
+        "name": "Can change text", 
+        "content_type": 20
+    }
+},
+{
+    "pk": 62, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_text", 
+        "name": "Can delete text", 
+        "content_type": 20
+    }
+},
+{
+    "pk": 63, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_cachekey", 
+        "name": "Can add cache key", 
+        "content_type": 21
+    }
+},
+{
+    "pk": 64, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_cachekey", 
+        "name": "Can change cache key", 
+        "content_type": 21
+    }
+},
+{
+    "pk": 65, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_cachekey", 
+        "name": "Can delete cache key", 
+        "content_type": 21
+    }
+},
+{
+    "pk": 66, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_style", 
+        "name": "Can add style", 
+        "content_type": 22
+    }
+},
+{
+    "pk": 67, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_style", 
+        "name": "Can change style", 
+        "content_type": 22
+    }
+},
+{
+    "pk": 68, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_style", 
+        "name": "Can delete style", 
+        "content_type": 22
+    }
+},
+{
+    "pk": 69, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_multicolumns", 
+        "name": "Can add multi columns", 
+        "content_type": 23
+    }
+},
+{
+    "pk": 70, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_multicolumns", 
+        "name": "Can change multi columns", 
+        "content_type": 23
+    }
+},
+{
+    "pk": 71, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_multicolumns", 
+        "name": "Can delete multi columns", 
+        "content_type": 23
+    }
+},
+{
+    "pk": 72, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_column", 
+        "name": "Can add column", 
+        "content_type": 24
+    }
+},
+{
+    "pk": 73, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_column", 
+        "name": "Can change column", 
+        "content_type": 24
+    }
+},
+{
+    "pk": 74, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_column", 
+        "name": "Can delete column", 
+        "content_type": 24
+    }
+},
+{
+    "pk": 75, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_file", 
+        "name": "Can add file", 
+        "content_type": 25
+    }
+},
+{
+    "pk": 76, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_file", 
+        "name": "Can change file", 
+        "content_type": 25
+    }
+},
+{
+    "pk": 77, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_file", 
+        "name": "Can delete file", 
+        "content_type": 25
+    }
+},
+{
+    "pk": 78, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_flash", 
+        "name": "Can add flash", 
+        "content_type": 26
+    }
+},
+{
+    "pk": 79, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_flash", 
+        "name": "Can change flash", 
+        "content_type": 26
+    }
+},
+{
+    "pk": 80, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_flash", 
+        "name": "Can delete flash", 
+        "content_type": 26
+    }
+},
+{
+    "pk": 81, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_googlemap", 
+        "name": "Can add google map", 
+        "content_type": 27
+    }
+},
+{
+    "pk": 82, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_googlemap", 
+        "name": "Can change google map", 
+        "content_type": 27
+    }
+},
+{
+    "pk": 83, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_googlemap", 
+        "name": "Can delete google map", 
+        "content_type": 27
+    }
+},
+{
+    "pk": 84, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_inheritpageplaceholder", 
+        "name": "Can add inherit page placeholder", 
+        "content_type": 28
+    }
+},
+{
+    "pk": 85, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_inheritpageplaceholder", 
+        "name": "Can change inherit page placeholder", 
+        "content_type": 28
+    }
+},
+{
+    "pk": 86, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_inheritpageplaceholder", 
+        "name": "Can delete inherit page placeholder", 
+        "content_type": 28
+    }
+},
+{
+    "pk": 87, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_link", 
+        "name": "Can add link", 
+        "content_type": 29
+    }
+},
+{
+    "pk": 88, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_link", 
+        "name": "Can change link", 
+        "content_type": 29
+    }
+},
+{
+    "pk": 89, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_link", 
+        "name": "Can delete link", 
+        "content_type": 29
+    }
+},
+{
+    "pk": 90, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_picture", 
+        "name": "Can add picture", 
+        "content_type": 30
+    }
+},
+{
+    "pk": 91, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_picture", 
+        "name": "Can change picture", 
+        "content_type": 30
+    }
+},
+{
+    "pk": 92, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_picture", 
+        "name": "Can delete picture", 
+        "content_type": 30
+    }
+},
+{
+    "pk": 93, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_teaser", 
+        "name": "Can add teaser", 
+        "content_type": 31
+    }
+},
+{
+    "pk": 94, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_teaser", 
+        "name": "Can change teaser", 
+        "content_type": 31
+    }
+},
+{
+    "pk": 95, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_teaser", 
+        "name": "Can delete teaser", 
+        "content_type": 31
+    }
+},
+{
+    "pk": 96, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_video", 
+        "name": "Can add video", 
+        "content_type": 32
+    }
+},
+{
+    "pk": 97, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_video", 
+        "name": "Can change video", 
+        "content_type": 32
+    }
+},
+{
+    "pk": 98, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_video", 
+        "name": "Can delete video", 
+        "content_type": 32
+    }
+},
+{
+    "pk": 99, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_revision", 
+        "name": "Can add revision", 
+        "content_type": 33
+    }
+},
+{
+    "pk": 100, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_revision", 
+        "name": "Can change revision", 
+        "content_type": 33
+    }
+},
+{
+    "pk": 101, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_revision", 
+        "name": "Can delete revision", 
+        "content_type": 33
+    }
+},
+{
+    "pk": 102, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_version", 
+        "name": "Can add version", 
+        "content_type": 34
+    }
+},
+{
+    "pk": 103, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_version", 
+        "name": "Can change version", 
+        "content_type": 34
+    }
+},
+{
+    "pk": 104, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_version", 
+        "name": "Can delete version", 
+        "content_type": 34
+    }
+},
+{
+    "pk": 105, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_whatwedotranslation", 
+        "name": "Can add what we do translation", 
+        "content_type": 35
+    }
+},
+{
+    "pk": 106, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_whatwedotranslation", 
+        "name": "Can change what we do translation", 
+        "content_type": 35
+    }
+},
+{
+    "pk": 107, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_whatwedotranslation", 
+        "name": "Can delete what we do translation", 
+        "content_type": 35
+    }
+},
+{
+    "pk": 108, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_whatwedo", 
+        "name": "Can add what we do", 
+        "content_type": 36
+    }
+},
+{
+    "pk": 109, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_whatwedo", 
+        "name": "Can change what we do", 
+        "content_type": 36
+    }
+},
+{
+    "pk": 110, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_whatwedo", 
+        "name": "Can delete what we do", 
+        "content_type": 36
+    }
+},
+{
+    "pk": 111, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_office", 
+        "name": "Can add office", 
+        "content_type": 37
+    }
+},
+{
+    "pk": 112, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_office", 
+        "name": "Can change office", 
+        "content_type": 37
+    }
+},
+{
+    "pk": 113, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_office", 
+        "name": "Can delete office", 
+        "content_type": 37
+    }
+},
+{
+    "pk": 114, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_projecttranslation", 
+        "name": "Can add project translation", 
+        "content_type": 38
+    }
+},
+{
+    "pk": 115, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_projecttranslation", 
+        "name": "Can change project translation", 
+        "content_type": 38
+    }
+},
+{
+    "pk": 116, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_projecttranslation", 
+        "name": "Can delete project translation", 
+        "content_type": 38
+    }
+},
+{
+    "pk": 117, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_project", 
+        "name": "Can add project", 
+        "content_type": 39
+    }
+},
+{
+    "pk": 118, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_project", 
+        "name": "Can change project", 
+        "content_type": 39
+    }
+},
+{
+    "pk": 119, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_project", 
+        "name": "Can delete project", 
+        "content_type": 39
+    }
+},
+{
+    "pk": 120, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_projectpluginmodel", 
+        "name": "Can add project plugin model", 
+        "content_type": 40
+    }
+},
+{
+    "pk": 121, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_projectpluginmodel", 
+        "name": "Can change project plugin model", 
+        "content_type": 40
+    }
+},
+{
+    "pk": 122, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_projectpluginmodel", 
+        "name": "Can delete project plugin model", 
+        "content_type": 40
+    }
+},
+{
+    "pk": 1, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "root", 
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "is_superuser": true, 
+        "is_staff": true, 
+        "last_login": "2014-04-16T09:52:31.600Z", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$10000$1FRP3S7vH0SB$ph+S9LrzpiA5eWTmAnjEuVR4zIK+Q7lrJ8pmFCf+nDA=", 
+        "email": "edouard@jplusplus.org", 
+        "date_joined": "2014-04-16T09:50:27.984Z"
+    }
+},
+{
+    "pk": 1, 
+    "model": "jplusplus.office", 
+    "fields": {
+        "slug": "paris-berlin", 
+        "title": "Paris/Berlin"
+    }
+},
+{
+    "pk": 1, 
+    "model": "jplusplus.projecttranslation", 
+    "fields": {
+        "language_code": "fr", 
+        "master": 1, 
+        "description": "Spending Stories est un proj\u00e9 de l'[Open Knowledge Foundation](http://fr.okfn.org/\u200e) visant \u00e0 am\u00e9liorer la compr\u00e9hension des donn\u00e9es budg\u00e9taires mondiales [en savoir plus](http://blog.okfn.org/category/okf-projects/spending-stories/).Ce projet est financ\u00e9 par la Knight Foundation.\r\n\r\nCette partie du projet \"Spending Stories\" permet aux utilisateurs de mettre des donn\u00e9es mon\u00e9taires en perspective et d'obtenir un contexte. N'importe quel montant dans n'importe quelle devise peut-\u00eatre entr\u00e9 et compar\u00e9 \u00e0 de vraies d\u00e9penses.\r\nLes r\u00e9sultats prennent en compte l'inflation dans le pays dans lequel la d\u00e9pense a \u00e9t\u00e9 r\u00e9alis\u00e9e ainsi que le taux de change entre deux monnaies diff\u00e9rentes, afin de pouvoir les comparer.\r\n\r\nCe projet est [open source](https://github.com/jplusplus/okf-spending-stories) et peut-\u00eatre install\u00e9 sur vos propres serveurs afin de pouvoir utiliser les d\u00e9penses budg\u00e9taires de votre choix dans votre base de donn\u00e9es.\r\n\r\n**L'Open Knowledge foundation a fait appel \u00e0 la partie de Journalism++ bas\u00e9e \u00e0 Paris et Berlin pour r\u00e9aliser cette application.\r\nCe projet a \u00e9t\u00e9 g\u00e9r\u00e9 par [Anne-Lise Bouyer](twitter.com/annelisebouyer) et d\u00e9velopp\u00e9 par [Pierre Bellon](twitter.com/toutenrab), [Edouard Richard](twitter.com/vied12), [Paul Joannon](twitter.com/paulloz) et [Pierre Romera.](twitter.com/pirhoo).**", 
+        "title": "Spending Stories"
+    }
+},
+{
+    "pk": 2, 
+    "model": "jplusplus.projecttranslation", 
+    "fields": {
+        "language_code": "fr", 
+        "master": 2, 
+        "description": " Journalism++ a d\u00e9velopp\u00e9 le site du webdocumentaire \"Une contre-histoire des Internets\", co-produit par Arte et Premi\u00e8res Lignes.\r\n\r\n L\u2019objectif de ce webdocumentaire : raconter et d\u00e9couvrir pourquoi, et comment, les internets ont chang\u00e9 nos vies, recenser ce qu\u2019on n\u2019a pas eu le droit d\u2019y faire, ce qu\u2019on a invent\u00e9 pour le faire quand m\u00eame, et ainsi participer collectivement \u00e0 l\u2019\u00e9laboration d\u2019une \u201ccontre-histoire des internets\u201d, qui se veut libre, ouverte et partag\u00e9e.\r\n\r\n\r\nLe site fait le lien avec le documentaire \u00e9crit par Jean-Marc Manach (@manhack) et Julien Goetz (@juliengoetz) r\u00e9alis\u00e9 par Sylvain Berg\u00e8re, diffus\u00e9 sur Art\u00e9 en Mai 2013.", 
+        "title": "Une contre-histoire des Internets"
+    }
+},
+{
+    "pk": 3, 
+    "model": "jplusplus.projecttranslation", 
+    "fields": {
+        "language_code": "en", 
+        "master": 2, 
+        "description": "Journalism++ developed the site of the web documentary \"The counter-history of the Internets\", co-produced by Arte and Premi\u00e8res Lignes.\r\n\r\nThe objective of this web documentary: tell and find out why, and how, the internets have changed our lives, identify what we don't have the right to do, what was invented to do it anyway and thus collectively participate in the development of a \"counter-history of the Internets\", which wants to be free, open and shared.\r\n\r\n\r\nThe site is related to the documentary written by Jean-Marc Manach (@manhack) and Julien Goetz (@juliengoetz),directed by Sylvain Berg\u00e8re, broadcast on Arte in May 2013.", 
+        "title": "The counter-history of the Internets"
+    }
+},
+{
+    "pk": 4, 
+    "model": "jplusplus.projecttranslation", 
+    "fields": {
+        "language_code": "de", 
+        "master": 2, 
+        "description": " Journalism++ a d\u00e9velopp\u00e9 le site du webdocumentaire \"Une contre-histoire des Internets\", co-produit par Arte et Premi\u00e8res Lignes.\r\n\r\n L\u2019objectif de ce webdocumentaire : raconter et d\u00e9couvrir pourquoi, et comment, les internets ont chang\u00e9 nos vies, recenser ce qu\u2019on n\u2019a pas eu le droit d\u2019y faire, ce qu\u2019on a invent\u00e9 pour le faire quand m\u00eame, et ainsi participer collectivement \u00e0 l\u2019\u00e9laboration d\u2019une \u201ccontre-histoire des internets\u201d, qui se veut libre, ouverte et partag\u00e9e.\r\n\r\n\r\nLe site fait le lien avec le documentaire \u00e9crit par Jean-Marc Manach (@manhack) et Julien Goetz (@juliengoetz) r\u00e9alis\u00e9 par Sylvain Berg\u00e8re, diffus\u00e9 sur Art\u00e9 en Mai 2013.", 
+        "title": "Eine gegengeschichte der Internetze"
+    }
+},
+{
+    "pk": 5, 
+    "model": "jplusplus.projecttranslation", 
+    "fields": {
+        "language_code": "de", 
+        "master": 1, 
+        "description": "Spending Stories is a project by the [Open Knowledge Foundation](http://okfn.org) aiming at improving fiscal literacy and providing greater awareness of budget data worldwide. Read more about it on this blog. It is supported by a grant by the Knight Foundation.\r\n\r\nThis part of the Spending Stories project enables users to put amounts into perspective. Any amount in any currency can be queried and compared against real-life expenditures. The results take into account inflation in the country where the expenditure has been realized.\r\n\r\nThe project is [open source](https://github.com/jplusplus/okf-spending-stories) and can be installed on your own server for you to insert your own spending stories. Find more instructions at Github.\r\n\r\n**The Open Knowledge foundation asked Paris and Berlin-based agency Journalism++ SAS  to build this app. It was managed by [Anne-Lise Bouyer](twitter.com/annelisebouyer) and coded by [Pierre Bellon](twitter.com/toutenrab), [Edouard Richard](twitter.com/vied12), [Paul Joannon](twitter.com/paulloz) and [Pierre Romera.](twitter.com/pirhoo).**", 
+        "title": "Spending Stories"
+    }
+},
+{
+    "pk": 1, 
+    "model": "jplusplus.project", 
+    "fields": {
+        "image": "projects/spending-stories.png", 
+        "order": 1, 
+        "highlighted": false, 
+        "link": "http://okf-spendingstories.herokuapp.com", 
+        "date": "2013-11-13", 
+        "offices": [
+            1
+        ], 
+        "slug": "spending-stories"
+    }
+},
+{
+    "pk": 2, 
+    "model": "jplusplus.project", 
+    "fields": {
+        "image": "projects/contre-histoire-internets.png", 
+        "order": 2, 
+        "highlighted": false, 
+        "link": "http://lesinternets.arte.tv", 
+        "date": "2013-08-16", 
+        "offices": [
+            1
+        ], 
+        "slug": "une-contre-histoire-des-internets"
+    }
+},
+{
+    "pk": 1, 
+    "model": "cms.usersettings", 
+    "fields": {
+        "clipboard": 1, 
+        "user": 1, 
+        "language": "fr"
+    }
+}
+]
