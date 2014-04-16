@@ -4,7 +4,11 @@
 	{% for project in projects %}
 		<div class="title"><h3>{{ project.title }}</h3></div>
 		<div class="description">{{ project.description | safe }}</div>
-		<a href="{% url 'jplusplus_project_details' project.slug %}">link</a>
+		{% if office %}
+			<a href="{% url 'jplusplus_project_details' office=office slug=project.slug %}">link</a>
+		{% else %}
+			<a href="{% url 'jplusplus_project_details' slug=project.slug %}">link</a>
+		{% endif %}
 	{% endfor %}
 </div>
 

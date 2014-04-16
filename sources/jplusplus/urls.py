@@ -13,7 +13,9 @@
 from django.conf.urls import url
 
 urlpatterns = [
-    url(r'^projects/$'                , 'jplusplus.views.projects'       , name='jplusplus_projects'),
-    url(r'^project/(?P<slug>[\w-]+)/$', 'jplusplus.views.project_details', name='jplusplus_project_details'),
+    url(r'^projects/$'                                   , 'jplusplus.views.projects'       , name='jplusplus_projects'),
+    url(r'^project/(?P<slug>[\w-]+)/$'                   , 'jplusplus.views.project_details', name='jplusplus_project_details'),
+    url(r'^(?P<office>[\w-]+)/projects/$'                , 'jplusplus.views.projects'       , name='jplusplus_projects'),
+    url(r'^(?P<office>[\w-]+)/project/(?P<slug>[\w-]+)/$', 'jplusplus.views.project_details', name='jplusplus_project_details'),
 ]
 # EOF

@@ -14,13 +14,16 @@ from django.template.context import RequestContext
 from django.shortcuts import render_to_response
 from .models import Project
 
-def projects(request):
-
+def projects(request, office=None):
 	projects = Project.objects.all()
-	return render_to_response("jplusplus/projects.html", {'projects':projects}, RequestContext(request))
+	if office:
+		projects = projects.filter(offices__slug=office)
+	context = {'projects':projects, 'office':office}
+	return render_to_response("jplusplus/projects.html", context, RequestContext(request))
 
-def project_details(request, slug):
+def project_details(request, slug, office=None):
 	project = Project.objects.get(slug=slug)
+	# TODO: raise 404 if office isn't related to the project. This is the law.
 	context = {'project':project}
 	return render_to_response("jplusplus/project_details.html", context, RequestContext(request))
 
