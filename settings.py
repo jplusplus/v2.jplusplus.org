@@ -86,6 +86,7 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
+    'compressor.finders.CompressorFinder',
 )
 
 # Make this unique, and don't share it with anybody.
@@ -184,6 +185,7 @@ INSTALLED_APPS = (
     'mptt',
     'menus',
     'south',
+    'compressor',
     'sekizai',
     'hvad',
     'adminsortable',
@@ -276,6 +278,11 @@ CMS_STYLE_NAMES = (
     ('info', gettext("info")),
     ('new', gettext("new")),
     ('hint', gettext("hint")),
+)
+
+COMPRESS_PRECOMPILERS = (
+    ('text/coffeescript', 'coffee --compile --stdio'),
+    ('text/less', 'lessc {infile} {outfile}'),
 )
 
 # EOF
