@@ -1,5 +1,6 @@
+{% extends "base.html" %}
 {% load i18n jpp_tags %}
 
-<div class="project-details">
-	<h2>{{ project.title }}</h2>
-</div>
+{% block content %}
+	{% include "jplusplus/partials/project_details.html" %}
+{% endblock %}

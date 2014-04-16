@@ -30,7 +30,7 @@ class WhatWeDoPlugin(CMSPluginBase):
 class ProjectsPlugin(CMSPluginBase):
     model           = ProjectPluginModel
     name            = _("J++ Projects")
-    render_template = "jplusplus/projects.html"
+    render_template = "jplusplus/partials/projects.html"
 
     def render(self, context, instance, placeholder):
     	# filter projects by offices, retrieve with translations

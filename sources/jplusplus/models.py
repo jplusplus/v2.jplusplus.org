@@ -14,6 +14,7 @@ from django.db import models
 from django.utils.translation import ugettext_lazy as _
 from hvad.models import TranslatableModel, TranslatedFields
 from cms.models.pluginmodel import CMSPlugin
+from djangocms_text_ckeditor.fields import HTMLField
 
 class WhatWeDo(TranslatableModel):
     """
@@ -53,7 +54,8 @@ class Project(TranslatableModel):
     # TODO: set tags
     translations = TranslatedFields(
         title       = models.CharField(_('title'), max_length=255),
-        description = models.TextField(_('description'), blank=True, null=True),
+        # description = models.TextField(_('description'), blank=True, null=True),
+        description = HTMLField(_('description'), blank=True, null=True)
     )
     slug         = models.SlugField(unique=True)
     offices      = models.ManyToManyField(Office)

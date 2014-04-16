@@ -2,17 +2,5 @@
 {% load i18n jpp_tags %}
 
 {% block content %}
-	<div class="projects">
-		{% for project in projects %}
-			<div class="title"><h3>{{ project.title }}</h3></div>
-			<div class="description">{{ project.description }}</div>
-			<div class="description">{{ project.slug }}</div>
-			<a href="{% url 'jplusplus_project_details' project.slug %}">link</a>
-		{% endfor %}
-	</div>
-
-	<script type="text/javascript">
-		var projects = JSON.parse("{{ projects | jsonify | escapejs }}");
-		console.log("Projects (sources/jplusplus/templates/projects.html)", projects);
-	</script>
+	{% include "jplusplus/partials/projects.html" %}
 {% endblock %}
