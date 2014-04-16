@@ -16,27 +16,6 @@ from hvad.models import TranslatableModel, TranslatedFields
 from cms.models.pluginmodel import CMSPlugin
 from djangocms_text_ckeditor.fields import HTMLField
 
-class WhatWeDo(TranslatableModel):
-    """
-    What we Do Model
-    """
-    image = models.ImageField(_("image"), upload_to="whatwedo", blank=True, null=True)
-    url   = models.CharField(_("link"), max_length=255, blank=True, null=True, help_text=_("If present image will be clickable."))
-    order = models.PositiveIntegerField(default=0, blank=False, null=False)
-    translations = TranslatedFields(
-        title       = models.CharField(_('title'), max_length=255),
-        description = models.TextField(_('description')),
-    )
-
-    search_fields = ('description', 'title')
-
-    class Meta:
-        verbose_name_plural = "What we do"
-        ordering = ('order',)
-
-    def __unicode__(self):
-        return self.title
-
 class Office(models.Model):
     """
     Office Model
@@ -73,5 +52,26 @@ class Project(TranslatableModel):
 
 class ProjectPluginModel(CMSPlugin):
     offices = models.ManyToManyField(Office, verbose_name=_("filter by office"), blank=True, null=True)
+
+class WhatWeDo(TranslatableModel):
+    """
+    What we Do Model
+    """
+    image = models.ImageField(_("image"), upload_to="whatwedo", blank=True, null=True)
+    url   = models.CharField(_("link"), max_length=255, blank=True, null=True, help_text=_("If present image will be clickable."))
+    order = models.PositiveIntegerField(default=0, blank=False, null=False)
+    translations = TranslatedFields(
+        title       = models.CharField(_('title'), max_length=255),
+        description = models.TextField(_('description')),
+    )
+
+    search_fields = ('description', 'title')
+
+    class Meta:
+        verbose_name_plural = "What we do"
+        ordering = ('order',)
+
+    def __unicode__(self):
+        return self.title
 
 # EOF
