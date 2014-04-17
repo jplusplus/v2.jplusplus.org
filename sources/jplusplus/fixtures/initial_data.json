@@ -340,14 +340,14 @@
     "model": "cms.cmsplugin", 
     "fields": {
         "rght": 2, 
-        "changed_date": "2014-04-16T12:46:32.074Z", 
+        "changed_date": "2014-04-17T15:00:45.211Z", 
         "parent": null, 
         "language": "fr", 
         "level": 0, 
         "creation_date": "2014-04-16T12:25:16.239Z", 
         "lft": 1, 
         "tree_id": 1, 
-        "position": 1, 
+        "position": 0, 
         "placeholder": 4, 
         "plugin_type": "ProjectsPlugin"
     }
@@ -367,23 +367,6 @@
         "position": 0, 
         "placeholder": 3, 
         "plugin_type": "WhatWeDoPlugin"
-    }
-},
-{
-    "pk": 3, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 2, 
-        "changed_date": "2014-04-16T12:46:59.719Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-16T12:46:16.073Z", 
-        "lft": 1, 
-        "tree_id": 3, 
-        "position": 0, 
-        "placeholder": 4, 
-        "plugin_type": "TextPlugin"
     }
 },
 {
@@ -408,33 +391,16 @@
     "model": "cms.cmsplugin", 
     "fields": {
         "rght": 2, 
-        "changed_date": "2014-04-16T13:00:43.061Z", 
+        "changed_date": "2014-04-17T15:00:45.392Z", 
         "parent": null, 
         "language": "de", 
         "level": 0, 
         "creation_date": "2014-04-16T12:25:16.239Z", 
         "lft": 1, 
         "tree_id": 8, 
-        "position": 1, 
-        "placeholder": 4, 
-        "plugin_type": "ProjectsPlugin"
-    }
-},
-{
-    "pk": 9, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 2, 
-        "changed_date": "2014-04-16T13:00:43.099Z", 
-        "parent": null, 
-        "language": "de", 
-        "level": 0, 
-        "creation_date": "2014-04-16T12:46:16.073Z", 
-        "lft": 1, 
-        "tree_id": 9, 
         "position": 0, 
         "placeholder": 4, 
-        "plugin_type": "TextPlugin"
+        "plugin_type": "ProjectsPlugin"
     }
 },
 {
@@ -459,33 +425,16 @@
     "model": "cms.cmsplugin", 
     "fields": {
         "rght": 2, 
-        "changed_date": "2014-04-16T13:00:56.583Z", 
+        "changed_date": "2014-04-17T15:00:45.565Z", 
         "parent": null, 
         "language": "de", 
         "level": 0, 
         "creation_date": "2014-04-16T12:25:16.239Z", 
         "lft": 1, 
         "tree_id": 11, 
-        "position": 1, 
-        "placeholder": 9, 
-        "plugin_type": "ProjectsPlugin"
-    }
-},
-{
-    "pk": 12, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 2, 
-        "changed_date": "2014-04-16T13:00:56.624Z", 
-        "parent": null, 
-        "language": "de", 
-        "level": 0, 
-        "creation_date": "2014-04-16T12:46:16.073Z", 
-        "lft": 1, 
-        "tree_id": 12, 
         "position": 0, 
         "placeholder": 9, 
-        "plugin_type": "TextPlugin"
+        "plugin_type": "ProjectsPlugin"
     }
 },
 {
@@ -544,33 +493,16 @@
     "model": "cms.cmsplugin", 
     "fields": {
         "rght": 2, 
-        "changed_date": "2014-04-16T14:03:08.659Z", 
+        "changed_date": "2014-04-17T15:00:45.784Z", 
         "parent": null, 
         "language": "fr", 
         "level": 0, 
         "creation_date": "2014-04-16T12:25:16.239Z", 
         "lft": 1, 
         "tree_id": 16, 
-        "position": 1, 
-        "placeholder": 9, 
-        "plugin_type": "ProjectsPlugin"
-    }
-},
-{
-    "pk": 17, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 2, 
-        "changed_date": "2014-04-16T14:03:08.711Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-16T12:46:16.073Z", 
-        "lft": 1, 
-        "tree_id": 17, 
         "position": 0, 
         "placeholder": 9, 
-        "plugin_type": "TextPlugin"
+        "plugin_type": "ProjectsPlugin"
     }
 },
 {
@@ -928,7 +860,7 @@
         "site": 1, 
         "application_namespace": null, 
         "lft": 3, 
-        "in_navigation": false, 
+        "in_navigation": true, 
         "reverse_id": null, 
         "login_required": false, 
         "created_by": "root", 
@@ -939,7 +871,7 @@
         "placeholders": [
             36
         ], 
-        "changed_date": "2014-04-16T14:07:25.405Z", 
+        "changed_date": "2014-04-17T14:52:54.998Z", 
         "limit_visibility_in_menu": null, 
         "parent": 3, 
         "soft_root": false, 
@@ -1078,7 +1010,7 @@
         "page": 1, 
         "published": true, 
         "path": "", 
-        "publisher_state": 0, 
+        "publisher_state": 1, 
         "creation_date": "2014-04-16T09:52:57.706Z", 
         "slug": "home", 
         "publisher_public": 2
@@ -1141,7 +1073,7 @@
         "page": 3, 
         "published": true, 
         "path": "paris-berlin", 
-        "publisher_state": 0, 
+        "publisher_state": 1, 
         "creation_date": "2014-04-16T09:54:38.530Z", 
         "slug": "paris-berlin", 
         "publisher_public": 5
@@ -1183,7 +1115,7 @@
         "page": 5, 
         "published": true, 
         "path": "cologne", 
-        "publisher_state": 0, 
+        "publisher_state": 1, 
         "creation_date": "2014-04-16T10:01:01.169Z", 
         "slug": "cologne", 
         "publisher_public": 7
@@ -1288,7 +1220,7 @@
         "page": 7, 
         "published": true, 
         "path": "paris-berlin/projects", 
-        "publisher_state": 0, 
+        "publisher_state": 1, 
         "creation_date": "2014-04-16T13:51:00.184Z", 
         "slug": "projects", 
         "publisher_public": 13
@@ -1372,7 +1304,7 @@
         "page": 3, 
         "published": true, 
         "path": "paris-berlin", 
-        "publisher_state": 0, 
+        "publisher_state": 1, 
         "creation_date": "2014-04-16T13:54:13.736Z", 
         "slug": "paris-berlin", 
         "publisher_public": 16
@@ -2612,7 +2544,7 @@
         "is_active": true, 
         "is_superuser": true, 
         "is_staff": true, 
-        "last_login": "2014-04-16T09:52:31.600Z", 
+        "last_login": "2014-04-17T14:31:54.060Z", 
         "groups": [], 
         "user_permissions": [], 
         "password": "pbkdf2_sha256$10000$1FRP3S7vH0SB$ph+S9LrzpiA5eWTmAnjEuVR4zIK+Q7lrJ8pmFCf+nDA=", 
@@ -2777,7 +2709,7 @@
         "language_code": "fr", 
         "master": 3, 
         "description": "<p>Journalism++ participe au projet [Datawrapper](http://datawrapper.de/), initi&eacute; par Mirko Lorenz pour le compte de [ABZV](http://abzv.de/), un organisme de formation continue pour journalistes. L&rsquo;objectif est de permettre &agrave; tous les journalistes de cr&eacute;er des diagrammes simples et corrects en quelques secondes, afin de les int&eacute;grer ensuite &agrave; leurs articles.</p>\r\n\r\n<p>Les journalistes apr&eacute;cient la simplicit&eacute; du produit et la justesse des visualisations produites, qui se fondent sur les enseignement de [Dona Wong](http://www.amazon.com/Street-Journal-Guide-Information-Graphics/dp/0393072959), du Wall Street Journal. Datawrapper permet &agrave; tout m&eacute;dia de personnaliser facilement le design de l&rsquo;outil en fonction de ses besoins.</p>\r\n\r\n<p>[@nicolaskb](https://twitter.com/#%21/nicolaskb/) a r&eacute;alis&eacute; le prototype de Datawrapper et la version 1.0 est maintenant cod&eacute;e principalement par [@driven_by_data](https://twitter.com/driven_by_data). Datawrapper est utilis&eacute; par [The Guardian](http://www.guardian.co.uk/), [Ruhr Nachrichten](http://www.ruhrnachrichten.de/) (Dortmund), [L&rsquo;Avenir](http://www.lavenir.net/) (Belgique) et [RTL.nl](http://www.rtl.nl/experience/rtlnl/), entre autres.</p>\r\n", 
-        "title": "Datawrapper: des\u00a0visualisations en\u00a0quelques secondes"
+        "title": "Datawrapper: des visualisations en quelques secondes"
     }
 },
 {
