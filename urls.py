@@ -16,11 +16,17 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.contrib import admin
 from django.conf import settings
 from cms.sitemaps import CMSSitemap
+from rest_framework import routers
+import api
 
 admin.autodiscover()
 
+router = routers.DefaultRouter()
+router.register(r'projects', api.ProjectViewSet)
+router.register(r'offices', api.OfficeViewSet)
+
 urlpatterns = i18n_patterns('',
-    # url(r'^jplusplus/', include('jplusplus.urls')),
+	url(r'^api/v1/', include(router.urls)),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': {'cmspages': CMSSitemap}}),
     url(r'^', include('cms.urls')),
