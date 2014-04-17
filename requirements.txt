@@ -7,7 +7,6 @@ django-filter==0.7
 django-hvad==0.3
 django-mptt==0.6.0
 django-reversion==1.8.0
-django-sekizai==0.7
 Django==1.5.5
 djangocms-admin-style==0.2.2
 djangocms-column==1.3
