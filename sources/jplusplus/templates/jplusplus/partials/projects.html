@@ -1,12 +1,6 @@
-{% load i18n jpp_tags sekizai_tags %}
+{% load i18n sekizai_tags %}
 
 {% addtoblock "js" %}<script type="text/coffeescript" src="{{STATIC_URL}}coffee/script.coffee"></script>{% endaddtoblock %}
-{% addtoblock "js" %}
-<script type="text/javascript">
-	var projects = JSON.parse("{{ projects | jsonify | escapejs }}");
-	console.log("Projects (sources/jplusplus/templates/projects.html)", projects);
-</script>
-{% endaddtoblock %}
 
 <div class="projects">
 	{% for project in projects %}
@@ -19,4 +13,3 @@
 		{% endif %}
 	{% endfor %}
 </div>
-
