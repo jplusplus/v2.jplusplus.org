@@ -280,7 +280,7 @@ CMS_STYLE_NAMES = (
 )
 
 COMPRESS_PRECOMPILERS = (
-    ('text/coffeescript', 'coffee --compile --stdio'),
+    ('text/coffeescript', 'coffee --bare --compile --stdio'),
     ('text/less', 'lessc {infile} {outfile}'),
 )
 

@@ -13,8 +13,8 @@
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 from hvad.models import TranslatableModel, TranslatedFields
-from cms.models.pluginmodel import CMSPlugin
 from djangocms_text_ckeditor.fields import HTMLField
+from cms.models.pluginmodel import CMSPlugin
 
 class Office(models.Model):
     """
@@ -52,6 +52,9 @@ class Project(TranslatableModel):
 
 class ProjectPluginModel(CMSPlugin):
     offices = models.ManyToManyField(Office, verbose_name=_("filter by office"), blank=True, null=True)
+
+    def copy_relations(self, oldinstance):
+        self.offices = oldinstance.offices.all()
 
 class WhatWeDo(TranslatableModel):
     """

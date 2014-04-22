@@ -1,15 +1,17 @@
 {% load i18n sekizai_tags %}
 
-{% addtoblock "js" %}<script type="text/coffeescript" src="{{STATIC_URL}}coffee/script.coffee"></script>{% endaddtoblock %}
+{% addtoblock "css" %} <link rel="stylesheet" type="text/less" href="{{STATIC_URL}}jplusplus/less/projects_mosaic.less">{% endaddtoblock %}
+{% addtoblock "js" %}<script type="text/coffeescript" src="{{STATIC_URL}}jplusplus/coffee/projects_mosaic.coffee"></script>{% endaddtoblock %}
 
-<div class="projects">
-	{% for project in projects %}
-		<div class="title"><h3>{{ project.title }}</h3></div>
-		<div class="description">{{ project.description | safe }}</div>
-		{% if office %}
-			<a href="{% url 'jplusplus_project_details' office=office slug=project.slug %}">link</a>
-		{% else %}
-			<a href="{% url 'jplusplus_project_details' slug=project.slug %}">link</a>
-		{% endif %}
-	{% endfor %}
+<div class="projects_mosaic projects_mosaic_{{instance}}">
+	<div class="project template">
+		<div class="illustration"></div>
+		<div class="title"></div>
+	</div>
 </div>
+
+{% addtoblock "js" %}
+	<script type="text/coffeescript">
+		new Mosaïc(".projects_mosaic_{{instance}}", {{ instance }})
+	</script>
+{% endaddtoblock %}
