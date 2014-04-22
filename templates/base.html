@@ -4,20 +4,34 @@
   <head>
     <title>{% page_attribute "page_title" %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% render_block "css" %}
+    {% render_block "css" postprocessor "compressor.contrib.sekizai.compress" %}
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+    {% addtoblock "css" %} <link rel="stylesheet" type="text/less" href="{{STATIC_URL}}less/style.less">{% endaddtoblock %}
   </head>
+
   <body style="padding-top:60px">
+
     {% cms_toolbar %}
+
       <div class="container">
-      {% include "header.html" %}
-      {% block content %}
-      {% endblock content %}
-      {% load cms_tags %} {% static_placeholder "footer" %}
+
+        <div class="row">
+          <div class="col-md-2">
+            {% include "header.html" %}
+          </div>
+
+          <div class="col-md-10">
+            <div class="body">
+              {% block content %}{% endblock content %}
+            </div>
+          </div>
+        </div>
       </div>
+
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
     {% render_block "js" postprocessor "compressor.contrib.sekizai.compress" %}
   </body>
+
 </html>
