@@ -6,3 +6,4 @@ fabfile.py
 venv
 *.log
 *.db
+node_modules/
