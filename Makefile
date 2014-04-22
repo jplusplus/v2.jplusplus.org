@@ -15,7 +15,7 @@ install_dependances:
 	. `pwd`/.env ; pip install -r requirements_dev.txt
 
 dump_data:
-	. `pwd`/.env ; python manage.py dumpdata cms auth djangocms_style djangocms_column djangocms_file djangocms_flash djangocms_googlemap djangocms_inherit djangocms_link djangocms_picture djangocms_teaser djangocms_video jplusplus --indent 4 > sources/jplusplus/fixtures/initial_data.json
+	. `pwd`/.env ; python manage.py dumpdata cms auth djangocms_style djangocms_column djangocms_text_ckeditor djangocms_file djangocms_flash djangocms_googlemap djangocms_inherit djangocms_link djangocms_picture djangocms_teaser djangocms_video jplusplus --indent 4 > sources/jplusplus/fixtures/initial_data.json
 
 init_db:
 	. `pwd`/.env ; python manage.py syncdb

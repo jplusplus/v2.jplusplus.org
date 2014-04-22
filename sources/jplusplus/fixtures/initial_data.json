@@ -296,14 +296,6 @@
     }
 },
 {
-    "pk": 38, 
-    "model": "cms.placeholder", 
-    "fields": {
-        "slot": "clipboard", 
-        "default_width": null
-    }
-},
-{
     "pk": 39, 
     "model": "cms.placeholder", 
     "fields": {
@@ -336,37 +328,43 @@
     }
 },
 {
-    "pk": 1, 
-    "model": "cms.cmsplugin", 
+    "pk": 43, 
+    "model": "cms.placeholder", 
     "fields": {
-        "rght": 2, 
-        "changed_date": "2014-04-17T15:00:45.211Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-16T12:25:16.239Z", 
-        "lft": 1, 
-        "tree_id": 1, 
-        "position": 0, 
-        "placeholder": 4, 
-        "plugin_type": "ProjectsPlugin"
+        "slot": "header", 
+        "default_width": null
     }
 },
 {
-    "pk": 2, 
-    "model": "cms.cmsplugin", 
+    "pk": 44, 
+    "model": "cms.placeholder", 
     "fields": {
-        "rght": 2, 
-        "changed_date": "2014-04-16T12:25:44.158Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-16T12:25:30.156Z", 
-        "lft": 1, 
-        "tree_id": 2, 
-        "position": 0, 
-        "placeholder": 3, 
-        "plugin_type": "WhatWeDoPlugin"
+        "slot": "body", 
+        "default_width": null
+    }
+},
+{
+    "pk": 45, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "clipboard", 
+        "default_width": null
+    }
+},
+{
+    "pk": 46, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "header", 
+        "default_width": null
+    }
+},
+{
+    "pk": 47, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "body", 
+        "default_width": null
     }
 },
 {
@@ -472,74 +470,6 @@
     }
 },
 {
-    "pk": 15, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 2, 
-        "changed_date": "2014-04-16T14:03:08.625Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-16T12:25:30.156Z", 
-        "lft": 1, 
-        "tree_id": 15, 
-        "position": 0, 
-        "placeholder": 8, 
-        "plugin_type": "WhatWeDoPlugin"
-    }
-},
-{
-    "pk": 16, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 2, 
-        "changed_date": "2014-04-17T15:00:45.784Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-16T12:25:16.239Z", 
-        "lft": 1, 
-        "tree_id": 16, 
-        "position": 0, 
-        "placeholder": 9, 
-        "plugin_type": "ProjectsPlugin"
-    }
-},
-{
-    "pk": 18, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 2, 
-        "changed_date": "2014-04-16T14:04:05.261Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-16T14:04:05.256Z", 
-        "lft": 1, 
-        "tree_id": 18, 
-        "position": null, 
-        "placeholder": 1, 
-        "plugin_type": "PlaceholderPlugin"
-    }
-},
-{
-    "pk": 19, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 2, 
-        "changed_date": "2014-04-16T14:04:05.274Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-16T13:45:56.976Z", 
-        "lft": 1, 
-        "tree_id": 19, 
-        "position": 0, 
-        "placeholder": 38, 
-        "plugin_type": "LinkPlugin"
-    }
-},
-{
     "pk": 20, 
     "model": "cms.cmsplugin", 
     "fields": {
@@ -608,6 +538,465 @@
     }
 },
 {
+    "pk": 24, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 3, 
+        "changed_date": "2014-04-22T11:44:52.271Z", 
+        "parent": 25, 
+        "language": "fr", 
+        "level": 1, 
+        "creation_date": "2014-04-22T11:43:09.817Z", 
+        "lft": 2, 
+        "tree_id": 25, 
+        "position": 0, 
+        "placeholder": 2, 
+        "plugin_type": "TextPlugin"
+    }
+},
+{
+    "pk": 25, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 4, 
+        "changed_date": "2014-04-22T11:45:45.640Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-22T11:44:13.034Z", 
+        "lft": 1, 
+        "tree_id": 25, 
+        "position": 1, 
+        "placeholder": 2, 
+        "plugin_type": "StylePlugin"
+    }
+},
+{
+    "pk": 26, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 3, 
+        "changed_date": "2014-04-22T11:50:10.804Z", 
+        "parent": 27, 
+        "language": "fr", 
+        "level": 1, 
+        "creation_date": "2014-04-22T11:49:07.920Z", 
+        "lft": 2, 
+        "tree_id": 27, 
+        "position": 0, 
+        "placeholder": 43, 
+        "plugin_type": "TextPlugin"
+    }
+},
+{
+    "pk": 27, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 4, 
+        "changed_date": "2014-04-22T11:49:57.888Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-22T11:49:53.363Z", 
+        "lft": 1, 
+        "tree_id": 27, 
+        "position": 1, 
+        "placeholder": 43, 
+        "plugin_type": "StylePlugin"
+    }
+},
+{
+    "pk": 30, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-22T12:23:37.842Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-22T12:23:37.838Z", 
+        "lft": 1, 
+        "tree_id": 30, 
+        "position": null, 
+        "placeholder": 1, 
+        "plugin_type": "PlaceholderPlugin"
+    }
+},
+{
+    "pk": 31, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-22T12:23:37.859Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-16T12:25:16.239Z", 
+        "lft": 1, 
+        "tree_id": 31, 
+        "position": 3, 
+        "placeholder": 45, 
+        "plugin_type": "ProjectsPlugin"
+    }
+},
+{
+    "pk": 32, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-22T12:23:37.869Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-16T12:25:30.156Z", 
+        "lft": 1, 
+        "tree_id": 32, 
+        "position": 1, 
+        "placeholder": 45, 
+        "plugin_type": "WhatWeDoPlugin"
+    }
+},
+{
+    "pk": 33, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-22T12:23:37.900Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-22T11:58:31.298Z", 
+        "lft": 1, 
+        "tree_id": 33, 
+        "position": 0, 
+        "placeholder": 45, 
+        "plugin_type": "TextPlugin"
+    }
+},
+{
+    "pk": 34, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-22T12:23:37.910Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-22T12:18:28.043Z", 
+        "lft": 1, 
+        "tree_id": 34, 
+        "position": 2, 
+        "placeholder": 45, 
+        "plugin_type": "TextPlugin"
+    }
+},
+{
+    "pk": 35, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-22T12:23:49.102Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-16T12:25:16.239Z", 
+        "lft": 1, 
+        "tree_id": 35, 
+        "position": 3, 
+        "placeholder": 44, 
+        "plugin_type": "ProjectsPlugin"
+    }
+},
+{
+    "pk": 36, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-22T12:23:49.126Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-16T12:25:30.156Z", 
+        "lft": 1, 
+        "tree_id": 36, 
+        "position": 1, 
+        "placeholder": 44, 
+        "plugin_type": "WhatWeDoPlugin"
+    }
+},
+{
+    "pk": 37, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-22T12:23:49.166Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-22T11:58:31.298Z", 
+        "lft": 1, 
+        "tree_id": 37, 
+        "position": 0, 
+        "placeholder": 44, 
+        "plugin_type": "TextPlugin"
+    }
+},
+{
+    "pk": 38, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-22T12:23:49.176Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-22T12:18:28.043Z", 
+        "lft": 1, 
+        "tree_id": 38, 
+        "position": 2, 
+        "placeholder": 44, 
+        "plugin_type": "TextPlugin"
+    }
+},
+{
+    "pk": 39, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-22T12:25:29.658Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-22T12:25:04.354Z", 
+        "lft": 1, 
+        "tree_id": 39, 
+        "position": 4, 
+        "placeholder": 44, 
+        "plugin_type": "TextPlugin"
+    }
+},
+{
+    "pk": 40, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-22T12:25:56.585Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-22T12:25:49.096Z", 
+        "lft": 1, 
+        "tree_id": 40, 
+        "position": 5, 
+        "placeholder": 44, 
+        "plugin_type": "TextPlugin"
+    }
+},
+{
+    "pk": 41, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-22T12:26:21.138Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-22T12:26:05.738Z", 
+        "lft": 1, 
+        "tree_id": 41, 
+        "position": 6, 
+        "placeholder": 44, 
+        "plugin_type": "TextPlugin"
+    }
+},
+{
+    "pk": 42, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 4, 
+        "changed_date": "2014-04-22T12:27:04.435Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-22T11:44:13.034Z", 
+        "lft": 1, 
+        "tree_id": 42, 
+        "position": 1, 
+        "placeholder": 7, 
+        "plugin_type": "StylePlugin"
+    }
+},
+{
+    "pk": 43, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 3, 
+        "changed_date": "2014-04-22T12:27:04.455Z", 
+        "parent": 42, 
+        "language": "fr", 
+        "level": 1, 
+        "creation_date": "2014-04-22T11:43:09.817Z", 
+        "lft": 2, 
+        "tree_id": 42, 
+        "position": 0, 
+        "placeholder": 7, 
+        "plugin_type": "TextPlugin"
+    }
+},
+{
+    "pk": 44, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 4, 
+        "changed_date": "2014-04-22T12:27:04.477Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-22T11:49:53.363Z", 
+        "lft": 1, 
+        "tree_id": 43, 
+        "position": 1, 
+        "placeholder": 46, 
+        "plugin_type": "StylePlugin"
+    }
+},
+{
+    "pk": 45, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 3, 
+        "changed_date": "2014-04-22T12:27:04.498Z", 
+        "parent": 44, 
+        "language": "fr", 
+        "level": 1, 
+        "creation_date": "2014-04-22T11:49:07.920Z", 
+        "lft": 2, 
+        "tree_id": 43, 
+        "position": 0, 
+        "placeholder": 46, 
+        "plugin_type": "TextPlugin"
+    }
+},
+{
+    "pk": 46, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-22T12:27:04.512Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-16T12:25:16.239Z", 
+        "lft": 1, 
+        "tree_id": 44, 
+        "position": 3, 
+        "placeholder": 47, 
+        "plugin_type": "ProjectsPlugin"
+    }
+},
+{
+    "pk": 47, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-22T12:27:04.518Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-16T12:25:30.156Z", 
+        "lft": 1, 
+        "tree_id": 45, 
+        "position": 1, 
+        "placeholder": 47, 
+        "plugin_type": "WhatWeDoPlugin"
+    }
+},
+{
+    "pk": 48, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-22T12:27:04.618Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-22T11:58:31.298Z", 
+        "lft": 1, 
+        "tree_id": 46, 
+        "position": 0, 
+        "placeholder": 47, 
+        "plugin_type": "TextPlugin"
+    }
+},
+{
+    "pk": 49, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-22T12:27:04.630Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-22T12:18:28.043Z", 
+        "lft": 1, 
+        "tree_id": 47, 
+        "position": 2, 
+        "placeholder": 47, 
+        "plugin_type": "TextPlugin"
+    }
+},
+{
+    "pk": 50, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-22T12:27:04.641Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-22T12:25:04.354Z", 
+        "lft": 1, 
+        "tree_id": 48, 
+        "position": 4, 
+        "placeholder": 47, 
+        "plugin_type": "TextPlugin"
+    }
+},
+{
+    "pk": 51, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-22T12:27:04.654Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-22T12:25:49.096Z", 
+        "lft": 1, 
+        "tree_id": 49, 
+        "position": 5, 
+        "placeholder": 47, 
+        "plugin_type": "TextPlugin"
+    }
+},
+{
+    "pk": 52, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-22T12:27:04.665Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-22T12:26:05.738Z", 
+        "lft": 1, 
+        "tree_id": 50, 
+        "position": 6, 
+        "placeholder": 47, 
+        "plugin_type": "TextPlugin"
+    }
+},
+{
     "pk": 1, 
     "model": "cms.page", 
     "fields": {
@@ -629,9 +1018,11 @@
             3, 
             4, 
             5, 
-            6
+            6, 
+            43, 
+            44
         ], 
-        "changed_date": "2014-04-16T14:03:08.909Z", 
+        "changed_date": "2014-04-22T12:27:04.828Z", 
         "limit_visibility_in_menu": null, 
         "parent": null, 
         "soft_root": false, 
@@ -669,9 +1060,11 @@
             8, 
             9, 
             10, 
-            11
+            11, 
+            46, 
+            47
         ], 
-        "changed_date": "2014-04-16T14:03:08.785Z", 
+        "changed_date": "2014-04-22T12:27:04.691Z", 
         "limit_visibility_in_menu": null, 
         "parent": null, 
         "soft_root": false, 
@@ -1010,7 +1403,7 @@
         "page": 1, 
         "published": true, 
         "path": "", 
-        "publisher_state": 1, 
+        "publisher_state": 0, 
         "creation_date": "2014-04-16T09:52:57.706Z", 
         "slug": "home", 
         "publisher_public": 2
@@ -1416,11 +1809,11 @@
     }
 },
 {
-    "pk": 18, 
+    "pk": 30, 
     "model": "cms.placeholderreference", 
     "fields": {
-        "placeholder_ref": 38, 
-        "name": "Contenu"
+        "placeholder_ref": 45, 
+        "name": "What We Do"
     }
 },
 {
@@ -2553,6 +2946,186 @@
     }
 },
 {
+    "pk": 25, 
+    "model": "djangocms_style.style", 
+    "fields": {
+        "additional_classes": "", 
+        "margin_right": null, 
+        "class_name": "header__title", 
+        "padding_bottom": null, 
+        "margin_left": null, 
+        "padding_right": null, 
+        "margin_top": null, 
+        "padding_left": null, 
+        "padding_top": null, 
+        "margin_bottom": null, 
+        "tag_type": "div"
+    }
+},
+{
+    "pk": 27, 
+    "model": "djangocms_style.style", 
+    "fields": {
+        "additional_classes": "", 
+        "margin_right": null, 
+        "class_name": "header__title", 
+        "padding_bottom": null, 
+        "margin_left": null, 
+        "padding_right": null, 
+        "margin_top": null, 
+        "padding_left": null, 
+        "padding_top": null, 
+        "margin_bottom": null, 
+        "tag_type": "div"
+    }
+},
+{
+    "pk": 42, 
+    "model": "djangocms_style.style", 
+    "fields": {
+        "additional_classes": "", 
+        "margin_right": null, 
+        "class_name": "header__title", 
+        "padding_bottom": null, 
+        "margin_left": null, 
+        "padding_right": null, 
+        "margin_top": null, 
+        "padding_left": null, 
+        "padding_top": null, 
+        "margin_bottom": null, 
+        "tag_type": "div"
+    }
+},
+{
+    "pk": 44, 
+    "model": "djangocms_style.style", 
+    "fields": {
+        "additional_classes": "", 
+        "margin_right": null, 
+        "class_name": "header__title", 
+        "padding_bottom": null, 
+        "margin_left": null, 
+        "padding_right": null, 
+        "margin_top": null, 
+        "padding_left": null, 
+        "padding_top": null, 
+        "margin_bottom": null, 
+        "tag_type": "div"
+    }
+},
+{
+    "pk": 24, 
+    "model": "djangocms_text_ckeditor.text", 
+    "fields": {
+        "body": "<h1><strong>DATA-DRIVEN</strong> STORYTELLING</h1>\n"
+    }
+},
+{
+    "pk": 26, 
+    "model": "djangocms_text_ckeditor.text", 
+    "fields": {
+        "body": "<h1><strong>DATA-DRIVEN</strong> STORYTELLING</h1>\n"
+    }
+},
+{
+    "pk": 33, 
+    "model": "djangocms_text_ckeditor.text", 
+    "fields": {
+        "body": "<h2>What we do</h2>\n\n<div class=\"subtitle\">We conceive, design and produce digital tools and integrated experiences for web, tablet and mobile</div>\n\n<p>By turning data into visuals, we help you discover trends and gain valuable insights.<br>\nOur dashboards and visual databases are keys to exploring your informations.</p>\n"
+    }
+},
+{
+    "pk": 34, 
+    "model": "djangocms_text_ckeditor.text", 
+    "fields": {
+        "body": "<h2>Our work</h2>\n"
+    }
+},
+{
+    "pk": 37, 
+    "model": "djangocms_text_ckeditor.text", 
+    "fields": {
+        "body": "<h2>What we do</h2>\n\n<div class=\"subtitle\">We conceive, design and produce digital tools and integrated experiences for web, tablet and mobile</div>\n\n<p>By turning data into visuals, we help you discover trends and gain valuable insights.<br>\nOur dashboards and visual databases are keys to exploring your informations.</p>\n"
+    }
+},
+{
+    "pk": 38, 
+    "model": "djangocms_text_ckeditor.text", 
+    "fields": {
+        "body": "<h2>Our work</h2>\n"
+    }
+},
+{
+    "pk": 39, 
+    "model": "djangocms_text_ckeditor.text", 
+    "fields": {
+        "body": "<h2>OUR CLIENTS &amp; PARTNERS</h2>\n"
+    }
+},
+{
+    "pk": 40, 
+    "model": "djangocms_text_ckeditor.text", 
+    "fields": {
+        "body": "<h2>WHO WE ARE</h2>\n"
+    }
+},
+{
+    "pk": 41, 
+    "model": "djangocms_text_ckeditor.text", 
+    "fields": {
+        "body": "<h2>LET\u2019S TALK</h2>\n"
+    }
+},
+{
+    "pk": 43, 
+    "model": "djangocms_text_ckeditor.text", 
+    "fields": {
+        "body": "<h1><strong>DATA-DRIVEN</strong> STORYTELLING</h1>\n"
+    }
+},
+{
+    "pk": 45, 
+    "model": "djangocms_text_ckeditor.text", 
+    "fields": {
+        "body": "<h1><strong>DATA-DRIVEN</strong> STORYTELLING</h1>\n"
+    }
+},
+{
+    "pk": 48, 
+    "model": "djangocms_text_ckeditor.text", 
+    "fields": {
+        "body": "<h2>What we do</h2>\n\n<div class=\"subtitle\">We conceive, design and produce digital tools and integrated experiences for web, tablet and mobile</div>\n\n<p>By turning data into visuals, we help you discover trends and gain valuable insights.<br>\nOur dashboards and visual databases are keys to exploring your informations.</p>\n"
+    }
+},
+{
+    "pk": 49, 
+    "model": "djangocms_text_ckeditor.text", 
+    "fields": {
+        "body": "<h2>Our work</h2>\n"
+    }
+},
+{
+    "pk": 50, 
+    "model": "djangocms_text_ckeditor.text", 
+    "fields": {
+        "body": "<h2>OUR CLIENTS &amp; PARTNERS</h2>\n"
+    }
+},
+{
+    "pk": 51, 
+    "model": "djangocms_text_ckeditor.text", 
+    "fields": {
+        "body": "<h2>WHO WE ARE</h2>\n"
+    }
+},
+{
+    "pk": 52, 
+    "model": "djangocms_text_ckeditor.text", 
+    "fields": {
+        "body": "<h2>LET\u2019S TALK</h2>\n"
+    }
+},
+{
     "pk": 13, 
     "model": "djangocms_link.link", 
     "fields": {
@@ -2566,18 +3139,6 @@
 },
 {
     "pk": 14, 
-    "model": "djangocms_link.link", 
-    "fields": {
-        "mailto": "", 
-        "target": "", 
-        "url": "", 
-        "page_link": 7, 
-        "phone": "", 
-        "name": "Nos projets"
-    }
-},
-{
-    "pk": 19, 
     "model": "djangocms_link.link", 
     "fields": {
         "mailto": "", 
@@ -2778,13 +3339,6 @@
     }
 },
 {
-    "pk": 1, 
-    "model": "jplusplus.projectpluginmodel", 
-    "fields": {
-        "offices": []
-    }
-},
-{
     "pk": 8, 
     "model": "jplusplus.projectpluginmodel", 
     "fields": {
@@ -2799,7 +3353,21 @@
     }
 },
 {
-    "pk": 16, 
+    "pk": 31, 
+    "model": "jplusplus.projectpluginmodel", 
+    "fields": {
+        "offices": []
+    }
+},
+{
+    "pk": 35, 
+    "model": "jplusplus.projectpluginmodel", 
+    "fields": {
+        "offices": []
+    }
+},
+{
+    "pk": 46, 
     "model": "jplusplus.projectpluginmodel", 
     "fields": {
         "offices": []
