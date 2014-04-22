@@ -1,13 +1,38 @@
 body, html {
 	background-color: #E6DEDB !important;
+	color           : #595551;
 }
 .container {
 	background-color: #fff;
-	.header {
+	h1, h2 {
+		text-transform: uppercase;
+		margin-bottom: 0px;
+	}
+	h2:after {
+		content: "–";
+		display: block;
+		line-height: .4em;
+
+	}
+	.subtitle {
+		color: #CCC2B8;
+		padding-bottom: 20px;
+	}
+	.navigation {
 		.logo {
 			img {
 				width  : 100px;
 				height : 100px;
+			}
+		}
+	}
+	.header {
+		.header__title {
+			display: table;
+			margin: 0 auto;
+			border-bottom: 1px solid #CCC2B8;
+			strong {
+				color: #CCC2B8;
 			}
 		}
 	}

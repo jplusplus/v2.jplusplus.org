@@ -2,24 +2,13 @@
 {% load cms_tags staticfiles sekizai_tags menu_tags %}
 
 {% block content %}
-<div class="jumbotron">
-  {% placeholder "intro" %}
+
+<div class="header">
+  {% placeholder "header" %}
 </div>
 
 <div>
-  {% placeholder "what we do" %}
-</div>
-
-<div>
-  {% placeholder "our work" %}
-</div>
-
-<div>
-  {% placeholder "who we are" %}
-</div>
-
-<div>
-  {% placeholder "lets talk" %}
+  {% placeholder "body" %}
 </div>
 
 {% endblock content %}
