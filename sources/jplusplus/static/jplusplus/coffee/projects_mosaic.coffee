@@ -11,6 +11,8 @@ class window.jplusplus.Mosaïc
 			project_tmpl  : $(".project.template", @ui)
 			filters       : $(".filter"          , @ui)
 		}
+		@data     = [] # all project objects
+		@projects = [] # list of {nui:$(), slug:""} shown on layout
 		# load data
 		$.getJSON("/api/v1/projects/?plugin_instance=#{plugin_instance}", @onDataLoaded)
 		# bind events
@@ -28,31 +30,57 @@ class window.jplusplus.Mosaïc
 		thumbnails_per_row = Math.floor(width             / (thumbnail_width + thumbnail_margin))
 		rows_number        = Math.ceil(thumbnails_number  / thumbnails_per_row)
 		# size
-		@uis.projects_list.css
-			height: rows_number * (thumbnail_height + row_margin)
-		$(".project:not(.template) .illustration").css
+		new_widget_height  = rows_number * (thumbnail_height + row_margin)
+		# only if new size is greater than the previous
+		if parseFloat(@uis.projects_list.css("height").replace("px", "")) < new_widget_height
+			@uis.projects_list.css
+				height: new_widget_height
+		$(".project:not(.template) .frame").css
 			width  : thumbnail_width
 			height : thumbnail_height
 		# position
-		$(".project:not(.template)", @ui).each (i) ->
-			nui = $(this)
-			nui.css
-				width : thumbnail_width
-				top   : Math.floor(i / thumbnails_per_row) * (thumbnail_height + row_margin)
-				left  : (i % thumbnails_per_row)           * (thumbnail_width  + thumbnail_margin)
+		for project, i in @projects
+			if project?
+				project.nui.css
+					width : thumbnail_width
+					top   : Math.floor(i / thumbnails_per_row) * (thumbnail_height + row_margin)
+					left  : (i % thumbnails_per_row)           * (thumbnail_width  + thumbnail_margin)
 
 	onDataLoaded: (data) =>
 		# set size of elements
-		for project in data
-			nui = @uis.project_tmpl.clone().removeClass("template")
-			image_url = project.image
-			nui.find(".illustration").css
-				"background-image" : "url(#{image_url})"
-			nui.find(".title").html(project.title)
-			@uis.projects_list.append(nui)
+		@data = data
+		@showProjects(@data)
+
+	showProjects: (projects) =>
+		# removing older projects
+		for project, i in @projects
+			project.nui.remove() if project? and not _.findWhere(projects, {"slug" : project.slug})?	
+		# add new projects
+		new_projects_mapping = []
+		for project, i in projects
+			# recycling project nui if exists
+			old_project = _.find(@projects, (e) -> e.slug == project.slug)
+			if old_project
+				nui = old_project.nui
+			else
+				nui = @uis.project_tmpl.clone().removeClass("template")
+				image_url = project.image
+				nui.find(".illustration").css
+					"background-image" : "url(#{image_url})"
+				nui.find(".title").html(project.title)
+				@uis.projects_list.append(nui)
+			new_projects_mapping.push({slug: project.slug, nui:nui})
+		@projects = new_projects_mapping
 		@relayout()
 
 	onFilterSelected: (filter) =>
-		console.log "filter", filter
+		#select the filter on screen
+		@uis.filters.removeClass("active")
+		@uis.filters.filter("[data-filter=#{filter}]").addClass("active")
+		# show relative projects
+		if filter == "all"
+			@showProjects(@data)
+		else
+			@showProjects(@data.filter((e) -> filter in e.tags))		
 
 # EOF
