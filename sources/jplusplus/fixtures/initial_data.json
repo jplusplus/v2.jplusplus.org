@@ -4,7 +4,9 @@
     "model": "cms.usersettings", 
     "fields": {
         "clipboard": 1, 
-        "user": 1, 
+        "user": [
+            "edouard"
+        ], 
         "language": "fr"
     }
 },
@@ -704,7 +706,7 @@
     "model": "cms.cmsplugin", 
     "fields": {
         "rght": 2, 
-        "changed_date": "2014-04-23T14:21:15.319Z", 
+        "changed_date": "2014-04-23T15:26:43.718Z", 
         "parent": null, 
         "language": "fr", 
         "level": 0, 
@@ -1065,7 +1067,7 @@
             43, 
             44
         ], 
-        "changed_date": "2014-04-23T14:21:15.401Z", 
+        "changed_date": "2014-04-23T15:26:43.809Z", 
         "limit_visibility_in_menu": null, 
         "parent": null, 
         "soft_root": false, 
@@ -1074,7 +1076,7 @@
         "creation_date": "2014-04-16T09:52:57.671Z", 
         "publisher_public": 2, 
         "level": 0, 
-        "changed_by": "root", 
+        "changed_by": "edouard", 
         "application_urls": "JppHook", 
         "publisher_is_draft": true, 
         "xframe_options": 0, 
@@ -1981,29 +1983,14 @@
     }
 },
 {
-    "pk": 2, 
-    "model": "taggit.taggeditem", 
-    "fields": {
-        "tag": 2, 
-        "content_type": 37, 
-        "object_id": 9
-    }
-},
-{
-    "pk": 3, 
-    "model": "taggit.taggeditem", 
-    "fields": {
-        "tag": 3, 
-        "content_type": 37, 
-        "object_id": 9
-    }
-},
-{
     "pk": 4, 
     "model": "taggit.taggeditem", 
     "fields": {
         "tag": 1, 
-        "content_type": 37, 
+        "content_type": [
+            "jplusplus", 
+            "project"
+        ], 
         "object_id": 8
     }
 },
@@ -2012,7 +1999,10 @@
     "model": "taggit.taggeditem", 
     "fields": {
         "tag": 4, 
-        "content_type": 37, 
+        "content_type": [
+            "jplusplus", 
+            "project"
+        ], 
         "object_id": 8
     }
 },
@@ -2021,7 +2011,10 @@
     "model": "taggit.taggeditem", 
     "fields": {
         "tag": 3, 
-        "content_type": 37, 
+        "content_type": [
+            "jplusplus", 
+            "project"
+        ], 
         "object_id": 6
     }
 },
@@ -2030,26 +2023,11 @@
     "model": "taggit.taggeditem", 
     "fields": {
         "tag": 3, 
-        "content_type": 37, 
+        "content_type": [
+            "jplusplus", 
+            "project"
+        ], 
         "object_id": 1
-    }
-},
-{
-    "pk": 14, 
-    "model": "taggit.taggeditem", 
-    "fields": {
-        "tag": 1, 
-        "content_type": 37, 
-        "object_id": 3
-    }
-},
-{
-    "pk": 15, 
-    "model": "taggit.taggeditem", 
-    "fields": {
-        "tag": 2, 
-        "content_type": 37, 
-        "object_id": 3
     }
 },
 {
@@ -2057,7 +2035,10 @@
     "model": "taggit.taggeditem", 
     "fields": {
         "tag": 3, 
-        "content_type": 37, 
+        "content_type": [
+            "jplusplus", 
+            "project"
+        ], 
         "object_id": 7
     }
 },
@@ -2066,17 +2047,143 @@
     "model": "taggit.taggeditem", 
     "fields": {
         "tag": 5, 
-        "content_type": 37, 
+        "content_type": [
+            "jplusplus", 
+            "project"
+        ], 
         "object_id": 4
     }
 },
 {
-    "pk": 18, 
+    "pk": 26, 
+    "model": "taggit.taggeditem", 
+    "fields": {
+        "tag": 2, 
+        "content_type": [
+            "jplusplus", 
+            "project"
+        ], 
+        "object_id": 2
+    }
+},
+{
+    "pk": 27, 
     "model": "taggit.taggeditem", 
     "fields": {
         "tag": 3, 
-        "content_type": 37, 
+        "content_type": [
+            "jplusplus", 
+            "project"
+        ], 
         "object_id": 2
+    }
+},
+{
+    "pk": 28, 
+    "model": "taggit.taggeditem", 
+    "fields": {
+        "tag": 4, 
+        "content_type": [
+            "jplusplus", 
+            "project"
+        ], 
+        "object_id": 2
+    }
+},
+{
+    "pk": 29, 
+    "model": "taggit.taggeditem", 
+    "fields": {
+        "tag": 5, 
+        "content_type": [
+            "jplusplus", 
+            "project"
+        ], 
+        "object_id": 2
+    }
+},
+{
+    "pk": 30, 
+    "model": "taggit.taggeditem", 
+    "fields": {
+        "tag": 1, 
+        "content_type": [
+            "jplusplus", 
+            "project"
+        ], 
+        "object_id": 3
+    }
+},
+{
+    "pk": 31, 
+    "model": "taggit.taggeditem", 
+    "fields": {
+        "tag": 2, 
+        "content_type": [
+            "jplusplus", 
+            "project"
+        ], 
+        "object_id": 3
+    }
+},
+{
+    "pk": 32, 
+    "model": "taggit.taggeditem", 
+    "fields": {
+        "tag": 2, 
+        "content_type": [
+            "jplusplus", 
+            "project"
+        ], 
+        "object_id": 5
+    }
+},
+{
+    "pk": 33, 
+    "model": "taggit.taggeditem", 
+    "fields": {
+        "tag": 4, 
+        "content_type": [
+            "jplusplus", 
+            "project"
+        ], 
+        "object_id": 5
+    }
+},
+{
+    "pk": 34, 
+    "model": "taggit.taggeditem", 
+    "fields": {
+        "tag": 5, 
+        "content_type": [
+            "jplusplus", 
+            "project"
+        ], 
+        "object_id": 5
+    }
+},
+{
+    "pk": 35, 
+    "model": "taggit.taggeditem", 
+    "fields": {
+        "tag": 2, 
+        "content_type": [
+            "jplusplus", 
+            "project"
+        ], 
+        "object_id": 9
+    }
+},
+{
+    "pk": 36, 
+    "model": "taggit.taggeditem", 
+    "fields": {
+        "tag": 3, 
+        "content_type": [
+            "jplusplus", 
+            "project"
+        ], 
+        "object_id": 9
     }
 },
 {
@@ -2594,7 +2701,7 @@
     "pk": 35, 
     "model": "jplusplus.projectpluginmodel", 
     "fields": {
-        "highlighted": true, 
+        "highlighted": false, 
         "offices": []
     }
 },
