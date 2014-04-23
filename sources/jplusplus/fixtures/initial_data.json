@@ -704,7 +704,7 @@
     "model": "cms.cmsplugin", 
     "fields": {
         "rght": 2, 
-        "changed_date": "2014-04-22T12:23:49.102Z", 
+        "changed_date": "2014-04-23T14:21:15.319Z", 
         "parent": null, 
         "language": "fr", 
         "level": 0, 
@@ -1006,6 +1006,40 @@
     }
 },
 {
+    "pk": 53, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-23T13:58:53.301Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-16T13:45:56.976Z", 
+        "lft": 1, 
+        "tree_id": 51, 
+        "position": 0, 
+        "placeholder": 35, 
+        "plugin_type": "LinkPlugin"
+    }
+},
+{
+    "pk": 54, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-23T14:20:53.730Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-23T14:04:46.333Z", 
+        "lft": 1, 
+        "tree_id": 52, 
+        "position": 0, 
+        "placeholder": 36, 
+        "plugin_type": "ProjectsPlugin"
+    }
+},
+{
     "pk": 1, 
     "model": "cms.page", 
     "fields": {
@@ -1031,7 +1065,7 @@
             43, 
             44
         ], 
-        "changed_date": "2014-04-22T12:27:04.828Z", 
+        "changed_date": "2014-04-23T14:21:15.401Z", 
         "limit_visibility_in_menu": null, 
         "parent": null, 
         "soft_root": false, 
@@ -1273,7 +1307,7 @@
         "placeholders": [
             36
         ], 
-        "changed_date": "2014-04-17T14:52:54.998Z", 
+        "changed_date": "2014-04-23T14:20:53.790Z", 
         "limit_visibility_in_menu": null, 
         "parent": 3, 
         "soft_root": false, 
@@ -1412,7 +1446,7 @@
         "page": 1, 
         "published": true, 
         "path": "", 
-        "publisher_state": 0, 
+        "publisher_state": 1, 
         "creation_date": "2014-04-16T09:52:57.706Z", 
         "slug": "home", 
         "publisher_public": 2
@@ -1907,6 +1941,145 @@
     }
 },
 {
+    "pk": 1, 
+    "model": "taggit.tag", 
+    "fields": {
+        "name": "code-apps", 
+        "slug": "code-apps"
+    }
+},
+{
+    "pk": 2, 
+    "model": "taggit.tag", 
+    "fields": {
+        "name": "consulting", 
+        "slug": "consulting"
+    }
+},
+{
+    "pk": 3, 
+    "model": "taggit.tag", 
+    "fields": {
+        "name": "design", 
+        "slug": "design"
+    }
+},
+{
+    "pk": 4, 
+    "model": "taggit.tag", 
+    "fields": {
+        "name": "investigate", 
+        "slug": "investigate"
+    }
+},
+{
+    "pk": 5, 
+    "model": "taggit.tag", 
+    "fields": {
+        "name": "evangelize", 
+        "slug": "evangelize"
+    }
+},
+{
+    "pk": 2, 
+    "model": "taggit.taggeditem", 
+    "fields": {
+        "tag": 2, 
+        "content_type": 37, 
+        "object_id": 9
+    }
+},
+{
+    "pk": 3, 
+    "model": "taggit.taggeditem", 
+    "fields": {
+        "tag": 3, 
+        "content_type": 37, 
+        "object_id": 9
+    }
+},
+{
+    "pk": 4, 
+    "model": "taggit.taggeditem", 
+    "fields": {
+        "tag": 1, 
+        "content_type": 37, 
+        "object_id": 8
+    }
+},
+{
+    "pk": 5, 
+    "model": "taggit.taggeditem", 
+    "fields": {
+        "tag": 4, 
+        "content_type": 37, 
+        "object_id": 8
+    }
+},
+{
+    "pk": 6, 
+    "model": "taggit.taggeditem", 
+    "fields": {
+        "tag": 3, 
+        "content_type": 37, 
+        "object_id": 6
+    }
+},
+{
+    "pk": 10, 
+    "model": "taggit.taggeditem", 
+    "fields": {
+        "tag": 3, 
+        "content_type": 37, 
+        "object_id": 1
+    }
+},
+{
+    "pk": 14, 
+    "model": "taggit.taggeditem", 
+    "fields": {
+        "tag": 1, 
+        "content_type": 37, 
+        "object_id": 3
+    }
+},
+{
+    "pk": 15, 
+    "model": "taggit.taggeditem", 
+    "fields": {
+        "tag": 2, 
+        "content_type": 37, 
+        "object_id": 3
+    }
+},
+{
+    "pk": 16, 
+    "model": "taggit.taggeditem", 
+    "fields": {
+        "tag": 3, 
+        "content_type": 37, 
+        "object_id": 7
+    }
+},
+{
+    "pk": 17, 
+    "model": "taggit.taggeditem", 
+    "fields": {
+        "tag": 5, 
+        "content_type": 37, 
+        "object_id": 4
+    }
+},
+{
+    "pk": 18, 
+    "model": "taggit.taggeditem", 
+    "fields": {
+        "tag": 3, 
+        "content_type": 37, 
+        "object_id": 2
+    }
+},
+{
     "pk": 24, 
     "model": "djangocms_text_ckeditor.text", 
     "fields": {
@@ -2091,6 +2264,18 @@
     }
 },
 {
+    "pk": 53, 
+    "model": "djangocms_link.link", 
+    "fields": {
+        "mailto": "", 
+        "target": "", 
+        "url": "", 
+        "page_link": 7, 
+        "phone": "", 
+        "name": "Nos projets"
+    }
+},
+{
     "pk": 1, 
     "model": "jplusplus.office", 
     "fields": {
@@ -2122,7 +2307,7 @@
     "fields": {
         "language_code": "fr", 
         "master": 2, 
-        "description": " Journalism++ a d\u00e9velopp\u00e9 le site du webdocumentaire \"Une contre-histoire des Internets\", co-produit par Arte et Premi\u00e8res Lignes.\r\n\r\n L\u2019objectif de ce webdocumentaire : raconter et d\u00e9couvrir pourquoi, et comment, les internets ont chang\u00e9 nos vies, recenser ce qu\u2019on n\u2019a pas eu le droit d\u2019y faire, ce qu\u2019on a invent\u00e9 pour le faire quand m\u00eame, et ainsi participer collectivement \u00e0 l\u2019\u00e9laboration d\u2019une \u201ccontre-histoire des internets\u201d, qui se veut libre, ouverte et partag\u00e9e.\r\n\r\n\r\nLe site fait le lien avec le documentaire \u00e9crit par Jean-Marc Manach (@manhack) et Julien Goetz (@juliengoetz) r\u00e9alis\u00e9 par Sylvain Berg\u00e8re, diffus\u00e9 sur Art\u00e9 en Mai 2013.", 
+        "description": "<p>Journalism++ a d&eacute;velopp&eacute; le site du webdocumentaire &quot;Une contre-histoire des Internets&quot;, co-produit par Arte et Premi&egrave;res Lignes. L&rsquo;objectif de ce webdocumentaire : raconter et d&eacute;couvrir pourquoi, et comment, les internets ont chang&eacute; nos vies, recenser ce qu&rsquo;on n&rsquo;a pas eu le droit d&rsquo;y faire, ce qu&rsquo;on a invent&eacute; pour le faire quand m&ecirc;me, et ainsi participer collectivement &agrave; l&rsquo;&eacute;laboration d&rsquo;une &ldquo;contre-histoire des internets&rdquo;, qui se veut libre, ouverte et partag&eacute;e. Le site fait le lien avec le documentaire &eacute;crit par Jean-Marc Manach (@manhack) et Julien Goetz (@juliengoetz) r&eacute;alis&eacute; par Sylvain Berg&egrave;re, diffus&eacute; sur Art&eacute; en Mai 2013.</p>\r\n", 
         "title": "Une contre-histoire des Internets"
     }
 },
@@ -2267,7 +2452,7 @@
     "fields": {
         "image": "projects/contre-histoire-internets.png", 
         "order": 3, 
-        "highlighted": false, 
+        "highlighted": true, 
         "link": "http://lesinternets.arte.tv", 
         "date": "2013-08-16", 
         "offices": [
@@ -2297,7 +2482,7 @@
     "fields": {
         "image": "projects/spending-stories.png", 
         "order": 2, 
-        "highlighted": false, 
+        "highlighted": true, 
         "link": "http://okf-spendingstories.herokuapp.com", 
         "date": "2013-11-13", 
         "offices": [
@@ -2342,7 +2527,7 @@
     "fields": {
         "image": "projects/spending-stories.png", 
         "order": 2, 
-        "highlighted": false, 
+        "highlighted": true, 
         "link": "http://okf-spendingstories.herokuapp.com", 
         "date": "2013-11-13", 
         "offices": [
@@ -2385,6 +2570,7 @@
     "pk": 8, 
     "model": "jplusplus.projectpluginmodel", 
     "fields": {
+        "highlighted": false, 
         "offices": []
     }
 },
@@ -2392,6 +2578,7 @@
     "pk": 11, 
     "model": "jplusplus.projectpluginmodel", 
     "fields": {
+        "highlighted": false, 
         "offices": []
     }
 },
@@ -2399,6 +2586,7 @@
     "pk": 31, 
     "model": "jplusplus.projectpluginmodel", 
     "fields": {
+        "highlighted": false, 
         "offices": []
     }
 },
@@ -2406,6 +2594,7 @@
     "pk": 35, 
     "model": "jplusplus.projectpluginmodel", 
     "fields": {
+        "highlighted": true, 
         "offices": []
     }
 },
@@ -2413,7 +2602,18 @@
     "pk": 46, 
     "model": "jplusplus.projectpluginmodel", 
     "fields": {
+        "highlighted": false, 
         "offices": []
+    }
+},
+{
+    "pk": 54, 
+    "model": "jplusplus.projectpluginmodel", 
+    "fields": {
+        "highlighted": false, 
+        "offices": [
+            1
+        ]
     }
 }
 ]
