@@ -77,7 +77,6 @@ class ProjectViewSet(viewsets.ModelViewSet):
         by filtering against a `username` query parameter in the URL.
         """
         queryset = Project.objects.all()
-        # FIXME: kind of duplicate of ProjectsPlugin's render function
         plugin_instance = self.request.QUERY_PARAMS.get('plugin_instance', None)
         if plugin_instance is not None:
             plugin_instance  = CMSPlugin.objects.get(pk=plugin_instance)
@@ -85,6 +84,8 @@ class ProjectViewSet(viewsets.ModelViewSet):
             selected_offices = plugin_instance.offices.all()
             if selected_offices:
                 queryset = queryset.filter(offices__in=selected_offices)
+            if plugin_instance.highlighted:
+                queryset = queryset.filter(highlighted=True)
         return queryset
 
 # EOF

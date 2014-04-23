@@ -53,7 +53,8 @@ class Project(TranslatableModel):
         return self.title
 
 class ProjectPluginModel(CMSPlugin):
-    offices = models.ManyToManyField(Office, verbose_name=_("filter by office"), blank=True, null=True)
+    offices     = models.ManyToManyField(Office, verbose_name=_("filter by office"), blank=True, null=True)
+    highlighted = models.BooleanField(_("show only highlighted projects"))
 
     def copy_relations(self, oldinstance):
         self.offices = oldinstance.offices.all()

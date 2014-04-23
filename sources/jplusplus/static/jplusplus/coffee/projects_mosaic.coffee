@@ -14,7 +14,9 @@ class window.jplusplus.Mosaïc
 		@data     = [] # all project objects
 		@projects = [] # list of {nui:$(), slug:""} shown on layout
 		# load data
-		$.getJSON("/api/v1/projects/?plugin_instance=#{plugin_instance}", @onDataLoaded)
+		url = "/api/v1/projects/"
+		url += "?plugin_instance=#{plugin_instance}" if plugin_instance
+		$.getJSON(url, @onDataLoaded)
 		# bind events
 		@uis.filters.click (e) ->
 			that.onFilterSelected($(this).data('filter'))
