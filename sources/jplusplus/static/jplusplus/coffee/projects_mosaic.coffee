@@ -25,7 +25,7 @@ class window.jplusplus.Mosaïc
 		that  = this
 		width = @ui.width()
 		thumbnail_width    = 250
-		thumbnail_height   = 100
+		thumbnail_height   = 150
 		thumbnail_margin   = 40
 		row_margin         = 50
 		thumbnails_number  = $(".project:not(.template)", @ui).length
