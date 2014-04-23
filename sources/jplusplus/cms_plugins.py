@@ -29,7 +29,7 @@ class WhatWeDoPlugin(CMSPluginBase):
 
 class ProjectsPlugin(CMSPluginBase):
     model           = ProjectPluginModel
-    name            = _("J++ Projects")
+    name            = _("J++ Projects Mosaic")
     render_template = "jplusplus/partials/projects.html"
 
     def render(self, context, instance, placeholder):
@@ -37,7 +37,18 @@ class ProjectsPlugin(CMSPluginBase):
             'instance' : instance,
         })
         return context
- 
+
+class ContactPlugin(CMSPluginBase):
+    name            = _("J++ Contact")
+    render_template = "jplusplus/partials/contact.html"
+
+    def render(self, context, instance, placeholder):
+        context.update({
+            'instance' : instance,
+        })
+        return context
+
+plugin_pool.register_plugin(ContactPlugin)
 plugin_pool.register_plugin(WhatWeDoPlugin)
 plugin_pool.register_plugin(ProjectsPlugin)
 

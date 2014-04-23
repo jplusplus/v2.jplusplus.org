@@ -1,0 +1,37 @@
+{% load i18n sekizai_tags %}
+
+{% addtoblock "js" %}<script type="text/javascript" src="{{STATIC_URL}}jplusplus/vendors/NaturalLanguageForm/js/modernizr.custom.js"></script>{% endaddtoblock %}
+{% addtoblock "js" %}<script type="text/javascript" src="{{STATIC_URL}}jplusplus/vendors/NaturalLanguageForm/js/nlform.js"></script>{% endaddtoblock %}
+{% addtoblock "css" %}<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}jplusplus/vendors/NaturalLanguageForm/css/default.css">{% endaddtoblock %}
+{% addtoblock "css" %}<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}jplusplus/vendors/NaturalLanguageForm/css/component.css">{% endaddtoblock %}
+
+<form id="nl-form" class="nl-form">
+	My name is <input type="text" value="" placeholder="your name" />, and interested in your services for <input type="text" value="" placeholder="my company" />.
+
+	We are specifically looking to implement 
+	<select>
+		<option value="1" selected>a service</option>
+		<option value="2">all</option>
+		<option value="3">code apps</option>
+		<option value="4">investigate</option>
+		<option value="5">consulting</option>
+		<option value="6">design</option>
+		<option value="7">evangelize</option>
+	</select>
+	and have a <input type="text" value="" placeholder="budget of"  data-subline="1 000 000 000 ?"/>
+	, our ideal timeframe to implement this is 
+	<select>
+		<option value="1" selected>1 month</option>
+		<option value="2">2 month</option>
+	</select>. Please contact me at <input type="text" value="" placeholder="email"  data-subline="1 000 000 000 ?"/>.
+	<div class="nl-submit-wrap">
+		<button class="nl-submit" type="submit">SEND</button>
+	</div>
+	<div class="nl-overlay"></div>
+</form>
+
+{% addtoblock "js" %}
+<script type="text/javascript">
+	var nlform = new NLForm( document.getElementById( 'nl-form' ) );
+</script>
+{% endaddtoblock %}
