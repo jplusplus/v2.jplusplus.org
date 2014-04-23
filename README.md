@@ -1,4 +1,4 @@
-JOURNALISM++ Web Site
+Journalism++ Web Site
 =====================
 
 ## Requirements
