@@ -1,6 +1,27 @@
 .projects_mosaic {
-    .illustration {
-        width: 100px;
-        height: 100px;
+    .filters {
+        list-style: none;
+        margin : 20px 0;
+        padding: 0;
+        .filter {
+            display: inline-block;
+            margin-right: 2em;
+            background-color: #E5E0DA;
+            text-transform: uppercase;
+            padding: 0 .3em;
+            cursor: pointer;
+        }
+    }
+    .projects {
+        position : relative;
+        list-style: none;
+        .project {
+            position: absolute;
+            overflow: hidden;
+            .illustration {
+                background-size: cover;
+            }
+            
+        }
     }
 }

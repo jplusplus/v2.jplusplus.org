@@ -2187,6 +2187,66 @@
     }
 },
 {
+    "pk": 9, 
+    "model": "jplusplus.projecttranslation", 
+    "fields": {
+        "language_code": "fr", 
+        "master": 4, 
+        "description": "<p>Spending Stories est un proj&eacute; de l&#39;[Open Knowledge Foundation](http://fr.okfn.org/&lrm;) visant &agrave; am&eacute;liorer la compr&eacute;hension des donn&eacute;es budg&eacute;taires mondiales [en savoir plus](http://blog.okfn.org/category/okf-projects/spending-stories/).Ce projet est financ&eacute; par la Knight Foundation. <strong>Cette partie</strong> du projet &quot;Spending Stories&quot; permet aux utilisateurs de mettre des donn&eacute;es mon&eacute;taires en perspective et d&#39;obtenir un contexte. N&#39;importe quel montant dans n&#39;importe quelle devise peut-&ecirc;tre entr&eacute; et compar&eacute; &agrave; de vraies d&eacute;penses. Les r&eacute;sultats prennent en compte l&#39;inflation dans le pays dans lequel la d&eacute;pense a &eacute;t&eacute; r&eacute;alis&eacute;e ainsi que le taux de change entre deux monnaies diff&eacute;rentes, afin de pouvoir les comparer. Ce projet est [open source](https://github.com/jplusplus/okf-spending-stories) et peut-&ecirc;tre install&eacute; sur vos propres serveurs afin de pouvoir utiliser les d&eacute;penses budg&eacute;taires de votre choix dans votre base de donn&eacute;es. **L&#39;Open Knowledge foundation a fait appel &agrave; la partie de Journalism++ bas&eacute;e &agrave; Paris et Berlin pour r&eacute;aliser cette application. Ce projet a &eacute;t&eacute; g&eacute;r&eacute; par [Anne-Lise Bouyer](twitter.com/annelisebouyer) et d&eacute;velopp&eacute; par [Pierre Bellon](twitter.com/toutenrab), [Edouard Richard](twitter.com/vied12), [Paul Joannon](twitter.com/paulloz) et [Pierre Romera.](twitter.com/pirhoo).**</p>\r\n", 
+        "title": "Spending Stories"
+    }
+},
+{
+    "pk": 10, 
+    "model": "jplusplus.projecttranslation", 
+    "fields": {
+        "language_code": "fr", 
+        "master": 5, 
+        "description": "<p>Spending Stories est un proj&eacute; de l&#39;[Open Knowledge Foundation](http://fr.okfn.org/&lrm;) visant &agrave; am&eacute;liorer la compr&eacute;hension des donn&eacute;es budg&eacute;taires mondiales [en savoir plus](http://blog.okfn.org/category/okf-projects/spending-stories/).Ce projet est financ&eacute; par la Knight Foundation. <strong>Cette partie</strong> du projet &quot;Spending Stories&quot; permet aux utilisateurs de mettre des donn&eacute;es mon&eacute;taires en perspective et d&#39;obtenir un contexte. N&#39;importe quel montant dans n&#39;importe quelle devise peut-&ecirc;tre entr&eacute; et compar&eacute; &agrave; de vraies d&eacute;penses. Les r&eacute;sultats prennent en compte l&#39;inflation dans le pays dans lequel la d&eacute;pense a &eacute;t&eacute; r&eacute;alis&eacute;e ainsi que le taux de change entre deux monnaies diff&eacute;rentes, afin de pouvoir les comparer. Ce projet est [open source](https://github.com/jplusplus/okf-spending-stories) et peut-&ecirc;tre install&eacute; sur vos propres serveurs afin de pouvoir utiliser les d&eacute;penses budg&eacute;taires de votre choix dans votre base de donn&eacute;es. **L&#39;Open Knowledge foundation a fait appel &agrave; la partie de Journalism++ bas&eacute;e &agrave; Paris et Berlin pour r&eacute;aliser cette application. Ce projet a &eacute;t&eacute; g&eacute;r&eacute; par [Anne-Lise Bouyer](twitter.com/annelisebouyer) et d&eacute;velopp&eacute; par [Pierre Bellon](twitter.com/toutenrab), [Edouard Richard](twitter.com/vied12), [Paul Joannon](twitter.com/paulloz) et [Pierre Romera.](twitter.com/pirhoo).**</p>\r\n", 
+        "title": "Spending Stories"
+    }
+},
+{
+    "pk": 11, 
+    "model": "jplusplus.projecttranslation", 
+    "fields": {
+        "language_code": "fr", 
+        "master": 6, 
+        "description": "<p>Spending Stories est un proj&eacute; de l&#39;[Open Knowledge Foundation](http://fr.okfn.org/&lrm;) visant &agrave; am&eacute;liorer la compr&eacute;hension des donn&eacute;es budg&eacute;taires mondiales [en savoir plus](http://blog.okfn.org/category/okf-projects/spending-stories/).Ce projet est financ&eacute; par la Knight Foundation. <strong>Cette partie</strong> du projet &quot;Spending Stories&quot; permet aux utilisateurs de mettre des donn&eacute;es mon&eacute;taires en perspective et d&#39;obtenir un contexte. N&#39;importe quel montant dans n&#39;importe quelle devise peut-&ecirc;tre entr&eacute; et compar&eacute; &agrave; de vraies d&eacute;penses. Les r&eacute;sultats prennent en compte l&#39;inflation dans le pays dans lequel la d&eacute;pense a &eacute;t&eacute; r&eacute;alis&eacute;e ainsi que le taux de change entre deux monnaies diff&eacute;rentes, afin de pouvoir les comparer. Ce projet est [open source](https://github.com/jplusplus/okf-spending-stories) et peut-&ecirc;tre install&eacute; sur vos propres serveurs afin de pouvoir utiliser les d&eacute;penses budg&eacute;taires de votre choix dans votre base de donn&eacute;es. **L&#39;Open Knowledge foundation a fait appel &agrave; la partie de Journalism++ bas&eacute;e &agrave; Paris et Berlin pour r&eacute;aliser cette application. Ce projet a &eacute;t&eacute; g&eacute;r&eacute; par [Anne-Lise Bouyer](twitter.com/annelisebouyer) et d&eacute;velopp&eacute; par [Pierre Bellon](twitter.com/toutenrab), [Edouard Richard](twitter.com/vied12), [Paul Joannon](twitter.com/paulloz) et [Pierre Romera.](twitter.com/pirhoo).**</p>\r\n", 
+        "title": "Spending Stories"
+    }
+},
+{
+    "pk": 12, 
+    "model": "jplusplus.projecttranslation", 
+    "fields": {
+        "language_code": "fr", 
+        "master": 7, 
+        "description": "<p>Spending Stories est un proj&eacute; de l&#39;[Open Knowledge Foundation](http://fr.okfn.org/&lrm;) visant &agrave; am&eacute;liorer la compr&eacute;hension des donn&eacute;es budg&eacute;taires mondiales [en savoir plus](http://blog.okfn.org/category/okf-projects/spending-stories/).Ce projet est financ&eacute; par la Knight Foundation. <strong>Cette partie</strong> du projet &quot;Spending Stories&quot; permet aux utilisateurs de mettre des donn&eacute;es mon&eacute;taires en perspective et d&#39;obtenir un contexte. N&#39;importe quel montant dans n&#39;importe quelle devise peut-&ecirc;tre entr&eacute; et compar&eacute; &agrave; de vraies d&eacute;penses. Les r&eacute;sultats prennent en compte l&#39;inflation dans le pays dans lequel la d&eacute;pense a &eacute;t&eacute; r&eacute;alis&eacute;e ainsi que le taux de change entre deux monnaies diff&eacute;rentes, afin de pouvoir les comparer. Ce projet est [open source](https://github.com/jplusplus/okf-spending-stories) et peut-&ecirc;tre install&eacute; sur vos propres serveurs afin de pouvoir utiliser les d&eacute;penses budg&eacute;taires de votre choix dans votre base de donn&eacute;es. **L&#39;Open Knowledge foundation a fait appel &agrave; la partie de Journalism++ bas&eacute;e &agrave; Paris et Berlin pour r&eacute;aliser cette application. Ce projet a &eacute;t&eacute; g&eacute;r&eacute; par [Anne-Lise Bouyer](twitter.com/annelisebouyer) et d&eacute;velopp&eacute; par [Pierre Bellon](twitter.com/toutenrab), [Edouard Richard](twitter.com/vied12), [Paul Joannon](twitter.com/paulloz) et [Pierre Romera.](twitter.com/pirhoo).**</p>\r\n", 
+        "title": "Spending Stories"
+    }
+},
+{
+    "pk": 13, 
+    "model": "jplusplus.projecttranslation", 
+    "fields": {
+        "language_code": "fr", 
+        "master": 8, 
+        "description": "<p>Spending Stories est un proj&eacute; de l&#39;[Open Knowledge Foundation](http://fr.okfn.org/&lrm;) visant &agrave; am&eacute;liorer la compr&eacute;hension des donn&eacute;es budg&eacute;taires mondiales [en savoir plus](http://blog.okfn.org/category/okf-projects/spending-stories/).Ce projet est financ&eacute; par la Knight Foundation. <strong>Cette partie</strong> du projet &quot;Spending Stories&quot; permet aux utilisateurs de mettre des donn&eacute;es mon&eacute;taires en perspective et d&#39;obtenir un contexte. N&#39;importe quel montant dans n&#39;importe quelle devise peut-&ecirc;tre entr&eacute; et compar&eacute; &agrave; de vraies d&eacute;penses. Les r&eacute;sultats prennent en compte l&#39;inflation dans le pays dans lequel la d&eacute;pense a &eacute;t&eacute; r&eacute;alis&eacute;e ainsi que le taux de change entre deux monnaies diff&eacute;rentes, afin de pouvoir les comparer. Ce projet est [open source](https://github.com/jplusplus/okf-spending-stories) et peut-&ecirc;tre install&eacute; sur vos propres serveurs afin de pouvoir utiliser les d&eacute;penses budg&eacute;taires de votre choix dans votre base de donn&eacute;es. **L&#39;Open Knowledge foundation a fait appel &agrave; la partie de Journalism++ bas&eacute;e &agrave; Paris et Berlin pour r&eacute;aliser cette application. Ce projet a &eacute;t&eacute; g&eacute;r&eacute; par [Anne-Lise Bouyer](twitter.com/annelisebouyer) et d&eacute;velopp&eacute; par [Pierre Bellon](twitter.com/toutenrab), [Edouard Richard](twitter.com/vied12), [Paul Joannon](twitter.com/paulloz) et [Pierre Romera.](twitter.com/pirhoo).**</p>\r\n", 
+        "title": "Spending Stories"
+    }
+},
+{
+    "pk": 14, 
+    "model": "jplusplus.projecttranslation", 
+    "fields": {
+        "language_code": "fr", 
+        "master": 9, 
+        "description": "<p>Spending Stories est un proj&eacute; de l&#39;[Open Knowledge Foundation](http://fr.okfn.org/&lrm;) visant &agrave; am&eacute;liorer la compr&eacute;hension des donn&eacute;es budg&eacute;taires mondiales [en savoir plus](http://blog.okfn.org/category/okf-projects/spending-stories/).Ce projet est financ&eacute; par la Knight Foundation. <strong>Cette partie</strong> du projet &quot;Spending Stories&quot; permet aux utilisateurs de mettre des donn&eacute;es mon&eacute;taires en perspective et d&#39;obtenir un contexte. N&#39;importe quel montant dans n&#39;importe quelle devise peut-&ecirc;tre entr&eacute; et compar&eacute; &agrave; de vraies d&eacute;penses. Les r&eacute;sultats prennent en compte l&#39;inflation dans le pays dans lequel la d&eacute;pense a &eacute;t&eacute; r&eacute;alis&eacute;e ainsi que le taux de change entre deux monnaies diff&eacute;rentes, afin de pouvoir les comparer. Ce projet est [open source](https://github.com/jplusplus/okf-spending-stories) et peut-&ecirc;tre install&eacute; sur vos propres serveurs afin de pouvoir utiliser les d&eacute;penses budg&eacute;taires de votre choix dans votre base de donn&eacute;es. **L&#39;Open Knowledge foundation a fait appel &agrave; la partie de Journalism++ bas&eacute;e &agrave; Paris et Berlin pour r&eacute;aliser cette application. Ce projet a &eacute;t&eacute; g&eacute;r&eacute; par [Anne-Lise Bouyer](twitter.com/annelisebouyer) et d&eacute;velopp&eacute; par [Pierre Bellon](twitter.com/toutenrab), [Edouard Richard](twitter.com/vied12), [Paul Joannon](twitter.com/paulloz) et [Pierre Romera.](twitter.com/pirhoo).**</p>\r\n", 
+        "title": "Spending Stories"
+    }
+},
+{
     "pk": 1, 
     "model": "jplusplus.project", 
     "fields": {
@@ -2229,6 +2289,96 @@
             2
         ], 
         "slug": "datawrapper"
+    }
+},
+{
+    "pk": 4, 
+    "model": "jplusplus.project", 
+    "fields": {
+        "image": "projects/spending-stories.png", 
+        "order": 2, 
+        "highlighted": false, 
+        "link": "http://okf-spendingstories.herokuapp.com", 
+        "date": "2013-11-13", 
+        "offices": [
+            1
+        ], 
+        "slug": "spending-stories4"
+    }
+},
+{
+    "pk": 5, 
+    "model": "jplusplus.project", 
+    "fields": {
+        "image": "projects/spending-stories.png", 
+        "order": 2, 
+        "highlighted": false, 
+        "link": "http://okf-spendingstories.herokuapp.com", 
+        "date": "2013-11-13", 
+        "offices": [
+            1
+        ], 
+        "slug": "spending-stories5"
+    }
+},
+{
+    "pk": 6, 
+    "model": "jplusplus.project", 
+    "fields": {
+        "image": "projects/spending-stories.png", 
+        "order": 2, 
+        "highlighted": false, 
+        "link": "http://okf-spendingstories.herokuapp.com", 
+        "date": "2013-11-13", 
+        "offices": [
+            1
+        ], 
+        "slug": "spending-stories6"
+    }
+},
+{
+    "pk": 7, 
+    "model": "jplusplus.project", 
+    "fields": {
+        "image": "projects/spending-stories.png", 
+        "order": 2, 
+        "highlighted": false, 
+        "link": "http://okf-spendingstories.herokuapp.com", 
+        "date": "2013-11-13", 
+        "offices": [
+            1
+        ], 
+        "slug": "spending-stories7"
+    }
+},
+{
+    "pk": 8, 
+    "model": "jplusplus.project", 
+    "fields": {
+        "image": "projects/spending-stories.png", 
+        "order": 2, 
+        "highlighted": false, 
+        "link": "http://okf-spendingstories.herokuapp.com", 
+        "date": "2013-11-13", 
+        "offices": [
+            1
+        ], 
+        "slug": "spending-stories8"
+    }
+},
+{
+    "pk": 9, 
+    "model": "jplusplus.project", 
+    "fields": {
+        "image": "projects/spending-stories.png", 
+        "order": 2, 
+        "highlighted": false, 
+        "link": "http://okf-spendingstories.herokuapp.com", 
+        "date": "2013-11-13", 
+        "offices": [
+            1
+        ], 
+        "slug": "spending-stories9"
     }
 },
 {

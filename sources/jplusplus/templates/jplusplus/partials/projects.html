@@ -1,17 +1,40 @@
 {% load i18n sekizai_tags %}
 
-{% addtoblock "css" %} <link rel="stylesheet" type="text/less" href="{{STATIC_URL}}jplusplus/less/projects_mosaic.less">{% endaddtoblock %}
+{% addtoblock "css" %}<link rel="stylesheet" type="text/less" href="{{STATIC_URL}}jplusplus/less/projects_mosaic.less">{% endaddtoblock %}
 {% addtoblock "js" %}<script type="text/coffeescript" src="{{STATIC_URL}}jplusplus/coffee/projects_mosaic.coffee"></script>{% endaddtoblock %}
 
 <div class="projects_mosaic projects_mosaic_{{instance}}">
-	<div class="project template">
-		<div class="illustration"></div>
-		<div class="title"></div>
-	</div>
+	<h3>By type</h3>
+	<ul class="filters">
+		<li class="filter" data-filter="all">
+			<div class="body">all</div>
+		</li>
+		<li class="filter" data-filter="code-apps">
+			<div class="body">code apps</div>
+		</li>
+		<li class="filter" data-filter="investigate">
+			<div class="body">investigate</div>
+		</li>
+		<li class="filter" data-filter="consulting">
+			<div class="body">consulting</div>
+		</li>
+		<li class="filter" data-filter="design">
+			<div class="body">design</div>
+		</li>
+		<li class="filter" data-filter="evangelize">
+			<div class="body">evangelize</div>
+		</li>
+	</ul>
+	<ul class="projects">
+		<li class="project template">
+			<div class="illustration"></div>
+			<div class="title"></div>
+		</li>
+	</ul>
 </div>
 
 {% addtoblock "js" %}
-	<script type="text/coffeescript">
-		new Mosaïc(".projects_mosaic_{{instance}}", {{ instance }})
-	</script>
+<script type="text/coffeescript">
+	new jplusplus.Mosaïc(".projects_mosaic_{{instance}}", {{ instance }})
+</script>
 {% endaddtoblock %}
