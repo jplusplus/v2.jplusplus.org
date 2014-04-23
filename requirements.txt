@@ -1,4 +1,4 @@
--r requirements_dev.txt
+-r requirements_core.txt
 boto==2.27.0
 django-storages==1.1.8
 gunicorn==18.0

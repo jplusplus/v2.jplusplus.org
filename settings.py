@@ -187,6 +187,7 @@ INSTALLED_APPS = (
     'south',
     'compressor',
     'sekizai',
+    'taggit',
     'hvad',
     'adminsortable',
     'rest_framework',
@@ -300,5 +301,10 @@ REST_FRAMEWORK = {
         'rest_framework.renderers.UnicodeJSONRenderer',
     )
 }
+
+SOUTH_MIGRATION_MODULES = {
+    'taggit': 'taggit.south_migrations',
+}
+
 
 # EOF

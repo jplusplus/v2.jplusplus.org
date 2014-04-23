@@ -15,6 +15,7 @@ from django.utils.translation import ugettext_lazy as _
 from hvad.models import TranslatableModel, TranslatedFields
 from djangocms_text_ckeditor.fields import HTMLField
 from cms.models.pluginmodel import CMSPlugin
+from taggit.managers import TaggableManager
 
 class Office(models.Model):
     """
@@ -43,6 +44,7 @@ class Project(TranslatableModel):
     order        = models.PositiveIntegerField(default=0, blank=False, null=False)
     highlighted  = models.BooleanField(_("highlighted"))
     link         = models.CharField(_('link'), max_length=255, blank=True, null=True)
+    tags         = TaggableManager(blank=True)
 
     class Meta:
         ordering = ('order',)
