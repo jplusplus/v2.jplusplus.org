@@ -8,7 +8,7 @@
 # License : proprietary journalism++
 # -----------------------------------------------------------------------------
 # Creation : 14-Apr-2014
-# Last mod : 14-Apr-2014
+# Last mod : 23-Apr-2014
 # -----------------------------------------------------------------------------
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
@@ -16,6 +16,7 @@ from hvad.models import TranslatableModel, TranslatedFields
 from djangocms_text_ckeditor.fields import HTMLField
 from cms.models.pluginmodel import CMSPlugin
 from taggit.managers import TaggableManager
+from django.core.urlresolvers import reverse
 
 class Office(models.Model):
     """
@@ -51,6 +52,9 @@ class Project(TranslatableModel):
 
     def __unicode__(self):
         return self.title
+
+    def get_absolute_url(self):
+        return reverse('jplusplus.views.project_details', args=[str(self.slug)])
 
 class ProjectPluginModel(CMSPlugin):
     offices     = models.ManyToManyField(Office, verbose_name=_("filter by office"), blank=True, null=True)

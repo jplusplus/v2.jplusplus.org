@@ -70,6 +70,8 @@ class window.jplusplus.Mosaïc
 				nui.find(".illustration").css
 					"background-image" : "url(#{image_url})"
 				nui.find(".title").html(project.title)
+				nui.find("a").attr("href", project.url)
+				# add to view
 				@uis.projects_list.append(nui)
 			new_projects_mapping.push({slug: project.slug, nui:nui})
 		@projects = new_projects_mapping

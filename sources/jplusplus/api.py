@@ -39,10 +39,11 @@ class ProjectSerializer(serializers.HyperlinkedModelSerializer):
     title       = serializers.CharField(source='title', read_only=True)
     image       = serializers.ImageField(source='image', read_only=True)
     tags        = TagListSerializer(blank=True)
+    url         = serializers.URLField(source='get_absolute_url', read_only=True)
 
     class Meta:
         model  = Project
-        fields = ("slug", "tags", "offices", "date", "image", "order", "highlighted", "link", "title", "description")
+        fields = ("slug", "tags", "url", "offices", "date", "image", "order", "highlighted", "link", "title", "description")
     def transform_image(self, obj, value):
         return obj.image.url
 
