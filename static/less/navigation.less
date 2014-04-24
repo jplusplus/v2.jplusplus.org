@@ -1,13 +1,12 @@
-.header {
+.container-fluid > .header {
 	position: relative;
 	z-index: 1; // under the first page for the shadow
 	.navbar {
 		background-color: #CCC2B8;
+		.cms-toolbar-expanded  & {top: 30px;}  // put the navbar under the debug toolbar
 	}
 }
 
 // 'cause of bootstrap fixed navbar
 body {padding-top : 50px;} 
 
-// put the debug toolbar under the navbar
-#cms_toolbar .cms_toolbar, #cms_toolbar .cms_toolbar-trigger {top: 50px !important;}
