@@ -947,14 +947,14 @@
     "pk": 78, 
     "model": "cms.cmsplugin", 
     "fields": {
-        "rght": 2, 
-        "changed_date": "2014-04-24T14:19:51.564Z", 
-        "parent": null, 
+        "rght": 3, 
+        "changed_date": "2014-04-24T19:56:46.834Z", 
+        "parent": 107, 
         "language": "fr", 
-        "level": 0, 
+        "level": 1, 
         "creation_date": "2014-04-24T14:18:15.767Z", 
-        "lft": 1, 
-        "tree_id": 70, 
+        "lft": 2, 
+        "tree_id": 88, 
         "position": 0, 
         "placeholder": 34, 
         "plugin_type": "TextPlugin"
@@ -1335,23 +1335,6 @@
     }
 },
 {
-    "pk": 101, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 2, 
-        "changed_date": "2014-04-24T16:04:23.836Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-24T14:18:15.767Z", 
-        "lft": 1, 
-        "tree_id": 83, 
-        "position": 0, 
-        "placeholder": 35, 
-        "plugin_type": "TextPlugin"
-    }
-},
-{
     "pk": 103, 
     "model": "cms.cmsplugin", 
     "fields": {
@@ -1403,6 +1386,91 @@
     }
 },
 {
+    "pk": 106, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-24T19:56:44.238Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-24T16:09:43.543Z", 
+        "lft": 1, 
+        "tree_id": 87, 
+        "position": 2, 
+        "placeholder": 34, 
+        "plugin_type": "ContactPlugin"
+    }
+},
+{
+    "pk": 107, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 4, 
+        "changed_date": "2014-04-24T19:56:44.246Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-24T19:56:32.476Z", 
+        "lft": 1, 
+        "tree_id": 88, 
+        "position": 0, 
+        "placeholder": 34, 
+        "plugin_type": "StylePlugin"
+    }
+},
+{
+    "pk": 108, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-24T19:56:56.081Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-24T16:09:43.543Z", 
+        "lft": 1, 
+        "tree_id": 89, 
+        "position": 2, 
+        "placeholder": 35, 
+        "plugin_type": "ContactPlugin"
+    }
+},
+{
+    "pk": 109, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 4, 
+        "changed_date": "2014-04-24T19:56:56.090Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-24T19:56:32.476Z", 
+        "lft": 1, 
+        "tree_id": 90, 
+        "position": 0, 
+        "placeholder": 35, 
+        "plugin_type": "StylePlugin"
+    }
+},
+{
+    "pk": 110, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 3, 
+        "changed_date": "2014-04-24T19:56:56.114Z", 
+        "parent": 109, 
+        "language": "fr", 
+        "level": 1, 
+        "creation_date": "2014-04-24T14:18:15.767Z", 
+        "lft": 2, 
+        "tree_id": 90, 
+        "position": 0, 
+        "placeholder": 35, 
+        "plugin_type": "TextPlugin"
+    }
+},
+{
     "pk": 1, 
     "model": "cms.page", 
     "fields": {
@@ -1430,7 +1498,7 @@
             48, 
             50
         ], 
-        "changed_date": "2014-04-24T16:04:23.905Z", 
+        "changed_date": "2014-04-24T19:56:56.186Z", 
         "limit_visibility_in_menu": null, 
         "parent": null, 
         "soft_root": false, 
@@ -1474,7 +1542,7 @@
             49, 
             57
         ], 
-        "changed_date": "2014-04-24T16:04:23.862Z", 
+        "changed_date": "2014-04-24T19:56:56.144Z", 
         "limit_visibility_in_menu": null, 
         "parent": null, 
         "soft_root": false, 
@@ -1515,7 +1583,7 @@
             18, 
             34
         ], 
-        "changed_date": "2014-04-24T16:04:23.960Z", 
+        "changed_date": "2014-04-24T19:56:56.226Z", 
         "limit_visibility_in_menu": null, 
         "parent": null, 
         "soft_root": false, 
@@ -1556,7 +1624,7 @@
             23, 
             35
         ], 
-        "changed_date": "2014-04-24T16:04:23.841Z", 
+        "changed_date": "2014-04-24T19:56:56.122Z", 
         "limit_visibility_in_menu": null, 
         "parent": null, 
         "soft_root": false, 
@@ -2639,6 +2707,40 @@
     }
 },
 {
+    "pk": 107, 
+    "model": "djangocms_style.style", 
+    "fields": {
+        "additional_classes": "", 
+        "margin_right": null, 
+        "class_name": "container", 
+        "padding_bottom": null, 
+        "margin_left": null, 
+        "padding_right": null, 
+        "margin_top": null, 
+        "padding_left": null, 
+        "padding_top": null, 
+        "margin_bottom": null, 
+        "tag_type": "div"
+    }
+},
+{
+    "pk": 109, 
+    "model": "djangocms_style.style", 
+    "fields": {
+        "additional_classes": "", 
+        "margin_right": null, 
+        "class_name": "container", 
+        "padding_bottom": null, 
+        "margin_left": null, 
+        "padding_right": null, 
+        "margin_top": null, 
+        "padding_left": null, 
+        "padding_top": null, 
+        "margin_bottom": null, 
+        "tag_type": "div"
+    }
+},
+{
     "pk": 1, 
     "model": "taggit.tag", 
     "fields": {
@@ -2942,7 +3044,7 @@
     "pk": 78, 
     "model": "djangocms_text_ckeditor.text", 
     "fields": {
-        "body": "<h2>Our Team</h2>\n\n<p>A network of independent for-profit companies operating from 6 different clities joined together in the coolest franchise of data-driven storytellers.</p>\n\n<h3>paris-berlin</h3>\n"
+        "body": "<h2>Our Team</h2>\n\n<p>A network of independent for-profit companies operating from 6 different clities joined together in the coolest franchise of data-driven storytellers.</p>\n\n<h3>paris-berlin</h3>\n\n<h2>let's talk</h2>\n"
     }
 },
 {
@@ -2995,10 +3097,10 @@
     }
 },
 {
-    "pk": 101, 
+    "pk": 110, 
     "model": "djangocms_text_ckeditor.text", 
     "fields": {
-        "body": "<h2>Our Team</h2>\n\n<p>A network of independent for-profit companies operating from 6 different clities joined together in the coolest franchise of data-driven storytellers.</p>\n\n<h3>paris-berlin</h3>\n"
+        "body": "<h2>Our Team</h2>\n\n<p>A network of independent for-profit companies operating from 6 different clities joined together in the coolest franchise of data-driven storytellers.</p>\n\n<h3>paris-berlin</h3>\n\n<h2>let's talk</h2>\n"
     }
 },
 {
