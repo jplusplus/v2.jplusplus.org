@@ -25,7 +25,7 @@ class WhatWeDoPlugin(CMSPluginBase):
             'instance' : instance,
             'items'    : items,
         })
-        return context 
+        return context
 
 class ProjectsPlugin(CMSPluginBase):
     model           = ProjectPluginModel
@@ -40,7 +40,7 @@ class ProjectsPlugin(CMSPluginBase):
 
 class ContactPlugin(CMSPluginBase):
     name            = _("J++ Contact")
-    render_template = "jplusplus/partials/contact.html"
+    render_template = "jplusplus/partials/contact_form.html"
 
     def render(self, context, instance, placeholder):
         context.update({

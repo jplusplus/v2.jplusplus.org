@@ -9,14 +9,6 @@
 	font-style: normal;
 }
 
-/* general style for the form */
-.nl-form {
-	width: 100%;
-	margin: 0.3em auto 0 auto;
-	font-size: 4em;
-	line-height: 1.5;
-}
-
 .nl-form ul {
 	list-style: none;
 	margin: 0;
@@ -26,7 +18,8 @@
 /* normalize the input elements, make them look like everything else */
 .nl-form input,
 .nl-form select,
-.nl-form button {
+.nl-form .body button 
+{
 	border: none;
 	background: transparent;
 	font-family: inherit;
@@ -213,7 +206,7 @@ input:focus::-ms-input-placeholder {
 }
 
 /* submit button */
-.nl-submit-wrap {
+/*.nl-submit-wrap {
 	margin-top: 0.4em;
 }
 
@@ -246,7 +239,7 @@ input:focus::-ms-input-placeholder {
 
 .no-touch .nl-form .nl-submit:hover:before {
 	background: #58a199;
-}
+}*/
 
 /* overlay becomes visible when a field is opened */
 .nl-overlay {
