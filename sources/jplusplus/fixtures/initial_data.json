@@ -379,6 +379,78 @@
     }
 },
 {
+    "pk": 49, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "first-page", 
+        "default_width": null
+    }
+},
+{
+    "pk": 50, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "content", 
+        "default_width": null
+    }
+},
+{
+    "pk": 51, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "first-page", 
+        "default_width": null
+    }
+},
+{
+    "pk": 52, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "body", 
+        "default_width": null
+    }
+},
+{
+    "pk": 53, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "content", 
+        "default_width": null
+    }
+},
+{
+    "pk": 54, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "content", 
+        "default_width": null
+    }
+},
+{
+    "pk": 55, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "first-page", 
+        "default_width": null
+    }
+},
+{
+    "pk": 56, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "body", 
+        "default_width": null
+    }
+},
+{
+    "pk": 57, 
+    "model": "cms.placeholder", 
+    "fields": {
+        "slot": "content", 
+        "default_width": null
+    }
+},
+{
     "pk": 7, 
     "model": "cms.cmsplugin", 
     "fields": {
@@ -444,40 +516,6 @@
         "position": 0, 
         "placeholder": 9, 
         "plugin_type": "ProjectsPlugin"
-    }
-},
-{
-    "pk": 13, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 2, 
-        "changed_date": "2014-04-16T13:52:20.458Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-16T13:45:56.976Z", 
-        "lft": 1, 
-        "tree_id": 13, 
-        "position": 0, 
-        "placeholder": 34, 
-        "plugin_type": "LinkPlugin"
-    }
-},
-{
-    "pk": 14, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 2, 
-        "changed_date": "2014-04-16T13:52:26.771Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-16T13:45:56.976Z", 
-        "lft": 1, 
-        "tree_id": 14, 
-        "position": 0, 
-        "placeholder": 35, 
-        "plugin_type": "LinkPlugin"
     }
 },
 {
@@ -621,7 +659,7 @@
     "model": "cms.cmsplugin", 
     "fields": {
         "rght": 5, 
-        "changed_date": "2014-04-24T11:10:47.472Z", 
+        "changed_date": "2014-04-24T12:31:53.791Z", 
         "parent": 70, 
         "language": "fr", 
         "level": 1, 
@@ -638,7 +676,7 @@
     "model": "cms.cmsplugin", 
     "fields": {
         "rght": 2, 
-        "changed_date": "2014-04-24T11:12:14.326Z", 
+        "changed_date": "2014-04-24T12:25:18.097Z", 
         "parent": null, 
         "language": "fr", 
         "level": 0, 
@@ -655,7 +693,7 @@
     "model": "cms.cmsplugin", 
     "fields": {
         "rght": 3, 
-        "changed_date": "2014-04-24T11:09:33.746Z", 
+        "changed_date": "2014-04-24T12:23:46.895Z", 
         "parent": 69, 
         "language": "fr", 
         "level": 1, 
@@ -672,7 +710,7 @@
     "model": "cms.cmsplugin", 
     "fields": {
         "rght": 3, 
-        "changed_date": "2014-04-24T11:10:47.449Z", 
+        "changed_date": "2014-04-24T12:31:53.773Z", 
         "parent": 70, 
         "language": "fr", 
         "level": 1, 
@@ -688,8 +726,8 @@
     "pk": 40, 
     "model": "cms.cmsplugin", 
     "fields": {
-        "rght": 3, 
-        "changed_date": "2014-04-24T11:15:01.091Z", 
+        "rght": 7, 
+        "changed_date": "2014-04-24T13:46:32.423Z", 
         "parent": 71, 
         "language": "fr", 
         "level": 1, 
@@ -702,34 +740,17 @@
     }
 },
 {
-    "pk": 53, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 2, 
-        "changed_date": "2014-04-23T13:58:53.301Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-16T13:45:56.976Z", 
-        "lft": 1, 
-        "tree_id": 51, 
-        "position": 0, 
-        "placeholder": 35, 
-        "plugin_type": "LinkPlugin"
-    }
-},
-{
     "pk": 54, 
     "model": "cms.cmsplugin", 
     "fields": {
-        "rght": 2, 
-        "changed_date": "2014-04-23T14:20:53.730Z", 
-        "parent": null, 
+        "rght": 3, 
+        "changed_date": "2014-04-24T16:05:59.977Z", 
+        "parent": 103, 
         "language": "fr", 
-        "level": 0, 
+        "level": 1, 
         "creation_date": "2014-04-23T14:04:46.333Z", 
-        "lft": 1, 
-        "tree_id": 52, 
+        "lft": 2, 
+        "tree_id": 85, 
         "position": 0, 
         "placeholder": 36, 
         "plugin_type": "ProjectsPlugin"
@@ -740,7 +761,7 @@
     "model": "cms.cmsplugin", 
     "fields": {
         "rght": 2, 
-        "changed_date": "2014-04-24T11:12:14.366Z", 
+        "changed_date": "2014-04-24T12:25:18.151Z", 
         "parent": null, 
         "language": "fr", 
         "level": 0, 
@@ -749,210 +770,6 @@
         "tree_id": 53, 
         "position": 6, 
         "placeholder": 44, 
-        "plugin_type": "ContactPlugin"
-    }
-},
-{
-    "pk": 56, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 4, 
-        "changed_date": "2014-04-23T15:53:01.585Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-22T11:44:13.034Z", 
-        "lft": 1, 
-        "tree_id": 54, 
-        "position": 1, 
-        "placeholder": 7, 
-        "plugin_type": "StylePlugin"
-    }
-},
-{
-    "pk": 57, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 3, 
-        "changed_date": "2014-04-23T15:53:01.623Z", 
-        "parent": 56, 
-        "language": "fr", 
-        "level": 1, 
-        "creation_date": "2014-04-22T11:43:09.817Z", 
-        "lft": 2, 
-        "tree_id": 54, 
-        "position": 0, 
-        "placeholder": 7, 
-        "plugin_type": "TextPlugin"
-    }
-},
-{
-    "pk": 58, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 4, 
-        "changed_date": "2014-04-23T15:53:01.647Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-22T11:49:53.363Z", 
-        "lft": 1, 
-        "tree_id": 55, 
-        "position": 1, 
-        "placeholder": 46, 
-        "plugin_type": "StylePlugin"
-    }
-},
-{
-    "pk": 59, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 3, 
-        "changed_date": "2014-04-23T15:53:01.673Z", 
-        "parent": 58, 
-        "language": "fr", 
-        "level": 1, 
-        "creation_date": "2014-04-22T11:49:07.920Z", 
-        "lft": 2, 
-        "tree_id": 55, 
-        "position": 0, 
-        "placeholder": 46, 
-        "plugin_type": "TextPlugin"
-    }
-},
-{
-    "pk": 60, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 2, 
-        "changed_date": "2014-04-23T15:53:01.692Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-16T12:25:16.239Z", 
-        "lft": 1, 
-        "tree_id": 56, 
-        "position": 3, 
-        "placeholder": 47, 
-        "plugin_type": "ProjectsPlugin"
-    }
-},
-{
-    "pk": 61, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 2, 
-        "changed_date": "2014-04-23T15:53:01.705Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-16T12:25:30.156Z", 
-        "lft": 1, 
-        "tree_id": 57, 
-        "position": 1, 
-        "placeholder": 47, 
-        "plugin_type": "WhatWeDoPlugin"
-    }
-},
-{
-    "pk": 62, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 2, 
-        "changed_date": "2014-04-23T15:53:01.777Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-22T11:58:31.298Z", 
-        "lft": 1, 
-        "tree_id": 58, 
-        "position": 0, 
-        "placeholder": 47, 
-        "plugin_type": "TextPlugin"
-    }
-},
-{
-    "pk": 63, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 2, 
-        "changed_date": "2014-04-23T15:53:01.787Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-22T12:18:28.043Z", 
-        "lft": 1, 
-        "tree_id": 59, 
-        "position": 2, 
-        "placeholder": 47, 
-        "plugin_type": "TextPlugin"
-    }
-},
-{
-    "pk": 64, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 2, 
-        "changed_date": "2014-04-23T15:53:01.798Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-22T12:25:04.354Z", 
-        "lft": 1, 
-        "tree_id": 60, 
-        "position": 4, 
-        "placeholder": 47, 
-        "plugin_type": "TextPlugin"
-    }
-},
-{
-    "pk": 65, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 2, 
-        "changed_date": "2014-04-23T15:53:01.807Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-22T12:25:49.096Z", 
-        "lft": 1, 
-        "tree_id": 61, 
-        "position": 5, 
-        "placeholder": 47, 
-        "plugin_type": "TextPlugin"
-    }
-},
-{
-    "pk": 66, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 2, 
-        "changed_date": "2014-04-23T15:53:01.818Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-22T12:26:05.738Z", 
-        "lft": 1, 
-        "tree_id": 62, 
-        "position": 6, 
-        "placeholder": 47, 
-        "plugin_type": "TextPlugin"
-    }
-},
-{
-    "pk": 67, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 2, 
-        "changed_date": "2014-04-23T15:53:01.766Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-23T15:50:00.741Z", 
-        "lft": 1, 
-        "tree_id": 63, 
-        "position": 7, 
-        "placeholder": 47, 
         "plugin_type": "ContactPlugin"
     }
 },
@@ -978,7 +795,7 @@
     "model": "cms.cmsplugin", 
     "fields": {
         "rght": 4, 
-        "changed_date": "2014-04-24T11:12:14.319Z", 
+        "changed_date": "2014-04-24T12:25:18.060Z", 
         "parent": null, 
         "language": "fr", 
         "level": 0, 
@@ -995,7 +812,7 @@
     "model": "cms.cmsplugin", 
     "fields": {
         "rght": 6, 
-        "changed_date": "2014-04-24T11:12:14.333Z", 
+        "changed_date": "2014-04-24T12:25:18.110Z", 
         "parent": null, 
         "language": "fr", 
         "level": 0, 
@@ -1011,8 +828,8 @@
     "pk": 71, 
     "model": "cms.cmsplugin", 
     "fields": {
-        "rght": 4, 
-        "changed_date": "2014-04-24T11:14:33.136Z", 
+        "rght": 8, 
+        "changed_date": "2014-04-24T12:25:18.124Z", 
         "parent": null, 
         "language": "fr", 
         "level": 0, 
@@ -1063,7 +880,7 @@
     "model": "cms.cmsplugin", 
     "fields": {
         "rght": 4, 
-        "changed_date": "2014-04-24T11:12:43.208Z", 
+        "changed_date": "2014-04-24T12:25:18.138Z", 
         "parent": null, 
         "language": "fr", 
         "level": 0, 
@@ -1080,7 +897,7 @@
     "model": "cms.cmsplugin", 
     "fields": {
         "rght": 3, 
-        "changed_date": "2014-04-24T11:12:43.250Z", 
+        "changed_date": "2014-04-24T12:39:44.004Z", 
         "parent": 74, 
         "language": "fr", 
         "level": 1, 
@@ -1093,10 +910,503 @@
     }
 },
 {
+    "pk": 76, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 4, 
+        "changed_date": "2014-04-24T13:45:58.742Z", 
+        "parent": 40, 
+        "language": "fr", 
+        "level": 2, 
+        "creation_date": "2014-04-24T13:45:45.644Z", 
+        "lft": 3, 
+        "tree_id": 67, 
+        "position": 0, 
+        "placeholder": 44, 
+        "plugin_type": "LinkPlugin"
+    }
+},
+{
+    "pk": 77, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 6, 
+        "changed_date": "2014-04-24T13:46:14.485Z", 
+        "parent": 40, 
+        "language": "fr", 
+        "level": 2, 
+        "creation_date": "2014-04-24T13:46:07.200Z", 
+        "lft": 5, 
+        "tree_id": 67, 
+        "position": 1, 
+        "placeholder": 44, 
+        "plugin_type": "LinkPlugin"
+    }
+},
+{
+    "pk": 78, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-24T14:19:51.564Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-24T14:18:15.767Z", 
+        "lft": 1, 
+        "tree_id": 70, 
+        "position": 0, 
+        "placeholder": 34, 
+        "plugin_type": "TextPlugin"
+    }
+},
+{
+    "pk": 79, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 3, 
+        "changed_date": "2014-04-24T15:58:33.691Z", 
+        "parent": 80, 
+        "language": "fr", 
+        "level": 1, 
+        "creation_date": "2014-04-24T15:57:41.787Z", 
+        "lft": 2, 
+        "tree_id": 72, 
+        "position": 0, 
+        "placeholder": 53, 
+        "plugin_type": "ProjectsPlugin"
+    }
+},
+{
+    "pk": 80, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 4, 
+        "changed_date": "2014-04-24T15:58:29.970Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-24T15:58:21.022Z", 
+        "lft": 1, 
+        "tree_id": 72, 
+        "position": 0, 
+        "placeholder": 53, 
+        "plugin_type": "StylePlugin"
+    }
+},
+{
+    "pk": 81, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 4, 
+        "changed_date": "2014-04-24T16:03:58.364Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-24T15:58:21.022Z", 
+        "lft": 1, 
+        "tree_id": 73, 
+        "position": 0, 
+        "placeholder": 54, 
+        "plugin_type": "StylePlugin"
+    }
+},
+{
+    "pk": 82, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 3, 
+        "changed_date": "2014-04-24T16:03:58.376Z", 
+        "parent": 81, 
+        "language": "fr", 
+        "level": 1, 
+        "creation_date": "2014-04-24T15:57:41.787Z", 
+        "lft": 2, 
+        "tree_id": 73, 
+        "position": 0, 
+        "placeholder": 54, 
+        "plugin_type": "ProjectsPlugin"
+    }
+},
+{
+    "pk": 83, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 4, 
+        "changed_date": "2014-04-24T16:04:12.882Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-22T11:44:13.034Z", 
+        "lft": 1, 
+        "tree_id": 74, 
+        "position": 1, 
+        "placeholder": 7, 
+        "plugin_type": "StylePlugin"
+    }
+},
+{
+    "pk": 84, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 3, 
+        "changed_date": "2014-04-24T16:04:12.912Z", 
+        "parent": 83, 
+        "language": "fr", 
+        "level": 1, 
+        "creation_date": "2014-04-22T11:43:09.817Z", 
+        "lft": 2, 
+        "tree_id": 74, 
+        "position": 0, 
+        "placeholder": 7, 
+        "plugin_type": "TextPlugin"
+    }
+},
+{
+    "pk": 85, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 4, 
+        "changed_date": "2014-04-24T16:04:12.938Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-22T11:49:53.363Z", 
+        "lft": 1, 
+        "tree_id": 75, 
+        "position": 1, 
+        "placeholder": 46, 
+        "plugin_type": "StylePlugin"
+    }
+},
+{
+    "pk": 86, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 3, 
+        "changed_date": "2014-04-24T16:04:12.965Z", 
+        "parent": 85, 
+        "language": "fr", 
+        "level": 1, 
+        "creation_date": "2014-04-22T11:49:07.920Z", 
+        "lft": 2, 
+        "tree_id": 75, 
+        "position": 0, 
+        "placeholder": 46, 
+        "plugin_type": "TextPlugin"
+    }
+},
+{
+    "pk": 87, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-24T16:04:12.981Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-16T12:25:30.156Z", 
+        "lft": 1, 
+        "tree_id": 76, 
+        "position": 1, 
+        "placeholder": 47, 
+        "plugin_type": "WhatWeDoPlugin"
+    }
+},
+{
+    "pk": 88, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-24T16:04:12.988Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-23T15:50:00.741Z", 
+        "lft": 1, 
+        "tree_id": 77, 
+        "position": 6, 
+        "placeholder": 47, 
+        "plugin_type": "ContactPlugin"
+    }
+},
+{
+    "pk": 89, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 4, 
+        "changed_date": "2014-04-24T16:04:12.999Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-24T11:09:17.363Z", 
+        "lft": 1, 
+        "tree_id": 78, 
+        "position": 0, 
+        "placeholder": 47, 
+        "plugin_type": "StylePlugin"
+    }
+},
+{
+    "pk": 90, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 3, 
+        "changed_date": "2014-04-24T16:04:13.169Z", 
+        "parent": 89, 
+        "language": "fr", 
+        "level": 1, 
+        "creation_date": "2014-04-22T11:58:31.298Z", 
+        "lft": 2, 
+        "tree_id": 78, 
+        "position": 0, 
+        "placeholder": 47, 
+        "plugin_type": "TextPlugin"
+    }
+},
+{
+    "pk": 91, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 6, 
+        "changed_date": "2014-04-24T16:04:13.040Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-24T11:10:14.319Z", 
+        "lft": 1, 
+        "tree_id": 79, 
+        "position": 2, 
+        "placeholder": 47, 
+        "plugin_type": "StylePlugin"
+    }
+},
+{
+    "pk": 92, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 3, 
+        "changed_date": "2014-04-24T16:04:13.184Z", 
+        "parent": 91, 
+        "language": "fr", 
+        "level": 1, 
+        "creation_date": "2014-04-22T12:18:28.043Z", 
+        "lft": 2, 
+        "tree_id": 79, 
+        "position": 0, 
+        "placeholder": 47, 
+        "plugin_type": "TextPlugin"
+    }
+},
+{
+    "pk": 93, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 5, 
+        "changed_date": "2014-04-24T16:04:13.070Z", 
+        "parent": 91, 
+        "language": "fr", 
+        "level": 1, 
+        "creation_date": "2014-04-16T12:25:16.239Z", 
+        "lft": 4, 
+        "tree_id": 79, 
+        "position": 1, 
+        "placeholder": 47, 
+        "plugin_type": "ProjectsPlugin"
+    }
+},
+{
+    "pk": 94, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 8, 
+        "changed_date": "2014-04-24T16:04:13.085Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-24T11:11:53.799Z", 
+        "lft": 1, 
+        "tree_id": 80, 
+        "position": 4, 
+        "placeholder": 47, 
+        "plugin_type": "StylePlugin"
+    }
+},
+{
+    "pk": 95, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 7, 
+        "changed_date": "2014-04-24T16:04:13.213Z", 
+        "parent": 94, 
+        "language": "fr", 
+        "level": 1, 
+        "creation_date": "2014-04-22T12:25:49.096Z", 
+        "lft": 2, 
+        "tree_id": 80, 
+        "position": 0, 
+        "placeholder": 47, 
+        "plugin_type": "TextPlugin"
+    }
+},
+{
+    "pk": 96, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 4, 
+        "changed_date": "2014-04-24T16:04:13.117Z", 
+        "parent": 95, 
+        "language": "fr", 
+        "level": 2, 
+        "creation_date": "2014-04-24T13:45:45.644Z", 
+        "lft": 3, 
+        "tree_id": 80, 
+        "position": 0, 
+        "placeholder": 47, 
+        "plugin_type": "LinkPlugin"
+    }
+},
+{
+    "pk": 97, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 6, 
+        "changed_date": "2014-04-24T16:04:13.128Z", 
+        "parent": 95, 
+        "language": "fr", 
+        "level": 2, 
+        "creation_date": "2014-04-24T13:46:07.200Z", 
+        "lft": 5, 
+        "tree_id": 80, 
+        "position": 1, 
+        "placeholder": 47, 
+        "plugin_type": "LinkPlugin"
+    }
+},
+{
+    "pk": 98, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 4, 
+        "changed_date": "2014-04-24T16:04:13.138Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-24T11:11:53.799Z", 
+        "lft": 1, 
+        "tree_id": 81, 
+        "position": 5, 
+        "placeholder": 47, 
+        "plugin_type": "StylePlugin"
+    }
+},
+{
+    "pk": 99, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 3, 
+        "changed_date": "2014-04-24T16:04:13.230Z", 
+        "parent": 98, 
+        "language": "fr", 
+        "level": 1, 
+        "creation_date": "2014-04-22T12:26:05.738Z", 
+        "lft": 2, 
+        "tree_id": 81, 
+        "position": 0, 
+        "placeholder": 47, 
+        "plugin_type": "TextPlugin"
+    }
+},
+{
+    "pk": 100, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-24T16:04:13.262Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-24T09:55:34.470Z", 
+        "lft": 1, 
+        "tree_id": 82, 
+        "position": 0, 
+        "placeholder": 49, 
+        "plugin_type": "TextPlugin"
+    }
+},
+{
+    "pk": 101, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-24T16:04:23.836Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-24T14:18:15.767Z", 
+        "lft": 1, 
+        "tree_id": 83, 
+        "position": 0, 
+        "placeholder": 35, 
+        "plugin_type": "TextPlugin"
+    }
+},
+{
+    "pk": 103, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 4, 
+        "changed_date": "2014-04-24T16:05:53.219Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-24T16:05:48.966Z", 
+        "lft": 1, 
+        "tree_id": 85, 
+        "position": 1, 
+        "placeholder": 36, 
+        "plugin_type": "StylePlugin"
+    }
+},
+{
+    "pk": 104, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 4, 
+        "changed_date": "2014-04-24T16:06:06.787Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-24T16:05:48.966Z", 
+        "lft": 1, 
+        "tree_id": 86, 
+        "position": 1, 
+        "placeholder": 37, 
+        "plugin_type": "StylePlugin"
+    }
+},
+{
+    "pk": 105, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 3, 
+        "changed_date": "2014-04-24T16:06:06.802Z", 
+        "parent": 104, 
+        "language": "fr", 
+        "level": 1, 
+        "creation_date": "2014-04-23T14:04:46.333Z", 
+        "lft": 2, 
+        "tree_id": 86, 
+        "position": 0, 
+        "placeholder": 37, 
+        "plugin_type": "ProjectsPlugin"
+    }
+},
+{
     "pk": 1, 
     "model": "cms.page", 
     "fields": {
-        "rght": 10, 
+        "rght": 4, 
         "navigation_extenders": "", 
         "site": 1, 
         "application_namespace": null, 
@@ -1107,7 +1417,7 @@
         "created_by": "root", 
         "languages": "fr,de,en", 
         "publication_end_date": null, 
-        "template": "INHERIT", 
+        "template": "home.html", 
         "tree_id": 1, 
         "placeholders": [
             2, 
@@ -1117,9 +1427,10 @@
             6, 
             43, 
             44, 
-            48
+            48, 
+            50
         ], 
-        "changed_date": "2014-04-24T11:15:01.176Z", 
+        "changed_date": "2014-04-24T16:04:23.905Z", 
         "limit_visibility_in_menu": null, 
         "parent": null, 
         "soft_root": false, 
@@ -1139,7 +1450,7 @@
     "pk": 2, 
     "model": "cms.page", 
     "fields": {
-        "rght": 10, 
+        "rght": 4, 
         "navigation_extenders": "", 
         "site": 1, 
         "application_namespace": null, 
@@ -1150,8 +1461,8 @@
         "created_by": "root", 
         "languages": "fr,de,en", 
         "publication_end_date": null, 
-        "template": "INHERIT", 
-        "tree_id": 2, 
+        "template": "home.html", 
+        "tree_id": 4, 
         "placeholders": [
             7, 
             8, 
@@ -1159,9 +1470,11 @@
             10, 
             11, 
             46, 
-            47
+            47, 
+            49, 
+            57
         ], 
-        "changed_date": "2014-04-23T15:53:01.852Z", 
+        "changed_date": "2014-04-24T16:04:23.862Z", 
         "limit_visibility_in_menu": null, 
         "parent": null, 
         "soft_root": false, 
@@ -1181,19 +1494,19 @@
     "pk": 3, 
     "model": "cms.page", 
     "fields": {
-        "rght": 5, 
+        "rght": 4, 
         "navigation_extenders": null, 
         "site": 1, 
         "application_namespace": null, 
-        "lft": 2, 
+        "lft": 1, 
         "in_navigation": true, 
         "reverse_id": null, 
         "login_required": false, 
         "created_by": "root", 
         "languages": "fr,de", 
         "publication_end_date": null, 
-        "template": "page.html", 
-        "tree_id": 1, 
+        "template": "chapter.html", 
+        "tree_id": 3, 
         "placeholders": [
             14, 
             15, 
@@ -1202,16 +1515,16 @@
             18, 
             34
         ], 
-        "changed_date": "2014-04-16T14:34:46.519Z", 
+        "changed_date": "2014-04-24T16:04:23.960Z", 
         "limit_visibility_in_menu": null, 
-        "parent": 1, 
+        "parent": null, 
         "soft_root": false, 
         "is_home": false, 
         "publication_date": "2014-04-16T09:54:49.529Z", 
         "creation_date": "2014-04-16T09:54:38.501Z", 
         "publisher_public": 4, 
-        "level": 1, 
-        "changed_by": "root", 
+        "level": 0, 
+        "changed_by": "edouard", 
         "application_urls": null, 
         "publisher_is_draft": true, 
         "xframe_options": 0, 
@@ -1222,19 +1535,19 @@
     "pk": 4, 
     "model": "cms.page", 
     "fields": {
-        "rght": 5, 
+        "rght": 4, 
         "navigation_extenders": null, 
         "site": 1, 
         "application_namespace": null, 
-        "lft": 2, 
+        "lft": 1, 
         "in_navigation": true, 
         "reverse_id": null, 
         "login_required": false, 
         "created_by": "root", 
         "languages": "fr,de", 
         "publication_end_date": null, 
-        "template": "page.html", 
-        "tree_id": 2, 
+        "template": "chapter.html", 
+        "tree_id": 6, 
         "placeholders": [
             19, 
             20, 
@@ -1243,16 +1556,16 @@
             23, 
             35
         ], 
-        "changed_date": "2014-04-16T14:34:46.427Z", 
+        "changed_date": "2014-04-24T16:04:23.841Z", 
         "limit_visibility_in_menu": null, 
-        "parent": 2, 
+        "parent": null, 
         "soft_root": false, 
         "is_home": false, 
         "publication_date": "2014-04-16T09:54:49.529Z", 
         "creation_date": "2014-04-16T09:54:49.543Z", 
         "publisher_public": 3, 
-        "level": 1, 
-        "changed_by": "root", 
+        "level": 0, 
+        "changed_by": "edouard", 
         "application_urls": null, 
         "publisher_is_draft": false, 
         "xframe_options": 0, 
@@ -1263,11 +1576,11 @@
     "pk": 5, 
     "model": "cms.page", 
     "fields": {
-        "rght": 9, 
+        "rght": 4, 
         "navigation_extenders": null, 
         "site": 1, 
         "application_namespace": null, 
-        "lft": 6, 
+        "lft": 1, 
         "in_navigation": true, 
         "reverse_id": null, 
         "login_required": false, 
@@ -1275,7 +1588,7 @@
         "languages": "fr", 
         "publication_end_date": null, 
         "template": "page.html", 
-        "tree_id": 1, 
+        "tree_id": 2, 
         "placeholders": [
             24, 
             25, 
@@ -1284,16 +1597,16 @@
             28, 
             39
         ], 
-        "changed_date": "2014-04-16T14:05:18.368Z", 
+        "changed_date": "2014-04-24T15:12:25.177Z", 
         "limit_visibility_in_menu": null, 
-        "parent": 1, 
+        "parent": null, 
         "soft_root": false, 
         "is_home": false, 
         "publication_date": "2014-04-16T10:01:10.415Z", 
         "creation_date": "2014-04-16T10:01:01.134Z", 
         "publisher_public": 6, 
-        "level": 1, 
-        "changed_by": "root", 
+        "level": 0, 
+        "changed_by": "edouard", 
         "application_urls": null, 
         "publisher_is_draft": true, 
         "xframe_options": 0, 
@@ -1304,11 +1617,11 @@
     "pk": 6, 
     "model": "cms.page", 
     "fields": {
-        "rght": 9, 
+        "rght": 4, 
         "navigation_extenders": null, 
         "site": 1, 
         "application_namespace": null, 
-        "lft": 6, 
+        "lft": 1, 
         "in_navigation": true, 
         "reverse_id": null, 
         "login_required": false, 
@@ -1316,7 +1629,7 @@
         "languages": "fr", 
         "publication_end_date": null, 
         "template": "page.html", 
-        "tree_id": 2, 
+        "tree_id": 5, 
         "placeholders": [
             29, 
             30, 
@@ -1325,16 +1638,16 @@
             33, 
             41
         ], 
-        "changed_date": "2014-04-16T14:05:18.319Z", 
+        "changed_date": "2014-04-24T15:12:25.278Z", 
         "limit_visibility_in_menu": null, 
-        "parent": 2, 
+        "parent": null, 
         "soft_root": false, 
         "is_home": false, 
         "publication_date": "2014-04-16T10:01:10.415Z", 
         "creation_date": "2014-04-16T10:01:10.432Z", 
         "publisher_public": 5, 
-        "level": 1, 
-        "changed_by": "root", 
+        "level": 0, 
+        "changed_by": "edouard", 
         "application_urls": null, 
         "publisher_is_draft": false, 
         "xframe_options": 0, 
@@ -1345,23 +1658,23 @@
     "pk": 7, 
     "model": "cms.page", 
     "fields": {
-        "rght": 4, 
+        "rght": 3, 
         "navigation_extenders": null, 
         "site": 1, 
         "application_namespace": null, 
-        "lft": 3, 
+        "lft": 2, 
         "in_navigation": true, 
         "reverse_id": null, 
         "login_required": false, 
         "created_by": "root", 
         "languages": "fr,de", 
         "publication_end_date": null, 
-        "template": "INHERIT", 
-        "tree_id": 1, 
+        "template": "page_with_header.html", 
+        "tree_id": 3, 
         "placeholders": [
             36
         ], 
-        "changed_date": "2014-04-23T14:20:53.790Z", 
+        "changed_date": "2014-04-24T16:06:06.877Z", 
         "limit_visibility_in_menu": null, 
         "parent": 3, 
         "soft_root": false, 
@@ -1369,8 +1682,8 @@
         "publication_date": "2014-04-16T13:51:33.665Z", 
         "creation_date": "2014-04-16T13:51:00.170Z", 
         "publisher_public": 8, 
-        "level": 2, 
-        "changed_by": "root", 
+        "level": 1, 
+        "changed_by": "edouard", 
         "application_urls": null, 
         "publisher_is_draft": true, 
         "xframe_options": 0, 
@@ -1381,23 +1694,23 @@
     "pk": 8, 
     "model": "cms.page", 
     "fields": {
-        "rght": 4, 
+        "rght": 3, 
         "navigation_extenders": null, 
         "site": 1, 
         "application_namespace": null, 
-        "lft": 3, 
-        "in_navigation": false, 
+        "lft": 2, 
+        "in_navigation": true, 
         "reverse_id": null, 
         "login_required": false, 
         "created_by": "root", 
         "languages": "fr,de", 
         "publication_end_date": null, 
-        "template": "INHERIT", 
-        "tree_id": 2, 
+        "template": "page_with_header.html", 
+        "tree_id": 6, 
         "placeholders": [
             37
         ], 
-        "changed_date": "2014-04-16T14:07:25.334Z", 
+        "changed_date": "2014-04-24T16:06:06.817Z", 
         "limit_visibility_in_menu": null, 
         "parent": 4, 
         "soft_root": false, 
@@ -1405,8 +1718,8 @@
         "publication_date": "2014-04-16T13:51:33.665Z", 
         "creation_date": "2014-04-16T13:51:33.682Z", 
         "publisher_public": 7, 
-        "level": 2, 
-        "changed_by": "root", 
+        "level": 1, 
+        "changed_by": "edouard", 
         "application_urls": null, 
         "publisher_is_draft": false, 
         "xframe_options": 0, 
@@ -1417,11 +1730,11 @@
     "pk": 9, 
     "model": "cms.page", 
     "fields": {
-        "rght": 8, 
+        "rght": 3, 
         "navigation_extenders": null, 
         "site": 1, 
         "application_namespace": null, 
-        "lft": 7, 
+        "lft": 2, 
         "in_navigation": false, 
         "reverse_id": null, 
         "login_required": false, 
@@ -1429,7 +1742,7 @@
         "languages": "fr,de", 
         "publication_end_date": null, 
         "template": "INHERIT", 
-        "tree_id": 1, 
+        "tree_id": 2, 
         "placeholders": [
             40
         ], 
@@ -1441,7 +1754,7 @@
         "publication_date": "2014-04-16T13:51:33.665Z", 
         "creation_date": "2014-04-16T14:04:55.501Z", 
         "publisher_public": 10, 
-        "level": 2, 
+        "level": 1, 
         "changed_by": "root", 
         "application_urls": null, 
         "publisher_is_draft": true, 
@@ -1453,11 +1766,11 @@
     "pk": 10, 
     "model": "cms.page", 
     "fields": {
-        "rght": 8, 
+        "rght": 3, 
         "navigation_extenders": null, 
         "site": 1, 
         "application_namespace": null, 
-        "lft": 7, 
+        "lft": 2, 
         "in_navigation": false, 
         "reverse_id": null, 
         "login_required": false, 
@@ -1465,7 +1778,7 @@
         "languages": "de,fr", 
         "publication_end_date": null, 
         "template": "INHERIT", 
-        "tree_id": 2, 
+        "tree_id": 5, 
         "placeholders": [
             42
         ], 
@@ -1477,8 +1790,84 @@
         "publication_date": "2014-04-16T13:51:33.665Z", 
         "creation_date": "2014-04-16T14:05:22.867Z", 
         "publisher_public": 9, 
-        "level": 2, 
+        "level": 1, 
         "changed_by": "root", 
+        "application_urls": null, 
+        "publisher_is_draft": false, 
+        "xframe_options": 0, 
+        "revision_id": 0
+    }
+},
+{
+    "pk": 11, 
+    "model": "cms.page", 
+    "fields": {
+        "rght": 3, 
+        "navigation_extenders": null, 
+        "site": 1, 
+        "application_namespace": null, 
+        "lft": 2, 
+        "in_navigation": true, 
+        "reverse_id": null, 
+        "login_required": false, 
+        "created_by": "edouard", 
+        "languages": "fr", 
+        "publication_end_date": null, 
+        "template": "page_with_header.html", 
+        "tree_id": 1, 
+        "placeholders": [
+            51, 
+            52, 
+            53
+        ], 
+        "changed_date": "2014-04-24T16:03:58.456Z", 
+        "limit_visibility_in_menu": null, 
+        "parent": 1, 
+        "soft_root": false, 
+        "is_home": false, 
+        "publication_date": "2014-04-24T16:03:58.278Z", 
+        "creation_date": "2014-04-24T15:56:30.329Z", 
+        "publisher_public": 12, 
+        "level": 1, 
+        "changed_by": "edouard", 
+        "application_urls": null, 
+        "publisher_is_draft": true, 
+        "xframe_options": 0, 
+        "revision_id": 0
+    }
+},
+{
+    "pk": 12, 
+    "model": "cms.page", 
+    "fields": {
+        "rght": 3, 
+        "navigation_extenders": null, 
+        "site": 1, 
+        "application_namespace": null, 
+        "lft": 2, 
+        "in_navigation": true, 
+        "reverse_id": null, 
+        "login_required": false, 
+        "created_by": "edouard", 
+        "languages": "fr", 
+        "publication_end_date": null, 
+        "template": "page_with_header.html", 
+        "tree_id": 4, 
+        "placeholders": [
+            54, 
+            55, 
+            56
+        ], 
+        "changed_date": "2014-04-24T16:03:58.407Z", 
+        "limit_visibility_in_menu": null, 
+        "parent": 2, 
+        "soft_root": false, 
+        "is_home": false, 
+        "publication_date": "2014-04-24T16:03:58.278Z", 
+        "creation_date": "2014-04-24T16:03:58.293Z", 
+        "publisher_public": 11, 
+        "level": 1, 
+        "changed_by": "edouard", 
         "application_urls": null, 
         "publisher_is_draft": false, 
         "xframe_options": 0, 
@@ -1500,7 +1889,7 @@
         "page": 1, 
         "published": true, 
         "path": "", 
-        "publisher_state": 1, 
+        "publisher_state": 0, 
         "creation_date": "2014-04-16T09:52:57.706Z", 
         "slug": "home", 
         "publisher_public": 2
@@ -1563,7 +1952,7 @@
         "page": 3, 
         "published": true, 
         "path": "paris-berlin", 
-        "publisher_state": 1, 
+        "publisher_state": 0, 
         "creation_date": "2014-04-16T09:54:38.530Z", 
         "slug": "paris-berlin", 
         "publisher_public": 5
@@ -1710,7 +2099,7 @@
         "page": 7, 
         "published": true, 
         "path": "paris-berlin/projects", 
-        "publisher_state": 1, 
+        "publisher_state": 0, 
         "creation_date": "2014-04-16T13:51:00.184Z", 
         "slug": "projects", 
         "publisher_public": 13
@@ -1752,7 +2141,7 @@
         "page": 8, 
         "published": true, 
         "path": "paris-berlin/projects", 
-        "publisher_state": 0, 
+        "publisher_state": 1, 
         "creation_date": "2014-04-16T13:51:00.184Z", 
         "slug": "projects", 
         "publisher_public": 11
@@ -1906,6 +2295,48 @@
     }
 },
 {
+    "pk": 21, 
+    "model": "cms.title", 
+    "fields": {
+        "menu_title": "", 
+        "meta_description": "", 
+        "page_title": "", 
+        "language": "fr", 
+        "title": "Projects", 
+        "has_url_overwrite": false, 
+        "redirect": null, 
+        "publisher_is_draft": true, 
+        "page": 11, 
+        "published": true, 
+        "path": "projects", 
+        "publisher_state": 0, 
+        "creation_date": "2014-04-24T15:56:30.350Z", 
+        "slug": "projects", 
+        "publisher_public": 22
+    }
+},
+{
+    "pk": 22, 
+    "model": "cms.title", 
+    "fields": {
+        "menu_title": "", 
+        "meta_description": "", 
+        "page_title": "", 
+        "language": "fr", 
+        "title": "Projects", 
+        "has_url_overwrite": false, 
+        "redirect": null, 
+        "publisher_is_draft": false, 
+        "page": 12, 
+        "published": true, 
+        "path": "projects", 
+        "publisher_state": 1, 
+        "creation_date": "2014-04-24T15:56:30.350Z", 
+        "slug": "projects", 
+        "publisher_public": 21
+    }
+},
+{
     "pk": 1, 
     "model": "cms.staticplaceholder", 
     "fields": {
@@ -1937,40 +2368,6 @@
 },
 {
     "pk": 27, 
-    "model": "djangocms_style.style", 
-    "fields": {
-        "additional_classes": "", 
-        "margin_right": null, 
-        "class_name": "header__title", 
-        "padding_bottom": null, 
-        "margin_left": null, 
-        "padding_right": null, 
-        "margin_top": null, 
-        "padding_left": null, 
-        "padding_top": null, 
-        "margin_bottom": null, 
-        "tag_type": "div"
-    }
-},
-{
-    "pk": 56, 
-    "model": "djangocms_style.style", 
-    "fields": {
-        "additional_classes": "", 
-        "margin_right": null, 
-        "class_name": "header__title", 
-        "padding_bottom": null, 
-        "margin_left": null, 
-        "padding_right": null, 
-        "margin_top": null, 
-        "padding_left": null, 
-        "padding_top": null, 
-        "margin_bottom": null, 
-        "tag_type": "div"
-    }
-},
-{
-    "pk": 58, 
     "model": "djangocms_style.style", 
     "fields": {
         "additional_classes": "", 
@@ -2056,6 +2453,176 @@
 },
 {
     "pk": 74, 
+    "model": "djangocms_style.style", 
+    "fields": {
+        "additional_classes": "", 
+        "margin_right": null, 
+        "class_name": "container", 
+        "padding_bottom": null, 
+        "margin_left": null, 
+        "padding_right": null, 
+        "margin_top": null, 
+        "padding_left": null, 
+        "padding_top": null, 
+        "margin_bottom": null, 
+        "tag_type": "div"
+    }
+},
+{
+    "pk": 80, 
+    "model": "djangocms_style.style", 
+    "fields": {
+        "additional_classes": "", 
+        "margin_right": null, 
+        "class_name": "container", 
+        "padding_bottom": null, 
+        "margin_left": null, 
+        "padding_right": null, 
+        "margin_top": null, 
+        "padding_left": null, 
+        "padding_top": null, 
+        "margin_bottom": null, 
+        "tag_type": "div"
+    }
+},
+{
+    "pk": 81, 
+    "model": "djangocms_style.style", 
+    "fields": {
+        "additional_classes": "", 
+        "margin_right": null, 
+        "class_name": "container", 
+        "padding_bottom": null, 
+        "margin_left": null, 
+        "padding_right": null, 
+        "margin_top": null, 
+        "padding_left": null, 
+        "padding_top": null, 
+        "margin_bottom": null, 
+        "tag_type": "div"
+    }
+},
+{
+    "pk": 83, 
+    "model": "djangocms_style.style", 
+    "fields": {
+        "additional_classes": "", 
+        "margin_right": null, 
+        "class_name": "header__title", 
+        "padding_bottom": null, 
+        "margin_left": null, 
+        "padding_right": null, 
+        "margin_top": null, 
+        "padding_left": null, 
+        "padding_top": null, 
+        "margin_bottom": null, 
+        "tag_type": "div"
+    }
+},
+{
+    "pk": 85, 
+    "model": "djangocms_style.style", 
+    "fields": {
+        "additional_classes": "", 
+        "margin_right": null, 
+        "class_name": "header__title", 
+        "padding_bottom": null, 
+        "margin_left": null, 
+        "padding_right": null, 
+        "margin_top": null, 
+        "padding_left": null, 
+        "padding_top": null, 
+        "margin_bottom": null, 
+        "tag_type": "div"
+    }
+},
+{
+    "pk": 89, 
+    "model": "djangocms_style.style", 
+    "fields": {
+        "additional_classes": "", 
+        "margin_right": null, 
+        "class_name": "container", 
+        "padding_bottom": null, 
+        "margin_left": null, 
+        "padding_right": null, 
+        "margin_top": null, 
+        "padding_left": null, 
+        "padding_top": null, 
+        "margin_bottom": null, 
+        "tag_type": "div"
+    }
+},
+{
+    "pk": 91, 
+    "model": "djangocms_style.style", 
+    "fields": {
+        "additional_classes": "", 
+        "margin_right": null, 
+        "class_name": "container", 
+        "padding_bottom": null, 
+        "margin_left": null, 
+        "padding_right": null, 
+        "margin_top": null, 
+        "padding_left": null, 
+        "padding_top": null, 
+        "margin_bottom": null, 
+        "tag_type": "div"
+    }
+},
+{
+    "pk": 94, 
+    "model": "djangocms_style.style", 
+    "fields": {
+        "additional_classes": "", 
+        "margin_right": null, 
+        "class_name": "container", 
+        "padding_bottom": null, 
+        "margin_left": null, 
+        "padding_right": null, 
+        "margin_top": null, 
+        "padding_left": null, 
+        "padding_top": null, 
+        "margin_bottom": null, 
+        "tag_type": "div"
+    }
+},
+{
+    "pk": 98, 
+    "model": "djangocms_style.style", 
+    "fields": {
+        "additional_classes": "", 
+        "margin_right": null, 
+        "class_name": "container", 
+        "padding_bottom": null, 
+        "margin_left": null, 
+        "padding_right": null, 
+        "margin_top": null, 
+        "padding_left": null, 
+        "padding_top": null, 
+        "margin_bottom": null, 
+        "tag_type": "div"
+    }
+},
+{
+    "pk": 103, 
+    "model": "djangocms_style.style", 
+    "fields": {
+        "additional_classes": "", 
+        "margin_right": null, 
+        "class_name": "container", 
+        "padding_bottom": null, 
+        "margin_left": null, 
+        "padding_right": null, 
+        "margin_top": null, 
+        "padding_left": null, 
+        "padding_top": null, 
+        "margin_bottom": null, 
+        "tag_type": "div"
+    }
+},
+{
+    "pk": 104, 
     "model": "djangocms_style.style", 
     "fields": {
         "additional_classes": "", 
@@ -2333,7 +2900,7 @@
     "pk": 37, 
     "model": "djangocms_text_ckeditor.text", 
     "fields": {
-        "body": "<h2>What we do</h2>\n\n<div class=\"subtitle\">We conceive, design and produce digital tools and integrated experiences for web, tablet and mobile</div>\n\n<p>By turning data into visuals, we help you discover trends and gain valuable insights.<br>\nOur dashboards and visual databases are keys to exploring your informations.</p>\n"
+        "body": "<h2>What we do</h2>\n\n<p>We conceive, design and produce digital tools and integrated experiences for web, tablet and mobile.</p>\n\n<p>By turning data into visuals, we help you discover trends and gain valuable insights. Our dashboards and visual databases are keys to exploring your informations.</p>\n"
     }
 },
 {
@@ -2347,56 +2914,7 @@
     "pk": 40, 
     "model": "djangocms_text_ckeditor.text", 
     "fields": {
-        "body": "<h2>WHO WE ARE</h2>\n"
-    }
-},
-{
-    "pk": 57, 
-    "model": "djangocms_text_ckeditor.text", 
-    "fields": {
-        "body": "<h1><strong>DATA-DRIVEN</strong> STORYTELLING</h1>\n"
-    }
-},
-{
-    "pk": 59, 
-    "model": "djangocms_text_ckeditor.text", 
-    "fields": {
-        "body": "<h1><strong>DATA-DRIVEN</strong> STORYTELLING</h1>\n"
-    }
-},
-{
-    "pk": 62, 
-    "model": "djangocms_text_ckeditor.text", 
-    "fields": {
-        "body": "<h2>What we do</h2>\n\n<div class=\"subtitle\">We conceive, design and produce digital tools and integrated experiences for web, tablet and mobile</div>\n\n<p>By turning data into visuals, we help you discover trends and gain valuable insights.<br>\nOur dashboards and visual databases are keys to exploring your informations.</p>\n"
-    }
-},
-{
-    "pk": 63, 
-    "model": "djangocms_text_ckeditor.text", 
-    "fields": {
-        "body": "<h2>Our work</h2>\n"
-    }
-},
-{
-    "pk": 64, 
-    "model": "djangocms_text_ckeditor.text", 
-    "fields": {
-        "body": "<h2>OUR CLIENTS &amp; PARTNERS</h2>\n"
-    }
-},
-{
-    "pk": 65, 
-    "model": "djangocms_text_ckeditor.text", 
-    "fields": {
-        "body": "<h2>WHO WE ARE</h2>\n"
-    }
-},
-{
-    "pk": 66, 
-    "model": "djangocms_text_ckeditor.text", 
-    "fields": {
-        "body": "<h2>LET\u2019S TALK</h2>\n"
+        "body": "<h2>WHO WE ARE</h2>\n\n<p><img src=\"/static/cms/images/plugins/link.png\" id=\"plugin_obj_76\" alt=\"Lien\" title=\"Lien - paris\">\u00a0/\u00a0<img src=\"/static/cms/images/plugins/link.png\" id=\"plugin_obj_77\" alt=\"Lien\" title=\"Lien - Cologne\"></p>\n"
     }
 },
 {
@@ -2417,31 +2935,70 @@
     "pk": 75, 
     "model": "djangocms_text_ckeditor.text", 
     "fields": {
-        "body": "<h2>LET\u2019S TALK</h2>\n"
+        "body": "<h2>LET\u2019S TALK</h2>\n\n<p>If you have questions, comments, or a project in mind, let's talk.<br>\nFill out our contact form, and we'll be in touch as soon as we can!</p>\n"
     }
 },
 {
-    "pk": 13, 
-    "model": "djangocms_link.link", 
+    "pk": 78, 
+    "model": "djangocms_text_ckeditor.text", 
     "fields": {
-        "mailto": "", 
-        "target": "", 
-        "url": "", 
-        "page_link": 7, 
-        "phone": "", 
-        "name": "Nos projets"
+        "body": "<h2>Our Team</h2>\n\n<p>A network of independent for-profit companies operating from 6 different clities joined together in the coolest franchise of data-driven storytellers.</p>\n\n<h3>paris-berlin</h3>\n"
     }
 },
 {
-    "pk": 14, 
-    "model": "djangocms_link.link", 
+    "pk": 84, 
+    "model": "djangocms_text_ckeditor.text", 
     "fields": {
-        "mailto": "", 
-        "target": "", 
-        "url": "", 
-        "page_link": 7, 
-        "phone": "", 
-        "name": "Nos projets"
+        "body": "<h1><strong>DATA-DRIVEN</strong> STORYTELLING</h1>\n"
+    }
+},
+{
+    "pk": 86, 
+    "model": "djangocms_text_ckeditor.text", 
+    "fields": {
+        "body": "<h1><strong>DATA-DRIVEN</strong> STORYTELLING</h1>\n"
+    }
+},
+{
+    "pk": 90, 
+    "model": "djangocms_text_ckeditor.text", 
+    "fields": {
+        "body": "<h2>What we do</h2>\n\n<p>We conceive, design and produce digital tools and integrated experiences for web, tablet and mobile.</p>\n\n<p>By turning data into visuals, we help you discover trends and gain valuable insights. Our dashboards and visual databases are keys to exploring your informations.</p>\n"
+    }
+},
+{
+    "pk": 92, 
+    "model": "djangocms_text_ckeditor.text", 
+    "fields": {
+        "body": "<h2>Our work</h2>\n"
+    }
+},
+{
+    "pk": 95, 
+    "model": "djangocms_text_ckeditor.text", 
+    "fields": {
+        "body": "<h2>WHO WE ARE</h2>\n\n<p><img src=\"/static/cms/images/plugins/link.png\" id=\"plugin_obj_96\" alt=\"Lien - paris\" title=\"Lien - paris\">\u00a0/\u00a0<img src=\"/static/cms/images/plugins/link.png\" id=\"plugin_obj_97\" alt=\"Lien - Cologne\" title=\"Lien - Cologne\"></p>\n"
+    }
+},
+{
+    "pk": 99, 
+    "model": "djangocms_text_ckeditor.text", 
+    "fields": {
+        "body": "<h2>LET\u2019S TALK</h2>\n\n<p>If you have questions, comments, or a project in mind, let's talk.<br>\nFill out our contact form, and we'll be in touch as soon as we can!</p>\n"
+    }
+},
+{
+    "pk": 100, 
+    "model": "djangocms_text_ckeditor.text", 
+    "fields": {
+        "body": "<p>is an agency for</p>\n\n<p><strong>DATA-DRIVEN</strong> STORYTELLING</p>\n"
+    }
+},
+{
+    "pk": 101, 
+    "model": "djangocms_text_ckeditor.text", 
+    "fields": {
+        "body": "<h2>Our Team</h2>\n\n<p>A network of independent for-profit companies operating from 6 different clities joined together in the coolest franchise of data-driven storytellers.</p>\n\n<h3>paris-berlin</h3>\n"
     }
 },
 {
@@ -2493,15 +3050,51 @@
     }
 },
 {
-    "pk": 53, 
+    "pk": 76, 
     "model": "djangocms_link.link", 
     "fields": {
         "mailto": "", 
         "target": "", 
         "url": "", 
-        "page_link": 7, 
+        "page_link": 3, 
         "phone": "", 
-        "name": "Nos projets"
+        "name": "paris"
+    }
+},
+{
+    "pk": 77, 
+    "model": "djangocms_link.link", 
+    "fields": {
+        "mailto": "", 
+        "target": "", 
+        "url": "", 
+        "page_link": 5, 
+        "phone": "", 
+        "name": "Cologne"
+    }
+},
+{
+    "pk": 96, 
+    "model": "djangocms_link.link", 
+    "fields": {
+        "mailto": "", 
+        "target": "", 
+        "url": "", 
+        "page_link": 3, 
+        "phone": "", 
+        "name": "paris"
+    }
+},
+{
+    "pk": 97, 
+    "model": "djangocms_link.link", 
+    "fields": {
+        "mailto": "", 
+        "target": "", 
+        "url": "", 
+        "page_link": 5, 
+        "phone": "", 
+        "name": "Cologne"
     }
 },
 {
@@ -2830,11 +3423,37 @@
     }
 },
 {
-    "pk": 60, 
+    "pk": 79, 
     "model": "jplusplus.projectpluginmodel", 
     "fields": {
         "highlighted": false, 
         "offices": []
+    }
+},
+{
+    "pk": 82, 
+    "model": "jplusplus.projectpluginmodel", 
+    "fields": {
+        "highlighted": false, 
+        "offices": []
+    }
+},
+{
+    "pk": 93, 
+    "model": "jplusplus.projectpluginmodel", 
+    "fields": {
+        "highlighted": false, 
+        "offices": []
+    }
+},
+{
+    "pk": 105, 
+    "model": "jplusplus.projectpluginmodel", 
+    "fields": {
+        "highlighted": false, 
+        "offices": [
+            1
+        ]
     }
 }
 ]
