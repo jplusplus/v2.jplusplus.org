@@ -278,6 +278,7 @@ DATABASES = {
 
 CMS_STYLE_NAMES = (
     ('header__title', gettext("Header title")),
+    ('container', gettext("Container")),
 )
 
 COMPRESS_PRECOMPILERS = (

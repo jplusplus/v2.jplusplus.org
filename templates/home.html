@@ -3,12 +3,22 @@
 
 {% block content %}
 
-<div class="header">
-  {% placeholder "header" %}
-</div>
+	{% addtoblock "js" %}<script type="text/coffeescript" src="{{STATIC_URL}}coffee/navigation.coffee"></script>{% endaddtoblock %}
 
-<div>
-  {% placeholder "body" %}
-</div>
+	<div class="header">
+		{% include "navigation.html" %}
+	</div>
+
+	<div class="first-page">
+		<img src="{{ STATIC_URL }}logos/jpp_logo.png"/>
+		<h1>Journalism++</h1>
+		{% placeholder "first-page" %}
+	</div>
+
+	<div>
+		{% placeholder "body" %}
+	</div>
+
+	{% addtoblock "js" %}<script type="text/coffeescript">new window.Navigation()</script>{% endaddtoblock %}
 
 {% endblock content %}

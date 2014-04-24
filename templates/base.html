@@ -4,28 +4,19 @@
   <head>
     <title>{% page_attribute "page_title" %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+    {# <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css"> #}
     {% render_block "css" postprocessor "compressor.contrib.sekizai.compress" %}
-    {% addtoblock "css" %} <link rel="stylesheet" type="text/less" href="{{STATIC_URL}}less/style.less">{% endaddtoblock %}
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    {% addtoblock "css" %}<link rel="stylesheet" type="text/less" href="{{STATIC_URL}}less/style.less">{% endaddtoblock %}
   </head>
 
-  <body style="padding-top:60px">
+  <body>
 
     {% cms_toolbar %}
 
-      <div class="container">
-
-        <div class="row">
-          <div class="col-md-2">
-            {% include "navigation.html" %}
-          </div>
-
-          <div class="col-md-10">
-            <div class="body">
-              {% block content %}{% endblock content %}
-            </div>
-          </div>
+      <div class="container-fluid">
+        <div class="body">
+          {% block content %}{% endblock content %}
         </div>
       </div>
 

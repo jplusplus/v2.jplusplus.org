@@ -1,37 +1,36 @@
-{% load cms_tags staticfiles sekizai_tags menu_tags %}
+{% load cms_tags staticfiles sekizai_tags menu_tags i18n %}
 
-{% language_chooser "menu/language_chooser.html" %}
+{% addtoblock "css" %}<link rel="stylesheet" type="text/less" href="{{STATIC_URL}}less/navigation.less">{% endaddtoblock %}
 
-<div class="navigation">
-  <div class="logo">
-    <img src="{% static "logos/jpp_logo.png" %}"/>
-  </div>
-  <div class="menu">
-    {% show_menu 1 2 100 100 "menu.html" %}
-  </div>
-  <div class="current-chapter">
-    <div class="current-chapter__title">Chapitre:</div>
-    <div class="item">
-      <div class="item__chapter">PARIS-BERLIN</div>
-      <div class="item__close">X</div>
+<nav class="navbar navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">{% trans "WHAT WE STAND FOR" %}</a>
     </div>
 
-  </div>
-  <div class="contact-us">
-    <div class="contact-us__button">contact us</div>
-    <div class="contact-us__email">bonjour@jplusplus.org</div>
-  </div>
-  <div class="follow-us">
-    <div class="follow-us__title">
-      Follow us on
-    </div>
-    <div class="follow-us__media">
-      <ul>
-        <li><img src="" alt="facebook" /></li>
-        <li><img src="" alt="twitter"  /></li>
-        <li><img src="" alt="github"   /></li>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#what-we-do">{% trans "What we Do" %}</a></li>
+        <li><a href="#our-work">{% trans "Our Work" %}</a></li>
+        <li><a href="#who-we-are">{% trans "Who we Are" %}</a></li>
+        <li><a href="#lets-talk">{% trans "Let's Talk" %}</a></li>
       </ul>
-    </div>
-  </div>
-
-</div>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">{% trans "LANGUAGE" %}<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            {% language_chooser "menu/language_chooser.html" %}
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

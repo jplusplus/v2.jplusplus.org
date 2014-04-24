@@ -1,38 +1,43 @@
-body, html {
-	background-color: #E6DEDB !important;
-	color           : #595551;
-}
-.container {
-	background-color: #fff;
-	h1, h2 {
-		text-transform: uppercase;
-		margin-bottom: 0px;
-	}
-	h2:after {
-		content: "–";
-		display: block;
-		line-height: .4em;
+body {padding-top: 50px;} // bootstrap fixed navbar
+#cms_toolbar .cms_toolbar, #cms_toolbar .cms_toolbar-trigger {top: 50px !important;} // put the debug toolbar under the navbar
 
+body, html {
+	background-color: #CCC2B8;
+	color           : #595551;
+	h1, h2 {
+		text-transform : uppercase;
+		margin-bottom  : 0px;
 	}
-	.subtitle {
+	h2 {
 		color: #CCC2B8;
-		padding-bottom: 20px;
-	}
-	.navigation {
-		.logo {
-			img {
-				width  : 100px;
-				height : 100px;
-			}
+		&:after {
+			color       : black;
+			content     : "–";
+			display     : block;
+			line-height : .4em;
 		}
 	}
-	.header {
-		.header__title {
-			display: table;
-			margin: 0 auto;
-			border-bottom: 1px solid #CCC2B8;
-			strong {
-				color: #CCC2B8;
+}
+
+body > .container-fluid > .body {
+	background-color: #fff;
+	.first-page {
+		text-align       : center;
+		background-color : #CCC2B8;
+		padding-top      : 80px;
+		color            : white;
+		position         : relative;
+		z-index          : 2; // upper the header for the shadow
+		box-shadow       : 0px -3px 10px rgba(0,0,0, .2);
+		margin-bottom    : 50px;
+		img, h1 {margin-bottom: 20px;}
+		img     {width: 100px;}
+		p {
+			margin-bottom : 0px;
+			font-size     : 2em;
+			&:nth-child(2) {
+				display: inline-block;
+				border-bottom: 1px solid rgba(255,255,255, .3);
 			}
 		}
 	}
