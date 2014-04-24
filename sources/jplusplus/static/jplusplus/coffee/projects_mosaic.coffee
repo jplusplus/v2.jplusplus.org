@@ -20,6 +20,7 @@ class window.jplusplus.Mosaïc
 		# bind events
 		@uis.filters.click (e) ->
 			that.onFilterSelected($(this).data('filter'))
+		$(window).resize(@relayout)
 
 	relayout: =>
 		that  = this
