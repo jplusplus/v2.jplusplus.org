@@ -13,9 +13,16 @@
 window.jplusplus = {} if not window.jplusplus
 
 class window.jplusplus.Mosaïc
+	
+	CONFIG = 
+		thumbnails_per_row : 4
+		thumbnail_margin   : 20
+		row_margin         : 50
+		image_ratio        : 1.666
 
 	constructor: (scope, plugin_instance=undefined) ->
-		that = this
+		that    = this
+		@config = CONFIG
 		# bind ui elements
 		@ui  = $(scope)
 		@uis = {
@@ -37,12 +44,13 @@ class window.jplusplus.Mosaïc
 	relayout: =>
 		that  = this
 		width = @ui.width()
-		thumbnail_width    = 250
-		thumbnail_height   = 150
-		thumbnail_margin   = 40
-		row_margin         = 50
 		thumbnails_number  = $(".project:not(.template)", @ui).length
-		thumbnails_per_row = Math.floor(width             / (thumbnail_width + thumbnail_margin))
+		thumbnails_per_row = @config.thumbnails_per_row
+		thumbnail_margin   = @config.thumbnail_margin
+		thumbnail_width    = (width / thumbnails_per_row) - thumbnail_margin
+		thumbnail_height   = thumbnail_width / @config.image_ratio
+		row_margin         = @config.row_margin
+		# thumbnails_per_row = Math.floor(width             / (thumbnail_width + thumbnail_margin))
 		rows_number        = Math.ceil(thumbnails_number  / thumbnails_per_row)
 		# size
 		new_widget_height  = rows_number * (thumbnail_height + row_margin)
