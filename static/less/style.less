@@ -1,9 +1,11 @@
-body {padding-top: 50px;} // bootstrap fixed navbar
-#cms_toolbar .cms_toolbar, #cms_toolbar .cms_toolbar-trigger {top: 50px !important;} // put the debug toolbar under the navbar
+// put the debug toolbar under the navbar
+#cms_toolbar .cms_toolbar, #cms_toolbar .cms_toolbar-trigger {top: 50px !important;}
 
-body, html {
+// Global settings
+body {
 	background-color: #CCC2B8;
 	color           : #595551;
+	padding-top     : 50px; // bootstrap fixed navbar
 	h1, h2 {
 		text-transform : uppercase;
 		margin-bottom  : 0px;
@@ -12,8 +14,8 @@ body, html {
 		color: #CCC2B8;
 		margin-bottom: .5em;
 	}
-	// separator below subtitle and last p of plugins
-	h2, .cms_plugin p:last-child { 
+	// separator – below subtitles and plugins last paragraph 
+	h2, .cms_plugin .container p:last-child {
 		&:after {
 			color       : black;
 			content     : "–";
@@ -25,6 +27,7 @@ body, html {
 	}
 }
 
+// inside the content block
 body > .container-fluid > .body {
 	background-color: #fff;
 	.first-page {
