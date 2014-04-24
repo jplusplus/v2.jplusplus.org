@@ -7,35 +7,34 @@
 {% addtoblock "css" %}<link rel="stylesheet" type="text/less" href="{{STATIC_URL}}jplusplus/less/contact_form.less">{% endaddtoblock %}
 
 <form id="nl-form" class="nl-form" method="post" action="/contact">
-	<div class="row">
-		<div class="col-md-10">
-			<div class="body">
-				My name is <input type="text" value="" placeholder="your name" />,<br/>
-				and interested in your services for <input type="text" value="" placeholder="my company" />.
-				<br/>
-				We are specifically looking to implement 
-				<select>
-					<option value="1" selected>a service</option>
-					<option value="2">evangelize</option>
-					<option value="3">code apps</option>
-					<option value="4">investigate</option>
-					<option value="5">consulting</option>
-					<option value="6">design</option>
-					<option value="7">all</option>
-				</select>
-				and have a <input type="text" value="" placeholder="budget of"  data-subline="1 000 000 000 ?"/>
-				, our ideal timeframe to implement this is 
-				<select>
-					<option value="1" selected>1 month</option>
-					<option value="2">1 century</option>
-				</select>. Please contact me at <input type="text" value="" placeholder="email"  data-subline="1 000 000 000 ?"/>.
-			</div>
-		</div>
-		<div class="col-md-2">
-			<div class="nl-submit-wrap">
-				<button class="nl-submit" type="submit">SEND</button>
-			</div>
-		</div>
+	<div class="body container">
+		Hi, my name is <input type="text" value="" placeholder="your name" />,<br/>
+		and interested in your services for <input type="text" value="" placeholder="my company" />.
+		<br/>
+		We are specifically looking to implement 
+		<select>
+			<option value="1" selected>a service</option>
+			<option value="2">evangelize</option>
+			<option value="3">code apps</option>
+			<option value="4">investigate</option>
+			<option value="5">consulting</option>
+			<option value="6">design</option>
+			<option value="7">all</option>
+		</select>
+		and have a <input type="text" value="" placeholder="budget of"  data-subline="1 000 000 000 ?"/>
+		,
+		<br/>
+		our ideal timeframe to implement this is 
+		<select>
+			<option value="1" selected>1 month</option>
+			<option value="2">1 century</option>
+		</select>.
+		<br/>
+		Please contact me at <input type="text" value="" placeholder="email"  data-subline="1 000 000 000 ?"/>.
+		<!-- <div class="nl-submit-wrap"> -->
+			<a class="nl-submit btn btn-outline-inverse btn-sm" type="submit">SEND</a>
+		<!-- </div> -->
+	</div>
 	<div class="nl-overlay"></div>
 </form>
 
