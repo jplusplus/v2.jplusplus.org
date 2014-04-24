@@ -1,13 +1,7 @@
-{% extends "base.html" %}
+{% extends "page_with_header.html" %}
 {% load cms_tags staticfiles sekizai_tags menu_tags %}
 
 {% block content %}
-
-	{% addtoblock "js" %}<script type="text/coffeescript" src="{{STATIC_URL}}coffee/navigation.coffee"></script>{% endaddtoblock %}
-
-	<div class="header">
-		{% include "navigation.html" %}
-	</div>
 
 	<div class="first-page">
 		<img src="{{ STATIC_URL }}logos/jpp_logo.png"/>
@@ -19,6 +13,5 @@
 		{% placeholder "body" %}
 	</div>
 
-	{% addtoblock "js" %}<script type="text/coffeescript">new window.Navigation()</script>{% endaddtoblock %}
 
 {% endblock content %}

@@ -265,6 +265,8 @@ CMS_TEMPLATES = (
     ('home.html', 'Home'),
     # ('chapter.html', 'Chapter'),
     ('page.html', 'Page'),
+    ('page_with_header.html', 'Page with header'),
+    ('chapter.html', 'Chapter'),
 )
 
 CMS_PERMISSION = True

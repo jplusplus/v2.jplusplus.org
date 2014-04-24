@@ -12,12 +12,11 @@
 
   <body>
 
-    {% cms_toolbar %}
-
+     
       <div class="container-fluid">
-        <div class="body">
-          {% block content %}{% endblock content %}
-        </div>
+        {% cms_toolbar %}
+        <div class="header">{% block header %}{% endblock header %}</div>
+        <div class="body">{% block content %}{% endblock content %}</div>
       </div>
 
     <script src="{{STATIC_URL}}js/jquery-1.11.0.min.js"></script>

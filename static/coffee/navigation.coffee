@@ -23,7 +23,8 @@ class window.Navigation
 
 	relayout: =>
 		window_height = $(window).height()
-		@uis.firstPage.css
-			height: window_height - @uis.firstPage.offset().top
+		if @uis.firstPage.length > 0
+			@uis.firstPage.css
+				height: window_height - @uis.firstPage.offset().top
 
 # EOF

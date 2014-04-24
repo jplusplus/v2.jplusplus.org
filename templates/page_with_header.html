@@ -1,0 +1,8 @@
+{% extends "page.html" %}
+{% load cms_tags staticfiles sekizai_tags menu_tags %}
+
+{% block header %}
+	{% addtoblock "js" %}<script type="text/coffeescript" src="{{STATIC_URL}}coffee/navigation.coffee"></script>{% endaddtoblock %}
+	{% include "navigation.html" %}
+	{% addtoblock "js" %}<script type="text/coffeescript">new window.Navigation()</script>{% endaddtoblock %}
+{% endblock header %}
