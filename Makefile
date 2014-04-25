@@ -5,11 +5,15 @@
 # License : GNU General Public License
 # -----------------------------------------------------------------------------
 
-PYC = $(wildcard *.pyc */*.pyc sources/*/*.pyc sources/*/*/*.pyc sources/*/*/*/*.pyc sources/*/*/*/*/*.pyc)
-RM = rm -f
+PYC        = $(wildcard *.pyc */*.pyc sources/*/*.pyc sources/*/*/*.pyc sources/*/*/*/*.pyc sources/*/*/*/*/*.pyc)
+RM         = rm -f
+VENV       = `pwd`/.env
+VIRTUALENV = virtualenv
+PIP        = pip
+PYTHON     = python
 
 run: clean
-	. `pwd`/.env ; python manage.py runserver
+	. `pwd`/.env ; $(PYTHON) manage.py runserver
 
 clean:
 	$(RM) $(PYC)
@@ -17,14 +21,14 @@ clean:
 install: install_dependances init_db
 
 install_dependances:
-	virtualenv venv --no-site-packages --distribute --prompt=jppv2
-	. `pwd`/.env ; pip install -r requirements_core.txt
+	$(VIRTUALENV) venv --no-site-packages --distribute --prompt=jppv2
+	. $(VENV) ; $(PIP) install -r requirements_core.txt
 
 dump_data:
-	. `pwd`/.env ; python manage.py dumpdata cms djangocms_style taggit djangocms_column djangocms_text_ckeditor djangocms_file djangocms_flash djangocms_googlemap djangocms_inherit djangocms_link djangocms_picture djangocms_teaser djangocms_video jplusplus --indent 4 --natural > sources/jplusplus/fixtures/initial_data.json
+	. $(VENV) ; $(PYTHON) manage.py dumpdata cms djangocms_style taggit djangocms_column djangocms_text_ckeditor djangocms_file djangocms_flash djangocms_googlemap djangocms_inherit djangocms_link djangocms_picture djangocms_teaser djangocms_video jplusplus --indent 4 --natural > sources/jplusplus/fixtures/initial_data.json
 
 init_db:
-	. `pwd`/.env ; python manage.py syncdb
-	. `pwd`/.env ; python manage.py migrate
+	. $(VENV) ; $(PYTHON) manage.py syncdb
+	. $(VENV) ; $(PYTHON) manage.py migrate
 
 # EOF
