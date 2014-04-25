@@ -19,7 +19,10 @@ class window.Navigation
 		# set elements size 
 		@relayout()
 		# bind event
+		$('body').scrollspy({ target: '.navbar-title', offset: 50 })
 		$(window).resize(@relayout)
+		$(document).on 'heighHasChanged', -> # from mosaic for instance
+			$("body").each(-> $(this).scrollspy('refresh'))
 
 	relayout: =>
 		window_height = $(window).height()
