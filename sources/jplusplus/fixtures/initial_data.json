@@ -1957,7 +1957,7 @@
         "page": 1, 
         "published": true, 
         "path": "", 
-        "publisher_state": 0, 
+        "publisher_state": 1, 
         "creation_date": "2014-04-16T09:52:57.706Z", 
         "slug": "home", 
         "publisher_public": 2
@@ -2020,7 +2020,7 @@
         "page": 3, 
         "published": true, 
         "path": "paris-berlin", 
-        "publisher_state": 0, 
+        "publisher_state": 1, 
         "creation_date": "2014-04-16T09:54:38.530Z", 
         "slug": "paris-berlin", 
         "publisher_public": 5
@@ -2167,7 +2167,7 @@
         "page": 7, 
         "published": true, 
         "path": "paris-berlin/projects", 
-        "publisher_state": 0, 
+        "publisher_state": 1, 
         "creation_date": "2014-04-16T13:51:00.184Z", 
         "slug": "projects", 
         "publisher_public": 13
@@ -2377,7 +2377,7 @@
         "page": 11, 
         "published": true, 
         "path": "projects", 
-        "publisher_state": 0, 
+        "publisher_state": 1, 
         "creation_date": "2014-04-24T15:56:30.350Z", 
         "slug": "projects", 
         "publisher_public": 22
@@ -2817,18 +2817,6 @@
     }
 },
 {
-    "pk": 10, 
-    "model": "taggit.taggeditem", 
-    "fields": {
-        "tag": 3, 
-        "content_type": [
-            "jplusplus", 
-            "project"
-        ], 
-        "object_id": 1
-    }
-},
-{
     "pk": 16, 
     "model": "taggit.taggeditem", 
     "fields": {
@@ -2982,6 +2970,18 @@
             "project"
         ], 
         "object_id": 9
+    }
+},
+{
+    "pk": 37, 
+    "model": "taggit.taggeditem", 
+    "fields": {
+        "tag": 3, 
+        "content_type": [
+            "jplusplus", 
+            "project"
+        ], 
+        "object_id": 1
     }
 },
 {
@@ -3203,6 +3203,7 @@
     "pk": 1, 
     "model": "jplusplus.office", 
     "fields": {
+        "page_link": 3, 
         "slug": "paris-berlin", 
         "title": "Paris/Berlin"
     }
@@ -3211,6 +3212,7 @@
     "pk": 2, 
     "model": "jplusplus.office", 
     "fields": {
+        "page_link": 5, 
         "slug": "cologne", 
         "title": "Cologne"
     }
@@ -3220,6 +3222,7 @@
     "model": "jplusplus.projecttranslation", 
     "fields": {
         "language_code": "fr", 
+        "client": "OKF", 
         "master": 1, 
         "description": "<p>Spending Stories est un proj&eacute; de l&#39;[Open Knowledge Foundation](http://fr.okfn.org/&lrm;) visant &agrave; am&eacute;liorer la compr&eacute;hension des donn&eacute;es budg&eacute;taires mondiales [en savoir plus](http://blog.okfn.org/category/okf-projects/spending-stories/).Ce projet est financ&eacute; par la Knight Foundation. <strong>Cette partie</strong> du projet &quot;Spending Stories&quot; permet aux utilisateurs de mettre des donn&eacute;es mon&eacute;taires en perspective et d&#39;obtenir un contexte. N&#39;importe quel montant dans n&#39;importe quelle devise peut-&ecirc;tre entr&eacute; et compar&eacute; &agrave; de vraies d&eacute;penses. Les r&eacute;sultats prennent en compte l&#39;inflation dans le pays dans lequel la d&eacute;pense a &eacute;t&eacute; r&eacute;alis&eacute;e ainsi que le taux de change entre deux monnaies diff&eacute;rentes, afin de pouvoir les comparer. Ce projet est [open source](https://github.com/jplusplus/okf-spending-stories) et peut-&ecirc;tre install&eacute; sur vos propres serveurs afin de pouvoir utiliser les d&eacute;penses budg&eacute;taires de votre choix dans votre base de donn&eacute;es. **L&#39;Open Knowledge foundation a fait appel &agrave; la partie de Journalism++ bas&eacute;e &agrave; Paris et Berlin pour r&eacute;aliser cette application. Ce projet a &eacute;t&eacute; g&eacute;r&eacute; par [Anne-Lise Bouyer](twitter.com/annelisebouyer) et d&eacute;velopp&eacute; par [Pierre Bellon](twitter.com/toutenrab), [Edouard Richard](twitter.com/vied12), [Paul Joannon](twitter.com/paulloz) et [Pierre Romera.](twitter.com/pirhoo).**</p>\r\n", 
         "title": "Spending Stories"
@@ -3230,6 +3233,7 @@
     "model": "jplusplus.projecttranslation", 
     "fields": {
         "language_code": "fr", 
+        "client": null, 
         "master": 2, 
         "description": "<p>Journalism++ a d&eacute;velopp&eacute; le site du webdocumentaire &quot;Une contre-histoire des Internets&quot;, co-produit par Arte et Premi&egrave;res Lignes. L&rsquo;objectif de ce webdocumentaire : raconter et d&eacute;couvrir pourquoi, et comment, les internets ont chang&eacute; nos vies, recenser ce qu&rsquo;on n&rsquo;a pas eu le droit d&rsquo;y faire, ce qu&rsquo;on a invent&eacute; pour le faire quand m&ecirc;me, et ainsi participer collectivement &agrave; l&rsquo;&eacute;laboration d&rsquo;une &ldquo;contre-histoire des internets&rdquo;, qui se veut libre, ouverte et partag&eacute;e. Le site fait le lien avec le documentaire &eacute;crit par Jean-Marc Manach (@manhack) et Julien Goetz (@juliengoetz) r&eacute;alis&eacute; par Sylvain Berg&egrave;re, diffus&eacute; sur Art&eacute; en Mai 2013.</p>\r\n", 
         "title": "Une contre-histoire des Internets"
@@ -3240,6 +3244,7 @@
     "model": "jplusplus.projecttranslation", 
     "fields": {
         "language_code": "en", 
+        "client": null, 
         "master": 2, 
         "description": "Journalism++ developed the site of the web documentary \"The counter-history of the Internets\", co-produced by Arte and Premi\u00e8res Lignes.\r\n\r\nThe objective of this web documentary: tell and find out why, and how, the internets have changed our lives, identify what we don't have the right to do, what was invented to do it anyway and thus collectively participate in the development of a \"counter-history of the Internets\", which wants to be free, open and shared.\r\n\r\n\r\nThe site is related to the documentary written by Jean-Marc Manach (@manhack) and Julien Goetz (@juliengoetz),directed by Sylvain Berg\u00e8re, broadcast on Arte in May 2013.", 
         "title": "The counter-history of the Internets"
@@ -3250,6 +3255,7 @@
     "model": "jplusplus.projecttranslation", 
     "fields": {
         "language_code": "de", 
+        "client": null, 
         "master": 2, 
         "description": " Journalism++ a d\u00e9velopp\u00e9 le site du webdocumentaire \"Une contre-histoire des Internets\", co-produit par Arte et Premi\u00e8res Lignes.\r\n\r\n L\u2019objectif de ce webdocumentaire : raconter et d\u00e9couvrir pourquoi, et comment, les internets ont chang\u00e9 nos vies, recenser ce qu\u2019on n\u2019a pas eu le droit d\u2019y faire, ce qu\u2019on a invent\u00e9 pour le faire quand m\u00eame, et ainsi participer collectivement \u00e0 l\u2019\u00e9laboration d\u2019une \u201ccontre-histoire des internets\u201d, qui se veut libre, ouverte et partag\u00e9e.\r\n\r\n\r\nLe site fait le lien avec le documentaire \u00e9crit par Jean-Marc Manach (@manhack) et Julien Goetz (@juliengoetz) r\u00e9alis\u00e9 par Sylvain Berg\u00e8re, diffus\u00e9 sur Art\u00e9 en Mai 2013.", 
         "title": "Eine gegengeschichte der Internetze"
@@ -3260,6 +3266,7 @@
     "model": "jplusplus.projecttranslation", 
     "fields": {
         "language_code": "de", 
+        "client": null, 
         "master": 1, 
         "description": "Spending Stories is a project by the [Open Knowledge Foundation](http://okfn.org) aiming at improving fiscal literacy and providing greater awareness of budget data worldwide. Read more about it on this blog. It is supported by a grant by the Knight Foundation.\r\n\r\nThis part of the Spending Stories project enables users to put amounts into perspective. Any amount in any currency can be queried and compared against real-life expenditures. The results take into account inflation in the country where the expenditure has been realized.\r\n\r\nThe project is [open source](https://github.com/jplusplus/okf-spending-stories) and can be installed on your own server for you to insert your own spending stories. Find more instructions at Github.\r\n\r\n**The Open Knowledge foundation asked Paris and Berlin-based agency Journalism++ SAS  to build this app. It was managed by [Anne-Lise Bouyer](twitter.com/annelisebouyer) and coded by [Pierre Bellon](twitter.com/toutenrab), [Edouard Richard](twitter.com/vied12), [Paul Joannon](twitter.com/paulloz) and [Pierre Romera.](twitter.com/pirhoo).**", 
         "title": "Spending Stories"
@@ -3270,6 +3277,7 @@
     "model": "jplusplus.projecttranslation", 
     "fields": {
         "language_code": "fr", 
+        "client": null, 
         "master": 3, 
         "description": "<p>Journalism++ participe au projet [Datawrapper](http://datawrapper.de/), initi&eacute; par Mirko Lorenz pour le compte de [ABZV](http://abzv.de/), un organisme de formation continue pour journalistes. L&rsquo;objectif est de permettre &agrave; tous les journalistes de cr&eacute;er des diagrammes simples et corrects en quelques secondes, afin de les int&eacute;grer ensuite &agrave; leurs articles.</p>\r\n\r\n<p>Les journalistes apr&eacute;cient la simplicit&eacute; du produit et la justesse des visualisations produites, qui se fondent sur les enseignement de [Dona Wong](http://www.amazon.com/Street-Journal-Guide-Information-Graphics/dp/0393072959), du Wall Street Journal. Datawrapper permet &agrave; tout m&eacute;dia de personnaliser facilement le design de l&rsquo;outil en fonction de ses besoins.</p>\r\n\r\n<p>[@nicolaskb](https://twitter.com/#%21/nicolaskb/) a r&eacute;alis&eacute; le prototype de Datawrapper et la version 1.0 est maintenant cod&eacute;e principalement par [@driven_by_data](https://twitter.com/driven_by_data). Datawrapper est utilis&eacute; par [The Guardian](http://www.guardian.co.uk/), [Ruhr Nachrichten](http://www.ruhrnachrichten.de/) (Dortmund), [L&rsquo;Avenir](http://www.lavenir.net/) (Belgique) et [RTL.nl](http://www.rtl.nl/experience/rtlnl/), entre autres.</p>\r\n", 
         "title": "Datawrapper: des visualisations en quelques secondes"
@@ -3280,6 +3288,7 @@
     "model": "jplusplus.projecttranslation", 
     "fields": {
         "language_code": "de", 
+        "client": null, 
         "master": 3, 
         "description": "<p>Journalism++ ist sehr stolz, am Datawrapper-Projekt teilzunehmen. Das Projekt wurde von Mirko Lorenz gestartet und wird von der [ABZV](http://abzv.de/) finanziert. Das Ziel ist, dass Journalisten einfache und korrekte Diagramme, die dann in Artikel eingebettet werden k&ouml;nnen, in Sekunden selbst bauen k&ouml;nnen.</p>\r\n\r\n<p>Journalisten lieben die Einfachheit des Produktes und die Tatsache, dass Datawrapper sie daran hindert, falscher Charts zu ver&ouml;ffentlichen. Das Charts Design folgt der Lehre von [Dona Wong](http://www.amazon.com/Street-Journal-Guide-Information-Graphics/dp/0393072959) vom Wall Street Journal. Datawrapper funktioniert so, dass jede Redaktion es einfach und schnell installieren und personalisieren kann.</p>\r\n\r\n<p>[@nicolaskb](https://twitter.com/#%21/nicolaskb/) hat den Prototyp f&uuml;r Datawrapper codiert. Version 1.0 wird jetzt von [@driven_by_data](https://twitter.com/driven_by_data) entwickelt. Datawrapper wird regelm&auml;&szlig;ig von [The Guardian](http://www.guardian.co.uk/), [Ruhr Nachrichten](http://www.ruhrnachrichten.de/) (Dortmund), [L&rsquo;Avenir](http://www.lavenir.net/) (Belgien) und [RTL.nl](http://www.rtl.nl/experience/rtlnl/) u.a. verwendet.</p>\r\n", 
         "title": "Datawrapper: Open Source Datenvisualisierung"
@@ -3290,6 +3299,7 @@
     "model": "jplusplus.projecttranslation", 
     "fields": {
         "language_code": "en", 
+        "client": null, 
         "master": 3, 
         "description": "<p>Journalism++ is very proud to take part in [Datawrapper](http://datawrapper.de/). The project was started by Mirko Lorenz and is financed by [ABZV](http://abzv.de/), a German training institute for journalists. The goal is to let any journalist build simple and correct charts in seconds that can then be embedded in articles.</p>\r\n\r\n<p>Journalists love the simplicity of the product and the fact that Datawrapper prevents them from publishing wrong charts. The charts design follows the teaching of The Wall Street Journal&rsquo;s [Dona Wong](http://www.amazon.com/Street-Journal-Guide-Information-Graphics/dp/0393072959). Datawrapper is built in such a way that any media organization can install and customize it quickly.</p>\r\n\r\n<p>[@nicolaskb](https://twitter.com/#%21/nicolaskb/) coded the prototype for Datawrapper. Version 1.0 is now developed by [@driven_by_data](https://twitter.com/driven_by_data). Datawrapper is used regularly by [The Guardian](http://www.guardian.co.uk/), [Ruhr Nachrichten](http://www.ruhrnachrichten.de/) (Dortmund), [L&rsquo;Avenir](http://www.lavenir.net/) (Belgium) and [RTL.nl](http://www.rtl.nl/experience/rtlnl/) among others.</p>\r\n", 
         "title": "Datawrapper: Build charts\u00a0in seconds"
@@ -3300,6 +3310,7 @@
     "model": "jplusplus.projecttranslation", 
     "fields": {
         "language_code": "fr", 
+        "client": null, 
         "master": 4, 
         "description": "<p>Spending Stories est un proj&eacute; de l&#39;[Open Knowledge Foundation](http://fr.okfn.org/&lrm;) visant &agrave; am&eacute;liorer la compr&eacute;hension des donn&eacute;es budg&eacute;taires mondiales [en savoir plus](http://blog.okfn.org/category/okf-projects/spending-stories/).Ce projet est financ&eacute; par la Knight Foundation. <strong>Cette partie</strong> du projet &quot;Spending Stories&quot; permet aux utilisateurs de mettre des donn&eacute;es mon&eacute;taires en perspective et d&#39;obtenir un contexte. N&#39;importe quel montant dans n&#39;importe quelle devise peut-&ecirc;tre entr&eacute; et compar&eacute; &agrave; de vraies d&eacute;penses. Les r&eacute;sultats prennent en compte l&#39;inflation dans le pays dans lequel la d&eacute;pense a &eacute;t&eacute; r&eacute;alis&eacute;e ainsi que le taux de change entre deux monnaies diff&eacute;rentes, afin de pouvoir les comparer. Ce projet est [open source](https://github.com/jplusplus/okf-spending-stories) et peut-&ecirc;tre install&eacute; sur vos propres serveurs afin de pouvoir utiliser les d&eacute;penses budg&eacute;taires de votre choix dans votre base de donn&eacute;es. **L&#39;Open Knowledge foundation a fait appel &agrave; la partie de Journalism++ bas&eacute;e &agrave; Paris et Berlin pour r&eacute;aliser cette application. Ce projet a &eacute;t&eacute; g&eacute;r&eacute; par [Anne-Lise Bouyer](twitter.com/annelisebouyer) et d&eacute;velopp&eacute; par [Pierre Bellon](twitter.com/toutenrab), [Edouard Richard](twitter.com/vied12), [Paul Joannon](twitter.com/paulloz) et [Pierre Romera.](twitter.com/pirhoo).**</p>\r\n", 
         "title": "Spending Stories"
@@ -3310,6 +3321,7 @@
     "model": "jplusplus.projecttranslation", 
     "fields": {
         "language_code": "fr", 
+        "client": null, 
         "master": 5, 
         "description": "<p>Spending Stories est un proj&eacute; de l&#39;[Open Knowledge Foundation](http://fr.okfn.org/&lrm;) visant &agrave; am&eacute;liorer la compr&eacute;hension des donn&eacute;es budg&eacute;taires mondiales [en savoir plus](http://blog.okfn.org/category/okf-projects/spending-stories/).Ce projet est financ&eacute; par la Knight Foundation. <strong>Cette partie</strong> du projet &quot;Spending Stories&quot; permet aux utilisateurs de mettre des donn&eacute;es mon&eacute;taires en perspective et d&#39;obtenir un contexte. N&#39;importe quel montant dans n&#39;importe quelle devise peut-&ecirc;tre entr&eacute; et compar&eacute; &agrave; de vraies d&eacute;penses. Les r&eacute;sultats prennent en compte l&#39;inflation dans le pays dans lequel la d&eacute;pense a &eacute;t&eacute; r&eacute;alis&eacute;e ainsi que le taux de change entre deux monnaies diff&eacute;rentes, afin de pouvoir les comparer. Ce projet est [open source](https://github.com/jplusplus/okf-spending-stories) et peut-&ecirc;tre install&eacute; sur vos propres serveurs afin de pouvoir utiliser les d&eacute;penses budg&eacute;taires de votre choix dans votre base de donn&eacute;es. **L&#39;Open Knowledge foundation a fait appel &agrave; la partie de Journalism++ bas&eacute;e &agrave; Paris et Berlin pour r&eacute;aliser cette application. Ce projet a &eacute;t&eacute; g&eacute;r&eacute; par [Anne-Lise Bouyer](twitter.com/annelisebouyer) et d&eacute;velopp&eacute; par [Pierre Bellon](twitter.com/toutenrab), [Edouard Richard](twitter.com/vied12), [Paul Joannon](twitter.com/paulloz) et [Pierre Romera.](twitter.com/pirhoo).**</p>\r\n", 
         "title": "Spending Stories"
@@ -3320,6 +3332,7 @@
     "model": "jplusplus.projecttranslation", 
     "fields": {
         "language_code": "fr", 
+        "client": null, 
         "master": 6, 
         "description": "<p>Spending Stories est un proj&eacute; de l&#39;[Open Knowledge Foundation](http://fr.okfn.org/&lrm;) visant &agrave; am&eacute;liorer la compr&eacute;hension des donn&eacute;es budg&eacute;taires mondiales [en savoir plus](http://blog.okfn.org/category/okf-projects/spending-stories/).Ce projet est financ&eacute; par la Knight Foundation. <strong>Cette partie</strong> du projet &quot;Spending Stories&quot; permet aux utilisateurs de mettre des donn&eacute;es mon&eacute;taires en perspective et d&#39;obtenir un contexte. N&#39;importe quel montant dans n&#39;importe quelle devise peut-&ecirc;tre entr&eacute; et compar&eacute; &agrave; de vraies d&eacute;penses. Les r&eacute;sultats prennent en compte l&#39;inflation dans le pays dans lequel la d&eacute;pense a &eacute;t&eacute; r&eacute;alis&eacute;e ainsi que le taux de change entre deux monnaies diff&eacute;rentes, afin de pouvoir les comparer. Ce projet est [open source](https://github.com/jplusplus/okf-spending-stories) et peut-&ecirc;tre install&eacute; sur vos propres serveurs afin de pouvoir utiliser les d&eacute;penses budg&eacute;taires de votre choix dans votre base de donn&eacute;es. **L&#39;Open Knowledge foundation a fait appel &agrave; la partie de Journalism++ bas&eacute;e &agrave; Paris et Berlin pour r&eacute;aliser cette application. Ce projet a &eacute;t&eacute; g&eacute;r&eacute; par [Anne-Lise Bouyer](twitter.com/annelisebouyer) et d&eacute;velopp&eacute; par [Pierre Bellon](twitter.com/toutenrab), [Edouard Richard](twitter.com/vied12), [Paul Joannon](twitter.com/paulloz) et [Pierre Romera.](twitter.com/pirhoo).**</p>\r\n", 
         "title": "Spending Stories"
@@ -3330,6 +3343,7 @@
     "model": "jplusplus.projecttranslation", 
     "fields": {
         "language_code": "fr", 
+        "client": null, 
         "master": 7, 
         "description": "<p>Spending Stories est un proj&eacute; de l&#39;[Open Knowledge Foundation](http://fr.okfn.org/&lrm;) visant &agrave; am&eacute;liorer la compr&eacute;hension des donn&eacute;es budg&eacute;taires mondiales [en savoir plus](http://blog.okfn.org/category/okf-projects/spending-stories/).Ce projet est financ&eacute; par la Knight Foundation. <strong>Cette partie</strong> du projet &quot;Spending Stories&quot; permet aux utilisateurs de mettre des donn&eacute;es mon&eacute;taires en perspective et d&#39;obtenir un contexte. N&#39;importe quel montant dans n&#39;importe quelle devise peut-&ecirc;tre entr&eacute; et compar&eacute; &agrave; de vraies d&eacute;penses. Les r&eacute;sultats prennent en compte l&#39;inflation dans le pays dans lequel la d&eacute;pense a &eacute;t&eacute; r&eacute;alis&eacute;e ainsi que le taux de change entre deux monnaies diff&eacute;rentes, afin de pouvoir les comparer. Ce projet est [open source](https://github.com/jplusplus/okf-spending-stories) et peut-&ecirc;tre install&eacute; sur vos propres serveurs afin de pouvoir utiliser les d&eacute;penses budg&eacute;taires de votre choix dans votre base de donn&eacute;es. **L&#39;Open Knowledge foundation a fait appel &agrave; la partie de Journalism++ bas&eacute;e &agrave; Paris et Berlin pour r&eacute;aliser cette application. Ce projet a &eacute;t&eacute; g&eacute;r&eacute; par [Anne-Lise Bouyer](twitter.com/annelisebouyer) et d&eacute;velopp&eacute; par [Pierre Bellon](twitter.com/toutenrab), [Edouard Richard](twitter.com/vied12), [Paul Joannon](twitter.com/paulloz) et [Pierre Romera.](twitter.com/pirhoo).**</p>\r\n", 
         "title": "Spending Stories"
@@ -3340,6 +3354,7 @@
     "model": "jplusplus.projecttranslation", 
     "fields": {
         "language_code": "fr", 
+        "client": null, 
         "master": 8, 
         "description": "<p>Spending Stories est un proj&eacute; de l&#39;[Open Knowledge Foundation](http://fr.okfn.org/&lrm;) visant &agrave; am&eacute;liorer la compr&eacute;hension des donn&eacute;es budg&eacute;taires mondiales [en savoir plus](http://blog.okfn.org/category/okf-projects/spending-stories/).Ce projet est financ&eacute; par la Knight Foundation. <strong>Cette partie</strong> du projet &quot;Spending Stories&quot; permet aux utilisateurs de mettre des donn&eacute;es mon&eacute;taires en perspective et d&#39;obtenir un contexte. N&#39;importe quel montant dans n&#39;importe quelle devise peut-&ecirc;tre entr&eacute; et compar&eacute; &agrave; de vraies d&eacute;penses. Les r&eacute;sultats prennent en compte l&#39;inflation dans le pays dans lequel la d&eacute;pense a &eacute;t&eacute; r&eacute;alis&eacute;e ainsi que le taux de change entre deux monnaies diff&eacute;rentes, afin de pouvoir les comparer. Ce projet est [open source](https://github.com/jplusplus/okf-spending-stories) et peut-&ecirc;tre install&eacute; sur vos propres serveurs afin de pouvoir utiliser les d&eacute;penses budg&eacute;taires de votre choix dans votre base de donn&eacute;es. **L&#39;Open Knowledge foundation a fait appel &agrave; la partie de Journalism++ bas&eacute;e &agrave; Paris et Berlin pour r&eacute;aliser cette application. Ce projet a &eacute;t&eacute; g&eacute;r&eacute; par [Anne-Lise Bouyer](twitter.com/annelisebouyer) et d&eacute;velopp&eacute; par [Pierre Bellon](twitter.com/toutenrab), [Edouard Richard](twitter.com/vied12), [Paul Joannon](twitter.com/paulloz) et [Pierre Romera.](twitter.com/pirhoo).**</p>\r\n", 
         "title": "Spending Stories"
@@ -3350,6 +3365,7 @@
     "model": "jplusplus.projecttranslation", 
     "fields": {
         "language_code": "fr", 
+        "client": null, 
         "master": 9, 
         "description": "<p>Spending Stories est un proj&eacute; de l&#39;[Open Knowledge Foundation](http://fr.okfn.org/&lrm;) visant &agrave; am&eacute;liorer la compr&eacute;hension des donn&eacute;es budg&eacute;taires mondiales [en savoir plus](http://blog.okfn.org/category/okf-projects/spending-stories/).Ce projet est financ&eacute; par la Knight Foundation. <strong>Cette partie</strong> du projet &quot;Spending Stories&quot; permet aux utilisateurs de mettre des donn&eacute;es mon&eacute;taires en perspective et d&#39;obtenir un contexte. N&#39;importe quel montant dans n&#39;importe quelle devise peut-&ecirc;tre entr&eacute; et compar&eacute; &agrave; de vraies d&eacute;penses. Les r&eacute;sultats prennent en compte l&#39;inflation dans le pays dans lequel la d&eacute;pense a &eacute;t&eacute; r&eacute;alis&eacute;e ainsi que le taux de change entre deux monnaies diff&eacute;rentes, afin de pouvoir les comparer. Ce projet est [open source](https://github.com/jplusplus/okf-spending-stories) et peut-&ecirc;tre install&eacute; sur vos propres serveurs afin de pouvoir utiliser les d&eacute;penses budg&eacute;taires de votre choix dans votre base de donn&eacute;es. **L&#39;Open Knowledge foundation a fait appel &agrave; la partie de Journalism++ bas&eacute;e &agrave; Paris et Berlin pour r&eacute;aliser cette application. Ce projet a &eacute;t&eacute; g&eacute;r&eacute; par [Anne-Lise Bouyer](twitter.com/annelisebouyer) et d&eacute;velopp&eacute; par [Pierre Bellon](twitter.com/toutenrab), [Edouard Richard](twitter.com/vied12), [Paul Joannon](twitter.com/paulloz) et [Pierre Romera.](twitter.com/pirhoo).**</p>\r\n", 
         "title": "Spending Stories"
