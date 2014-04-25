@@ -285,7 +285,7 @@ CMS_STYLE_NAMES = (
 
 COMPRESS_PRECOMPILERS = (
     ('text/coffeescript', 'coffee --bare --compile --stdio'),
-    ('text/less', 'lessc {infile} {outfile}'),
+    ('text/less', 'lessc --include-path="%s" {infile} {outfile}' % (os.path.join(STATICFILES_DIRS[0], 'less'))),
 )
 
 REST_FRAMEWORK = {

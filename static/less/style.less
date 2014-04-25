@@ -1,12 +1,12 @@
+@import "variables.less";
+
 // Global settings
 body {
-	background-color: #CCC2B8;
-	color           : #595551;
 	h1, h2, h3 {
 		text-transform : uppercase;
 	}
 	h2 {
-		color          : #CCC2B8;
+		color          : @grey;
 		margin-bottom  : .5em;
 	}
 	h3 {
@@ -14,7 +14,7 @@ body {
 		margin-bottom  : .5em;
 	}
 	// separator – below subtitles and plugins last paragraph 
-	h2, .cms_plugin .container p:last-child {
+	h2, .cms_plugin .container p:last-child, .separator {
 		&:after {
 			color       : black;
 			content     : "–";
@@ -24,6 +24,7 @@ body {
 			font-size   : 25px;
 		}
 	}
+	.separator { margin-bottom: 20px;}
 }
 
 // inside the content block
@@ -31,7 +32,7 @@ body > .container-fluid > .body {
 	background-color: #fff;
 	.first-page {
 		text-align       : center;
-		background-color : #CCC2B8;
+		background-color : @grey;
 		padding-top      : 80px;
 		color            : white;
 		position         : relative;
