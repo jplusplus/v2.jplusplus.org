@@ -1,8 +1,32 @@
-{% load i18n %}
+{% load i18n sekizai_tags %}
+{% addtoblock "css" %}<link rel="stylesheet" type="text/less" href="{{STATIC_URL}}jplusplus/less/project_details.less">{% endaddtoblock %}
 
 <div class="project-details">
-	<h2>{{ project.title }}</h2>
-	<div><img src="{{project.image.url}}" /></div>
+	<h3>{{ project.title }}</h3>
+	<div class="separator"></div>
+	<div class="link"><a href="{{ project.link }}" target="_blank">{{ project.link }}</a></div>
+	<div class="about row">
+		<div class="col-sm-10">
+			<div class="illustration" style="background-image:url({{project.image.url}})"></div>
+		</div>
+		<div class="col-sm-2">
+			<div class="title">A project by</div>
+				<ul>
+				{% for office in project.offices.all %}
+					<li>
+						{% if office.page_link %}<a href="{{ office.get_absolute_url }}">{% endif %}
+						{{ office.title }}
+						{% if office.page_link %}</a>{% endif %}
+					</li>
+				{% endfor %}
+				</ul>
+			{% if project.client %}
+				<div class="title">For</div>
+				{{ project.client }}
+			{% endif %}
 
-	<div>{{ project.description | safe }}</div>
+		</div>
+	</div>
+
+	<div class="description">{{ project.description | safe }}</div>
 </div>
