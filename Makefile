@@ -5,8 +5,14 @@
 # License : GNU General Public License
 # -----------------------------------------------------------------------------
 
-run:
+PYC = $(wildcard *.pyc */*.pyc sources/*/*.pyc sources/*/*/*.pyc sources/*/*/*/*.pyc sources/*/*/*/*/*.pyc)
+RM = rm -f
+
+run: clean
 	. `pwd`/.env ; python manage.py runserver
+
+clean:
+	$(RM) $(PYC)
 
 install: install_dependances init_db
 
