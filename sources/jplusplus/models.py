@@ -13,11 +13,11 @@
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 from hvad.models import TranslatableModel, TranslatedFields
-from djangocms_text_ckeditor.fields import HTMLField
 from cms.models.pluginmodel import CMSPlugin
 from taggit.managers import TaggableManager
 from django.core.urlresolvers import reverse
 from cms.models import Page
+from redactor.fields import RedactorField
 
 class Office(models.Model):
     """
@@ -39,7 +39,7 @@ class Project(TranslatableModel):
     """
     translations = TranslatedFields(
         title       = models.CharField(_('title'), max_length=255),
-        description = HTMLField(_('description'), blank=True, null=True),
+        description = RedactorField(_('description'), blank=True, null=True),
         client      = models.CharField(_('client'), max_length=255, blank=True, null=True)
     )
     slug         = models.SlugField(unique=True)

@@ -186,6 +186,7 @@ INSTALLED_APPS = (
     'menus',
     'south',
     'compressor',
+    'redactor',
     'sekizai',
     'taggit',
     'hvad',
@@ -309,5 +310,8 @@ SOUTH_MIGRATION_MODULES = {
     'taggit': 'taggit.south_migrations',
 }
 
+REDACTOR_OPTIONS = {'lang': 'en'}
+REDACTOR_UPLOAD  = 'uploads/'
+UUIDUploader     = 'redactor.handlers.DateDirectoryUploader'
 
 # EOF

@@ -5,7 +5,7 @@
     "fields": {
         "clipboard": 1, 
         "user": [
-            "root"
+            "edouard"
         ], 
         "language": "en"
     }
@@ -1630,7 +1630,7 @@
         "language_code": "en", 
         "client": "", 
         "master": 1, 
-        "description": "<p>Spending Stories</p>\r\n", 
+        "description": "<p>Spending Stories</p>\r\n<p>sdasdsad</p>\r\n", 
         "title": "Spending Stories"
     }
 },
