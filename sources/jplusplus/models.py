@@ -17,26 +17,30 @@ from djangocms_text_ckeditor.fields import HTMLField
 from cms.models.pluginmodel import CMSPlugin
 from taggit.managers import TaggableManager
 from django.core.urlresolvers import reverse
+from cms.models import Page
 
 class Office(models.Model):
     """
     Office Model
     """
-    title = models.CharField(_('title'), max_length=255)
-    slug  = models.SlugField(_('slug'), help_text=_("should be the same that the office page"), unique=True)
+    title     = models.CharField(_('title'), max_length=255)
+    slug      = models.SlugField(_('slug'), help_text=_("should be the same that the office page"), unique=True)
+    page_link = models.ForeignKey(Page, verbose_name=_("page"), blank=True, null=True, on_delete=models.SET_NULL)
 
     def __unicode__(self):
         return self.title
+
+    def get_absolute_url(self):
+        return self.page_link.get_absolute_url()
 
 class Project(TranslatableModel):
     """
     Project Model
     """
-    # TODO: set tags
     translations = TranslatedFields(
         title       = models.CharField(_('title'), max_length=255),
-        # description = models.TextField(_('description'), blank=True, null=True),
-        description = HTMLField(_('description'), blank=True, null=True)
+        description = HTMLField(_('description'), blank=True, null=True),
+        client      = models.CharField(_('client'), max_length=255, blank=True, null=True)
     )
     slug         = models.SlugField(unique=True)
     offices      = models.ManyToManyField(Office)
@@ -63,25 +67,21 @@ class ProjectPluginModel(CMSPlugin):
     def copy_relations(self, oldinstance):
         self.offices = oldinstance.offices.all()
 
-class WhatWeDo(TranslatableModel):
+class Title(TranslatableModel):
     """
-    What we Do Model
+    Title Model
     """
-    image = models.ImageField(_("image"), upload_to="whatwedo", blank=True, null=True)
-    url   = models.CharField(_("link"), max_length=255, blank=True, null=True, help_text=_("If present image will be clickable."))
-    order = models.PositiveIntegerField(default=0, blank=False, null=False)
     translations = TranslatedFields(
-        title       = models.CharField(_('title'), max_length=255),
-        description = models.TextField(_('description')),
+        title = models.CharField(_('title'), help_text=_("to be translated"), max_length=255),
     )
-
-    search_fields = ('description', 'title')
-
-    class Meta:
-        verbose_name_plural = "What we do"
-        ordering = ('order',)
+    anchor = models.CharField(_('anchor'), help_text=_("don't translate"), max_length=255, unique=True)
 
     def __unicode__(self):
         return self.title
+
+class TitlePluginModel(CMSPlugin):
+    title     = models.ForeignKey(Title, verbose_name=_("title"))
+    def __unicode__(self):
+        return self.title.title
 
 # EOF

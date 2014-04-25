@@ -13,11 +13,8 @@
 from django.utils.translation import ugettext_lazy as _
 from django.contrib import admin
 from hvad.admin import TranslatableAdmin
-from .models import WhatWeDo, Office, Project
+from .models import Office, Project, Title
 from adminsortable.admin import SortableAdminMixin
-
-class WhatWeDoAdmin(SortableAdminMixin, TranslatableAdmin):
-    pass
 
 class OfficeAdmin(admin.ModelAdmin):
     def __init__(self, *args, **kwargs):
@@ -27,6 +24,13 @@ class OfficeAdmin(admin.ModelAdmin):
         self.prepopulated_fields = {'slug': ('title',)}
 
     list_display = ("title", "slug")
+
+class TitleAdmin(TranslatableAdmin):
+    list_display = ("get_title", "anchor")
+
+    def get_title(self, obj):
+        return obj.title
+    get_title.short_description = _('Title')
 
 class ProjectAdmin(SortableAdminMixin, TranslatableAdmin):
     def __init__(self, *args, **kwargs):
@@ -43,8 +47,8 @@ class ProjectAdmin(SortableAdminMixin, TranslatableAdmin):
         return obj.title
     get_title.short_description = _('Title')
 
-admin.site.register(WhatWeDo, WhatWeDoAdmin)
 admin.site.register(Office, OfficeAdmin)
 admin.site.register(Project, ProjectAdmin)
+admin.site.register(Title, TitleAdmin)
 
 # EOF
