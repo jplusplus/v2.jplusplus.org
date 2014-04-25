@@ -8,7 +8,7 @@
 # License : proprietary journalism++
 # -----------------------------------------------------------------------------
 # Creation : 14-Apr-2014
-# Last mod : 14-Apr-2014
+# Last mod : 25-Apr-2014
 # -----------------------------------------------------------------------------
 from django.utils.translation import ugettext_lazy as _
 from django.contrib import admin

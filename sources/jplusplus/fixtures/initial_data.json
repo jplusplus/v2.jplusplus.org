@@ -5,9 +5,9 @@
     "fields": {
         "clipboard": 1, 
         "user": [
-            "edouard"
+            "root"
         ], 
-        "language": "fr"
+        "language": "en"
     }
 },
 {
@@ -22,7 +22,7 @@
     "pk": 2, 
     "model": "cms.placeholder", 
     "fields": {
-        "slot": "intro", 
+        "slot": "first-page", 
         "default_width": null
     }
 },
@@ -30,7 +30,7 @@
     "pk": 3, 
     "model": "cms.placeholder", 
     "fields": {
-        "slot": "what we do", 
+        "slot": "body", 
         "default_width": null
     }
 },
@@ -38,7 +38,7 @@
     "pk": 4, 
     "model": "cms.placeholder", 
     "fields": {
-        "slot": "our work", 
+        "slot": "first-page", 
         "default_width": null
     }
 },
@@ -46,7 +46,7 @@
     "pk": 5, 
     "model": "cms.placeholder", 
     "fields": {
-        "slot": "who we are", 
+        "slot": "body", 
         "default_width": null
     }
 },
@@ -54,7 +54,7 @@
     "pk": 6, 
     "model": "cms.placeholder", 
     "fields": {
-        "slot": "lets talk", 
+        "slot": "first-page", 
         "default_width": null
     }
 },
@@ -62,7 +62,7 @@
     "pk": 7, 
     "model": "cms.placeholder", 
     "fields": {
-        "slot": "intro", 
+        "slot": "body", 
         "default_width": null
     }
 },
@@ -70,7 +70,7 @@
     "pk": 8, 
     "model": "cms.placeholder", 
     "fields": {
-        "slot": "what we do", 
+        "slot": "content", 
         "default_width": null
     }
 },
@@ -78,7 +78,7 @@
     "pk": 9, 
     "model": "cms.placeholder", 
     "fields": {
-        "slot": "our work", 
+        "slot": "first-page", 
         "default_width": null
     }
 },
@@ -86,7 +86,7 @@
     "pk": 10, 
     "model": "cms.placeholder", 
     "fields": {
-        "slot": "who we are", 
+        "slot": "body", 
         "default_width": null
     }
 },
@@ -94,7 +94,7 @@
     "pk": 11, 
     "model": "cms.placeholder", 
     "fields": {
-        "slot": "lets talk", 
+        "slot": "content", 
         "default_width": null
     }
 },
@@ -102,7 +102,7 @@
     "pk": 12, 
     "model": "cms.placeholder", 
     "fields": {
-        "slot": "footer", 
+        "slot": "first-page", 
         "default_width": null
     }
 },
@@ -110,7 +110,7 @@
     "pk": 13, 
     "model": "cms.placeholder", 
     "fields": {
-        "slot": "footer", 
+        "slot": "body", 
         "default_width": null
     }
 },
@@ -118,7 +118,7 @@
     "pk": 14, 
     "model": "cms.placeholder", 
     "fields": {
-        "slot": "intro", 
+        "slot": "content", 
         "default_width": null
     }
 },
@@ -126,7 +126,7 @@
     "pk": 15, 
     "model": "cms.placeholder", 
     "fields": {
-        "slot": "what we do", 
+        "slot": "content", 
         "default_width": null
     }
 },
@@ -134,7 +134,7 @@
     "pk": 16, 
     "model": "cms.placeholder", 
     "fields": {
-        "slot": "our work", 
+        "slot": "first-page", 
         "default_width": null
     }
 },
@@ -142,516 +142,671 @@
     "pk": 17, 
     "model": "cms.placeholder", 
     "fields": {
-        "slot": "who we are", 
-        "default_width": null
-    }
-},
-{
-    "pk": 18, 
-    "model": "cms.placeholder", 
-    "fields": {
-        "slot": "lets talk", 
-        "default_width": null
-    }
-},
-{
-    "pk": 19, 
-    "model": "cms.placeholder", 
-    "fields": {
-        "slot": "intro", 
-        "default_width": null
-    }
-},
-{
-    "pk": 20, 
-    "model": "cms.placeholder", 
-    "fields": {
-        "slot": "what we do", 
-        "default_width": null
-    }
-},
-{
-    "pk": 21, 
-    "model": "cms.placeholder", 
-    "fields": {
-        "slot": "our work", 
-        "default_width": null
-    }
-},
-{
-    "pk": 22, 
-    "model": "cms.placeholder", 
-    "fields": {
-        "slot": "who we are", 
-        "default_width": null
-    }
-},
-{
-    "pk": 23, 
-    "model": "cms.placeholder", 
-    "fields": {
-        "slot": "lets talk", 
-        "default_width": null
-    }
-},
-{
-    "pk": 24, 
-    "model": "cms.placeholder", 
-    "fields": {
-        "slot": "intro", 
-        "default_width": null
-    }
-},
-{
-    "pk": 25, 
-    "model": "cms.placeholder", 
-    "fields": {
-        "slot": "what we do", 
-        "default_width": null
-    }
-},
-{
-    "pk": 26, 
-    "model": "cms.placeholder", 
-    "fields": {
-        "slot": "our work", 
-        "default_width": null
-    }
-},
-{
-    "pk": 27, 
-    "model": "cms.placeholder", 
-    "fields": {
-        "slot": "who we are", 
-        "default_width": null
-    }
-},
-{
-    "pk": 28, 
-    "model": "cms.placeholder", 
-    "fields": {
-        "slot": "lets talk", 
-        "default_width": null
-    }
-},
-{
-    "pk": 29, 
-    "model": "cms.placeholder", 
-    "fields": {
-        "slot": "intro", 
-        "default_width": null
-    }
-},
-{
-    "pk": 30, 
-    "model": "cms.placeholder", 
-    "fields": {
-        "slot": "what we do", 
-        "default_width": null
-    }
-},
-{
-    "pk": 31, 
-    "model": "cms.placeholder", 
-    "fields": {
-        "slot": "our work", 
-        "default_width": null
-    }
-},
-{
-    "pk": 32, 
-    "model": "cms.placeholder", 
-    "fields": {
-        "slot": "who we are", 
-        "default_width": null
-    }
-},
-{
-    "pk": 33, 
-    "model": "cms.placeholder", 
-    "fields": {
-        "slot": "lets talk", 
-        "default_width": null
-    }
-},
-{
-    "pk": 34, 
-    "model": "cms.placeholder", 
-    "fields": {
-        "slot": "content", 
-        "default_width": null
-    }
-},
-{
-    "pk": 35, 
-    "model": "cms.placeholder", 
-    "fields": {
-        "slot": "content", 
-        "default_width": null
-    }
-},
-{
-    "pk": 36, 
-    "model": "cms.placeholder", 
-    "fields": {
-        "slot": "content", 
-        "default_width": null
-    }
-},
-{
-    "pk": 37, 
-    "model": "cms.placeholder", 
-    "fields": {
-        "slot": "content", 
-        "default_width": null
-    }
-},
-{
-    "pk": 39, 
-    "model": "cms.placeholder", 
-    "fields": {
-        "slot": "content", 
-        "default_width": null
-    }
-},
-{
-    "pk": 40, 
-    "model": "cms.placeholder", 
-    "fields": {
-        "slot": "content", 
-        "default_width": null
-    }
-},
-{
-    "pk": 41, 
-    "model": "cms.placeholder", 
-    "fields": {
-        "slot": "content", 
-        "default_width": null
-    }
-},
-{
-    "pk": 42, 
-    "model": "cms.placeholder", 
-    "fields": {
-        "slot": "content", 
-        "default_width": null
-    }
-},
-{
-    "pk": 43, 
-    "model": "cms.placeholder", 
-    "fields": {
-        "slot": "header", 
-        "default_width": null
-    }
-},
-{
-    "pk": 44, 
-    "model": "cms.placeholder", 
-    "fields": {
         "slot": "body", 
         "default_width": null
     }
 },
 {
-    "pk": 46, 
-    "model": "cms.placeholder", 
+    "pk": 1, 
+    "model": "cms.cmsplugin", 
     "fields": {
-        "slot": "header", 
-        "default_width": null
+        "rght": 4, 
+        "changed_date": "2014-04-25T14:59:39.265Z", 
+        "parent": null, 
+        "language": "en", 
+        "level": 0, 
+        "creation_date": "2014-04-25T14:59:36.062Z", 
+        "lft": 1, 
+        "tree_id": 1, 
+        "position": 0, 
+        "placeholder": 8, 
+        "plugin_type": "StylePlugin"
     }
 },
 {
-    "pk": 47, 
-    "model": "cms.placeholder", 
+    "pk": 2, 
+    "model": "cms.cmsplugin", 
     "fields": {
-        "slot": "body", 
-        "default_width": null
+        "rght": 3, 
+        "changed_date": "2014-04-25T14:59:56.733Z", 
+        "parent": 1, 
+        "language": "en", 
+        "level": 1, 
+        "creation_date": "2014-04-25T14:59:50.978Z", 
+        "lft": 2, 
+        "tree_id": 1, 
+        "position": 0, 
+        "placeholder": 8, 
+        "plugin_type": "ProjectsPlugin"
     }
 },
 {
-    "pk": 48, 
-    "model": "cms.placeholder", 
+    "pk": 3, 
+    "model": "cms.cmsplugin", 
     "fields": {
-        "slot": "first-page", 
-        "default_width": null
+        "rght": 2, 
+        "changed_date": "2014-04-25T15:00:47.660Z", 
+        "parent": null, 
+        "language": "en", 
+        "level": 0, 
+        "creation_date": "2014-04-25T15:00:15.911Z", 
+        "lft": 1, 
+        "tree_id": 2, 
+        "position": 0, 
+        "placeholder": 2, 
+        "plugin_type": "TextPlugin"
     }
 },
 {
-    "pk": 49, 
-    "model": "cms.placeholder", 
+    "pk": 4, 
+    "model": "cms.cmsplugin", 
     "fields": {
-        "slot": "first-page", 
-        "default_width": null
+        "rght": 3, 
+        "changed_date": "2014-04-25T15:10:43.760Z", 
+        "parent": 5, 
+        "language": "en", 
+        "level": 1, 
+        "creation_date": "2014-04-25T15:01:03.213Z", 
+        "lft": 2, 
+        "tree_id": 4, 
+        "position": 0, 
+        "placeholder": 3, 
+        "plugin_type": "TitlePlugin"
     }
 },
 {
-    "pk": 50, 
-    "model": "cms.placeholder", 
+    "pk": 5, 
+    "model": "cms.cmsplugin", 
     "fields": {
-        "slot": "content", 
-        "default_width": null
+        "rght": 14, 
+        "changed_date": "2014-04-25T15:02:56.589Z", 
+        "parent": null, 
+        "language": "en", 
+        "level": 0, 
+        "creation_date": "2014-04-25T15:02:53.605Z", 
+        "lft": 1, 
+        "tree_id": 4, 
+        "position": 1, 
+        "placeholder": 3, 
+        "plugin_type": "StylePlugin"
     }
 },
 {
-    "pk": 51, 
-    "model": "cms.placeholder", 
+    "pk": 6, 
+    "model": "cms.cmsplugin", 
     "fields": {
-        "slot": "first-page", 
-        "default_width": null
+        "rght": 5, 
+        "changed_date": "2014-04-25T15:10:43.781Z", 
+        "parent": 5, 
+        "language": "en", 
+        "level": 1, 
+        "creation_date": "2014-04-25T15:03:49.366Z", 
+        "lft": 4, 
+        "tree_id": 4, 
+        "position": 1, 
+        "placeholder": 3, 
+        "plugin_type": "TitlePlugin"
     }
 },
 {
-    "pk": 52, 
-    "model": "cms.placeholder", 
+    "pk": 7, 
+    "model": "cms.cmsplugin", 
     "fields": {
-        "slot": "body", 
-        "default_width": null
-    }
-},
-{
-    "pk": 53, 
-    "model": "cms.placeholder", 
-    "fields": {
-        "slot": "content", 
-        "default_width": null
-    }
-},
-{
-    "pk": 54, 
-    "model": "cms.placeholder", 
-    "fields": {
-        "slot": "content", 
-        "default_width": null
-    }
-},
-{
-    "pk": 55, 
-    "model": "cms.placeholder", 
-    "fields": {
-        "slot": "first-page", 
-        "default_width": null
-    }
-},
-{
-    "pk": 56, 
-    "model": "cms.placeholder", 
-    "fields": {
-        "slot": "body", 
-        "default_width": null
-    }
-},
-{
-    "pk": 57, 
-    "model": "cms.placeholder", 
-    "fields": {
-        "slot": "content", 
-        "default_width": null
+        "rght": 7, 
+        "changed_date": "2014-04-25T15:10:43.789Z", 
+        "parent": 5, 
+        "language": "en", 
+        "level": 1, 
+        "creation_date": "2014-04-25T15:04:21.056Z", 
+        "lft": 6, 
+        "tree_id": 4, 
+        "position": 2, 
+        "placeholder": 3, 
+        "plugin_type": "ProjectsPlugin"
     }
 },
 {
     "pk": 8, 
     "model": "cms.cmsplugin", 
     "fields": {
-        "rght": 2, 
-        "changed_date": "2014-04-17T15:00:45.392Z", 
-        "parent": null, 
-        "language": "de", 
-        "level": 0, 
-        "creation_date": "2014-04-16T12:25:16.239Z", 
-        "lft": 1, 
-        "tree_id": 8, 
-        "position": 0, 
-        "placeholder": 4, 
-        "plugin_type": "ProjectsPlugin"
-    }
-},
-{
-    "pk": 11, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 2, 
-        "changed_date": "2014-04-17T15:00:45.565Z", 
-        "parent": null, 
-        "language": "de", 
-        "level": 0, 
-        "creation_date": "2014-04-16T12:25:16.239Z", 
-        "lft": 1, 
-        "tree_id": 11, 
-        "position": 0, 
-        "placeholder": 9, 
-        "plugin_type": "ProjectsPlugin"
-    }
-},
-{
-    "pk": 20, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 2, 
-        "changed_date": "2014-04-16T14:05:07.158Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-16T13:45:56.976Z", 
-        "lft": 1, 
-        "tree_id": 20, 
-        "position": 0, 
-        "placeholder": 39, 
-        "plugin_type": "LinkPlugin"
-    }
-},
-{
-    "pk": 21, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 2, 
-        "changed_date": "2014-04-16T14:05:18.308Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-16T13:45:56.976Z", 
-        "lft": 1, 
-        "tree_id": 21, 
-        "position": 0, 
-        "placeholder": 41, 
-        "plugin_type": "LinkPlugin"
-    }
-},
-{
-    "pk": 22, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 2, 
-        "changed_date": "2014-04-16T14:34:43.708Z", 
-        "parent": null, 
-        "language": "de", 
-        "level": 0, 
-        "creation_date": "2014-04-16T13:45:56.976Z", 
-        "lft": 1, 
-        "tree_id": 22, 
-        "position": 0, 
-        "placeholder": 34, 
-        "plugin_type": "LinkPlugin"
-    }
-},
-{
-    "pk": 23, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 2, 
-        "changed_date": "2014-04-16T14:34:46.417Z", 
-        "parent": null, 
-        "language": "de", 
-        "level": 0, 
-        "creation_date": "2014-04-16T13:45:56.976Z", 
-        "lft": 1, 
-        "tree_id": 23, 
-        "position": 0, 
-        "placeholder": 35, 
-        "plugin_type": "LinkPlugin"
-    }
-},
-{
-    "pk": 24, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 3, 
-        "changed_date": "2014-04-22T11:44:52.271Z", 
-        "parent": 25, 
-        "language": "fr", 
-        "level": 1, 
-        "creation_date": "2014-04-22T11:43:09.817Z", 
-        "lft": 2, 
-        "tree_id": 25, 
-        "position": 0, 
-        "placeholder": 2, 
-        "plugin_type": "TextPlugin"
-    }
-},
-{
-    "pk": 25, 
-    "model": "cms.cmsplugin", 
-    "fields": {
         "rght": 4, 
-        "changed_date": "2014-04-22T11:45:45.640Z", 
+        "changed_date": "2014-04-25T15:05:22.188Z", 
         "parent": null, 
-        "language": "fr", 
+        "language": "en", 
         "level": 0, 
-        "creation_date": "2014-04-22T11:44:13.034Z", 
+        "creation_date": "2014-04-25T14:59:36.062Z", 
         "lft": 1, 
-        "tree_id": 25, 
-        "position": 1, 
-        "placeholder": 2, 
+        "tree_id": 6, 
+        "position": 0, 
+        "placeholder": 11, 
         "plugin_type": "StylePlugin"
     }
 },
 {
-    "pk": 26, 
+    "pk": 9, 
     "model": "cms.cmsplugin", 
     "fields": {
         "rght": 3, 
-        "changed_date": "2014-04-22T11:50:10.804Z", 
-        "parent": 27, 
-        "language": "fr", 
+        "changed_date": "2014-04-25T15:05:22.206Z", 
+        "parent": 8, 
+        "language": "en", 
         "level": 1, 
-        "creation_date": "2014-04-22T11:49:07.920Z", 
+        "creation_date": "2014-04-25T14:59:50.978Z", 
         "lft": 2, 
-        "tree_id": 27, 
+        "tree_id": 6, 
         "position": 0, 
-        "placeholder": 43, 
-        "plugin_type": "TextPlugin"
+        "placeholder": 11, 
+        "plugin_type": "ProjectsPlugin"
     }
 },
 {
-    "pk": 27, 
+    "pk": 15, 
     "model": "cms.cmsplugin", 
     "fields": {
-        "rght": 4, 
-        "changed_date": "2014-04-22T11:49:57.888Z", 
+        "rght": 9, 
+        "changed_date": "2014-04-25T15:10:43.794Z", 
+        "parent": 5, 
+        "language": "en", 
+        "level": 1, 
+        "creation_date": "2014-04-25T15:06:05.326Z", 
+        "lft": 8, 
+        "tree_id": 4, 
+        "position": 3, 
+        "placeholder": 3, 
+        "plugin_type": "TitlePlugin"
+    }
+},
+{
+    "pk": 16, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 11, 
+        "changed_date": "2014-04-25T15:10:43.802Z", 
+        "parent": 5, 
+        "language": "en", 
+        "level": 1, 
+        "creation_date": "2014-04-25T15:06:25.275Z", 
+        "lft": 10, 
+        "tree_id": 4, 
+        "position": 5, 
+        "placeholder": 3, 
+        "plugin_type": "TitlePlugin"
+    }
+},
+{
+    "pk": 17, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-25T15:06:43.217Z", 
+        "parent": null, 
+        "language": "en", 
+        "level": 0, 
+        "creation_date": "2014-04-25T15:06:41.245Z", 
+        "lft": 1, 
+        "tree_id": 10, 
+        "position": 6, 
+        "placeholder": 3, 
+        "plugin_type": "ContactPlugin"
+    }
+},
+{
+    "pk": 18, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 13, 
+        "changed_date": "2014-04-25T15:10:43.809Z", 
+        "parent": 5, 
+        "language": "en", 
+        "level": 1, 
+        "creation_date": "2014-04-25T15:10:21.692Z", 
+        "lft": 12, 
+        "tree_id": 4, 
+        "position": 4, 
+        "placeholder": 3, 
+        "plugin_type": "LinkPlugin"
+    }
+},
+{
+    "pk": 28, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 3, 
+        "changed_date": "2014-04-25T15:12:19.225Z", 
+        "parent": 29, 
+        "language": "en", 
+        "level": 1, 
+        "creation_date": "2014-04-25T15:11:38.412Z", 
+        "lft": 2, 
+        "tree_id": 15, 
+        "position": 1, 
+        "placeholder": 14, 
+        "plugin_type": "ProjectsPlugin"
+    }
+},
+{
+    "pk": 29, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 6, 
+        "changed_date": "2014-04-25T15:11:56.712Z", 
+        "parent": null, 
+        "language": "en", 
+        "level": 0, 
+        "creation_date": "2014-04-25T15:11:47.813Z", 
+        "lft": 1, 
+        "tree_id": 15, 
+        "position": 0, 
+        "placeholder": 14, 
+        "plugin_type": "StylePlugin"
+    }
+},
+{
+    "pk": 30, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 5, 
+        "changed_date": "2014-04-25T15:12:19.233Z", 
+        "parent": 29, 
+        "language": "en", 
+        "level": 1, 
+        "creation_date": "2014-04-25T15:12:07.945Z", 
+        "lft": 4, 
+        "tree_id": 15, 
+        "position": 0, 
+        "placeholder": 14, 
+        "plugin_type": "TitlePlugin"
+    }
+},
+{
+    "pk": 31, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 6, 
+        "changed_date": "2014-04-25T15:12:21.978Z", 
+        "parent": null, 
+        "language": "en", 
+        "level": 0, 
+        "creation_date": "2014-04-25T15:11:47.813Z", 
+        "lft": 1, 
+        "tree_id": 16, 
+        "position": 0, 
+        "placeholder": 15, 
+        "plugin_type": "StylePlugin"
+    }
+},
+{
+    "pk": 32, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 3, 
+        "changed_date": "2014-04-25T15:12:21.990Z", 
+        "parent": 31, 
+        "language": "en", 
+        "level": 1, 
+        "creation_date": "2014-04-25T15:11:38.412Z", 
+        "lft": 2, 
+        "tree_id": 16, 
+        "position": 1, 
+        "placeholder": 15, 
+        "plugin_type": "ProjectsPlugin"
+    }
+},
+{
+    "pk": 33, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 5, 
+        "changed_date": "2014-04-25T15:12:22.003Z", 
+        "parent": 31, 
+        "language": "en", 
+        "level": 1, 
+        "creation_date": "2014-04-25T15:12:07.945Z", 
+        "lft": 4, 
+        "tree_id": 16, 
+        "position": 0, 
+        "placeholder": 15, 
+        "plugin_type": "TitlePlugin"
+    }
+},
+{
+    "pk": 34, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-25T15:13:34.402Z", 
         "parent": null, 
         "language": "fr", 
         "level": 0, 
-        "creation_date": "2014-04-22T11:49:53.363Z", 
+        "creation_date": "2014-04-25T15:00:15.911Z", 
         "lft": 1, 
-        "tree_id": 27, 
-        "position": 1, 
-        "placeholder": 43, 
-        "plugin_type": "StylePlugin"
+        "tree_id": 17, 
+        "position": 0, 
+        "placeholder": 2, 
+        "plugin_type": "TextPlugin"
     }
 },
 {
     "pk": 35, 
     "model": "cms.cmsplugin", 
     "fields": {
-        "rght": 5, 
-        "changed_date": "2014-04-24T12:31:53.791Z", 
-        "parent": 70, 
+        "rght": 14, 
+        "changed_date": "2014-04-25T15:21:41.194Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-25T15:02:53.605Z", 
+        "lft": 1, 
+        "tree_id": 18, 
+        "position": 1, 
+        "placeholder": 3, 
+        "plugin_type": "StylePlugin"
+    }
+},
+{
+    "pk": 36, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 3, 
+        "changed_date": "2014-04-25T15:14:35.324Z", 
+        "parent": 35, 
         "language": "fr", 
         "level": 1, 
-        "creation_date": "2014-04-16T12:25:16.239Z", 
+        "creation_date": "2014-04-25T15:01:03.213Z", 
+        "lft": 2, 
+        "tree_id": 18, 
+        "position": 0, 
+        "placeholder": 3, 
+        "plugin_type": "TitlePlugin"
+    }
+},
+{
+    "pk": 37, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 5, 
+        "changed_date": "2014-04-25T15:14:35.333Z", 
+        "parent": 35, 
+        "language": "fr", 
+        "level": 1, 
+        "creation_date": "2014-04-25T15:03:49.366Z", 
         "lft": 4, 
-        "tree_id": 66, 
+        "tree_id": 18, 
         "position": 1, 
-        "placeholder": 44, 
+        "placeholder": 3, 
+        "plugin_type": "TitlePlugin"
+    }
+},
+{
+    "pk": 38, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 7, 
+        "changed_date": "2014-04-25T15:14:35.342Z", 
+        "parent": 35, 
+        "language": "fr", 
+        "level": 1, 
+        "creation_date": "2014-04-25T15:04:21.056Z", 
+        "lft": 6, 
+        "tree_id": 18, 
+        "position": 2, 
+        "placeholder": 3, 
         "plugin_type": "ProjectsPlugin"
+    }
+},
+{
+    "pk": 39, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 9, 
+        "changed_date": "2014-04-25T15:14:35.353Z", 
+        "parent": 35, 
+        "language": "fr", 
+        "level": 1, 
+        "creation_date": "2014-04-25T15:06:05.326Z", 
+        "lft": 8, 
+        "tree_id": 18, 
+        "position": 3, 
+        "placeholder": 3, 
+        "plugin_type": "TitlePlugin"
     }
 },
 {
     "pk": 40, 
     "model": "cms.cmsplugin", 
     "fields": {
-        "rght": 7, 
-        "changed_date": "2014-04-25T13:53:36.571Z", 
-        "parent": 71, 
+        "rght": 11, 
+        "changed_date": "2014-04-25T15:14:35.363Z", 
+        "parent": 35, 
         "language": "fr", 
         "level": 1, 
-        "creation_date": "2014-04-22T12:25:49.096Z", 
-        "lft": 2, 
-        "tree_id": 67, 
-        "position": 1, 
-        "placeholder": 44, 
+        "creation_date": "2014-04-25T15:10:21.692Z", 
+        "lft": 10, 
+        "tree_id": 18, 
+        "position": 4, 
+        "placeholder": 3, 
+        "plugin_type": "LinkPlugin"
+    }
+},
+{
+    "pk": 41, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 13, 
+        "changed_date": "2014-04-25T15:14:35.374Z", 
+        "parent": 35, 
+        "language": "fr", 
+        "level": 1, 
+        "creation_date": "2014-04-25T15:06:25.275Z", 
+        "lft": 12, 
+        "tree_id": 18, 
+        "position": 5, 
+        "placeholder": 3, 
+        "plugin_type": "TitlePlugin"
+    }
+},
+{
+    "pk": 42, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-25T15:14:35.383Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-25T15:06:41.245Z", 
+        "lft": 1, 
+        "tree_id": 19, 
+        "position": 6, 
+        "placeholder": 3, 
+        "plugin_type": "ContactPlugin"
+    }
+},
+{
+    "pk": 43, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-25T15:21:45.526Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-25T15:00:15.911Z", 
+        "lft": 1, 
+        "tree_id": 20, 
+        "position": 0, 
+        "placeholder": 4, 
         "plugin_type": "TextPlugin"
+    }
+},
+{
+    "pk": 44, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 14, 
+        "changed_date": "2014-04-25T15:21:45.537Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-25T15:02:53.605Z", 
+        "lft": 1, 
+        "tree_id": 21, 
+        "position": 1, 
+        "placeholder": 5, 
+        "plugin_type": "StylePlugin"
+    }
+},
+{
+    "pk": 45, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 3, 
+        "changed_date": "2014-04-25T15:21:45.546Z", 
+        "parent": 44, 
+        "language": "fr", 
+        "level": 1, 
+        "creation_date": "2014-04-25T15:01:03.213Z", 
+        "lft": 2, 
+        "tree_id": 21, 
+        "position": 0, 
+        "placeholder": 5, 
+        "plugin_type": "TitlePlugin"
+    }
+},
+{
+    "pk": 46, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 5, 
+        "changed_date": "2014-04-25T15:21:45.554Z", 
+        "parent": 44, 
+        "language": "fr", 
+        "level": 1, 
+        "creation_date": "2014-04-25T15:03:49.366Z", 
+        "lft": 4, 
+        "tree_id": 21, 
+        "position": 1, 
+        "placeholder": 5, 
+        "plugin_type": "TitlePlugin"
+    }
+},
+{
+    "pk": 47, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 7, 
+        "changed_date": "2014-04-25T15:21:45.564Z", 
+        "parent": 44, 
+        "language": "fr", 
+        "level": 1, 
+        "creation_date": "2014-04-25T15:04:21.056Z", 
+        "lft": 6, 
+        "tree_id": 21, 
+        "position": 2, 
+        "placeholder": 5, 
+        "plugin_type": "ProjectsPlugin"
+    }
+},
+{
+    "pk": 48, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 9, 
+        "changed_date": "2014-04-25T15:21:45.576Z", 
+        "parent": 44, 
+        "language": "fr", 
+        "level": 1, 
+        "creation_date": "2014-04-25T15:06:05.326Z", 
+        "lft": 8, 
+        "tree_id": 21, 
+        "position": 3, 
+        "placeholder": 5, 
+        "plugin_type": "TitlePlugin"
+    }
+},
+{
+    "pk": 49, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 11, 
+        "changed_date": "2014-04-25T15:21:45.586Z", 
+        "parent": 44, 
+        "language": "fr", 
+        "level": 1, 
+        "creation_date": "2014-04-25T15:10:21.692Z", 
+        "lft": 10, 
+        "tree_id": 21, 
+        "position": 4, 
+        "placeholder": 5, 
+        "plugin_type": "LinkPlugin"
+    }
+},
+{
+    "pk": 50, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 13, 
+        "changed_date": "2014-04-25T15:21:45.595Z", 
+        "parent": 44, 
+        "language": "fr", 
+        "level": 1, 
+        "creation_date": "2014-04-25T15:06:25.275Z", 
+        "lft": 12, 
+        "tree_id": 21, 
+        "position": 5, 
+        "placeholder": 5, 
+        "plugin_type": "TitlePlugin"
+    }
+},
+{
+    "pk": 51, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-25T15:21:45.602Z", 
+        "parent": null, 
+        "language": "fr", 
+        "level": 0, 
+        "creation_date": "2014-04-25T15:06:41.245Z", 
+        "lft": 1, 
+        "tree_id": 22, 
+        "position": 6, 
+        "placeholder": 5, 
+        "plugin_type": "ContactPlugin"
+    }
+},
+{
+    "pk": 52, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 2, 
+        "changed_date": "2014-04-25T15:30:21.481Z", 
+        "parent": null, 
+        "language": "en", 
+        "level": 0, 
+        "creation_date": "2014-04-25T15:00:15.911Z", 
+        "lft": 1, 
+        "tree_id": 23, 
+        "position": 0, 
+        "placeholder": 4, 
+        "plugin_type": "TextPlugin"
+    }
+},
+{
+    "pk": 53, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 14, 
+        "changed_date": "2014-04-25T15:30:21.491Z", 
+        "parent": null, 
+        "language": "en", 
+        "level": 0, 
+        "creation_date": "2014-04-25T15:02:53.605Z", 
+        "lft": 1, 
+        "tree_id": 24, 
+        "position": 1, 
+        "placeholder": 5, 
+        "plugin_type": "StylePlugin"
     }
 },
 {
@@ -659,798 +814,118 @@
     "model": "cms.cmsplugin", 
     "fields": {
         "rght": 3, 
-        "changed_date": "2014-04-24T16:05:59.977Z", 
-        "parent": 103, 
-        "language": "fr", 
+        "changed_date": "2014-04-25T15:30:21.502Z", 
+        "parent": 53, 
+        "language": "en", 
         "level": 1, 
-        "creation_date": "2014-04-23T14:04:46.333Z", 
+        "creation_date": "2014-04-25T15:01:03.213Z", 
         "lft": 2, 
-        "tree_id": 85, 
+        "tree_id": 24, 
         "position": 0, 
-        "placeholder": 36, 
-        "plugin_type": "ProjectsPlugin"
+        "placeholder": 5, 
+        "plugin_type": "TitlePlugin"
     }
 },
 {
     "pk": 55, 
     "model": "cms.cmsplugin", 
     "fields": {
-        "rght": 2, 
-        "changed_date": "2014-04-25T13:28:23.015Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-23T15:50:00.741Z", 
-        "lft": 1, 
-        "tree_id": 53, 
-        "position": 4, 
-        "placeholder": 44, 
-        "plugin_type": "ContactPlugin"
-    }
-},
-{
-    "pk": 68, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 2, 
-        "changed_date": "2014-04-24T10:27:19.810Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-24T09:55:34.470Z", 
-        "lft": 1, 
-        "tree_id": 64, 
-        "position": 0, 
-        "placeholder": 48, 
-        "plugin_type": "TextPlugin"
-    }
-},
-{
-    "pk": 69, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 4, 
-        "changed_date": "2014-04-24T12:25:18.060Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-24T11:09:17.363Z", 
-        "lft": 1, 
-        "tree_id": 65, 
-        "position": 0, 
-        "placeholder": 44, 
-        "plugin_type": "StylePlugin"
-    }
-},
-{
-    "pk": 70, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 6, 
-        "changed_date": "2014-04-25T13:28:22.904Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-24T11:10:14.319Z", 
-        "lft": 1, 
-        "tree_id": 66, 
-        "position": 1, 
-        "placeholder": 44, 
-        "plugin_type": "StylePlugin"
-    }
-},
-{
-    "pk": 71, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 10, 
-        "changed_date": "2014-04-25T13:28:22.952Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-24T11:11:53.799Z", 
-        "lft": 1, 
-        "tree_id": 67, 
-        "position": 2, 
-        "placeholder": 44, 
-        "plugin_type": "StylePlugin"
-    }
-},
-{
-    "pk": 74, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 6, 
-        "changed_date": "2014-04-25T13:28:22.987Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-24T11:11:53.799Z", 
-        "lft": 1, 
-        "tree_id": 69, 
-        "position": 3, 
-        "placeholder": 44, 
-        "plugin_type": "StylePlugin"
-    }
-},
-{
-    "pk": 75, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 3, 
-        "changed_date": "2014-04-25T13:54:33.717Z", 
-        "parent": 74, 
-        "language": "fr", 
-        "level": 1, 
-        "creation_date": "2014-04-22T12:26:05.738Z", 
-        "lft": 2, 
-        "tree_id": 69, 
-        "position": 1, 
-        "placeholder": 44, 
-        "plugin_type": "TextPlugin"
-    }
-},
-{
-    "pk": 76, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 4, 
-        "changed_date": "2014-04-24T13:45:58.742Z", 
-        "parent": 40, 
-        "language": "fr", 
-        "level": 2, 
-        "creation_date": "2014-04-24T13:45:45.644Z", 
-        "lft": 3, 
-        "tree_id": 67, 
-        "position": 0, 
-        "placeholder": 44, 
-        "plugin_type": "LinkPlugin"
-    }
-},
-{
-    "pk": 77, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 6, 
-        "changed_date": "2014-04-24T13:46:14.485Z", 
-        "parent": 40, 
-        "language": "fr", 
-        "level": 2, 
-        "creation_date": "2014-04-24T13:46:07.200Z", 
-        "lft": 5, 
-        "tree_id": 67, 
-        "position": 1, 
-        "placeholder": 44, 
-        "plugin_type": "LinkPlugin"
-    }
-},
-{
-    "pk": 78, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 3, 
-        "changed_date": "2014-04-24T19:56:46.834Z", 
-        "parent": 107, 
-        "language": "fr", 
-        "level": 1, 
-        "creation_date": "2014-04-24T14:18:15.767Z", 
-        "lft": 2, 
-        "tree_id": 88, 
-        "position": 0, 
-        "placeholder": 34, 
-        "plugin_type": "TextPlugin"
-    }
-},
-{
-    "pk": 79, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 3, 
-        "changed_date": "2014-04-24T15:58:33.691Z", 
-        "parent": 80, 
-        "language": "fr", 
-        "level": 1, 
-        "creation_date": "2014-04-24T15:57:41.787Z", 
-        "lft": 2, 
-        "tree_id": 72, 
-        "position": 0, 
-        "placeholder": 53, 
-        "plugin_type": "ProjectsPlugin"
-    }
-},
-{
-    "pk": 80, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 4, 
-        "changed_date": "2014-04-24T15:58:29.970Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-24T15:58:21.022Z", 
-        "lft": 1, 
-        "tree_id": 72, 
-        "position": 0, 
-        "placeholder": 53, 
-        "plugin_type": "StylePlugin"
-    }
-},
-{
-    "pk": 81, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 4, 
-        "changed_date": "2014-04-24T16:03:58.364Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-24T15:58:21.022Z", 
-        "lft": 1, 
-        "tree_id": 73, 
-        "position": 0, 
-        "placeholder": 54, 
-        "plugin_type": "StylePlugin"
-    }
-},
-{
-    "pk": 82, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 3, 
-        "changed_date": "2014-04-24T16:03:58.376Z", 
-        "parent": 81, 
-        "language": "fr", 
-        "level": 1, 
-        "creation_date": "2014-04-24T15:57:41.787Z", 
-        "lft": 2, 
-        "tree_id": 73, 
-        "position": 0, 
-        "placeholder": 54, 
-        "plugin_type": "ProjectsPlugin"
-    }
-},
-{
-    "pk": 103, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 4, 
-        "changed_date": "2014-04-24T16:05:53.219Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-24T16:05:48.966Z", 
-        "lft": 1, 
-        "tree_id": 85, 
-        "position": 1, 
-        "placeholder": 36, 
-        "plugin_type": "StylePlugin"
-    }
-},
-{
-    "pk": 104, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 4, 
-        "changed_date": "2014-04-24T16:06:06.787Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-24T16:05:48.966Z", 
-        "lft": 1, 
-        "tree_id": 86, 
-        "position": 1, 
-        "placeholder": 37, 
-        "plugin_type": "StylePlugin"
-    }
-},
-{
-    "pk": 105, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 3, 
-        "changed_date": "2014-04-24T16:06:06.802Z", 
-        "parent": 104, 
-        "language": "fr", 
-        "level": 1, 
-        "creation_date": "2014-04-23T14:04:46.333Z", 
-        "lft": 2, 
-        "tree_id": 86, 
-        "position": 0, 
-        "placeholder": 37, 
-        "plugin_type": "ProjectsPlugin"
-    }
-},
-{
-    "pk": 106, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 2, 
-        "changed_date": "2014-04-24T19:56:44.238Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-24T16:09:43.543Z", 
-        "lft": 1, 
-        "tree_id": 87, 
-        "position": 2, 
-        "placeholder": 34, 
-        "plugin_type": "ContactPlugin"
-    }
-},
-{
-    "pk": 107, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 4, 
-        "changed_date": "2014-04-24T19:56:44.246Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-24T19:56:32.476Z", 
-        "lft": 1, 
-        "tree_id": 88, 
-        "position": 0, 
-        "placeholder": 34, 
-        "plugin_type": "StylePlugin"
-    }
-},
-{
-    "pk": 108, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 2, 
-        "changed_date": "2014-04-24T19:56:56.081Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-24T16:09:43.543Z", 
-        "lft": 1, 
-        "tree_id": 89, 
-        "position": 2, 
-        "placeholder": 35, 
-        "plugin_type": "ContactPlugin"
-    }
-},
-{
-    "pk": 109, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 4, 
-        "changed_date": "2014-04-24T19:56:56.090Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-24T19:56:32.476Z", 
-        "lft": 1, 
-        "tree_id": 90, 
-        "position": 0, 
-        "placeholder": 35, 
-        "plugin_type": "StylePlugin"
-    }
-},
-{
-    "pk": 110, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 3, 
-        "changed_date": "2014-04-24T19:56:56.114Z", 
-        "parent": 109, 
-        "language": "fr", 
-        "level": 1, 
-        "creation_date": "2014-04-24T14:18:15.767Z", 
-        "lft": 2, 
-        "tree_id": 90, 
-        "position": 0, 
-        "placeholder": 35, 
-        "plugin_type": "TextPlugin"
-    }
-},
-{
-    "pk": 111, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 3, 
-        "changed_date": "2014-04-25T13:41:33.782Z", 
-        "parent": 69, 
-        "language": "fr", 
-        "level": 1, 
-        "creation_date": "2014-04-25T13:41:11.306Z", 
-        "lft": 2, 
-        "tree_id": 65, 
-        "position": 0, 
-        "placeholder": 44, 
-        "plugin_type": "TitlePlugin"
-    }
-},
-{
-    "pk": 112, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 2, 
-        "changed_date": "2014-04-25T13:49:43.697Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-25T13:41:11.306Z", 
-        "lft": 1, 
-        "tree_id": 91, 
-        "position": 0, 
-        "placeholder": 1, 
-        "plugin_type": "TitlePlugin"
-    }
-},
-{
-    "pk": 113, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 3, 
-        "changed_date": "2014-04-25T13:50:10.839Z", 
-        "parent": 70, 
-        "language": "fr", 
-        "level": 1, 
-        "creation_date": "2014-04-25T13:41:11.306Z", 
-        "lft": 2, 
-        "tree_id": 66, 
-        "position": 0, 
-        "placeholder": 44, 
-        "plugin_type": "TitlePlugin"
-    }
-},
-{
-    "pk": 114, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 9, 
-        "changed_date": "2014-04-25T13:51:36.372Z", 
-        "parent": 71, 
-        "language": "fr", 
-        "level": 1, 
-        "creation_date": "2014-04-25T13:51:21.483Z", 
-        "lft": 8, 
-        "tree_id": 67, 
-        "position": 0, 
-        "placeholder": 44, 
-        "plugin_type": "TitlePlugin"
-    }
-},
-{
-    "pk": 115, 
-    "model": "cms.cmsplugin", 
-    "fields": {
         "rght": 5, 
-        "changed_date": "2014-04-25T13:54:33.725Z", 
-        "parent": 74, 
-        "language": "fr", 
+        "changed_date": "2014-04-25T15:30:21.517Z", 
+        "parent": 53, 
+        "language": "en", 
         "level": 1, 
-        "creation_date": "2014-04-25T13:53:59.683Z", 
+        "creation_date": "2014-04-25T15:03:49.366Z", 
         "lft": 4, 
-        "tree_id": 69, 
-        "position": 0, 
-        "placeholder": 44, 
+        "tree_id": 24, 
+        "position": 1, 
+        "placeholder": 5, 
         "plugin_type": "TitlePlugin"
     }
 },
 {
-    "pk": 116, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 4, 
-        "changed_date": "2014-04-25T13:55:55.008Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-22T11:44:13.034Z", 
-        "lft": 1, 
-        "tree_id": 92, 
-        "position": 1, 
-        "placeholder": 7, 
-        "plugin_type": "StylePlugin"
-    }
-},
-{
-    "pk": 117, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 3, 
-        "changed_date": "2014-04-25T13:55:55.029Z", 
-        "parent": 116, 
-        "language": "fr", 
-        "level": 1, 
-        "creation_date": "2014-04-22T11:43:09.817Z", 
-        "lft": 2, 
-        "tree_id": 92, 
-        "position": 0, 
-        "placeholder": 7, 
-        "plugin_type": "TextPlugin"
-    }
-},
-{
-    "pk": 118, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 4, 
-        "changed_date": "2014-04-25T13:55:55.049Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-22T11:49:53.363Z", 
-        "lft": 1, 
-        "tree_id": 93, 
-        "position": 1, 
-        "placeholder": 46, 
-        "plugin_type": "StylePlugin"
-    }
-},
-{
-    "pk": 119, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 3, 
-        "changed_date": "2014-04-25T13:55:55.073Z", 
-        "parent": 118, 
-        "language": "fr", 
-        "level": 1, 
-        "creation_date": "2014-04-22T11:49:07.920Z", 
-        "lft": 2, 
-        "tree_id": 93, 
-        "position": 0, 
-        "placeholder": 46, 
-        "plugin_type": "TextPlugin"
-    }
-},
-{
-    "pk": 120, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 2, 
-        "changed_date": "2014-04-25T13:55:55.084Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-23T15:50:00.741Z", 
-        "lft": 1, 
-        "tree_id": 94, 
-        "position": 4, 
-        "placeholder": 47, 
-        "plugin_type": "ContactPlugin"
-    }
-},
-{
-    "pk": 121, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 4, 
-        "changed_date": "2014-04-25T13:55:55.090Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-24T11:09:17.363Z", 
-        "lft": 1, 
-        "tree_id": 95, 
-        "position": 0, 
-        "placeholder": 47, 
-        "plugin_type": "StylePlugin"
-    }
-},
-{
-    "pk": 122, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 3, 
-        "changed_date": "2014-04-25T13:55:55.099Z", 
-        "parent": 121, 
-        "language": "fr", 
-        "level": 1, 
-        "creation_date": "2014-04-25T13:41:11.306Z", 
-        "lft": 2, 
-        "tree_id": 95, 
-        "position": 0, 
-        "placeholder": 47, 
-        "plugin_type": "TitlePlugin"
-    }
-},
-{
-    "pk": 123, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 6, 
-        "changed_date": "2014-04-25T13:55:55.109Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-24T11:10:14.319Z", 
-        "lft": 1, 
-        "tree_id": 96, 
-        "position": 1, 
-        "placeholder": 47, 
-        "plugin_type": "StylePlugin"
-    }
-},
-{
-    "pk": 124, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 3, 
-        "changed_date": "2014-04-25T13:55:55.118Z", 
-        "parent": 123, 
-        "language": "fr", 
-        "level": 1, 
-        "creation_date": "2014-04-25T13:41:11.306Z", 
-        "lft": 2, 
-        "tree_id": 96, 
-        "position": 0, 
-        "placeholder": 47, 
-        "plugin_type": "TitlePlugin"
-    }
-},
-{
-    "pk": 125, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 5, 
-        "changed_date": "2014-04-25T13:55:55.127Z", 
-        "parent": 123, 
-        "language": "fr", 
-        "level": 1, 
-        "creation_date": "2014-04-16T12:25:16.239Z", 
-        "lft": 4, 
-        "tree_id": 96, 
-        "position": 1, 
-        "placeholder": 47, 
-        "plugin_type": "ProjectsPlugin"
-    }
-},
-{
-    "pk": 126, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 10, 
-        "changed_date": "2014-04-25T13:55:55.136Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-24T11:11:53.799Z", 
-        "lft": 1, 
-        "tree_id": 97, 
-        "position": 2, 
-        "placeholder": 47, 
-        "plugin_type": "StylePlugin"
-    }
-},
-{
-    "pk": 127, 
+    "pk": 56, 
     "model": "cms.cmsplugin", 
     "fields": {
         "rght": 7, 
-        "changed_date": "2014-04-25T13:55:55.227Z", 
-        "parent": 126, 
-        "language": "fr", 
+        "changed_date": "2014-04-25T15:30:21.526Z", 
+        "parent": 53, 
+        "language": "en", 
         "level": 1, 
-        "creation_date": "2014-04-22T12:25:49.096Z", 
-        "lft": 2, 
-        "tree_id": 97, 
-        "position": 1, 
-        "placeholder": 47, 
-        "plugin_type": "TextPlugin"
+        "creation_date": "2014-04-25T15:04:21.056Z", 
+        "lft": 6, 
+        "tree_id": 24, 
+        "position": 2, 
+        "placeholder": 5, 
+        "plugin_type": "ProjectsPlugin"
     }
 },
 {
-    "pk": 128, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 4, 
-        "changed_date": "2014-04-25T13:55:55.156Z", 
-        "parent": 127, 
-        "language": "fr", 
-        "level": 2, 
-        "creation_date": "2014-04-24T13:45:45.644Z", 
-        "lft": 3, 
-        "tree_id": 97, 
-        "position": 0, 
-        "placeholder": 47, 
-        "plugin_type": "LinkPlugin"
-    }
-},
-{
-    "pk": 129, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 6, 
-        "changed_date": "2014-04-25T13:55:55.164Z", 
-        "parent": 127, 
-        "language": "fr", 
-        "level": 2, 
-        "creation_date": "2014-04-24T13:46:07.200Z", 
-        "lft": 5, 
-        "tree_id": 97, 
-        "position": 1, 
-        "placeholder": 47, 
-        "plugin_type": "LinkPlugin"
-    }
-},
-{
-    "pk": 130, 
+    "pk": 57, 
     "model": "cms.cmsplugin", 
     "fields": {
         "rght": 9, 
-        "changed_date": "2014-04-25T13:55:55.171Z", 
-        "parent": 126, 
-        "language": "fr", 
+        "changed_date": "2014-04-25T15:30:21.537Z", 
+        "parent": 53, 
+        "language": "en", 
         "level": 1, 
-        "creation_date": "2014-04-25T13:51:21.483Z", 
+        "creation_date": "2014-04-25T15:06:05.326Z", 
         "lft": 8, 
-        "tree_id": 97, 
-        "position": 0, 
-        "placeholder": 47, 
-        "plugin_type": "TitlePlugin"
-    }
-},
-{
-    "pk": 131, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 6, 
-        "changed_date": "2014-04-25T13:55:55.179Z", 
-        "parent": null, 
-        "language": "fr", 
-        "level": 0, 
-        "creation_date": "2014-04-24T11:11:53.799Z", 
-        "lft": 1, 
-        "tree_id": 98, 
+        "tree_id": 24, 
         "position": 3, 
-        "placeholder": 47, 
-        "plugin_type": "StylePlugin"
-    }
-},
-{
-    "pk": 132, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 3, 
-        "changed_date": "2014-04-25T13:55:55.245Z", 
-        "parent": 131, 
-        "language": "fr", 
-        "level": 1, 
-        "creation_date": "2014-04-22T12:26:05.738Z", 
-        "lft": 2, 
-        "tree_id": 98, 
-        "position": 1, 
-        "placeholder": 47, 
-        "plugin_type": "TextPlugin"
-    }
-},
-{
-    "pk": 133, 
-    "model": "cms.cmsplugin", 
-    "fields": {
-        "rght": 5, 
-        "changed_date": "2014-04-25T13:55:55.196Z", 
-        "parent": 131, 
-        "language": "fr", 
-        "level": 1, 
-        "creation_date": "2014-04-25T13:53:59.683Z", 
-        "lft": 4, 
-        "tree_id": 98, 
-        "position": 0, 
-        "placeholder": 47, 
+        "placeholder": 5, 
         "plugin_type": "TitlePlugin"
     }
 },
 {
-    "pk": 134, 
+    "pk": 58, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 11, 
+        "changed_date": "2014-04-25T15:30:21.546Z", 
+        "parent": 53, 
+        "language": "en", 
+        "level": 1, 
+        "creation_date": "2014-04-25T15:06:25.275Z", 
+        "lft": 10, 
+        "tree_id": 24, 
+        "position": 5, 
+        "placeholder": 5, 
+        "plugin_type": "TitlePlugin"
+    }
+},
+{
+    "pk": 59, 
+    "model": "cms.cmsplugin", 
+    "fields": {
+        "rght": 13, 
+        "changed_date": "2014-04-25T15:30:21.555Z", 
+        "parent": 53, 
+        "language": "en", 
+        "level": 1, 
+        "creation_date": "2014-04-25T15:10:21.692Z", 
+        "lft": 12, 
+        "tree_id": 24, 
+        "position": 4, 
+        "placeholder": 5, 
+        "plugin_type": "LinkPlugin"
+    }
+},
+{
+    "pk": 60, 
     "model": "cms.cmsplugin", 
     "fields": {
         "rght": 2, 
-        "changed_date": "2014-04-25T13:55:55.274Z", 
+        "changed_date": "2014-04-25T15:30:21.561Z", 
         "parent": null, 
-        "language": "fr", 
+        "language": "en", 
         "level": 0, 
-        "creation_date": "2014-04-24T09:55:34.470Z", 
+        "creation_date": "2014-04-25T15:06:41.245Z", 
         "lft": 1, 
-        "tree_id": 99, 
-        "position": 0, 
-        "placeholder": 49, 
-        "plugin_type": "TextPlugin"
+        "tree_id": 25, 
+        "position": 6, 
+        "placeholder": 5, 
+        "plugin_type": "ContactPlugin"
     }
 },
 {
@@ -1462,35 +937,28 @@
         "site": 1, 
         "application_namespace": null, 
         "lft": 1, 
-        "in_navigation": false, 
+        "in_navigation": true, 
         "reverse_id": null, 
         "login_required": false, 
         "created_by": "root", 
-        "languages": "fr,de,en", 
+        "languages": "en,fr", 
         "publication_end_date": null, 
         "template": "home.html", 
         "tree_id": 1, 
         "placeholders": [
             2, 
-            3, 
-            4, 
-            5, 
-            6, 
-            43, 
-            44, 
-            48, 
-            50
+            3
         ], 
-        "changed_date": "2014-04-25T13:55:55.490Z", 
+        "changed_date": "2014-04-25T15:30:21.727Z", 
         "limit_visibility_in_menu": null, 
         "parent": null, 
         "soft_root": false, 
         "is_home": true, 
-        "publication_date": "2014-04-16T09:52:57.711Z", 
-        "creation_date": "2014-04-16T09:52:57.671Z", 
+        "publication_date": "2014-04-25T14:58:25.216Z", 
+        "creation_date": "2014-04-25T14:58:25.173Z", 
         "publisher_public": 2, 
         "level": 0, 
-        "changed_by": "edouard", 
+        "changed_by": "root", 
         "application_urls": "JppHook", 
         "publisher_is_draft": true, 
         "xframe_options": 0, 
@@ -1506,35 +974,28 @@
         "site": 1, 
         "application_namespace": null, 
         "lft": 1, 
-        "in_navigation": false, 
+        "in_navigation": true, 
         "reverse_id": null, 
         "login_required": false, 
         "created_by": "root", 
-        "languages": "fr,de,en", 
+        "languages": "en,fr", 
         "publication_end_date": null, 
         "template": "home.html", 
-        "tree_id": 4, 
+        "tree_id": 2, 
         "placeholders": [
-            7, 
-            8, 
-            9, 
-            10, 
-            11, 
-            46, 
-            47, 
-            49, 
-            57
+            4, 
+            5
         ], 
-        "changed_date": "2014-04-25T13:55:55.311Z", 
+        "changed_date": "2014-04-25T15:30:21.597Z", 
         "limit_visibility_in_menu": null, 
         "parent": null, 
         "soft_root": false, 
         "is_home": true, 
-        "publication_date": "2014-04-16T09:52:57.711Z", 
-        "creation_date": "2014-04-16T09:52:57.716Z", 
+        "publication_date": "2014-04-25T14:58:25.216Z", 
+        "creation_date": "2014-04-25T14:58:25.220Z", 
         "publisher_public": 1, 
         "level": 0, 
-        "changed_by": "edouard", 
+        "changed_by": "root", 
         "application_urls": "JppHook", 
         "publisher_is_draft": false, 
         "xframe_options": 0, 
@@ -1545,37 +1006,34 @@
     "pk": 3, 
     "model": "cms.page", 
     "fields": {
-        "rght": 4, 
+        "rght": 3, 
         "navigation_extenders": null, 
         "site": 1, 
         "application_namespace": null, 
-        "lft": 1, 
+        "lft": 2, 
         "in_navigation": true, 
         "reverse_id": null, 
         "login_required": false, 
         "created_by": "root", 
-        "languages": "fr,de", 
+        "languages": "en", 
         "publication_end_date": null, 
-        "template": "chapter.html", 
-        "tree_id": 3, 
+        "template": "page_with_header.html", 
+        "tree_id": 1, 
         "placeholders": [
-            14, 
-            15, 
-            16, 
-            17, 
-            18, 
-            34
+            6, 
+            7, 
+            8
         ], 
-        "changed_date": "2014-04-24T19:56:56.226Z", 
+        "changed_date": "2014-04-25T15:05:22.298Z", 
         "limit_visibility_in_menu": null, 
-        "parent": null, 
+        "parent": 1, 
         "soft_root": false, 
         "is_home": false, 
-        "publication_date": "2014-04-16T09:54:49.529Z", 
-        "creation_date": "2014-04-16T09:54:38.501Z", 
-        "publisher_public": 4, 
-        "level": 0, 
-        "changed_by": "edouard", 
+        "publication_date": "2014-04-25T15:05:22.128Z", 
+        "creation_date": "2014-04-25T14:58:51.316Z", 
+        "publisher_public": 5, 
+        "level": 1, 
+        "changed_by": "root", 
         "application_urls": null, 
         "publisher_is_draft": true, 
         "xframe_options": 0, 
@@ -1586,7 +1044,7 @@
     "pk": 4, 
     "model": "cms.page", 
     "fields": {
-        "rght": 4, 
+        "rght": 2, 
         "navigation_extenders": null, 
         "site": 1, 
         "application_namespace": null, 
@@ -1595,30 +1053,27 @@
         "reverse_id": null, 
         "login_required": false, 
         "created_by": "root", 
-        "languages": "fr,de", 
+        "languages": "en", 
         "publication_end_date": null, 
         "template": "chapter.html", 
-        "tree_id": 6, 
+        "tree_id": 3, 
         "placeholders": [
-            19, 
-            20, 
-            21, 
-            22, 
-            23, 
-            35
+            9, 
+            10, 
+            14
         ], 
-        "changed_date": "2014-04-24T19:56:56.122Z", 
+        "changed_date": "2014-04-25T15:12:22.110Z", 
         "limit_visibility_in_menu": null, 
         "parent": null, 
         "soft_root": false, 
         "is_home": false, 
-        "publication_date": "2014-04-16T09:54:49.529Z", 
-        "creation_date": "2014-04-16T09:54:49.543Z", 
-        "publisher_public": 3, 
+        "publication_date": "2014-04-25T15:12:21.891Z", 
+        "creation_date": "2014-04-25T15:04:54.904Z", 
+        "publisher_public": 6, 
         "level": 0, 
-        "changed_by": "edouard", 
+        "changed_by": "root", 
         "application_urls": null, 
-        "publisher_is_draft": false, 
+        "publisher_is_draft": true, 
         "xframe_options": 0, 
         "revision_id": 0
     }
@@ -1627,39 +1082,36 @@
     "pk": 5, 
     "model": "cms.page", 
     "fields": {
-        "rght": 4, 
+        "rght": 3, 
         "navigation_extenders": null, 
         "site": 1, 
         "application_namespace": null, 
-        "lft": 1, 
+        "lft": 2, 
         "in_navigation": true, 
         "reverse_id": null, 
         "login_required": false, 
         "created_by": "root", 
-        "languages": "fr", 
+        "languages": "en", 
         "publication_end_date": null, 
-        "template": "page.html", 
+        "template": "page_with_header.html", 
         "tree_id": 2, 
         "placeholders": [
-            24, 
-            25, 
-            26, 
-            27, 
-            28, 
-            39
+            11, 
+            12, 
+            13
         ], 
-        "changed_date": "2014-04-24T15:12:25.177Z", 
+        "changed_date": "2014-04-25T15:05:22.233Z", 
         "limit_visibility_in_menu": null, 
-        "parent": null, 
+        "parent": 2, 
         "soft_root": false, 
         "is_home": false, 
-        "publication_date": "2014-04-16T10:01:10.415Z", 
-        "creation_date": "2014-04-16T10:01:01.134Z", 
-        "publisher_public": 6, 
-        "level": 0, 
-        "changed_by": "edouard", 
+        "publication_date": "2014-04-25T15:05:22.128Z", 
+        "creation_date": "2014-04-25T15:05:22.140Z", 
+        "publisher_public": 3, 
+        "level": 1, 
+        "changed_by": "root", 
         "application_urls": null, 
-        "publisher_is_draft": true, 
+        "publisher_is_draft": false, 
         "xframe_options": 0, 
         "revision_id": 0
     }
@@ -1668,7 +1120,7 @@
     "pk": 6, 
     "model": "cms.page", 
     "fields": {
-        "rght": 4, 
+        "rght": 2, 
         "navigation_extenders": null, 
         "site": 1, 
         "application_namespace": null, 
@@ -1677,248 +1129,25 @@
         "reverse_id": null, 
         "login_required": false, 
         "created_by": "root", 
-        "languages": "fr", 
+        "languages": "en", 
         "publication_end_date": null, 
-        "template": "page.html", 
-        "tree_id": 5, 
+        "template": "chapter.html", 
+        "tree_id": 4, 
         "placeholders": [
-            29, 
-            30, 
-            31, 
-            32, 
-            33, 
-            41
+            15, 
+            16, 
+            17
         ], 
-        "changed_date": "2014-04-24T15:12:25.278Z", 
+        "changed_date": "2014-04-25T15:12:22.015Z", 
         "limit_visibility_in_menu": null, 
         "parent": null, 
         "soft_root": false, 
         "is_home": false, 
-        "publication_date": "2014-04-16T10:01:10.415Z", 
-        "creation_date": "2014-04-16T10:01:10.432Z", 
-        "publisher_public": 5, 
+        "publication_date": "2014-04-25T15:12:21.891Z", 
+        "creation_date": "2014-04-25T15:12:21.902Z", 
+        "publisher_public": 4, 
         "level": 0, 
-        "changed_by": "edouard", 
-        "application_urls": null, 
-        "publisher_is_draft": false, 
-        "xframe_options": 0, 
-        "revision_id": 0
-    }
-},
-{
-    "pk": 7, 
-    "model": "cms.page", 
-    "fields": {
-        "rght": 3, 
-        "navigation_extenders": null, 
-        "site": 1, 
-        "application_namespace": null, 
-        "lft": 2, 
-        "in_navigation": true, 
-        "reverse_id": null, 
-        "login_required": false, 
-        "created_by": "root", 
-        "languages": "fr,de", 
-        "publication_end_date": null, 
-        "template": "page_with_header.html", 
-        "tree_id": 3, 
-        "placeholders": [
-            36
-        ], 
-        "changed_date": "2014-04-24T16:06:06.877Z", 
-        "limit_visibility_in_menu": null, 
-        "parent": 3, 
-        "soft_root": false, 
-        "is_home": false, 
-        "publication_date": "2014-04-16T13:51:33.665Z", 
-        "creation_date": "2014-04-16T13:51:00.170Z", 
-        "publisher_public": 8, 
-        "level": 1, 
-        "changed_by": "edouard", 
-        "application_urls": null, 
-        "publisher_is_draft": true, 
-        "xframe_options": 0, 
-        "revision_id": 0
-    }
-},
-{
-    "pk": 8, 
-    "model": "cms.page", 
-    "fields": {
-        "rght": 3, 
-        "navigation_extenders": null, 
-        "site": 1, 
-        "application_namespace": null, 
-        "lft": 2, 
-        "in_navigation": true, 
-        "reverse_id": null, 
-        "login_required": false, 
-        "created_by": "root", 
-        "languages": "fr,de", 
-        "publication_end_date": null, 
-        "template": "page_with_header.html", 
-        "tree_id": 6, 
-        "placeholders": [
-            37
-        ], 
-        "changed_date": "2014-04-24T16:06:06.817Z", 
-        "limit_visibility_in_menu": null, 
-        "parent": 4, 
-        "soft_root": false, 
-        "is_home": false, 
-        "publication_date": "2014-04-16T13:51:33.665Z", 
-        "creation_date": "2014-04-16T13:51:33.682Z", 
-        "publisher_public": 7, 
-        "level": 1, 
-        "changed_by": "edouard", 
-        "application_urls": null, 
-        "publisher_is_draft": false, 
-        "xframe_options": 0, 
-        "revision_id": 0
-    }
-},
-{
-    "pk": 9, 
-    "model": "cms.page", 
-    "fields": {
-        "rght": 3, 
-        "navigation_extenders": null, 
-        "site": 1, 
-        "application_namespace": null, 
-        "lft": 2, 
-        "in_navigation": false, 
-        "reverse_id": null, 
-        "login_required": false, 
-        "created_by": "root", 
-        "languages": "fr,de", 
-        "publication_end_date": null, 
-        "template": "INHERIT", 
-        "tree_id": 2, 
-        "placeholders": [
-            40
-        ], 
-        "changed_date": "2014-04-16T14:07:32.170Z", 
-        "limit_visibility_in_menu": null, 
-        "parent": 5, 
-        "soft_root": false, 
-        "is_home": false, 
-        "publication_date": "2014-04-16T13:51:33.665Z", 
-        "creation_date": "2014-04-16T14:04:55.501Z", 
-        "publisher_public": 10, 
-        "level": 1, 
         "changed_by": "root", 
-        "application_urls": null, 
-        "publisher_is_draft": true, 
-        "xframe_options": 0, 
-        "revision_id": 0
-    }
-},
-{
-    "pk": 10, 
-    "model": "cms.page", 
-    "fields": {
-        "rght": 3, 
-        "navigation_extenders": null, 
-        "site": 1, 
-        "application_namespace": null, 
-        "lft": 2, 
-        "in_navigation": false, 
-        "reverse_id": null, 
-        "login_required": false, 
-        "created_by": "root", 
-        "languages": "de,fr", 
-        "publication_end_date": null, 
-        "template": "INHERIT", 
-        "tree_id": 5, 
-        "placeholders": [
-            42
-        ], 
-        "changed_date": "2014-04-16T14:07:32.129Z", 
-        "limit_visibility_in_menu": null, 
-        "parent": 6, 
-        "soft_root": false, 
-        "is_home": false, 
-        "publication_date": "2014-04-16T13:51:33.665Z", 
-        "creation_date": "2014-04-16T14:05:22.867Z", 
-        "publisher_public": 9, 
-        "level": 1, 
-        "changed_by": "root", 
-        "application_urls": null, 
-        "publisher_is_draft": false, 
-        "xframe_options": 0, 
-        "revision_id": 0
-    }
-},
-{
-    "pk": 11, 
-    "model": "cms.page", 
-    "fields": {
-        "rght": 3, 
-        "navigation_extenders": null, 
-        "site": 1, 
-        "application_namespace": null, 
-        "lft": 2, 
-        "in_navigation": true, 
-        "reverse_id": null, 
-        "login_required": false, 
-        "created_by": "edouard", 
-        "languages": "fr", 
-        "publication_end_date": null, 
-        "template": "page_with_header.html", 
-        "tree_id": 1, 
-        "placeholders": [
-            51, 
-            52, 
-            53
-        ], 
-        "changed_date": "2014-04-24T16:03:58.456Z", 
-        "limit_visibility_in_menu": null, 
-        "parent": 1, 
-        "soft_root": false, 
-        "is_home": false, 
-        "publication_date": "2014-04-24T16:03:58.278Z", 
-        "creation_date": "2014-04-24T15:56:30.329Z", 
-        "publisher_public": 12, 
-        "level": 1, 
-        "changed_by": "edouard", 
-        "application_urls": null, 
-        "publisher_is_draft": true, 
-        "xframe_options": 0, 
-        "revision_id": 0
-    }
-},
-{
-    "pk": 12, 
-    "model": "cms.page", 
-    "fields": {
-        "rght": 3, 
-        "navigation_extenders": null, 
-        "site": 1, 
-        "application_namespace": null, 
-        "lft": 2, 
-        "in_navigation": true, 
-        "reverse_id": null, 
-        "login_required": false, 
-        "created_by": "edouard", 
-        "languages": "fr", 
-        "publication_end_date": null, 
-        "template": "page_with_header.html", 
-        "tree_id": 4, 
-        "placeholders": [
-            54, 
-            55, 
-            56
-        ], 
-        "changed_date": "2014-04-24T16:03:58.407Z", 
-        "limit_visibility_in_menu": null, 
-        "parent": 2, 
-        "soft_root": false, 
-        "is_home": false, 
-        "publication_date": "2014-04-24T16:03:58.278Z", 
-        "creation_date": "2014-04-24T16:03:58.293Z", 
-        "publisher_public": 11, 
-        "level": 1, 
-        "changed_by": "edouard", 
         "application_urls": null, 
         "publisher_is_draft": false, 
         "xframe_options": 0, 
@@ -1931,8 +1160,8 @@
     "fields": {
         "menu_title": "", 
         "meta_description": "", 
-        "page_title": "Journalism++", 
-        "language": "fr", 
+        "page_title": "", 
+        "language": "en", 
         "title": "Home", 
         "has_url_overwrite": false, 
         "redirect": "", 
@@ -1941,7 +1170,7 @@
         "published": true, 
         "path": "", 
         "publisher_state": 0, 
-        "creation_date": "2014-04-16T09:52:57.706Z", 
+        "creation_date": "2014-04-25T14:58:25.208Z", 
         "slug": "home", 
         "publisher_public": 2
     }
@@ -1952,8 +1181,8 @@
     "fields": {
         "menu_title": "", 
         "meta_description": "", 
-        "page_title": "Journalism++", 
-        "language": "fr", 
+        "page_title": "", 
+        "language": "en", 
         "title": "Home", 
         "has_url_overwrite": false, 
         "redirect": "", 
@@ -1962,7 +1191,7 @@
         "published": true, 
         "path": "", 
         "publisher_state": 1, 
-        "creation_date": "2014-04-16T09:52:57.706Z", 
+        "creation_date": "2014-04-25T14:58:25.208Z", 
         "slug": "home", 
         "publisher_public": 1
     }
@@ -1974,18 +1203,18 @@
         "menu_title": "", 
         "meta_description": "", 
         "page_title": "", 
-        "language": "de", 
-        "title": "Home", 
+        "language": "en", 
+        "title": "Projects", 
         "has_url_overwrite": false, 
-        "redirect": "", 
+        "redirect": null, 
         "publisher_is_draft": true, 
-        "page": 1, 
+        "page": 3, 
         "published": true, 
-        "path": "", 
-        "publisher_state": 1, 
-        "creation_date": "2014-04-16T09:53:05.417Z", 
-        "slug": "home", 
-        "publisher_public": 8
+        "path": "projects", 
+        "publisher_state": 0, 
+        "creation_date": "2014-04-25T14:58:51.331Z", 
+        "slug": "projects", 
+        "publisher_public": 5
     }
 },
 {
@@ -1994,19 +1223,19 @@
     "fields": {
         "menu_title": "", 
         "meta_description": "", 
-        "page_title": "Paris / Berlin", 
-        "language": "fr", 
+        "page_title": "", 
+        "language": "en", 
         "title": "Paris/Berlin", 
         "has_url_overwrite": false, 
         "redirect": null, 
         "publisher_is_draft": true, 
-        "page": 3, 
+        "page": 4, 
         "published": true, 
         "path": "paris-berlin", 
-        "publisher_state": 1, 
-        "creation_date": "2014-04-16T09:54:38.530Z", 
+        "publisher_state": 0, 
+        "creation_date": "2014-04-25T15:04:54.941Z", 
         "slug": "paris-berlin", 
-        "publisher_public": 5
+        "publisher_public": 6
     }
 },
 {
@@ -2015,19 +1244,19 @@
     "fields": {
         "menu_title": "", 
         "meta_description": "", 
-        "page_title": "Paris / Berlin", 
-        "language": "fr", 
-        "title": "Paris/Berlin", 
+        "page_title": "", 
+        "language": "en", 
+        "title": "Projects", 
         "has_url_overwrite": false, 
         "redirect": null, 
         "publisher_is_draft": false, 
-        "page": 4, 
+        "page": 5, 
         "published": true, 
-        "path": "paris-berlin", 
+        "path": "projects", 
         "publisher_state": 1, 
-        "creation_date": "2014-04-16T09:54:38.530Z", 
-        "slug": "paris-berlin", 
-        "publisher_public": 4
+        "creation_date": "2014-04-25T14:58:51.331Z", 
+        "slug": "projects", 
+        "publisher_public": 3
     }
 },
 {
@@ -2037,18 +1266,18 @@
         "menu_title": "", 
         "meta_description": "", 
         "page_title": "", 
-        "language": "fr", 
-        "title": "Cologne", 
+        "language": "en", 
+        "title": "Paris/Berlin", 
         "has_url_overwrite": false, 
         "redirect": null, 
-        "publisher_is_draft": true, 
-        "page": 5, 
+        "publisher_is_draft": false, 
+        "page": 6, 
         "published": true, 
-        "path": "cologne", 
+        "path": "paris-berlin", 
         "publisher_state": 1, 
-        "creation_date": "2014-04-16T10:01:01.169Z", 
-        "slug": "cologne", 
-        "publisher_public": 7
+        "creation_date": "2014-04-25T15:04:54.941Z", 
+        "slug": "paris-berlin", 
+        "publisher_public": 4
     }
 },
 {
@@ -2059,17 +1288,17 @@
         "meta_description": "", 
         "page_title": "", 
         "language": "fr", 
-        "title": "Cologne", 
+        "title": "Journalism++", 
         "has_url_overwrite": false, 
         "redirect": null, 
-        "publisher_is_draft": false, 
-        "page": 6, 
+        "publisher_is_draft": true, 
+        "page": 1, 
         "published": true, 
-        "path": "cologne", 
+        "path": "", 
         "publisher_state": 1, 
-        "creation_date": "2014-04-16T10:01:01.169Z", 
-        "slug": "cologne", 
-        "publisher_public": 6
+        "creation_date": "2014-04-25T15:13:17.313Z", 
+        "slug": "journalism", 
+        "publisher_public": 8
     }
 },
 {
@@ -2079,363 +1308,22 @@
         "menu_title": "", 
         "meta_description": "", 
         "page_title": "", 
-        "language": "de", 
-        "title": "Home", 
-        "has_url_overwrite": false, 
-        "redirect": "", 
-        "publisher_is_draft": false, 
-        "page": 2, 
-        "published": true, 
-        "path": "", 
-        "publisher_state": 1, 
-        "creation_date": "2014-04-16T09:53:05.417Z", 
-        "slug": "home", 
-        "publisher_public": 3
-    }
-},
-{
-    "pk": 9, 
-    "model": "cms.title", 
-    "fields": {
-        "menu_title": "", 
-        "meta_description": "", 
-        "page_title": "", 
-        "language": "en", 
-        "title": "Home", 
-        "has_url_overwrite": false, 
-        "redirect": null, 
-        "publisher_is_draft": true, 
-        "page": 1, 
-        "published": true, 
-        "path": "", 
-        "publisher_state": 1, 
-        "creation_date": "2014-04-16T10:31:04.754Z", 
-        "slug": "home", 
-        "publisher_public": 10
-    }
-},
-{
-    "pk": 10, 
-    "model": "cms.title", 
-    "fields": {
-        "menu_title": "", 
-        "meta_description": "", 
-        "page_title": "", 
-        "language": "en", 
-        "title": "Home", 
+        "language": "fr", 
+        "title": "Journalism++", 
         "has_url_overwrite": false, 
         "redirect": null, 
         "publisher_is_draft": false, 
         "page": 2, 
         "published": true, 
         "path": "", 
-        "publisher_state": 0, 
-        "creation_date": "2014-04-16T10:31:04.754Z", 
-        "slug": "home", 
-        "publisher_public": 9
-    }
-},
-{
-    "pk": 11, 
-    "model": "cms.title", 
-    "fields": {
-        "menu_title": "", 
-        "meta_description": "", 
-        "page_title": "", 
-        "language": "fr", 
-        "title": "Projet", 
-        "has_url_overwrite": false, 
-        "redirect": null, 
-        "publisher_is_draft": true, 
-        "page": 7, 
-        "published": true, 
-        "path": "paris-berlin/projects", 
         "publisher_state": 1, 
-        "creation_date": "2014-04-16T13:51:00.184Z", 
-        "slug": "projects", 
-        "publisher_public": 13
-    }
-},
-{
-    "pk": 12, 
-    "model": "cms.title", 
-    "fields": {
-        "menu_title": "", 
-        "meta_description": "", 
-        "page_title": "", 
-        "language": "de", 
-        "title": "Projects", 
-        "has_url_overwrite": false, 
-        "redirect": null, 
-        "publisher_is_draft": true, 
-        "page": 7, 
-        "published": true, 
-        "path": "paris-berlin/projects", 
-        "publisher_state": 1, 
-        "creation_date": "2014-04-16T13:51:26.319Z", 
-        "slug": "projects", 
-        "publisher_public": 14
-    }
-},
-{
-    "pk": 13, 
-    "model": "cms.title", 
-    "fields": {
-        "menu_title": "", 
-        "meta_description": "", 
-        "page_title": "", 
-        "language": "fr", 
-        "title": "Projet", 
-        "has_url_overwrite": false, 
-        "redirect": null, 
-        "publisher_is_draft": false, 
-        "page": 8, 
-        "published": true, 
-        "path": "paris-berlin/projects", 
-        "publisher_state": 1, 
-        "creation_date": "2014-04-16T13:51:00.184Z", 
-        "slug": "projects", 
-        "publisher_public": 11
-    }
-},
-{
-    "pk": 14, 
-    "model": "cms.title", 
-    "fields": {
-        "menu_title": "", 
-        "meta_description": "", 
-        "page_title": "", 
-        "language": "de", 
-        "title": "Projects", 
-        "has_url_overwrite": false, 
-        "redirect": null, 
-        "publisher_is_draft": false, 
-        "page": 8, 
-        "published": true, 
-        "path": "paris-berlin/projects", 
-        "publisher_state": 0, 
-        "creation_date": "2014-04-16T13:51:26.319Z", 
-        "slug": "projects", 
-        "publisher_public": 12
-    }
-},
-{
-    "pk": 15, 
-    "model": "cms.title", 
-    "fields": {
-        "menu_title": "", 
-        "meta_description": "", 
-        "page_title": "", 
-        "language": "de", 
-        "title": "Paris/Berlin", 
-        "has_url_overwrite": false, 
-        "redirect": null, 
-        "publisher_is_draft": true, 
-        "page": 3, 
-        "published": true, 
-        "path": "paris-berlin", 
-        "publisher_state": 1, 
-        "creation_date": "2014-04-16T13:54:13.736Z", 
-        "slug": "paris-berlin", 
-        "publisher_public": 16
-    }
-},
-{
-    "pk": 16, 
-    "model": "cms.title", 
-    "fields": {
-        "menu_title": "", 
-        "meta_description": "", 
-        "page_title": "", 
-        "language": "de", 
-        "title": "Paris/Berlin", 
-        "has_url_overwrite": false, 
-        "redirect": null, 
-        "publisher_is_draft": false, 
-        "page": 4, 
-        "published": true, 
-        "path": "paris-berlin", 
-        "publisher_state": 1, 
-        "creation_date": "2014-04-16T13:54:13.736Z", 
-        "slug": "paris-berlin", 
-        "publisher_public": 15
-    }
-},
-{
-    "pk": 17, 
-    "model": "cms.title", 
-    "fields": {
-        "menu_title": "", 
-        "meta_description": "", 
-        "page_title": "", 
-        "language": "fr", 
-        "title": "Projet", 
-        "has_url_overwrite": false, 
-        "redirect": null, 
-        "publisher_is_draft": true, 
-        "page": 9, 
-        "published": true, 
-        "path": "cologne/projects", 
-        "publisher_state": 0, 
-        "creation_date": "2014-04-16T13:51:00.184Z", 
-        "slug": "projects", 
-        "publisher_public": 20
-    }
-},
-{
-    "pk": 18, 
-    "model": "cms.title", 
-    "fields": {
-        "menu_title": "", 
-        "meta_description": "", 
-        "page_title": "", 
-        "language": "de", 
-        "title": "Projects", 
-        "has_url_overwrite": false, 
-        "redirect": null, 
-        "publisher_is_draft": true, 
-        "page": 9, 
-        "published": true, 
-        "path": "cologne/projects", 
-        "publisher_state": 1, 
-        "creation_date": "2014-04-16T13:51:26.319Z", 
-        "slug": "projects", 
-        "publisher_public": 19
-    }
-},
-{
-    "pk": 19, 
-    "model": "cms.title", 
-    "fields": {
-        "menu_title": "", 
-        "meta_description": "", 
-        "page_title": "", 
-        "language": "de", 
-        "title": "Projects", 
-        "has_url_overwrite": false, 
-        "redirect": null, 
-        "publisher_is_draft": false, 
-        "page": 10, 
-        "published": false, 
-        "path": "cologne/projects", 
-        "publisher_state": 4, 
-        "creation_date": "2014-04-16T13:51:26.319Z", 
-        "slug": "projects", 
-        "publisher_public": 18
-    }
-},
-{
-    "pk": 20, 
-    "model": "cms.title", 
-    "fields": {
-        "menu_title": "", 
-        "meta_description": "", 
-        "page_title": "", 
-        "language": "fr", 
-        "title": "Projet", 
-        "has_url_overwrite": false, 
-        "redirect": null, 
-        "publisher_is_draft": false, 
-        "page": 10, 
-        "published": true, 
-        "path": "cologne/projects", 
-        "publisher_state": 0, 
-        "creation_date": "2014-04-16T13:51:00.184Z", 
-        "slug": "projects", 
-        "publisher_public": 17
-    }
-},
-{
-    "pk": 21, 
-    "model": "cms.title", 
-    "fields": {
-        "menu_title": "", 
-        "meta_description": "", 
-        "page_title": "", 
-        "language": "fr", 
-        "title": "Projects", 
-        "has_url_overwrite": false, 
-        "redirect": null, 
-        "publisher_is_draft": true, 
-        "page": 11, 
-        "published": true, 
-        "path": "projects", 
-        "publisher_state": 1, 
-        "creation_date": "2014-04-24T15:56:30.350Z", 
-        "slug": "projects", 
-        "publisher_public": 22
-    }
-},
-{
-    "pk": 22, 
-    "model": "cms.title", 
-    "fields": {
-        "menu_title": "", 
-        "meta_description": "", 
-        "page_title": "", 
-        "language": "fr", 
-        "title": "Projects", 
-        "has_url_overwrite": false, 
-        "redirect": null, 
-        "publisher_is_draft": false, 
-        "page": 12, 
-        "published": true, 
-        "path": "projects", 
-        "publisher_state": 1, 
-        "creation_date": "2014-04-24T15:56:30.350Z", 
-        "slug": "projects", 
-        "publisher_public": 21
+        "creation_date": "2014-04-25T15:13:17.313Z", 
+        "slug": "journalism", 
+        "publisher_public": 7
     }
 },
 {
     "pk": 1, 
-    "model": "cms.staticplaceholder", 
-    "fields": {
-        "code": "footer", 
-        "name": "footer", 
-        "creation_method": "template", 
-        "site": null, 
-        "draft": 12, 
-        "dirty": false, 
-        "public": 13
-    }
-},
-{
-    "pk": 25, 
-    "model": "djangocms_style.style", 
-    "fields": {
-        "additional_classes": "", 
-        "margin_right": null, 
-        "class_name": "header__title", 
-        "padding_bottom": null, 
-        "margin_left": null, 
-        "padding_right": null, 
-        "margin_top": null, 
-        "padding_left": null, 
-        "padding_top": null, 
-        "margin_bottom": null, 
-        "tag_type": "div"
-    }
-},
-{
-    "pk": 27, 
-    "model": "djangocms_style.style", 
-    "fields": {
-        "additional_classes": "", 
-        "margin_right": null, 
-        "class_name": "header__title", 
-        "padding_bottom": null, 
-        "margin_left": null, 
-        "padding_right": null, 
-        "margin_top": null, 
-        "padding_left": null, 
-        "padding_top": null, 
-        "margin_bottom": null, 
-        "tag_type": "div"
-    }
-},
-{
-    "pk": 69, 
     "model": "djangocms_style.style", 
     "fields": {
         "additional_classes": "", 
@@ -2452,7 +1340,7 @@
     }
 },
 {
-    "pk": 70, 
+    "pk": 5, 
     "model": "djangocms_style.style", 
     "fields": {
         "additional_classes": "", 
@@ -2469,7 +1357,7 @@
     }
 },
 {
-    "pk": 71, 
+    "pk": 8, 
     "model": "djangocms_style.style", 
     "fields": {
         "additional_classes": "", 
@@ -2486,7 +1374,7 @@
     }
 },
 {
-    "pk": 74, 
+    "pk": 29, 
     "model": "djangocms_style.style", 
     "fields": {
         "additional_classes": "", 
@@ -2503,7 +1391,7 @@
     }
 },
 {
-    "pk": 80, 
+    "pk": 31, 
     "model": "djangocms_style.style", 
     "fields": {
         "additional_classes": "", 
@@ -2520,7 +1408,7 @@
     }
 },
 {
-    "pk": 81, 
+    "pk": 35, 
     "model": "djangocms_style.style", 
     "fields": {
         "additional_classes": "", 
@@ -2537,7 +1425,7 @@
     }
 },
 {
-    "pk": 103, 
+    "pk": 44, 
     "model": "djangocms_style.style", 
     "fields": {
         "additional_classes": "", 
@@ -2554,143 +1442,7 @@
     }
 },
 {
-    "pk": 104, 
-    "model": "djangocms_style.style", 
-    "fields": {
-        "additional_classes": "", 
-        "margin_right": null, 
-        "class_name": "container", 
-        "padding_bottom": null, 
-        "margin_left": null, 
-        "padding_right": null, 
-        "margin_top": null, 
-        "padding_left": null, 
-        "padding_top": null, 
-        "margin_bottom": null, 
-        "tag_type": "div"
-    }
-},
-{
-    "pk": 107, 
-    "model": "djangocms_style.style", 
-    "fields": {
-        "additional_classes": "", 
-        "margin_right": null, 
-        "class_name": "container", 
-        "padding_bottom": null, 
-        "margin_left": null, 
-        "padding_right": null, 
-        "margin_top": null, 
-        "padding_left": null, 
-        "padding_top": null, 
-        "margin_bottom": null, 
-        "tag_type": "div"
-    }
-},
-{
-    "pk": 109, 
-    "model": "djangocms_style.style", 
-    "fields": {
-        "additional_classes": "", 
-        "margin_right": null, 
-        "class_name": "container", 
-        "padding_bottom": null, 
-        "margin_left": null, 
-        "padding_right": null, 
-        "margin_top": null, 
-        "padding_left": null, 
-        "padding_top": null, 
-        "margin_bottom": null, 
-        "tag_type": "div"
-    }
-},
-{
-    "pk": 116, 
-    "model": "djangocms_style.style", 
-    "fields": {
-        "additional_classes": "", 
-        "margin_right": null, 
-        "class_name": "header__title", 
-        "padding_bottom": null, 
-        "margin_left": null, 
-        "padding_right": null, 
-        "margin_top": null, 
-        "padding_left": null, 
-        "padding_top": null, 
-        "margin_bottom": null, 
-        "tag_type": "div"
-    }
-},
-{
-    "pk": 118, 
-    "model": "djangocms_style.style", 
-    "fields": {
-        "additional_classes": "", 
-        "margin_right": null, 
-        "class_name": "header__title", 
-        "padding_bottom": null, 
-        "margin_left": null, 
-        "padding_right": null, 
-        "margin_top": null, 
-        "padding_left": null, 
-        "padding_top": null, 
-        "margin_bottom": null, 
-        "tag_type": "div"
-    }
-},
-{
-    "pk": 121, 
-    "model": "djangocms_style.style", 
-    "fields": {
-        "additional_classes": "", 
-        "margin_right": null, 
-        "class_name": "container", 
-        "padding_bottom": null, 
-        "margin_left": null, 
-        "padding_right": null, 
-        "margin_top": null, 
-        "padding_left": null, 
-        "padding_top": null, 
-        "margin_bottom": null, 
-        "tag_type": "div"
-    }
-},
-{
-    "pk": 123, 
-    "model": "djangocms_style.style", 
-    "fields": {
-        "additional_classes": "", 
-        "margin_right": null, 
-        "class_name": "container", 
-        "padding_bottom": null, 
-        "margin_left": null, 
-        "padding_right": null, 
-        "margin_top": null, 
-        "padding_left": null, 
-        "padding_top": null, 
-        "margin_bottom": null, 
-        "tag_type": "div"
-    }
-},
-{
-    "pk": 126, 
-    "model": "djangocms_style.style", 
-    "fields": {
-        "additional_classes": "", 
-        "margin_right": null, 
-        "class_name": "container", 
-        "padding_bottom": null, 
-        "margin_left": null, 
-        "padding_right": null, 
-        "margin_top": null, 
-        "padding_left": null, 
-        "padding_top": null, 
-        "margin_bottom": null, 
-        "tag_type": "div"
-    }
-},
-{
-    "pk": 131, 
+    "pk": 53, 
     "model": "djangocms_style.style", 
     "fields": {
         "additional_classes": "", 
@@ -2708,6 +1460,14 @@
 },
 {
     "pk": 1, 
+    "model": "taggit.tag", 
+    "fields": {
+        "name": "evangelize", 
+        "slug": "evangelize"
+    }
+},
+{
+    "pk": 2, 
     "model": "taggit.tag", 
     "fields": {
         "name": "code-apps", 
@@ -2715,19 +1475,11 @@
     }
 },
 {
-    "pk": 2, 
+    "pk": 3, 
     "model": "taggit.tag", 
     "fields": {
         "name": "consulting", 
         "slug": "consulting"
-    }
-},
-{
-    "pk": 3, 
-    "model": "taggit.tag", 
-    "fields": {
-        "name": "design", 
-        "slug": "design"
     }
 },
 {
@@ -2739,15 +1491,7 @@
     }
 },
 {
-    "pk": 5, 
-    "model": "taggit.tag", 
-    "fields": {
-        "name": "evangelize", 
-        "slug": "evangelize"
-    }
-},
-{
-    "pk": 4, 
+    "pk": 1, 
     "model": "taggit.taggeditem", 
     "fields": {
         "tag": 1, 
@@ -2755,59 +1499,11 @@
             "jplusplus", 
             "project"
         ], 
-        "object_id": 8
+        "object_id": 1
     }
 },
 {
-    "pk": 5, 
-    "model": "taggit.taggeditem", 
-    "fields": {
-        "tag": 4, 
-        "content_type": [
-            "jplusplus", 
-            "project"
-        ], 
-        "object_id": 8
-    }
-},
-{
-    "pk": 6, 
-    "model": "taggit.taggeditem", 
-    "fields": {
-        "tag": 3, 
-        "content_type": [
-            "jplusplus", 
-            "project"
-        ], 
-        "object_id": 6
-    }
-},
-{
-    "pk": 16, 
-    "model": "taggit.taggeditem", 
-    "fields": {
-        "tag": 3, 
-        "content_type": [
-            "jplusplus", 
-            "project"
-        ], 
-        "object_id": 7
-    }
-},
-{
-    "pk": 17, 
-    "model": "taggit.taggeditem", 
-    "fields": {
-        "tag": 5, 
-        "content_type": [
-            "jplusplus", 
-            "project"
-        ], 
-        "object_id": 4
-    }
-},
-{
-    "pk": 26, 
+    "pk": 2, 
     "model": "taggit.taggeditem", 
     "fields": {
         "tag": 2, 
@@ -2815,131 +1511,11 @@
             "jplusplus", 
             "project"
         ], 
-        "object_id": 2
+        "object_id": 1
     }
 },
 {
-    "pk": 27, 
-    "model": "taggit.taggeditem", 
-    "fields": {
-        "tag": 3, 
-        "content_type": [
-            "jplusplus", 
-            "project"
-        ], 
-        "object_id": 2
-    }
-},
-{
-    "pk": 28, 
-    "model": "taggit.taggeditem", 
-    "fields": {
-        "tag": 4, 
-        "content_type": [
-            "jplusplus", 
-            "project"
-        ], 
-        "object_id": 2
-    }
-},
-{
-    "pk": 29, 
-    "model": "taggit.taggeditem", 
-    "fields": {
-        "tag": 5, 
-        "content_type": [
-            "jplusplus", 
-            "project"
-        ], 
-        "object_id": 2
-    }
-},
-{
-    "pk": 30, 
-    "model": "taggit.taggeditem", 
-    "fields": {
-        "tag": 1, 
-        "content_type": [
-            "jplusplus", 
-            "project"
-        ], 
-        "object_id": 3
-    }
-},
-{
-    "pk": 31, 
-    "model": "taggit.taggeditem", 
-    "fields": {
-        "tag": 2, 
-        "content_type": [
-            "jplusplus", 
-            "project"
-        ], 
-        "object_id": 3
-    }
-},
-{
-    "pk": 32, 
-    "model": "taggit.taggeditem", 
-    "fields": {
-        "tag": 2, 
-        "content_type": [
-            "jplusplus", 
-            "project"
-        ], 
-        "object_id": 5
-    }
-},
-{
-    "pk": 33, 
-    "model": "taggit.taggeditem", 
-    "fields": {
-        "tag": 4, 
-        "content_type": [
-            "jplusplus", 
-            "project"
-        ], 
-        "object_id": 5
-    }
-},
-{
-    "pk": 34, 
-    "model": "taggit.taggeditem", 
-    "fields": {
-        "tag": 5, 
-        "content_type": [
-            "jplusplus", 
-            "project"
-        ], 
-        "object_id": 5
-    }
-},
-{
-    "pk": 35, 
-    "model": "taggit.taggeditem", 
-    "fields": {
-        "tag": 2, 
-        "content_type": [
-            "jplusplus", 
-            "project"
-        ], 
-        "object_id": 9
-    }
-},
-{
-    "pk": 36, 
-    "model": "taggit.taggeditem", 
-    "fields": {
-        "tag": 3, 
-        "content_type": [
-            "jplusplus", 
-            "project"
-        ], 
-        "object_id": 9
-    }
-},
-{
-    "pk": 37, 
+    "pk": 3, 
     "model": "taggit.taggeditem", 
     "fields": {
         "tag": 3, 
@@ -2951,354 +1527,110 @@
     }
 },
 {
-    "pk": 24, 
-    "model": "djangocms_text_ckeditor.text", 
+    "pk": 4, 
+    "model": "taggit.taggeditem", 
     "fields": {
-        "body": "<h1><strong>DATA-DRIVEN</strong> STORYTELLING</h1>\n"
+        "tag": 4, 
+        "content_type": [
+            "jplusplus", 
+            "project"
+        ], 
+        "object_id": 1
     }
 },
 {
-    "pk": 26, 
+    "pk": 3, 
     "model": "djangocms_text_ckeditor.text", 
     "fields": {
-        "body": "<h1><strong>DATA-DRIVEN</strong> STORYTELLING</h1>\n"
+        "body": "<p>is an agency for</p>\n\n<p><strong>DATA-DRIVEN</strong> STORYTELLING</p>\n"
+    }
+},
+{
+    "pk": 34, 
+    "model": "djangocms_text_ckeditor.text", 
+    "fields": {
+        "body": "<p>is an agency for</p>\n\n<p><strong>DATA-DRIVEN</strong> STORYTELLING</p>\n"
+    }
+},
+{
+    "pk": 43, 
+    "model": "djangocms_text_ckeditor.text", 
+    "fields": {
+        "body": "<p>is an agency for</p>\n\n<p><strong>DATA-DRIVEN</strong> STORYTELLING</p>\n"
+    }
+},
+{
+    "pk": 52, 
+    "model": "djangocms_text_ckeditor.text", 
+    "fields": {
+        "body": "<p>is an agency for</p>\n\n<p><strong>DATA-DRIVEN</strong> STORYTELLING</p>\n"
+    }
+},
+{
+    "pk": 18, 
+    "model": "djangocms_link.link", 
+    "fields": {
+        "mailto": "", 
+        "target": "", 
+        "url": "", 
+        "page_link": 4, 
+        "phone": "", 
+        "name": "paris/berlin"
     }
 },
 {
     "pk": 40, 
-    "model": "djangocms_text_ckeditor.text", 
-    "fields": {
-        "body": "<p><img src=\"/static/cms/images/plugins/link.png\" id=\"plugin_obj_76\" alt=\"Lien\" title=\"Lien - paris\" style=\"font-size: 13px; line-height: 1.6em;\"><span style=\"font-size: 13px; line-height: 1.6em;\">\u00a0/\u00a0</span><img src=\"/static/cms/images/plugins/link.png\" id=\"plugin_obj_77\" alt=\"Lien\" title=\"Lien - Cologne\" style=\"font-size: 13px; line-height: 1.6em;\"></p>\n"
-    }
-},
-{
-    "pk": 68, 
-    "model": "djangocms_text_ckeditor.text", 
-    "fields": {
-        "body": "<p>is an agency for</p>\n\n<p><strong>DATA-DRIVEN</strong> STORYTELLING</p>\n"
-    }
-},
-{
-    "pk": 75, 
-    "model": "djangocms_text_ckeditor.text", 
-    "fields": {
-        "body": "<p>If you have questions, comments, or a project in mind, let's talk.</p>\n\n<p>Fill out our contact form, and we'll be in touch as soon as we can!</p>\n"
-    }
-},
-{
-    "pk": 78, 
-    "model": "djangocms_text_ckeditor.text", 
-    "fields": {
-        "body": "<h2>Our Team</h2>\n\n<p>A network of independent for-profit companies operating from 6 different clities joined together in the coolest franchise of data-driven storytellers.</p>\n\n<h3>paris-berlin</h3>\n\n<h2>let's talk</h2>\n"
-    }
-},
-{
-    "pk": 110, 
-    "model": "djangocms_text_ckeditor.text", 
-    "fields": {
-        "body": "<h2>Our Team</h2>\n\n<p>A network of independent for-profit companies operating from 6 different clities joined together in the coolest franchise of data-driven storytellers.</p>\n\n<h3>paris-berlin</h3>\n\n<h2>let's talk</h2>\n"
-    }
-},
-{
-    "pk": 117, 
-    "model": "djangocms_text_ckeditor.text", 
-    "fields": {
-        "body": "<h1><strong>DATA-DRIVEN</strong> STORYTELLING</h1>\n"
-    }
-},
-{
-    "pk": 119, 
-    "model": "djangocms_text_ckeditor.text", 
-    "fields": {
-        "body": "<h1><strong>DATA-DRIVEN</strong> STORYTELLING</h1>\n"
-    }
-},
-{
-    "pk": 127, 
-    "model": "djangocms_text_ckeditor.text", 
-    "fields": {
-        "body": "<p><img src=\"/static/cms/images/plugins/link.png\" id=\"plugin_obj_128\" alt=\"Lien - paris\" title=\"Lien - paris\"><span style=\"font-size: 13px; line-height: 1.6em;\">\u00a0/\u00a0</span><img src=\"/static/cms/images/plugins/link.png\" id=\"plugin_obj_129\" alt=\"Lien - Cologne\" title=\"Lien - Cologne\"></p>\n"
-    }
-},
-{
-    "pk": 132, 
-    "model": "djangocms_text_ckeditor.text", 
-    "fields": {
-        "body": "<p>If you have questions, comments, or a project in mind, let's talk.</p>\n\n<p>Fill out our contact form, and we'll be in touch as soon as we can!</p>\n"
-    }
-},
-{
-    "pk": 134, 
-    "model": "djangocms_text_ckeditor.text", 
-    "fields": {
-        "body": "<p>is an agency for</p>\n\n<p><strong>DATA-DRIVEN</strong> STORYTELLING</p>\n"
-    }
-},
-{
-    "pk": 20, 
     "model": "djangocms_link.link", 
     "fields": {
         "mailto": "", 
         "target": "", 
         "url": "", 
-        "page_link": 9, 
+        "page_link": 4, 
         "phone": "", 
-        "name": "Nos projets"
+        "name": "paris/berlin"
     }
 },
 {
-    "pk": 21, 
+    "pk": 49, 
     "model": "djangocms_link.link", 
     "fields": {
         "mailto": "", 
         "target": "", 
         "url": "", 
-        "page_link": 9, 
+        "page_link": 4, 
         "phone": "", 
-        "name": "Nos projets"
+        "name": "paris/berlin"
     }
 },
 {
-    "pk": 22, 
+    "pk": 59, 
     "model": "djangocms_link.link", 
     "fields": {
         "mailto": "", 
         "target": "", 
         "url": "", 
-        "page_link": 7, 
+        "page_link": 4, 
         "phone": "", 
-        "name": "projekt"
-    }
-},
-{
-    "pk": 23, 
-    "model": "djangocms_link.link", 
-    "fields": {
-        "mailto": "", 
-        "target": "", 
-        "url": "", 
-        "page_link": 7, 
-        "phone": "", 
-        "name": "projekt"
-    }
-},
-{
-    "pk": 76, 
-    "model": "djangocms_link.link", 
-    "fields": {
-        "mailto": "", 
-        "target": "", 
-        "url": "", 
-        "page_link": 3, 
-        "phone": "", 
-        "name": "paris"
-    }
-},
-{
-    "pk": 77, 
-    "model": "djangocms_link.link", 
-    "fields": {
-        "mailto": "", 
-        "target": "", 
-        "url": "", 
-        "page_link": 5, 
-        "phone": "", 
-        "name": "Cologne"
-    }
-},
-{
-    "pk": 128, 
-    "model": "djangocms_link.link", 
-    "fields": {
-        "mailto": "", 
-        "target": "", 
-        "url": "", 
-        "page_link": 3, 
-        "phone": "", 
-        "name": "paris"
-    }
-},
-{
-    "pk": 129, 
-    "model": "djangocms_link.link", 
-    "fields": {
-        "mailto": "", 
-        "target": "", 
-        "url": "", 
-        "page_link": 5, 
-        "phone": "", 
-        "name": "Cologne"
+        "name": "paris/berlin"
     }
 },
 {
     "pk": 1, 
     "model": "jplusplus.office", 
     "fields": {
-        "page_link": 3, 
+        "page_link": 4, 
         "slug": "paris-berlin", 
         "title": "Paris/Berlin"
     }
 },
 {
-    "pk": 2, 
-    "model": "jplusplus.office", 
-    "fields": {
-        "page_link": 5, 
-        "slug": "cologne", 
-        "title": "Cologne"
-    }
-},
-{
     "pk": 1, 
     "model": "jplusplus.projecttranslation", 
     "fields": {
-        "language_code": "fr", 
-        "client": "OKF", 
-        "master": 1, 
-        "description": "<p>Spending Stories est un proj&eacute; de l&#39;[Open Knowledge Foundation](http://fr.okfn.org/&lrm;) visant &agrave; am&eacute;liorer la compr&eacute;hension des donn&eacute;es budg&eacute;taires mondiales [en savoir plus](http://blog.okfn.org/category/okf-projects/spending-stories/).Ce projet est financ&eacute; par la Knight Foundation. <strong>Cette partie</strong> du projet &quot;Spending Stories&quot; permet aux utilisateurs de mettre des donn&eacute;es mon&eacute;taires en perspective et d&#39;obtenir un contexte. N&#39;importe quel montant dans n&#39;importe quelle devise peut-&ecirc;tre entr&eacute; et compar&eacute; &agrave; de vraies d&eacute;penses. Les r&eacute;sultats prennent en compte l&#39;inflation dans le pays dans lequel la d&eacute;pense a &eacute;t&eacute; r&eacute;alis&eacute;e ainsi que le taux de change entre deux monnaies diff&eacute;rentes, afin de pouvoir les comparer. Ce projet est [open source](https://github.com/jplusplus/okf-spending-stories) et peut-&ecirc;tre install&eacute; sur vos propres serveurs afin de pouvoir utiliser les d&eacute;penses budg&eacute;taires de votre choix dans votre base de donn&eacute;es. **L&#39;Open Knowledge foundation a fait appel &agrave; la partie de Journalism++ bas&eacute;e &agrave; Paris et Berlin pour r&eacute;aliser cette application. Ce projet a &eacute;t&eacute; g&eacute;r&eacute; par [Anne-Lise Bouyer](twitter.com/annelisebouyer) et d&eacute;velopp&eacute; par [Pierre Bellon](twitter.com/toutenrab), [Edouard Richard](twitter.com/vied12), [Paul Joannon](twitter.com/paulloz) et [Pierre Romera.](twitter.com/pirhoo).**</p>\r\n", 
-        "title": "Spending Stories"
-    }
-},
-{
-    "pk": 2, 
-    "model": "jplusplus.projecttranslation", 
-    "fields": {
-        "language_code": "fr", 
-        "client": null, 
-        "master": 2, 
-        "description": "<p>Journalism++ a d&eacute;velopp&eacute; le site du webdocumentaire &quot;Une contre-histoire des Internets&quot;, co-produit par Arte et Premi&egrave;res Lignes. L&rsquo;objectif de ce webdocumentaire : raconter et d&eacute;couvrir pourquoi, et comment, les internets ont chang&eacute; nos vies, recenser ce qu&rsquo;on n&rsquo;a pas eu le droit d&rsquo;y faire, ce qu&rsquo;on a invent&eacute; pour le faire quand m&ecirc;me, et ainsi participer collectivement &agrave; l&rsquo;&eacute;laboration d&rsquo;une &ldquo;contre-histoire des internets&rdquo;, qui se veut libre, ouverte et partag&eacute;e. Le site fait le lien avec le documentaire &eacute;crit par Jean-Marc Manach (@manhack) et Julien Goetz (@juliengoetz) r&eacute;alis&eacute; par Sylvain Berg&egrave;re, diffus&eacute; sur Art&eacute; en Mai 2013.</p>\r\n", 
-        "title": "Une contre-histoire des Internets"
-    }
-},
-{
-    "pk": 3, 
-    "model": "jplusplus.projecttranslation", 
-    "fields": {
         "language_code": "en", 
-        "client": null, 
-        "master": 2, 
-        "description": "Journalism++ developed the site of the web documentary \"The counter-history of the Internets\", co-produced by Arte and Premi\u00e8res Lignes.\r\n\r\nThe objective of this web documentary: tell and find out why, and how, the internets have changed our lives, identify what we don't have the right to do, what was invented to do it anyway and thus collectively participate in the development of a \"counter-history of the Internets\", which wants to be free, open and shared.\r\n\r\n\r\nThe site is related to the documentary written by Jean-Marc Manach (@manhack) and Julien Goetz (@juliengoetz),directed by Sylvain Berg\u00e8re, broadcast on Arte in May 2013.", 
-        "title": "The counter-history of the Internets"
-    }
-},
-{
-    "pk": 4, 
-    "model": "jplusplus.projecttranslation", 
-    "fields": {
-        "language_code": "de", 
-        "client": null, 
-        "master": 2, 
-        "description": " Journalism++ a d\u00e9velopp\u00e9 le site du webdocumentaire \"Une contre-histoire des Internets\", co-produit par Arte et Premi\u00e8res Lignes.\r\n\r\n L\u2019objectif de ce webdocumentaire : raconter et d\u00e9couvrir pourquoi, et comment, les internets ont chang\u00e9 nos vies, recenser ce qu\u2019on n\u2019a pas eu le droit d\u2019y faire, ce qu\u2019on a invent\u00e9 pour le faire quand m\u00eame, et ainsi participer collectivement \u00e0 l\u2019\u00e9laboration d\u2019une \u201ccontre-histoire des internets\u201d, qui se veut libre, ouverte et partag\u00e9e.\r\n\r\n\r\nLe site fait le lien avec le documentaire \u00e9crit par Jean-Marc Manach (@manhack) et Julien Goetz (@juliengoetz) r\u00e9alis\u00e9 par Sylvain Berg\u00e8re, diffus\u00e9 sur Art\u00e9 en Mai 2013.", 
-        "title": "Eine gegengeschichte der Internetze"
-    }
-},
-{
-    "pk": 5, 
-    "model": "jplusplus.projecttranslation", 
-    "fields": {
-        "language_code": "de", 
-        "client": null, 
+        "client": "", 
         "master": 1, 
-        "description": "Spending Stories is a project by the [Open Knowledge Foundation](http://okfn.org) aiming at improving fiscal literacy and providing greater awareness of budget data worldwide. Read more about it on this blog. It is supported by a grant by the Knight Foundation.\r\n\r\nThis part of the Spending Stories project enables users to put amounts into perspective. Any amount in any currency can be queried and compared against real-life expenditures. The results take into account inflation in the country where the expenditure has been realized.\r\n\r\nThe project is [open source](https://github.com/jplusplus/okf-spending-stories) and can be installed on your own server for you to insert your own spending stories. Find more instructions at Github.\r\n\r\n**The Open Knowledge foundation asked Paris and Berlin-based agency Journalism++ SAS  to build this app. It was managed by [Anne-Lise Bouyer](twitter.com/annelisebouyer) and coded by [Pierre Bellon](twitter.com/toutenrab), [Edouard Richard](twitter.com/vied12), [Paul Joannon](twitter.com/paulloz) and [Pierre Romera.](twitter.com/pirhoo).**", 
-        "title": "Spending Stories"
-    }
-},
-{
-    "pk": 6, 
-    "model": "jplusplus.projecttranslation", 
-    "fields": {
-        "language_code": "fr", 
-        "client": null, 
-        "master": 3, 
-        "description": "<p>Journalism++ participe au projet [Datawrapper](http://datawrapper.de/), initi&eacute; par Mirko Lorenz pour le compte de [ABZV](http://abzv.de/), un organisme de formation continue pour journalistes. L&rsquo;objectif est de permettre &agrave; tous les journalistes de cr&eacute;er des diagrammes simples et corrects en quelques secondes, afin de les int&eacute;grer ensuite &agrave; leurs articles.</p>\r\n\r\n<p>Les journalistes apr&eacute;cient la simplicit&eacute; du produit et la justesse des visualisations produites, qui se fondent sur les enseignement de [Dona Wong](http://www.amazon.com/Street-Journal-Guide-Information-Graphics/dp/0393072959), du Wall Street Journal. Datawrapper permet &agrave; tout m&eacute;dia de personnaliser facilement le design de l&rsquo;outil en fonction de ses besoins.</p>\r\n\r\n<p>[@nicolaskb](https://twitter.com/#%21/nicolaskb/) a r&eacute;alis&eacute; le prototype de Datawrapper et la version 1.0 est maintenant cod&eacute;e principalement par [@driven_by_data](https://twitter.com/driven_by_data). Datawrapper est utilis&eacute; par [The Guardian](http://www.guardian.co.uk/), [Ruhr Nachrichten](http://www.ruhrnachrichten.de/) (Dortmund), [L&rsquo;Avenir](http://www.lavenir.net/) (Belgique) et [RTL.nl](http://www.rtl.nl/experience/rtlnl/), entre autres.</p>\r\n", 
-        "title": "Datawrapper: des visualisations en quelques secondes"
-    }
-},
-{
-    "pk": 7, 
-    "model": "jplusplus.projecttranslation", 
-    "fields": {
-        "language_code": "de", 
-        "client": null, 
-        "master": 3, 
-        "description": "<p>Journalism++ ist sehr stolz, am Datawrapper-Projekt teilzunehmen. Das Projekt wurde von Mirko Lorenz gestartet und wird von der [ABZV](http://abzv.de/) finanziert. Das Ziel ist, dass Journalisten einfache und korrekte Diagramme, die dann in Artikel eingebettet werden k&ouml;nnen, in Sekunden selbst bauen k&ouml;nnen.</p>\r\n\r\n<p>Journalisten lieben die Einfachheit des Produktes und die Tatsache, dass Datawrapper sie daran hindert, falscher Charts zu ver&ouml;ffentlichen. Das Charts Design folgt der Lehre von [Dona Wong](http://www.amazon.com/Street-Journal-Guide-Information-Graphics/dp/0393072959) vom Wall Street Journal. Datawrapper funktioniert so, dass jede Redaktion es einfach und schnell installieren und personalisieren kann.</p>\r\n\r\n<p>[@nicolaskb](https://twitter.com/#%21/nicolaskb/) hat den Prototyp f&uuml;r Datawrapper codiert. Version 1.0 wird jetzt von [@driven_by_data](https://twitter.com/driven_by_data) entwickelt. Datawrapper wird regelm&auml;&szlig;ig von [The Guardian](http://www.guardian.co.uk/), [Ruhr Nachrichten](http://www.ruhrnachrichten.de/) (Dortmund), [L&rsquo;Avenir](http://www.lavenir.net/) (Belgien) und [RTL.nl](http://www.rtl.nl/experience/rtlnl/) u.a. verwendet.</p>\r\n", 
-        "title": "Datawrapper: Open Source Datenvisualisierung"
-    }
-},
-{
-    "pk": 8, 
-    "model": "jplusplus.projecttranslation", 
-    "fields": {
-        "language_code": "en", 
-        "client": null, 
-        "master": 3, 
-        "description": "<p>Journalism++ is very proud to take part in [Datawrapper](http://datawrapper.de/). The project was started by Mirko Lorenz and is financed by [ABZV](http://abzv.de/), a German training institute for journalists. The goal is to let any journalist build simple and correct charts in seconds that can then be embedded in articles.</p>\r\n\r\n<p>Journalists love the simplicity of the product and the fact that Datawrapper prevents them from publishing wrong charts. The charts design follows the teaching of The Wall Street Journal&rsquo;s [Dona Wong](http://www.amazon.com/Street-Journal-Guide-Information-Graphics/dp/0393072959). Datawrapper is built in such a way that any media organization can install and customize it quickly.</p>\r\n\r\n<p>[@nicolaskb](https://twitter.com/#%21/nicolaskb/) coded the prototype for Datawrapper. Version 1.0 is now developed by [@driven_by_data](https://twitter.com/driven_by_data). Datawrapper is used regularly by [The Guardian](http://www.guardian.co.uk/), [Ruhr Nachrichten](http://www.ruhrnachrichten.de/) (Dortmund), [L&rsquo;Avenir](http://www.lavenir.net/) (Belgium) and [RTL.nl](http://www.rtl.nl/experience/rtlnl/) among others.</p>\r\n", 
-        "title": "Datawrapper: Build charts\u00a0in seconds"
-    }
-},
-{
-    "pk": 9, 
-    "model": "jplusplus.projecttranslation", 
-    "fields": {
-        "language_code": "fr", 
-        "client": null, 
-        "master": 4, 
-        "description": "<p>Spending Stories est un proj&eacute; de l&#39;[Open Knowledge Foundation](http://fr.okfn.org/&lrm;) visant &agrave; am&eacute;liorer la compr&eacute;hension des donn&eacute;es budg&eacute;taires mondiales [en savoir plus](http://blog.okfn.org/category/okf-projects/spending-stories/).Ce projet est financ&eacute; par la Knight Foundation. <strong>Cette partie</strong> du projet &quot;Spending Stories&quot; permet aux utilisateurs de mettre des donn&eacute;es mon&eacute;taires en perspective et d&#39;obtenir un contexte. N&#39;importe quel montant dans n&#39;importe quelle devise peut-&ecirc;tre entr&eacute; et compar&eacute; &agrave; de vraies d&eacute;penses. Les r&eacute;sultats prennent en compte l&#39;inflation dans le pays dans lequel la d&eacute;pense a &eacute;t&eacute; r&eacute;alis&eacute;e ainsi que le taux de change entre deux monnaies diff&eacute;rentes, afin de pouvoir les comparer. Ce projet est [open source](https://github.com/jplusplus/okf-spending-stories) et peut-&ecirc;tre install&eacute; sur vos propres serveurs afin de pouvoir utiliser les d&eacute;penses budg&eacute;taires de votre choix dans votre base de donn&eacute;es. **L&#39;Open Knowledge foundation a fait appel &agrave; la partie de Journalism++ bas&eacute;e &agrave; Paris et Berlin pour r&eacute;aliser cette application. Ce projet a &eacute;t&eacute; g&eacute;r&eacute; par [Anne-Lise Bouyer](twitter.com/annelisebouyer) et d&eacute;velopp&eacute; par [Pierre Bellon](twitter.com/toutenrab), [Edouard Richard](twitter.com/vied12), [Paul Joannon](twitter.com/paulloz) et [Pierre Romera.](twitter.com/pirhoo).**</p>\r\n", 
-        "title": "Spending Stories"
-    }
-},
-{
-    "pk": 10, 
-    "model": "jplusplus.projecttranslation", 
-    "fields": {
-        "language_code": "fr", 
-        "client": null, 
-        "master": 5, 
-        "description": "<p>Spending Stories est un proj&eacute; de l&#39;[Open Knowledge Foundation](http://fr.okfn.org/&lrm;) visant &agrave; am&eacute;liorer la compr&eacute;hension des donn&eacute;es budg&eacute;taires mondiales [en savoir plus](http://blog.okfn.org/category/okf-projects/spending-stories/).Ce projet est financ&eacute; par la Knight Foundation. <strong>Cette partie</strong> du projet &quot;Spending Stories&quot; permet aux utilisateurs de mettre des donn&eacute;es mon&eacute;taires en perspective et d&#39;obtenir un contexte. N&#39;importe quel montant dans n&#39;importe quelle devise peut-&ecirc;tre entr&eacute; et compar&eacute; &agrave; de vraies d&eacute;penses. Les r&eacute;sultats prennent en compte l&#39;inflation dans le pays dans lequel la d&eacute;pense a &eacute;t&eacute; r&eacute;alis&eacute;e ainsi que le taux de change entre deux monnaies diff&eacute;rentes, afin de pouvoir les comparer. Ce projet est [open source](https://github.com/jplusplus/okf-spending-stories) et peut-&ecirc;tre install&eacute; sur vos propres serveurs afin de pouvoir utiliser les d&eacute;penses budg&eacute;taires de votre choix dans votre base de donn&eacute;es. **L&#39;Open Knowledge foundation a fait appel &agrave; la partie de Journalism++ bas&eacute;e &agrave; Paris et Berlin pour r&eacute;aliser cette application. Ce projet a &eacute;t&eacute; g&eacute;r&eacute; par [Anne-Lise Bouyer](twitter.com/annelisebouyer) et d&eacute;velopp&eacute; par [Pierre Bellon](twitter.com/toutenrab), [Edouard Richard](twitter.com/vied12), [Paul Joannon](twitter.com/paulloz) et [Pierre Romera.](twitter.com/pirhoo).**</p>\r\n", 
-        "title": "Spending Stories"
-    }
-},
-{
-    "pk": 11, 
-    "model": "jplusplus.projecttranslation", 
-    "fields": {
-        "language_code": "fr", 
-        "client": null, 
-        "master": 6, 
-        "description": "<p>Spending Stories est un proj&eacute; de l&#39;[Open Knowledge Foundation](http://fr.okfn.org/&lrm;) visant &agrave; am&eacute;liorer la compr&eacute;hension des donn&eacute;es budg&eacute;taires mondiales [en savoir plus](http://blog.okfn.org/category/okf-projects/spending-stories/).Ce projet est financ&eacute; par la Knight Foundation. <strong>Cette partie</strong> du projet &quot;Spending Stories&quot; permet aux utilisateurs de mettre des donn&eacute;es mon&eacute;taires en perspective et d&#39;obtenir un contexte. N&#39;importe quel montant dans n&#39;importe quelle devise peut-&ecirc;tre entr&eacute; et compar&eacute; &agrave; de vraies d&eacute;penses. Les r&eacute;sultats prennent en compte l&#39;inflation dans le pays dans lequel la d&eacute;pense a &eacute;t&eacute; r&eacute;alis&eacute;e ainsi que le taux de change entre deux monnaies diff&eacute;rentes, afin de pouvoir les comparer. Ce projet est [open source](https://github.com/jplusplus/okf-spending-stories) et peut-&ecirc;tre install&eacute; sur vos propres serveurs afin de pouvoir utiliser les d&eacute;penses budg&eacute;taires de votre choix dans votre base de donn&eacute;es. **L&#39;Open Knowledge foundation a fait appel &agrave; la partie de Journalism++ bas&eacute;e &agrave; Paris et Berlin pour r&eacute;aliser cette application. Ce projet a &eacute;t&eacute; g&eacute;r&eacute; par [Anne-Lise Bouyer](twitter.com/annelisebouyer) et d&eacute;velopp&eacute; par [Pierre Bellon](twitter.com/toutenrab), [Edouard Richard](twitter.com/vied12), [Paul Joannon](twitter.com/paulloz) et [Pierre Romera.](twitter.com/pirhoo).**</p>\r\n", 
-        "title": "Spending Stories"
-    }
-},
-{
-    "pk": 12, 
-    "model": "jplusplus.projecttranslation", 
-    "fields": {
-        "language_code": "fr", 
-        "client": null, 
-        "master": 7, 
-        "description": "<p>Spending Stories est un proj&eacute; de l&#39;[Open Knowledge Foundation](http://fr.okfn.org/&lrm;) visant &agrave; am&eacute;liorer la compr&eacute;hension des donn&eacute;es budg&eacute;taires mondiales [en savoir plus](http://blog.okfn.org/category/okf-projects/spending-stories/).Ce projet est financ&eacute; par la Knight Foundation. <strong>Cette partie</strong> du projet &quot;Spending Stories&quot; permet aux utilisateurs de mettre des donn&eacute;es mon&eacute;taires en perspective et d&#39;obtenir un contexte. N&#39;importe quel montant dans n&#39;importe quelle devise peut-&ecirc;tre entr&eacute; et compar&eacute; &agrave; de vraies d&eacute;penses. Les r&eacute;sultats prennent en compte l&#39;inflation dans le pays dans lequel la d&eacute;pense a &eacute;t&eacute; r&eacute;alis&eacute;e ainsi que le taux de change entre deux monnaies diff&eacute;rentes, afin de pouvoir les comparer. Ce projet est [open source](https://github.com/jplusplus/okf-spending-stories) et peut-&ecirc;tre install&eacute; sur vos propres serveurs afin de pouvoir utiliser les d&eacute;penses budg&eacute;taires de votre choix dans votre base de donn&eacute;es. **L&#39;Open Knowledge foundation a fait appel &agrave; la partie de Journalism++ bas&eacute;e &agrave; Paris et Berlin pour r&eacute;aliser cette application. Ce projet a &eacute;t&eacute; g&eacute;r&eacute; par [Anne-Lise Bouyer](twitter.com/annelisebouyer) et d&eacute;velopp&eacute; par [Pierre Bellon](twitter.com/toutenrab), [Edouard Richard](twitter.com/vied12), [Paul Joannon](twitter.com/paulloz) et [Pierre Romera.](twitter.com/pirhoo).**</p>\r\n", 
-        "title": "Spending Stories"
-    }
-},
-{
-    "pk": 13, 
-    "model": "jplusplus.projecttranslation", 
-    "fields": {
-        "language_code": "fr", 
-        "client": null, 
-        "master": 8, 
-        "description": "<p>Spending Stories est un proj&eacute; de l&#39;[Open Knowledge Foundation](http://fr.okfn.org/&lrm;) visant &agrave; am&eacute;liorer la compr&eacute;hension des donn&eacute;es budg&eacute;taires mondiales [en savoir plus](http://blog.okfn.org/category/okf-projects/spending-stories/).Ce projet est financ&eacute; par la Knight Foundation. <strong>Cette partie</strong> du projet &quot;Spending Stories&quot; permet aux utilisateurs de mettre des donn&eacute;es mon&eacute;taires en perspective et d&#39;obtenir un contexte. N&#39;importe quel montant dans n&#39;importe quelle devise peut-&ecirc;tre entr&eacute; et compar&eacute; &agrave; de vraies d&eacute;penses. Les r&eacute;sultats prennent en compte l&#39;inflation dans le pays dans lequel la d&eacute;pense a &eacute;t&eacute; r&eacute;alis&eacute;e ainsi que le taux de change entre deux monnaies diff&eacute;rentes, afin de pouvoir les comparer. Ce projet est [open source](https://github.com/jplusplus/okf-spending-stories) et peut-&ecirc;tre install&eacute; sur vos propres serveurs afin de pouvoir utiliser les d&eacute;penses budg&eacute;taires de votre choix dans votre base de donn&eacute;es. **L&#39;Open Knowledge foundation a fait appel &agrave; la partie de Journalism++ bas&eacute;e &agrave; Paris et Berlin pour r&eacute;aliser cette application. Ce projet a &eacute;t&eacute; g&eacute;r&eacute; par [Anne-Lise Bouyer](twitter.com/annelisebouyer) et d&eacute;velopp&eacute; par [Pierre Bellon](twitter.com/toutenrab), [Edouard Richard](twitter.com/vied12), [Paul Joannon](twitter.com/paulloz) et [Pierre Romera.](twitter.com/pirhoo).**</p>\r\n", 
-        "title": "Spending Stories"
-    }
-},
-{
-    "pk": 14, 
-    "model": "jplusplus.projecttranslation", 
-    "fields": {
-        "language_code": "fr", 
-        "client": null, 
-        "master": 9, 
-        "description": "<p>Spending Stories est un proj&eacute; de l&#39;[Open Knowledge Foundation](http://fr.okfn.org/&lrm;) visant &agrave; am&eacute;liorer la compr&eacute;hension des donn&eacute;es budg&eacute;taires mondiales [en savoir plus](http://blog.okfn.org/category/okf-projects/spending-stories/).Ce projet est financ&eacute; par la Knight Foundation. <strong>Cette partie</strong> du projet &quot;Spending Stories&quot; permet aux utilisateurs de mettre des donn&eacute;es mon&eacute;taires en perspective et d&#39;obtenir un contexte. N&#39;importe quel montant dans n&#39;importe quelle devise peut-&ecirc;tre entr&eacute; et compar&eacute; &agrave; de vraies d&eacute;penses. Les r&eacute;sultats prennent en compte l&#39;inflation dans le pays dans lequel la d&eacute;pense a &eacute;t&eacute; r&eacute;alis&eacute;e ainsi que le taux de change entre deux monnaies diff&eacute;rentes, afin de pouvoir les comparer. Ce projet est [open source](https://github.com/jplusplus/okf-spending-stories) et peut-&ecirc;tre install&eacute; sur vos propres serveurs afin de pouvoir utiliser les d&eacute;penses budg&eacute;taires de votre choix dans votre base de donn&eacute;es. **L&#39;Open Knowledge foundation a fait appel &agrave; la partie de Journalism++ bas&eacute;e &agrave; Paris et Berlin pour r&eacute;aliser cette application. Ce projet a &eacute;t&eacute; g&eacute;r&eacute; par [Anne-Lise Bouyer](twitter.com/annelisebouyer) et d&eacute;velopp&eacute; par [Pierre Bellon](twitter.com/toutenrab), [Edouard Richard](twitter.com/vied12), [Paul Joannon](twitter.com/paulloz) et [Pierre Romera.](twitter.com/pirhoo).**</p>\r\n", 
+        "description": "<p>Spending Stories</p>\r\n", 
         "title": "Spending Stories"
     }
 },
@@ -3306,11 +1638,11 @@
     "pk": 1, 
     "model": "jplusplus.project", 
     "fields": {
-        "image": "projects/spending-stories.png", 
-        "order": 2, 
-        "highlighted": false, 
+        "image": "projects/spending-stories_1.png", 
+        "order": 1, 
+        "highlighted": true, 
         "link": "http://okf-spendingstories.herokuapp.com", 
-        "date": "2013-11-13", 
+        "date": "2014-04-25", 
         "offices": [
             1
         ], 
@@ -3319,126 +1651,22 @@
 },
 {
     "pk": 2, 
-    "model": "jplusplus.project", 
+    "model": "jplusplus.projectpluginmodel", 
     "fields": {
-        "image": "projects/contre-histoire-internets.png", 
-        "order": 3, 
-        "highlighted": true, 
-        "link": "http://lesinternets.arte.tv", 
-        "date": "2013-08-16", 
-        "offices": [
-            1
-        ], 
-        "slug": "une-contre-histoire-des-internets"
-    }
-},
-{
-    "pk": 3, 
-    "model": "jplusplus.project", 
-    "fields": {
-        "image": "projects/dw.png", 
-        "order": 1, 
-        "highlighted": true, 
-        "link": "http://datawrapper.de", 
-        "date": "2012-06-09", 
-        "offices": [
-            2
-        ], 
-        "slug": "datawrapper"
-    }
-},
-{
-    "pk": 4, 
-    "model": "jplusplus.project", 
-    "fields": {
-        "image": "projects/spending-stories.png", 
-        "order": 2, 
-        "highlighted": true, 
-        "link": "http://okf-spendingstories.herokuapp.com", 
-        "date": "2013-11-13", 
-        "offices": [
-            1
-        ], 
-        "slug": "spending-stories4"
-    }
-},
-{
-    "pk": 5, 
-    "model": "jplusplus.project", 
-    "fields": {
-        "image": "projects/spending-stories.png", 
-        "order": 2, 
         "highlighted": false, 
-        "link": "http://okf-spendingstories.herokuapp.com", 
-        "date": "2013-11-13", 
-        "offices": [
-            1
-        ], 
-        "slug": "spending-stories5"
-    }
-},
-{
-    "pk": 6, 
-    "model": "jplusplus.project", 
-    "fields": {
-        "image": "projects/spending-stories.png", 
-        "order": 2, 
-        "highlighted": false, 
-        "link": "http://okf-spendingstories.herokuapp.com", 
-        "date": "2013-11-13", 
-        "offices": [
-            1
-        ], 
-        "slug": "spending-stories6"
+        "offices": []
     }
 },
 {
     "pk": 7, 
-    "model": "jplusplus.project", 
+    "model": "jplusplus.projectpluginmodel", 
     "fields": {
-        "image": "projects/spending-stories.png", 
-        "order": 2, 
         "highlighted": true, 
-        "link": "http://okf-spendingstories.herokuapp.com", 
-        "date": "2013-11-13", 
-        "offices": [
-            1
-        ], 
-        "slug": "spending-stories7"
-    }
-},
-{
-    "pk": 8, 
-    "model": "jplusplus.project", 
-    "fields": {
-        "image": "projects/spending-stories.png", 
-        "order": 2, 
-        "highlighted": false, 
-        "link": "http://okf-spendingstories.herokuapp.com", 
-        "date": "2013-11-13", 
-        "offices": [
-            1
-        ], 
-        "slug": "spending-stories8"
+        "offices": []
     }
 },
 {
     "pk": 9, 
-    "model": "jplusplus.project", 
-    "fields": {
-        "image": "projects/spending-stories.png", 
-        "order": 2, 
-        "highlighted": false, 
-        "link": "http://okf-spendingstories.herokuapp.com", 
-        "date": "2013-11-13", 
-        "offices": [
-            1
-        ], 
-        "slug": "spending-stories9"
-    }
-},
-{
-    "pk": 8, 
     "model": "jplusplus.projectpluginmodel", 
     "fields": {
         "highlighted": false, 
@@ -3446,23 +1674,7 @@
     }
 },
 {
-    "pk": 11, 
-    "model": "jplusplus.projectpluginmodel", 
-    "fields": {
-        "highlighted": false, 
-        "offices": []
-    }
-},
-{
-    "pk": 35, 
-    "model": "jplusplus.projectpluginmodel", 
-    "fields": {
-        "highlighted": false, 
-        "offices": []
-    }
-},
-{
-    "pk": 54, 
+    "pk": 28, 
     "model": "jplusplus.projectpluginmodel", 
     "fields": {
         "highlighted": false, 
@@ -3472,23 +1684,7 @@
     }
 },
 {
-    "pk": 79, 
-    "model": "jplusplus.projectpluginmodel", 
-    "fields": {
-        "highlighted": false, 
-        "offices": []
-    }
-},
-{
-    "pk": 82, 
-    "model": "jplusplus.projectpluginmodel", 
-    "fields": {
-        "highlighted": false, 
-        "offices": []
-    }
-},
-{
-    "pk": 105, 
+    "pk": 32, 
     "model": "jplusplus.projectpluginmodel", 
     "fields": {
         "highlighted": false, 
@@ -3498,10 +1694,26 @@
     }
 },
 {
-    "pk": 125, 
+    "pk": 38, 
     "model": "jplusplus.projectpluginmodel", 
     "fields": {
-        "highlighted": false, 
+        "highlighted": true, 
+        "offices": []
+    }
+},
+{
+    "pk": 47, 
+    "model": "jplusplus.projectpluginmodel", 
+    "fields": {
+        "highlighted": true, 
+        "offices": []
+    }
+},
+{
+    "pk": 56, 
+    "model": "jplusplus.projectpluginmodel", 
+    "fields": {
+        "highlighted": true, 
         "offices": []
     }
 },
@@ -3509,7 +1721,7 @@
     "pk": 1, 
     "model": "jplusplus.titletranslation", 
     "fields": {
-        "language_code": "fr", 
+        "language_code": "en", 
         "master": 1, 
         "title": "What we Do"
     }
@@ -3518,17 +1730,17 @@
     "pk": 2, 
     "model": "jplusplus.titletranslation", 
     "fields": {
-        "language_code": "de", 
-        "master": 1, 
-        "title": "What we Da"
+        "language_code": "en", 
+        "master": 2, 
+        "title": "Let's talk"
     }
 },
 {
     "pk": 3, 
     "model": "jplusplus.titletranslation", 
     "fields": {
-        "language_code": "fr", 
-        "master": 2, 
+        "language_code": "en", 
+        "master": 3, 
         "title": "Our Work"
     }
 },
@@ -3536,8 +1748,8 @@
     "pk": 4, 
     "model": "jplusplus.titletranslation", 
     "fields": {
-        "language_code": "fr", 
-        "master": 3, 
+        "language_code": "en", 
+        "master": 4, 
         "title": "Who we are"
     }
 },
@@ -3547,7 +1759,7 @@
     "fields": {
         "language_code": "fr", 
         "master": 4, 
-        "title": "Let's talk"
+        "title": "Qui sommes nous"
     }
 },
 {
@@ -3561,11 +1773,18 @@
     "pk": 2, 
     "model": "jplusplus.title", 
     "fields": {
-        "anchor": "our-work"
+        "anchor": "lets-talk"
     }
 },
 {
     "pk": 3, 
+    "model": "jplusplus.title", 
+    "fields": {
+        "anchor": "our-work"
+    }
+},
+{
+    "pk": 4, 
     "model": "jplusplus.title", 
     "fields": {
         "anchor": "who-we-are"
@@ -3573,72 +1792,128 @@
 },
 {
     "pk": 4, 
-    "model": "jplusplus.title", 
-    "fields": {
-        "anchor": "lets-talk"
-    }
-},
-{
-    "pk": 111, 
     "model": "jplusplus.titlepluginmodel", 
     "fields": {
         "title": 1
     }
 },
 {
-    "pk": 112, 
-    "model": "jplusplus.titlepluginmodel", 
-    "fields": {
-        "title": 1
-    }
-},
-{
-    "pk": 113, 
-    "model": "jplusplus.titlepluginmodel", 
-    "fields": {
-        "title": 2
-    }
-},
-{
-    "pk": 114, 
+    "pk": 6, 
     "model": "jplusplus.titlepluginmodel", 
     "fields": {
         "title": 3
     }
 },
 {
-    "pk": 115, 
+    "pk": 15, 
     "model": "jplusplus.titlepluginmodel", 
     "fields": {
         "title": 4
     }
 },
 {
-    "pk": 122, 
-    "model": "jplusplus.titlepluginmodel", 
-    "fields": {
-        "title": 1
-    }
-},
-{
-    "pk": 124, 
+    "pk": 16, 
     "model": "jplusplus.titlepluginmodel", 
     "fields": {
         "title": 2
     }
 },
 {
-    "pk": 130, 
+    "pk": 30, 
     "model": "jplusplus.titlepluginmodel", 
     "fields": {
         "title": 3
     }
 },
 {
-    "pk": 133, 
+    "pk": 33, 
+    "model": "jplusplus.titlepluginmodel", 
+    "fields": {
+        "title": 3
+    }
+},
+{
+    "pk": 36, 
+    "model": "jplusplus.titlepluginmodel", 
+    "fields": {
+        "title": 1
+    }
+},
+{
+    "pk": 37, 
+    "model": "jplusplus.titlepluginmodel", 
+    "fields": {
+        "title": 3
+    }
+},
+{
+    "pk": 39, 
     "model": "jplusplus.titlepluginmodel", 
     "fields": {
         "title": 4
+    }
+},
+{
+    "pk": 41, 
+    "model": "jplusplus.titlepluginmodel", 
+    "fields": {
+        "title": 2
+    }
+},
+{
+    "pk": 45, 
+    "model": "jplusplus.titlepluginmodel", 
+    "fields": {
+        "title": 1
+    }
+},
+{
+    "pk": 46, 
+    "model": "jplusplus.titlepluginmodel", 
+    "fields": {
+        "title": 3
+    }
+},
+{
+    "pk": 48, 
+    "model": "jplusplus.titlepluginmodel", 
+    "fields": {
+        "title": 4
+    }
+},
+{
+    "pk": 50, 
+    "model": "jplusplus.titlepluginmodel", 
+    "fields": {
+        "title": 2
+    }
+},
+{
+    "pk": 54, 
+    "model": "jplusplus.titlepluginmodel", 
+    "fields": {
+        "title": 1
+    }
+},
+{
+    "pk": 55, 
+    "model": "jplusplus.titlepluginmodel", 
+    "fields": {
+        "title": 3
+    }
+},
+{
+    "pk": 57, 
+    "model": "jplusplus.titlepluginmodel", 
+    "fields": {
+        "title": 4
+    }
+},
+{
+    "pk": 58, 
+    "model": "jplusplus.titlepluginmodel", 
+    "fields": {
+        "title": 2
     }
 }
 ]

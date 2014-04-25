@@ -8,7 +8,7 @@
 # License : proprietary journalism++
 # -----------------------------------------------------------------------------
 # Creation : 11-Apr-2014
-# Last mod : 11-Apr-2014
+# Last mod : 25-Apr-2014
 # -----------------------------------------------------------------------------
 import os
 from django.utils.translation import ugettext_lazy as _
@@ -40,7 +40,7 @@ TIME_ZONE = 'Europe/Paris'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'fr'
+LANGUAGE_CODE = 'en'
 
 SITE_ID = 1
 
@@ -207,9 +207,9 @@ INSTALLED_APPS = (
 
 LANGUAGES = (
     ## Customize this
+    ('en', gettext('en')),
     ('fr', gettext('fr')),
     ('de', gettext('de')),
-    ('en', gettext('en')),
     ('pt', gettext('pt')),
     ('sv', gettext('sv')),
 )
@@ -224,6 +224,13 @@ CMS_LANGUAGES = {
     1: [
         {
             'redirect_on_fallback': True,
+            'code': 'en',
+            'hide_untranslated': False,
+            'name': gettext('en'),
+            'public': True,
+        },
+        {
+            'redirect_on_fallback': True,
             'code': 'fr',
             'hide_untranslated': False,
             'name': gettext('fr'),
@@ -234,13 +241,6 @@ CMS_LANGUAGES = {
             'code': 'de',
             'hide_untranslated': False,
             'name': gettext('de'),
-            'public': True,
-        },
-        {
-            'redirect_on_fallback': True,
-            'code': 'en',
-            'hide_untranslated': False,
-            'name': gettext('en'),
             'public': True,
         },
         {
@@ -264,7 +264,7 @@ CMS_TEMPLATES = (
     ## Customize this
     ('home.html', 'Home'),
     # ('chapter.html', 'Chapter'),
-    ('page.html', 'Page'),
+    # ('page.html', 'Page'),
     ('page_with_header.html', 'Page with header'),
     ('chapter.html', 'Chapter'),
 )
@@ -279,7 +279,7 @@ DATABASES = {
 }
 
 CMS_STYLE_NAMES = (
-    ('header__title', gettext("Header title")),
+    # ('header__title', gettext("Header title")),
     ('container', gettext("Container")),
 )
 

@@ -8,7 +8,7 @@
 # License : proprietary journalism++
 # -----------------------------------------------------------------------------
 # Creation : 14-Apr-2014
-# Last mod : 23-Apr-2014
+# Last mod : 25-Apr-2014
 # -----------------------------------------------------------------------------
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
@@ -82,6 +82,8 @@ class Title(TranslatableModel):
 class TitlePluginModel(CMSPlugin):
     title     = models.ForeignKey(Title, verbose_name=_("title"))
     def __unicode__(self):
-        return self.title.title
-
+        try:
+            return self.title.title
+        except:
+            return "TitlePluginModel"
 # EOF

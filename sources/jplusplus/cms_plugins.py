@@ -8,7 +8,7 @@
 # License : proprietary journalism++
 # -----------------------------------------------------------------------------
 # Creation : 14-Apr-2014
-# Last mod : 23-Apr-2014
+# Last mod : 25-Apr-2014
 # -----------------------------------------------------------------------------
 from django.utils.translation import ugettext_lazy as _
 from cms.plugin_base import CMSPluginBase
@@ -42,7 +42,6 @@ class TitlePlugin(CMSPluginBase):
     model           = TitlePluginModel
 
     def render(self, context, instance, placeholder):
-        print instance.__dict__
         context.update({
             'title'    : instance.title,
             'instance' : instance,
