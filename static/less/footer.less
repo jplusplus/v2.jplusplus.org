@@ -30,16 +30,16 @@
 					margin-right: 10px;
 					&:hover {cursor: pointer;}
 					&.facebook {
-						         background-image: url("../../img/pic_facebook.png");
-						&:hover {background-image: url("../../img/pic_facebook-hover.png");}
+						         background-image: url("{{ STATIC_URL }}img/pic_facebook.png");
+						&:hover {background-image: url("{{ STATIC_URL }}img/pic_facebook-hover.png");}
 					}
 					&.github {
-						         background-image: url("../../img/pic_github.png");
-						&:hover {background-image: url("../../img/pic_github-hover.png");}
+						         background-image: url("{{ STATIC_URL }}img/pic_github.png");
+						&:hover {background-image: url("{{ STATIC_URL }}img/pic_github-hover.png");}
 					}
 					&.twitter {
-						         background-image: url("../../img/pic_twitter.png");
-						&:hover {background-image: url("../../img/pic_twitter-hover.png");}
+						         background-image: url("{{ STATIC_URL }}img/pic_twitter.png");
+						&:hover {background-image: url("{{ STATIC_URL }}img/pic_twitter-hover.png");}
 					}
 				}
 			}
@@ -50,7 +50,7 @@
 			margin-top : 20px;
 			bottom     : 0px;
 			&:before {
-				content      : url("../../img/pic_contact.png");
+				content      : url("{{ STATIC_URL }}img/pic_contact.png");
 				margin-right : 5px;
 				top          : 2px;
 				position     : relative;
@@ -58,7 +58,7 @@
 			&:hover {
 				color: #928B84;
 				&:before {
-					content : url("../../img/pic_contact-on.png");
+					content : url("{{ STATIC_URL }}img/pic_contact-on.png");
 				}
 			}
 		}
@@ -77,9 +77,9 @@
 			li {
 				display: list-item;
 				.follow-us__illustration {
-					&.facebook {background-image: url("../../img/pic_facebook2.png")}
-					&.github   {background-image: url("../../img/pic_github2.png")}
-					&.twitter  {background-image: url("../../img/pic_twitter2.png")}
+					&.facebook {background-image: url("{{ STATIC_URL }}img/pic_facebook2.png")}
+					&.github   {background-image: url("{{ STATIC_URL }}img/pic_github2.png")}
+					&.twitter  {background-image: url("{{ STATIC_URL }}img/pic_twitter2.png")}
 				}
 			}
 		}

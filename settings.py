@@ -310,6 +310,15 @@ SOUTH_MIGRATION_MODULES = {
     'taggit': 'taggit.south_migrations',
 }
 
+COMPRESS_ENABLED           = True
+COMPRESS_CSS_FILTERS       = (
+    # "compressor.filters.cssmin.CSSMinFilter",
+    "compressor.filters.template.TemplateFilter",
+)
+COMPRESS_TEMPLATE_FILTER_CONTEXT = {
+    'STATIC_URL': STATIC_URL
+}
+
 REDACTOR_OPTIONS = {'lang': 'en'}
 REDACTOR_UPLOAD  = 'uploads/'
 UUIDUploader     = 'redactor.handlers.DateDirectoryUploader'

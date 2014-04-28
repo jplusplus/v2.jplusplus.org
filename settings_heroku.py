@@ -53,7 +53,7 @@ COMPRESS_OFFLINE           = False
 # )
 
 COMPRESS_JS_FILTERS = (
-    "compressor.filters.jsmin.JSMinFilter",
+    # "compressor.filters.jsmin.JSMinFilter",
     "compressor.filters.template.TemplateFilter",
 )
 
