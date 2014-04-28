@@ -45,7 +45,7 @@ class Project(TranslatableModel):
     slug         = models.SlugField(unique=True)
     offices      = models.ManyToManyField(Office)
     date         = models.DateField(blank=True, null=True)
-    image        = models.ImageField(_("image"), upload_to="projects", blank=True, null=True)
+    image        = models.ImageField(_("image"), upload_to="projects")
     order        = models.PositiveIntegerField(default=0, blank=False, null=False)
     highlighted  = models.BooleanField(_("highlighted"))
     link         = models.CharField(_('link'), max_length=255, blank=True, null=True)
