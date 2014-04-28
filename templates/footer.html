@@ -1,0 +1,19 @@
+{% load i18n sekizai_tags %}
+
+{% addtoblock "css" %}<link rel="stylesheet" type="text/less" href="{{STATIC_URL}}less/footer.less">{% endaddtoblock %}
+
+<div class="footer white">
+	<!-- <div class="container"> -->
+		<div class="follow-us pull-left">
+			<div class="header">{% trans "follow us" %}</div>
+			<ul>
+				<li><a href=""><div class="follow-us__illustration facebook"></div></a></li>
+				<li><a href=""><div class="follow-us__illustration twitter"></div></a></li>
+				<li><a href=""><div class="follow-us__illustration github"></div></a></li>
+			</ul>
+		</div>
+		<div class="contact-us pull-right">
+			<a href="" class="btn btn-xs">{% trans "contact us" %}</a>
+		</div>
+	<!-- </div> -->
+</div>

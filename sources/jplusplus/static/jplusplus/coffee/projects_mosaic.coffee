@@ -58,7 +58,7 @@ class window.jplusplus.Mosaïc
 		if parseFloat(@uis.projects_list.css("height").replace("px", "")) < new_widget_height
 			@uis.projects_list.css
 				height: new_widget_height
-			$(document).trigger("heighHasChanged")
+			$(document).trigger("heightHasChanged")
 		$(".project:not(.template) .frame").css
 			width  : thumbnail_width
 			height : thumbnail_height

@@ -1,0 +1,87 @@
+@import "variables.less";
+
+.footer {
+	z-index             : 1;
+	position            : fixed;
+	font-size           : .7em;  
+	bottom              : 0;
+	left                : 0;
+	right               : 0;
+	height              : 60px;
+	background-color    : @grey;
+	padding             : 3px 15px;
+	color               : white;
+	font-weight         : bold;
+	transition-property : background-color;
+	transition-duration : .25s;
+	.follow-us {
+		.header {
+			text-transform: uppercase;
+		}
+		ul {
+			padding : 0;
+			li {
+				display: inline-block;
+				list-style: none;
+				.follow-us__illustration {
+					width: 32px;
+					height: 32px;
+					margin-bottom: 10px;
+					margin-right: 10px;
+					&:hover {cursor: pointer;}
+					&.facebook {
+						         background-image: url("../../img/pic_facebook.png");
+						&:hover {background-image: url("../../img/pic_facebook-hover.png");}
+					}
+					&.github {
+						         background-image: url("../../img/pic_github.png");
+						&:hover {background-image: url("../../img/pic_github-hover.png");}
+					}
+					&.twitter {
+						         background-image: url("../../img/pic_twitter.png");
+						&:hover {background-image: url("../../img/pic_twitter-hover.png");}
+					}
+				}
+			}
+		}
+	}
+	.contact-us {
+		.btn {
+			margin-top : 20px;
+			bottom     : 0px;
+			&:before {
+				content      : url("../../img/pic_contact.png");
+				margin-right : 5px;
+				top          : 2px;
+				position     : relative;
+			}
+			&:hover {
+				color: #928B84;
+				&:before {
+					content : url("../../img/pic_contact-on.png");
+				}
+			}
+		}
+	}
+	// when we leave the first-page mode
+	&.white {
+		background-color: transparent;
+		color: @grey;
+		.header {
+			position: absolute;
+			bottom  : 0;
+		}
+		ul {
+			position: absolute;
+			bottom  : 0;
+			li {
+				display: list-item;
+				.follow-us__illustration {
+					&.facebook {background-image: url("../../img/pic_facebook2.png")}
+					&.github   {background-image: url("../../img/pic_github2.png")}
+					&.twitter  {background-image: url("../../img/pic_twitter2.png")}
+				}
+			}
+		}
+	}
+}

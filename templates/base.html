@@ -5,18 +5,27 @@
     <title>{% page_attribute "page_title" %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {# <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css"> #}
-    {% render_block "css" postprocessor "compressor.contrib.sekizai.compress" %}
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,400italic,300,800' rel='stylesheet' type='text/css'>
+    {% render_block "css" postprocessor "compressor.contrib.sekizai.compress" %}
     {% addtoblock "css" %}<link rel="stylesheet" type="text/less" href="{{STATIC_URL}}less/style.less">{% endaddtoblock %}
   </head>
 
   <body>
-
-     
       <div class="container-fluid">
         {% cms_toolbar %}
+        {% addtoblock "js" %}
+          <!-- when debug toolbar is open, page height change -->
+          <script type="text/javascript">
+            if (window.CMS != null) {
+            window.CMS.$(document).on('cms-ready', function () {$(document).trigger("heightHasChanged")});
+          }
+          </script>
+        {% endaddtoblock %}
+
         <div class="header">{% block header %}{% endblock header %}</div>
         <div class="body">{% block content %}{% endblock content %}</div>
+        {% block footer %}{% endblock footer %}
       </div>
 
     <script src="{{STATIC_URL}}js/jquery-1.11.0.min.js"></script>
