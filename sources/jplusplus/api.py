@@ -45,7 +45,10 @@ class ProjectSerializer(serializers.HyperlinkedModelSerializer):
         model  = Project
         fields = ("slug", "tags", "url", "offices", "date", "image", "order", "highlighted", "link", "title", "description")
     def transform_image(self, obj, value):
-        return obj.image.url
+        if obj.image:
+            return obj.image.url
+        else:
+            return None
 
 class OfficeSerializer(serializers.HyperlinkedModelSerializer):
 
