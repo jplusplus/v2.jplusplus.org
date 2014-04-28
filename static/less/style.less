@@ -3,6 +3,7 @@
 // Global settings
 body .container-fluid {
 	font-family: 'Merriweather Sans', 'sans-serif';
+	padding: 0px;
 	h1, h2, h3 {
 		text-transform : uppercase;
 	}
@@ -68,6 +69,15 @@ body > .container-fluid > .body {
 			margin-left     : -41px; // half of the image width
 			background-image: url(../../img/next-home.png);
 			&:hover         {background-image: url(../../img/next-home-hover.png);}
+		}
+	}
+}
+
+@media (max-height: 600px) {
+	body > .container-fluid > .body .first-page {
+		padding-top:10px;
+		img, h1 {
+			margin-bottom: 10px;
 		}
 	}
 }
