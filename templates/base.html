@@ -5,7 +5,8 @@
     <title>{% page_attribute "page_title" %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"> -->
-    {% addtoblock "css" %}<link rel="stylesheet" type="text/less" href="{{STATIC_URL}}css/bootstrap.min.css">{% endaddtoblock %}
+    <!-- {% addtoblock "css" %}<link rel="stylesheet" type="text/less" href="{{STATIC_URL}}css/bootstrap.min.css">{% endaddtoblock %} -->
+    <!-- <link rel="stylesheet" type="text/less" href="{{STATIC_URL}}css/bootstrap.min.css"> -->
 
     {% render_block "css" postprocessor "compressor.contrib.sekizai.compress" %}
     {% addtoblock "css" %}<link rel="stylesheet" type="text/less" href="{{STATIC_URL}}less/style.less">{% endaddtoblock %}

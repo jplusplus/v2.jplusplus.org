@@ -50,14 +50,16 @@ body > .container-fluid > .body {
 	background-color: #fff;
 	margin-bottom   : 100px;
 	.first-page {
-		text-align       : center;
-		background-color : @grey;
-		padding-top      : 80px;
-		color            : white;
-		position         : relative;
-		z-index          : 2; // upper the header for the shadow
-		box-shadow       : 0px 0px 20px rgba(0,0,0, .2);
-		margin-bottom    : 100px;
+		transition-property : height;
+		transition-duration :.25s;
+		text-align          : center;
+		background-color    : @grey;
+		padding-top         : 80px;
+		color               : white;
+		position            : relative;
+		z-index             : 2; // upper the header for the shadow
+		box-shadow          : 0px 0px 20px rgba(0,0,0, .2);
+		margin-bottom       : 100px;
 		img, h1 {margin-bottom: 20px;}
 		p {
 			margin-bottom : 0px;
