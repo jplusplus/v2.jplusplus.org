@@ -1,0 +1,36 @@
+@import "variables.less";
+.map {
+	width: 100%;
+	background-color: #E4DFDA;
+	box-shadow: inset 0 0 8px rgba(0,0,0,.6);
+	 > .wrapper {
+		width: 1280px;
+		height: 390px;
+		margin: 0 auto;
+		position: relative;
+		// trick for shadow on img
+		&:before,  &:after{
+			content : "";
+			position: absolute;
+			top     : 0;
+			bottom  : 0;
+			left    : 0;
+			right   : 0;
+		}
+		&:before {box-shadow: 0  19px 11px -20px rgba(0, 0, 0, 0.6) inset;}
+		&:after  {box-shadow: 0 -19px 11px -20px rgba(0, 0, 0, 0.6) inset;}
+
+		> .overflow {
+			position : absolute;
+			z-index  : 1;
+			top      : 0;
+			bottom   : 0;
+			right    : 0;
+			left     : 0;
+			.label {
+				color   :@red_jpp;
+				position: absolute;
+			}
+		}
+	}
+}

@@ -26,12 +26,15 @@ class Office(models.Model):
     title     = models.CharField(_('title'), max_length=255)
     slug      = models.SlugField(_('slug'), help_text=_("should be the same that the office page"), unique=True)
     page_link = models.ForeignKey(Page, verbose_name=_("page"), blank=True, null=True, on_delete=models.SET_NULL)
+    map_top   = models.FloatField(_("top offset on map") , default=0)
+    map_left  = models.FloatField(_("left offset on map"), default=0)
 
     def __unicode__(self):
         return self.title
 
     def get_absolute_url(self):
-        return self.page_link.get_absolute_url()
+        if self.page_link:
+            return self.page_link.get_absolute_url()
 
 class Project(TranslatableModel):
     """

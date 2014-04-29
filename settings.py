@@ -314,6 +314,7 @@ COMPRESS_ENABLED           = True
 COMPRESS_CSS_FILTERS       = (
     # "compressor.filters.cssmin.CSSMinFilter",
     "compressor.filters.template.TemplateFilter",
+    'compressor.filters.css_default.CssAbsoluteFilter',
 )
 COMPRESS_TEMPLATE_FILTER_CONTEXT = {
     'STATIC_URL': STATIC_URL

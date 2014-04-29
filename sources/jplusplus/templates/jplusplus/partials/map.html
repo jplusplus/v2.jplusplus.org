@@ -1,0 +1,13 @@
+{% load i18n sekizai_tags %}
+{% addtoblock "css" %}<link rel="stylesheet" type="text/less" href="{{STATIC_URL}}jplusplus/less/map.less">{% endaddtoblock %}
+
+<div class='map'>
+	<div class='wrapper'>
+		<img src="{{ STATIC_URL }}img/map.png">
+		<div class='overflow'>
+			{% for office in offices %}
+				<a href="{{ office.get_absolute_url }}"><div class="label" style="top:{{ office.map_top }}%;left:{{ office.map_left }}%;">{{ office.title }}+</div></a>
+			{% endfor %}
+		</div>
+	</div>
+</div>
