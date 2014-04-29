@@ -17,7 +17,7 @@ import api
 router = routers.DefaultRouter()
 router.register(r'projects', api.ProjectViewSet)
 router.register(r'offices', api.OfficeViewSet)
-print "COUCOU"
+
 urlpatterns = [
 	url(r'^api/v1/', include(router.urls)),
     # url(r'^projects/$'                                   , 'jplusplus.views.projects'       , name='jplusplus_projects'),
