@@ -6,7 +6,10 @@ body .container-fluid {
 	padding: 0px;
 	h1, h2, h3 {
 		text-transform : uppercase;
+		font-family: 'Lato', 'sans-serif';
+		font-weight: bold;
 	}
+	h1 {font-size: 3.5em;}
 	h2 {
 		color          : @grey;
 		margin-bottom  : .5em;
@@ -35,11 +38,15 @@ body .container-fluid {
 		background-color : @grey;
 		color            : white;
 	}
+	.hint {
+		color : @grey;
+	}
 }
 
 // inside the content block
 body > .container-fluid > .body {
 	background-color: #fff;
+	margin-bottom   : 100px;
 	.first-page {
 		text-align       : center;
 		background-color : @grey;
@@ -56,6 +63,8 @@ body > .container-fluid > .body {
 			&:last-child { // underline for last sentence
 				display       : inline-block;
 				border-bottom : 1px solid rgba(255,255,255, .3);
+				font-family: 'Lato', 'sans-serif';
+				font-weight: 300;
 			}
 		}
 		.cms_plugin { display: block}
