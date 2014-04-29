@@ -80,7 +80,10 @@ class Title(TranslatableModel):
     anchor = models.CharField(_('anchor'), help_text=_("don't translate"), max_length=255, unique=True)
 
     def __unicode__(self):
-        return self.title
+        try:
+            return self.title
+        except:
+            return self.anchor
 
 class TitlePluginModel(CMSPlugin):
     title     = models.ForeignKey(Title, verbose_name=_("title"))

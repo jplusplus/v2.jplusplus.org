@@ -52,7 +52,6 @@ class window.jplusplus.Mosaïc
 		if thumbnail_width < @config.thumbnail_min_width
 			thumbnails_per_row -= 1
 			thumbnail_width = 100
-
 		thumbnail_height   = thumbnail_width / @config.image_ratio
 		row_margin         = @config.row_margin
 		# thumbnails_per_row = Math.floor(width             / (thumbnail_width + thumbnail_margin))
