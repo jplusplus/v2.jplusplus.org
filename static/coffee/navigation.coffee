@@ -15,7 +15,8 @@ class window.Navigation
 
 	constructor: ->
 		@CONFIG = 
-			headerHeight : 70
+			headerHeight  : 70
+			offsetScroll  : 50
 		@uis =
 			firstPage     : $(".first-page")
 			footer        : $(".footer")
@@ -27,7 +28,7 @@ class window.Navigation
 		# set elements size 
 		@relayout()
 		# bind event
-		$('body').scrollspy({ target: ".navbar-menu", offset: 170 })
+		$('body').scrollspy({ target: ".navbar-menu", offset: @CONFIG.offsetScroll + @uis.header.offset().top +  @CONFIG.headerHeight })
 		lazy_relayout = _.debounce(@relayout, 500)
 		$(window).resize(lazy_relayout)
 		$(window).scroll(@onFirstPageScroll); @onFirstPageScroll() if @uis.firstPage.length
@@ -52,7 +53,7 @@ class window.Navigation
 			.find(".wrapper")
 				.css
 					"width"     : window_width
-					"height"    : window_width / 3.282051282
+					"height"    : window_width / 3.282051282 # ratio of map picture
 					"font-size" : "#{Math.min(window_width/1280, 1)}em"
 			.find("img")
 				.css("width", window_width)
@@ -66,7 +67,7 @@ class window.Navigation
 		if scroll_top >= $(document).height() - $(window).height() then @uis.footer.removeClass("white")
 
 	onTitleClick: (anchor) =>
-		offset = $(anchor).offset().top - (@uis.header.outerHeight(true) + @uis.header.offset().top + 50)
+		offset = $(anchor).offset().top - (@CONFIG.headerHeight + @uis.header.offset().top - @CONFIG.offsetScroll)
 		$('html, body').animate({scrollTop: offset}, 'slow')
 		return false
 
