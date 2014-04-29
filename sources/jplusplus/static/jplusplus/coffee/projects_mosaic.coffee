@@ -16,6 +16,7 @@ class window.jplusplus.Mosaïc
 	
 	CONFIG = 
 		thumbnails_per_row : 4
+		thumbnail_min_width: 100
 		thumbnail_margin   : 20
 		row_margin         : 50
 		image_ratio        : 1.666
@@ -48,6 +49,10 @@ class window.jplusplus.Mosaïc
 		thumbnails_per_row = @config.thumbnails_per_row
 		thumbnail_margin   = @config.thumbnail_margin
 		thumbnail_width    = (width / thumbnails_per_row) - thumbnail_margin
+		if thumbnail_width < @config.thumbnail_min_width
+			thumbnails_per_row -= 1
+			thumbnail_width = 100
+
 		thumbnail_height   = thumbnail_width / @config.image_ratio
 		row_margin         = @config.row_margin
 		# thumbnails_per_row = Math.floor(width             / (thumbnail_width + thumbnail_margin))

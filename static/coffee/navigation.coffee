@@ -32,13 +32,12 @@ class window.Navigation
 		lazy_relayout = _.debounce(@relayout, 500)
 		$(window).resize(lazy_relayout)
 		$(window).scroll(@onFirstPageScroll); @onFirstPageScroll() if @uis.firstPage.length
+		$(document).on('heightHasChanged', @relayout) # from mosaic for instance
 		@uis.titles.on("click", (e) => @onTitleClick($(e.currentTarget).find("a").attr("href")))
-		$(document).on 'heightHasChanged', => # from mosaic for instance
-			$("body").each(-> $(this).scrollspy('refresh'))
-			@relayout()
 		# hack for z-index
-		$(".header .dropdown.languages").on("show.bs.dropdown", => @uis.header.css("z-index", 3))
-		$(".header .dropdown.languages").on("hide.bs.dropdown", => @uis.header.css("z-index", 1))
+		$(".header .dropdown.languages")
+			.on("show.bs.dropdown", => @uis.header.css("z-index", 3))
+			.on("hide.bs.dropdown", => @uis.header.css("z-index", 2))
 
 	relayout: =>
 		window_height = $(window).height()
@@ -57,6 +56,10 @@ class window.Navigation
 					"font-size" : "#{Math.min(window_width/1280, 1)}em"
 			.find("img")
 				.css("width", window_width)
+		# refresh scrollspy
+		setTimeout(->
+			$("body").each(-> $(this).scrollspy('refresh'))
+		, 500) # because of height animation (on first-page for instance)
 
 	onFirstPageScroll: =>
 		scroll_top = $(window).scrollTop()

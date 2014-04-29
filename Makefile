@@ -6,7 +6,8 @@
 # -----------------------------------------------------------------------------
 
 PYC        = $(wildcard *.pyc */*.pyc sources/*/*.pyc sources/*/*/*.pyc sources/*/*/*/*.pyc sources/*/*/*/*/*.pyc)
-RM         = rm -f
+CACHE      = $(wildcard staticfiles/CACHE)
+RM         = rm -fr
 VENV       = `pwd`/.env
 VIRTUALENV = virtualenv
 PIP        = pip
@@ -17,6 +18,7 @@ run: clean
 
 clean:
 	$(RM) $(PYC)
+	$(RM) $(CACHE)
 
 install: install_dependances init_db
 
