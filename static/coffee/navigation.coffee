@@ -32,7 +32,9 @@ class window.Navigation
 		$('body').scrollspy({ target: ".navbar-menu", offset: @CONFIG.offsetScroll + @uis.header.offset().top +  @CONFIG.headerHeight })
 		lazy_relayout = _.debounce(@relayout, 500)
 		$(window).resize(lazy_relayout)
-		$(window).scroll(@onFirstPageScroll); @onFirstPageScroll() if @uis.firstPage.length
+		if @uis.firstPage.length > 0
+			(window).scroll(@onFirstPageScroll)
+			@onFirstPageScroll() 
 		$(document).on('heightHasChanged', @relayout) # from mosaic for instance
 		# $("a[href^=#]").on("click", (e) -> that.onTitleClick($(this).attr("href").split("&")[0]))
 		@uis.titles.on("click", (e) -> that.onTitleClick($(this).find("a").attr("href").split("&")[0]))
