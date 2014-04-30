@@ -19,7 +19,7 @@ body .container-fluid {
 		margin-bottom  : .5em;
 	}
 	// separator – below subtitles and plugins last paragraph 
-	h2, .cms_plugin .container p:last-child, .separator {
+	h2, .cms_plugin > p:last-child, .separator {
 		&:after {
 			color       : black;
 			content     : "–";
@@ -70,6 +70,7 @@ body > .container-fluid > .body {
 				font-family: 'Lato', 'sans-serif';
 				font-weight: 300;
 			}
+			&:after {content:none;} // remove separator
 		}
 		.cms_plugin { display: block}
 		.scroll-indicator {

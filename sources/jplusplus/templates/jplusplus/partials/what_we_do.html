@@ -1,0 +1,30 @@
+{% load i18n sekizai_tags %}
+
+{% addtoblock "js" %}<script type="text/javascript" src="{{STATIC_URL}}jplusplus/vendors/NaturalLanguageForm/js/modernizr.custom.js"></script>{% endaddtoblock %}
+{% addtoblock "css" %}<link rel="stylesheet" type="text/less" href="{{STATIC_URL}}jplusplus/less/what_we_do.less">{% endaddtoblock %}
+
+<div class="what-we-do">
+	<div class="container">
+		{% for item in what_we_do %}
+			<div class="item">
+				<div class="illustration"><img src="{{ item.illustration.url }}"/></div>
+				<div class="title">{{ item.title }}</div>
+				<div class="short-description">{{ item.short_description | safe }}</div>
+				<div class="hover">
+					<div class="wrapper">
+						<div class="title">{{ item.title }}</div>
+						<div class="description">{{ item.description | safe }}</div>
+						<div class="bottom_centered_wrapper">
+							<a href="#our-work&mosaic_filter={{ item.tags.all|first }}" class="btn btn-sm">{% trans "See projects" %}</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+</div>
+
+{% addtoblock "js" %}
+<script type="text/javascript">
+</script>
+{% endaddtoblock %}

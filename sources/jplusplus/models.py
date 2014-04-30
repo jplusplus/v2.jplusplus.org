@@ -8,7 +8,7 @@
 # License : proprietary journalism++
 # -----------------------------------------------------------------------------
 # Creation : 14-Apr-2014
-# Last mod : 25-Apr-2014
+# Last mod : 30-Apr-2014
 # -----------------------------------------------------------------------------
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
@@ -92,4 +92,26 @@ class TitlePluginModel(CMSPlugin):
             return self.title.title
         except:
             return "TitlePluginModel"
+
+class WhatWeDo(TranslatableModel):
+    """
+    WhatWeDo Model
+    """
+    translations = TranslatedFields(
+        title             = models.CharField(_('title'), help_text=_("to be translated"), max_length=255),
+        short_description = RedactorField(_('short description'), help_text=_("to be translated")),
+        description       = RedactorField(_('description'), help_text=_("to be translated")),
+    )
+    illustration = models.ImageField(_('illustration'), help_text=_("don't translate"), max_length=255, upload_to="whatwedo")
+    tags         = TaggableManager(blank=True)
+    position     = models.PositiveIntegerField(default=0, blank=False, null=False)
+
+    class Meta:
+        verbose_name_plural = "WhatWeDo"
+        ordering = ('position',)
+
+    def __unicode__(self):
+        # beurk, never use hvad again. next time multilingual-ng ?
+        return self.safe_translation_getter('title', unicode(self.pk))
+
 # EOF

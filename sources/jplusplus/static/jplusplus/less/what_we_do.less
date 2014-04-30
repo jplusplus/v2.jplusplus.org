@@ -1,0 +1,72 @@
+@import "variables.less";
+	
+.what-we-do {
+	background-color: @blue_background;
+	.container {
+		position: relative;
+		overflow: hidden;
+		.item, .hover > .wrapper {
+			padding: 20px 5px;
+		}
+		.item {
+			float      :left;
+			width      : 20%; // 5 items
+			text-align : center;
+
+			.illustration {
+				height: 100px;
+			}
+			.title {
+				font-weight : 800;
+				font-size   : 1.5em;
+				color       : white;
+			}
+			.short-description {
+				color: @blue_on_blue;
+			}
+			.hover {
+				transition-property : top, bottom;
+				transition-duration : .50s;
+				position            : absolute;
+				color               : white;
+				background-color    : #595651;
+				text-align          : left;
+				overflow            : hidden;
+				 > .wrapper {
+
+				 	// btn at the bottom, center aligned
+				 	> .bottom_centered_wrapper {
+							position  : absolute;
+							bottom    : 10px;
+							left      : 0;
+							right     : 0;
+							text-align: center;
+						a.btn {
+							&:before {
+								content: url("../../img/pic_eye.png");
+								padding-right: 5px;
+								position: relative;
+								top: 1px;
+							}
+						}
+				 	}
+				}
+			}
+			&:nth-child(1) .hover {left:  0%; right: 80%; top: 400px; height: 100%;}
+			// &:nth-child(2) .hover {left: 20%; right: 60%; top:0     ; bottom: 400px;}
+			&:nth-child(2) .hover {left: 20%; right: 60%; top: 400px; height: 100%;}
+			&:nth-child(3) .hover {left: 40%; right: 40%; top: 400px; height: 100%;}
+			// &:nth-child(4) .hover {left: 60%; right: 20%; top:0     ; bottom: 400px;}
+			&:nth-child(4) .hover {left: 60%; right: 20%; top: 400px; height: 100%;}
+			&:nth-child(5) .hover {left: 80%; right:  0%; top: 400px; height: 100%;}
+			&:hover .hover {top:0; bottom: 0;}
+		}
+	}
+}
+
+@media (max-width: 770px) {
+	.what-we-do .container .item {
+		width : 50%;
+		.hover { display: none;}
+	}
+}

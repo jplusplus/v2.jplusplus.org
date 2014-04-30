@@ -13,7 +13,7 @@
 from django.utils.translation import ugettext_lazy as _
 from cms.plugin_base import CMSPluginBase
 from cms.plugin_pool import plugin_pool
-from .models import ProjectPluginModel, TitlePluginModel, Office
+from .models import ProjectPluginModel, TitlePluginModel, Office, WhatWeDo
 
 class ProjectsPlugin(CMSPluginBase):
     model           = ProjectPluginModel
@@ -60,9 +60,21 @@ class MapPlugin(CMSPluginBase):
         })
         return context
 
+class WhatWeDoPlugin(CMSPluginBase):
+    name            = _("J++ WhatWeDo")
+    render_template = "jplusplus/partials/what_we_do.html"
+    def render(self, context, instance, placeholder):
+        what_we_do = WhatWeDo.objects.all()
+        context.update({
+            'instance'   : instance,
+            'what_we_do' : what_we_do
+        })
+        return context
+
 plugin_pool.register_plugin(ContactPlugin)
 plugin_pool.register_plugin(ProjectsPlugin)
 plugin_pool.register_plugin(TitlePlugin)
 plugin_pool.register_plugin(MapPlugin)
+plugin_pool.register_plugin(WhatWeDoPlugin)
 
 # EOF

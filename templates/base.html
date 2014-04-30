@@ -3,7 +3,7 @@
 <html>
   <head>
     <title>{% page_attribute "page_title" %}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"> -->
     <!-- {% addtoblock "css" %}<link rel="stylesheet" type="text/less" href="{{STATIC_URL}}css/bootstrap.min.css">{% endaddtoblock %} -->
     <!-- <link rel="stylesheet" type="text/less" href="{{STATIC_URL}}css/bootstrap.min.css"> -->
@@ -19,6 +19,7 @@
         {% cms_toolbar %}
         {% addtoblock "js" %}
           <!-- when debug toolbar is open, page height change -->
+          {# TODO: only for admin #}
           <script type="text/javascript">
             if (window.CMS != null) {
             window.CMS.$(document).on('cms-ready', function () {$(document).trigger("heightHasChanged")});
