@@ -33,7 +33,7 @@ class window.Navigation
 		lazy_relayout = _.debounce(@relayout, 500)
 		$(window).resize(lazy_relayout)
 		if @uis.firstPage.length > 0
-			(window).scroll(@onFirstPageScroll)
+			$(window).scroll(@onFirstPageScroll)
 			@onFirstPageScroll() 
 		$(document).on('heightHasChanged', @relayout) # from mosaic for instance
 		# $("a[href^=#]").on("click", (e) -> that.onTitleClick($(this).attr("href").split("&")[0]))
