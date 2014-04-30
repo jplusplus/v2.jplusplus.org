@@ -2,6 +2,10 @@
 
 {% addtoblock "css" %}<link rel="stylesheet" type="text/less" href="{{STATIC_URL}}less/navigation.less">{% endaddtoblock %}
 
+{% if request.current_page.reverse_id != "home" %}
+  {% page_url "home" as url_prefix %}
+{%endif%}
+
 <nav class="navbar navbar-fixed-top" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -9,18 +13,17 @@
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-menu">
         MENU <b class="caret"></b>
       </button>
-      <a class="title" href="#">{% trans "WHAT WE STAND FOR" %}</a>
+      <a class="title" href="{{url_prefix}}">{% trans "WHAT WE STAND FOR" %}</a>
     </div>
-
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbar-collapse-menu">
       <div class="navbar-menu">
         <ul class="nav navbar-nav">
-          <li class="title"><a href="#what-we-do">{% trans "What we Do" %}</a></li>
-          <li class="title"><a href="#our-work">{% trans "Our Work" %}</a></li>
-          <li class="logo" ><a href="/"><img src="{{STATIC_URL}}img/jpp_logo.png"/></a></li>
-          <li class="title"><a href="#who-we-are">{% trans "Who we Are" %}</a></li>
-          <li class="title"><a href="#lets-talk">{% trans "Let's Talk" %}</a></li>
+          <li class="title"><a href="{{url_prefix}}#what-we-do">{% trans "What we Do" %}</a></li>
+          <li class="title"><a href="{{url_prefix}}#our-work"  >{% trans "Our Work" %}</a></li>
+          <li class="logo" ><a href="{{url_prefix}}"           ><img src="{{STATIC_URL}}img/jpp_logo.png"/></a></li>
+          <li class="title"><a href="{{url_prefix}}#who-we-are">{% trans "Who we Are" %}</a></li>
+          <li class="title"><a href="{{url_prefix}}#lets-talk" >{% trans "Let's Talk" %}</a></li>
         </ul>
       </div>
       <ul class="nav navbar-nav navbar-right">
