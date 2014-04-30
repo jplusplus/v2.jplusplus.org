@@ -1,3 +1,5 @@
+@import "variables.less";
+
 .project-details {
 	.about, .link {
 		margin-bottom: 20px;
@@ -9,6 +11,29 @@
 			left            : -15%;  // TODO : disable lefting on small screen, when the cols breaks
 			height          : 400px;
 			background-size : cover;
+		}
+		.client, .project-by {
+			.title {
+				color         : @grey;
+				font-size     : 1.3em;
+				margin-bottom : .5em;
+			}
+			ul {
+				padding:0;
+				li {
+					list-style: none;
+				}
+			}
+		}
+		.client {
+			text-transform: uppercase;
+		}
+	}
+	.description {
+		img {
+			display: block;
+			margin: 0 auto;
+			max-width: 100%;
 		}
 	}
 }

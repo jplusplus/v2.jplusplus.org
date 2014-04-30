@@ -10,7 +10,8 @@
 			<div class="illustration" style="background-image:url({{project.image.url}})"></div>
 		</div>
 		<div class="col-sm-2">
-			<div class="title">A project by</div>
+			<div class="project-by">
+				<div class="title">A project by</div>
 				<ul>
 				{% for office in project.offices.all %}
 					<li>
@@ -20,9 +21,14 @@
 					</li>
 				{% endfor %}
 				</ul>
+				<div class="separator"> </div>
+			</div>
 			{% if project.client %}
+			<div class="client">
 				<div class="title">For</div>
 				{{ project.client }}
+				<div class="separator"> </div>
+			</div>
 			{% endif %}
 
 		</div>
