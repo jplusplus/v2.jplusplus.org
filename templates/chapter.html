@@ -1,6 +1,14 @@
-{% extends "page_with_header.html" %}
+{% extends "page.html" %}
 {% load cms_tags staticfiles sekizai_tags menu_tags %}
 
+{% block header %}
+	{% addtoblock "js" %}<script type="text/coffeescript" src="{{STATIC_URL}}coffee/navigation.coffee"></script>{% endaddtoblock %}
+	{% include "navigation_chapter.html" %}
+	{% addtoblock "js" %}<script type="text/coffeescript">new window.Navigation()</script>{% endaddtoblock %}
+{% endblock header %}
+
 {% block content %}
-	{% placeholder "content" %}
+	<div class="container">
+		{% placeholder "content" %}
+	</div>
 {% endblock content %}

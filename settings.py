@@ -268,6 +268,7 @@ CMS_TEMPLATES = (
     # ('page.html', 'Page'),
     ('page_with_header.html', 'Page with header'),
     ('chapter.html', 'Chapter'),
+    ('chapter_paris_berlin.html', 'Chapter Paris/Berlin'),
 )
 
 CMS_PERMISSION = True

@@ -17,6 +17,7 @@ body .container-fluid {
 	h3 {
 		color          : #BE1627;
 		margin-bottom  : .5em;
+		font-weight    : 100;
 	}
 	// separator – below subtitles and plugins last paragraph 
 	h2, .cms_plugin > p:last-child, .separator {
@@ -49,6 +50,8 @@ body .container-fluid {
 body > .container-fluid > .body {
 	background-color: #fff;
 	margin-bottom   : 100px;
+	margin-top      : @margin_under_header;
+
 	.first-page {
 		transition-property : height;
 		transition-duration :.25s;
@@ -59,6 +62,7 @@ body > .container-fluid > .body {
 		position            : relative;
 		z-index             : 2; // upper the header for the shadow
 		box-shadow          : 0px 0px 20px rgba(0,0,0, .2);
+		margin-top          : -@margin_under_header; // remove the margin-top set above
 		margin-bottom       : 100px;
 		img, h1 {margin-bottom: 20px;}
 		p {

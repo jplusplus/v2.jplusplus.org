@@ -1,0 +1,51 @@
+{% extends "chapter.html" %}
+{% load cms_tags staticfiles sekizai_tags menu_tags i18n %}
+
+{% block content %}
+
+{% addtoblock "css" %}<link rel="stylesheet" type="text/less" href="{{STATIC_URL}}less/chapter_paris_berlin.less">{% endaddtoblock %}
+
+	<div class="container">
+		{% placeholder "content" %}
+		
+		<div class="our-team row">
+			<div class="our-team__illustration col-sm-8"><img src="{{ STATIC_URL }}img/team.png"></div>
+			<div class="our-team__body col-sm-4">{% placeholder "our-team" %}</div>
+		</div>
+
+		<div class="trombinoscope">
+			<div class="item" style="background-image:url({{ STATIC_URL }}img/nico.png);">
+				<div class="header">Nicolas<br/><b>Kayser-Bril</b></div>
+				<div class="footer">{% trans "CEO/Data-journalist" %}</div>
+			</div>
+			<div class="item" style="background-image:url({{ STATIC_URL }}img/pirhoo.png);">
+				<div class="header">Pierre<br/><b>Roméra</b></div>
+				<div class="footer">{% trans "CTO/Developer" %}</div>
+			</div>
+			<div class="item" style="background-image:url({{ STATIC_URL }}img/anne-lise.png);">
+				<div class="header">Anne-Lise<br/><b>Bouyer</b></div>
+				<div class="footer">{% trans "Project Manager" %}</div>
+			</div>
+			<div class="item" style="background-image:url({{ STATIC_URL }}img/edouard.png);">
+				<div class="header">Édouard<br/><b>Richard</b></div>
+				<div class="footer">{% trans "Developer" %}</div>
+			</div>
+			<div class="item" style="background-image:url({{ STATIC_URL }}img/pierre.png);">
+				<div class="header">Pierre<br/><b>Bellon</b></div>
+				<div class="footer">{% trans "Developer" %}</div>
+			</div>
+			<div class="item" style="background-image:url({{ STATIC_URL }}img/paul.png);">
+				<div class="header">Paul<br/><b>Joannon</b></div>
+				<div class="footer">{% trans "Developer" %}</div>
+			</div>
+			<div class="item" style="background-image:url({{ STATIC_URL }}img/sebastian.png);">
+				<div class="header">Sebstian<br/><b>Kraus</b></div>
+				<div class="footer">{% trans "CEO/DATA-JOURNALIST" %}</div>
+			</div>
+		</div>
+
+		{% placeholder "content2" %}
+
+	</div>
+
+{% endblock content %}
