@@ -119,7 +119,7 @@ class Trombinoscope(TranslatableModel):
     Person Model
     """
     translations = TranslatedFields(
-        short_description = models.CharField(_('short description'), help_text=_("to be translated"), max_length=20),
+        short_description = models.CharField(_('short description'), help_text=_("to be translated"), max_length=255),
         description       = RedactorField(_('description'), help_text=_("to be translated"), null=True, blank=True),
     )
     first_name = models.CharField(_('first name'), help_text=_("don't translate"), max_length=255)
