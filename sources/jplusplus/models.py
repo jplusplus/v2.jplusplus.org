@@ -58,7 +58,8 @@ class Project(TranslatableModel):
         ordering = ('order',)
 
     def __unicode__(self):
-        return self.title
+        return self.safe_translation_getter('title', unicode(self.pk))
+
 
     def get_absolute_url(self):
         return reverse('jplusplus_project_details', args=[str(self.slug)])
