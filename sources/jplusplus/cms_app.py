@@ -17,7 +17,6 @@ from django.utils.translation import ugettext_lazy as _
 class JppHook(CMSApp):
     name     = _("J++ App")
     urls     = ["jplusplus.urls"]
-    app_name = "jplusplus_app"
 
 apphook_pool.register(JppHook)
 

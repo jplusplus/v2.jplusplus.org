@@ -61,7 +61,7 @@ class Project(TranslatableModel):
         return self.title
 
     def get_absolute_url(self):
-        return reverse('jplusplus.views.project_details', args=[str(self.slug)])
+        return reverse('jplusplus_project_details', args=[str(self.slug)])
 
 class ProjectPluginModel(CMSPlugin):
     offices     = models.ManyToManyField(Office, verbose_name=_("filter by office"), blank=True, null=True)
