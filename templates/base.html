@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{% page_attribute "page_title" %}</title>
+    <title>{% block title %}{% page_attribute "page_title" %}{% endblock title %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"> -->
     <!-- {% addtoblock "css" %}<link rel="stylesheet" type="text/less" href="{{STATIC_URL}}css/bootstrap.min.css">{% endaddtoblock %} -->

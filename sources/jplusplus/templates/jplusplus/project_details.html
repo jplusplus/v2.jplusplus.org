@@ -1,5 +1,7 @@
 {% extends "page_with_header.html" %}
-{% load i18n %}
+{% load i18n cms_tags %}
+
+{% block title %}{{project.title}}{% endblock title %}
 
 {% block content %}
 	<div class="container">
