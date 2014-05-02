@@ -33,4 +33,10 @@ init_db:
 	. $(VENV) ; $(PYTHON) manage.py syncdb
 	. $(VENV) ; $(PYTHON) manage.py migrate
 
+update_i18n:
+	. $(VENV) ; django-admin.py makemessages -a -i "venv/*"
+
+compile_i18n:
+	. $(VENV) ; django-admin.py compilemessages
+
 # EOF

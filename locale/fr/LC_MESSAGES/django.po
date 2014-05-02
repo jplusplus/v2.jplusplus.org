@@ -1,0 +1,252 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-05-02 18:40+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: settings.py:234
+msgid "en"
+msgstr ""
+
+#: settings.py:241
+msgid "fr"
+msgstr ""
+
+#: settings.py:248
+msgid "de"
+msgstr ""
+
+#: settings.py:255
+msgid "pt"
+msgstr ""
+
+#: settings.py:262
+msgid "sv"
+msgstr ""
+
+#: settings.py:289
+msgid "Container"
+msgstr ""
+
+#: sources/adminsortable/admin.py:127
+#: sources/adminsortable/templates/adminsortable/tabular-1.5.html:9
+#: sources/adminsortable/templates/adminsortable/tabular-1.6.html:9
+msgid "Sort"
+msgstr ""
+
+#: sources/adminsortable/admin.py:151
+msgid "Move selected to previous page"
+msgstr ""
+
+#: sources/adminsortable/admin.py:155
+msgid "Move selected to next page"
+msgstr ""
+
+#: sources/adminsortable/admin.py:159
+msgid "Move selected to first page"
+msgstr ""
+
+#: sources/adminsortable/admin.py:163
+msgid "Move selected to last page"
+msgstr ""
+
+#: sources/adminsortable/templates/adminsortable/stacked-1.5.html:10
+#: sources/adminsortable/templates/adminsortable/stacked-1.6.html:10
+#: sources/adminsortable/templates/adminsortable/tabular-1.5.html:31
+#: sources/adminsortable/templates/adminsortable/tabular-1.6.html:31
+msgid "View on site"
+msgstr ""
+
+#: sources/adminsortable/templates/adminsortable/stacked-1.5.html:28
+#: sources/adminsortable/templates/adminsortable/stacked-1.6.html:28
+#: sources/adminsortable/templates/adminsortable/tabular-1.5.html:78
+#: sources/adminsortable/templates/adminsortable/tabular-1.6.html:77
+msgid "Remove"
+msgstr ""
+
+#: sources/adminsortable/templates/adminsortable/stacked-1.5.html:29
+#: sources/adminsortable/templates/adminsortable/stacked-1.6.html:29
+#: sources/adminsortable/templates/adminsortable/tabular-1.5.html:77
+#: sources/adminsortable/templates/adminsortable/tabular-1.6.html:76
+#, python-format
+msgid "Add another %(verbose_name)s"
+msgstr ""
+
+#: sources/adminsortable/templates/adminsortable/tabular-1.5.html:17
+#: sources/adminsortable/templates/adminsortable/tabular-1.6.html:17
+msgid "Delete?"
+msgstr ""
+
+#: sources/jplusplus/admin.py:33 sources/jplusplus/admin.py:40
+#: sources/jplusplus/admin.py:57
+msgid "Title"
+msgstr ""
+
+#: sources/jplusplus/cms_app.py:18
+msgid "J++ App"
+msgstr ""
+
+#: sources/jplusplus/cms_plugins.py:20
+msgid "J++ Projects Mosaic"
+msgstr ""
+
+#: sources/jplusplus/cms_plugins.py:30
+msgid "J++ Contact"
+msgstr ""
+
+#: sources/jplusplus/cms_plugins.py:40
+msgid "J++ Titles"
+msgstr ""
+
+#: sources/jplusplus/cms_plugins.py:52
+msgid "J++ Map"
+msgstr ""
+
+#: sources/jplusplus/cms_plugins.py:64
+msgid "J++ WhatWeDo"
+msgstr ""
+
+#: sources/jplusplus/cms_plugins.py:75
+msgid "J++ Trombinoscope"
+msgstr ""
+
+#: sources/jplusplus/models.py:26 sources/jplusplus/models.py:44
+#: sources/jplusplus/models.py:78 sources/jplusplus/models.py:89
+#: sources/jplusplus/models.py:101
+msgid "title"
+msgstr ""
+
+#: sources/jplusplus/models.py:27
+msgid "slug"
+msgstr ""
+
+#: sources/jplusplus/models.py:27
+msgid "should be the same that the office page"
+msgstr ""
+
+#: sources/jplusplus/models.py:28
+msgid "page"
+msgstr ""
+
+#: sources/jplusplus/models.py:29
+msgid "top offset on map"
+msgstr ""
+
+#: sources/jplusplus/models.py:30
+msgid "left offset on map"
+msgstr ""
+
+#: sources/jplusplus/models.py:45 sources/jplusplus/models.py:103
+#: sources/jplusplus/models.py:123
+msgid "description"
+msgstr ""
+
+#: sources/jplusplus/models.py:46
+msgid "client"
+msgstr ""
+
+#: sources/jplusplus/models.py:51
+msgid "image"
+msgstr ""
+
+#: sources/jplusplus/models.py:53
+msgid "highlighted"
+msgstr ""
+
+#: sources/jplusplus/models.py:54
+msgid "link"
+msgstr ""
+
+#: sources/jplusplus/models.py:67 sources/jplusplus/models.py:139
+msgid "filter by office"
+msgstr ""
+
+#: sources/jplusplus/models.py:68
+msgid "show only highlighted projects"
+msgstr ""
+
+#: sources/jplusplus/models.py:78 sources/jplusplus/models.py:101
+#: sources/jplusplus/models.py:102 sources/jplusplus/models.py:103
+#: sources/jplusplus/models.py:122 sources/jplusplus/models.py:123
+msgid "to be translated"
+msgstr ""
+
+#: sources/jplusplus/models.py:80
+msgid "anchor"
+msgstr ""
+
+#: sources/jplusplus/models.py:80 sources/jplusplus/models.py:105
+#: sources/jplusplus/models.py:125 sources/jplusplus/models.py:126
+#: sources/jplusplus/models.py:127
+msgid "don't translate"
+msgstr ""
+
+#: sources/jplusplus/models.py:102 sources/jplusplus/models.py:122
+msgid "short description"
+msgstr ""
+
+#: sources/jplusplus/models.py:105 sources/jplusplus/models.py:127
+msgid "illustration"
+msgstr ""
+
+#: sources/jplusplus/models.py:125
+msgid "first name"
+msgstr ""
+
+#: sources/jplusplus/models.py:126
+msgid "last name"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/what_we_do.html:18
+msgid "See projects"
+msgstr ""
+
+#: templates/footer.html:8
+msgid "follow us"
+msgstr ""
+
+#: templates/footer.html:16
+msgid "contact us"
+msgstr ""
+
+#: templates/navigation.html:16 templates/navigation_chapter.html:13
+msgid "WHAT WE STAND FOR"
+msgstr ""
+
+#: templates/navigation.html:22
+msgid "What we Do"
+msgstr ""
+
+#: templates/navigation.html:23 templates/navigation_chapter.html:20
+msgid "Our Work"
+msgstr ""
+
+#: templates/navigation.html:25
+msgid "Who we Are"
+msgstr ""
+
+#: templates/navigation.html:26 templates/navigation_chapter.html:22
+msgid "Let's Talk"
+msgstr ""
+
+#: templates/navigation.html:31 templates/navigation_chapter.html:27
+msgid "LANGUAGE"
+msgstr ""
+
+#: templates/navigation_chapter.html:19
+msgid "Our Team"
+msgstr ""

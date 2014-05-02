@@ -135,6 +135,10 @@ TEMPLATE_LOADERS = (
     'django.template.loaders.eggs.Loader'
 )
 
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'locale'),
+)
+
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -208,11 +212,11 @@ INSTALLED_APPS = (
 
 LANGUAGES = (
     ## Customize this
-    ('en', gettext('en')),
-    ('fr', gettext('fr')),
-    ('de', gettext('de')),
-    ('pt', gettext('pt')),
-    ('sv', gettext('sv')),
+    ('en', u'English'),
+    ('fr', u'Français'),
+    ('de', u'Deutsch'),
+    ('pt', u'Português'),
+    ('sv', u'Svenska'),
 )
 
 CMS_LANGUAGES = {
@@ -257,7 +261,7 @@ CMS_LANGUAGES = {
             'hide_untranslated': False,
             'name': gettext('sv'),
             'public': True,
-        },
+        }
     ],
 }
 
