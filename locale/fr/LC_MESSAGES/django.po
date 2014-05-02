@@ -213,40 +213,40 @@ msgstr ""
 
 #: sources/jplusplus/templates/jplusplus/partials/what_we_do.html:18
 msgid "See projects"
-msgstr ""
+msgstr "Voir les projets"
 
 #: templates/footer.html:8
 msgid "follow us"
-msgstr ""
+msgstr "suivez-nous"
 
 #: templates/footer.html:16
 msgid "contact us"
-msgstr ""
+msgstr "contactez-nous"
 
 #: templates/navigation.html:16 templates/navigation_chapter.html:13
 msgid "WHAT WE STAND FOR"
-msgstr ""
+msgstr "NOS VALEURS"
 
 #: templates/navigation.html:22
 msgid "What we Do"
-msgstr ""
+msgstr "Nos métiers"
 
 #: templates/navigation.html:23 templates/navigation_chapter.html:20
 msgid "Our Work"
-msgstr ""
+msgstr "Portfolio"
 
 #: templates/navigation.html:25
 msgid "Who we Are"
-msgstr ""
+msgstr "Qui sommes-nous?"
 
 #: templates/navigation.html:26 templates/navigation_chapter.html:22
 msgid "Let's Talk"
-msgstr ""
+msgstr "Contactez-nous"
 
 #: templates/navigation.html:31 templates/navigation_chapter.html:27
 msgid "LANGUAGE"
-msgstr ""
+msgstr "LANGUE"
 
 #: templates/navigation_chapter.html:19
 msgid "Our Team"
-msgstr ""
+msgstr "Notre équipe"
