@@ -114,4 +114,30 @@ class WhatWeDo(TranslatableModel):
         # beurk, never use hvad again. next time multilingual-ng ?
         return self.safe_translation_getter('title', unicode(self.pk))
 
+class Trombinoscope(TranslatableModel):
+    """
+    Person Model
+    """
+    translations = TranslatedFields(
+        short_description = models.CharField(_('short description'), help_text=_("to be translated"), max_length=20),
+        description       = RedactorField(_('description'), help_text=_("to be translated"), null=True, blank=True),
+    )
+    first_name = models.CharField(_('first name'), help_text=_("don't translate"), max_length=255)
+    last_name  = models.CharField(_('last name') , help_text=_("don't translate"), max_length=255)
+    photo      = models.ImageField(_('illustration'), help_text=_("don't translate"), max_length=255, upload_to="trombinoscope")
+    position   = models.PositiveIntegerField(default=0, blank=False, null=False)
+    offices    = models.ManyToManyField(Office)
+
+    class Meta:
+        verbose_name_plural = "Trombinoscope"
+        ordering = ('position',)
+
+    def __unicode__(self):
+        return "%s %s" % (self.first_name, self.last_name)
+
+class TrombinoscopePluginModel(CMSPlugin):
+    offices = models.ManyToManyField(Office, verbose_name=_("filter by office"), blank=True, null=True)
+
+    def copy_relations(self, oldinstance):
+        self.offices = oldinstance.offices.all()
 # EOF

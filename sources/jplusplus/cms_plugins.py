@@ -13,7 +13,7 @@
 from django.utils.translation import ugettext_lazy as _
 from cms.plugin_base import CMSPluginBase
 from cms.plugin_pool import plugin_pool
-from .models import ProjectPluginModel, TitlePluginModel, Office, WhatWeDo
+from .models import ProjectPluginModel, TitlePluginModel, Office, WhatWeDo, Trombinoscope, TrombinoscopePluginModel
 
 class ProjectsPlugin(CMSPluginBase):
     model           = ProjectPluginModel
@@ -71,10 +71,23 @@ class WhatWeDoPlugin(CMSPluginBase):
         })
         return context
 
+class TrombinoscopePlugin(CMSPluginBase):
+    name            = _("J++ Trombinoscope")
+    render_template = "jplusplus/partials/trombinoscope.html"
+    model           = TrombinoscopePluginModel
+    def render(self, context, instance, placeholder):
+        trombinoscope = Trombinoscope.objects.filter(offices__in=instance.offices.all()).distinct()
+        context.update({
+            'instance'      : instance,
+            'trombinoscope' : trombinoscope
+        })
+        return context
+
 plugin_pool.register_plugin(ContactPlugin)
 plugin_pool.register_plugin(ProjectsPlugin)
 plugin_pool.register_plugin(TitlePlugin)
 plugin_pool.register_plugin(MapPlugin)
 plugin_pool.register_plugin(WhatWeDoPlugin)
+plugin_pool.register_plugin(TrombinoscopePlugin)
 
 # EOF

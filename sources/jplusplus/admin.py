@@ -13,7 +13,7 @@
 from django.utils.translation import ugettext_lazy as _
 from django.contrib import admin
 from hvad.admin import TranslatableAdmin
-from .models import Office, Project, Title, WhatWeDo
+from .models import Office, Project, Title, WhatWeDo, Trombinoscope
 from adminsortable.admin import SortableAdminMixin
 
 class OfficeAdmin(admin.ModelAdmin):
@@ -39,6 +39,9 @@ class WhatWeDoAdmin(SortableAdminMixin, TranslatableAdmin):
         return obj.title
     get_title.short_description = _('Title')
 
+class TombinoscopeAdmin(SortableAdminMixin, TranslatableAdmin):
+    pass
+
 class ProjectAdmin(SortableAdminMixin, TranslatableAdmin):
     def __init__(self, *args, **kwargs):
         # for prepopulate fields
@@ -57,5 +60,6 @@ admin.site.register(Office, OfficeAdmin)
 admin.site.register(Project, ProjectAdmin)
 admin.site.register(Title, TitleAdmin)
 admin.site.register(WhatWeDo, WhatWeDoAdmin)
+admin.site.register(Trombinoscope, TombinoscopeAdmin)
 
 # EOF

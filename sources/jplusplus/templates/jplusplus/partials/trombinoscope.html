@@ -1,0 +1,13 @@
+{% load sekizai_tags %}
+
+<div class="trombinoscope">
+	{% for person in trombinoscope %}
+		<div class="item" style="background-image:url({{ person.photo.url }});">
+			<div class="header">
+				<div class="first_name">{{ person.first_name }}</div>
+				<div class="last_name" >{{ person.last_name }}</div>
+			</div>
+			<div class="footer">{{ person.short_description }}</div>
+		</div>
+	{% endfor %}
+</div>
