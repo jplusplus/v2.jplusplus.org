@@ -1,13 +1,17 @@
 {% load sekizai_tags %}
+{% addtoblock "css" %}<link rel="stylesheet" type="text/less" href="{{STATIC_URL}}jplusplus/less/trombinoscope.less">{% endaddtoblock %}
 
 <div class="trombinoscope">
 	{% for person in trombinoscope %}
-		<div class="item" style="background-image:url({{ person.photo.url }});">
-			<div class="header">
-				<div class="first_name">{{ person.first_name }}</div>
-				<div class="last_name" >{{ person.last_name }}</div>
+		<div class="item">
+			<div class="image-wrapper" style="background-image:url({{ person.photo.url }});">
+				<div class="header">
+					<div class="first-name">{{ person.first_name }}</div>
+					<div class="last-name" >{{ person.last_name }}</div>
+				</div>
+				<div class="footer">{{ person.short_description }}</div>
 			</div>
-			<div class="footer">{{ person.short_description }}</div>
+			<div class="description">{{ person.description | safe }}</div>
 		</div>
 	{% endfor %}
 </div>
