@@ -2,8 +2,8 @@
 
 {% addtoblock "css" %}<link rel="stylesheet" type="text/less" href="{{STATIC_URL}}less/navigation.less">{% endaddtoblock %}
 
-{% if request.current_page.reverse_id != "home" %}
-  {% page_url "home" as url_prefix %}
+{% if request.current_page.reverse_id != "home" or root %}
+{% page_url "home" as url_prefix %}
 {% endif %}
 
 <nav class="navbar navbar-fixed-top" role="navigation">

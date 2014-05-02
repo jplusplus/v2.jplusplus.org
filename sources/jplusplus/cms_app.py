@@ -8,15 +8,16 @@
 # License : proprietary journalism++
 # -----------------------------------------------------------------------------
 # Creation : 16-Apr-2014
-# Last mod : 16-Apr-2014
+# Last mod : 02-May-2014
 # -----------------------------------------------------------------------------
 from cms.app_base import CMSApp
 from cms.apphook_pool import apphook_pool
 from django.utils.translation import ugettext_lazy as _
 
 class JppHook(CMSApp):
-    name = _("J++ App")
-    urls = ["jplusplus.urls"]
+    name     = _("J++ App")
+    urls     = ["jplusplus.urls"]
+    app_name = "jplusplus_app"
 
 apphook_pool.register(JppHook)
 
