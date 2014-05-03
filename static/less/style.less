@@ -9,7 +9,9 @@ body .container-fluid {
 		font-family: 'Lato', 'sans-serif';
 		font-weight: bold;
 	}
-	h1 {font-size: 3.5em;}
+	h1 {
+		font-size: 3.5em;
+	}
 	h2 {
 		color          : @grey;
 		margin-bottom  : .5em;
@@ -88,6 +90,17 @@ body > .container-fluid > .body {
 			background-repeat  : no-repeat;
 			&:hover         {background-image: url({{ STATIC_URL }}img/next-home-hover.png);}
 		}
+	}
+}
+
+// MOBILE
+
+@media (max-width: 640px) {
+	body .container-fluid h1 {
+		font-size: 2em;
+	}
+	body > .container-fluid > .body .first-page p {
+		font-size: 1.5em;
 	}
 }
 
