@@ -78,14 +78,14 @@ body > .container-fluid > .body {
 		}
 		.cms_plugin { display: block}
 		.scroll-indicator {
-			display         : inline-block;
-			width           : 82px;
+			width           : 100%;
 			height          : 42px;
 			cursor          : pointer;
 			position        : absolute;
 			bottom          : 20px;
-			margin-left     : -41px; // half of the image width
-			background-image: url({{ STATIC_URL }}img/next-home.png);
+			background-image   : url({{ STATIC_URL }}img/next-home.png);
+			background-position: center;
+			background-repeat  : no-repeat;
 			&:hover         {background-image: url({{ STATIC_URL }}img/next-home-hover.png);}
 		}
 	}
