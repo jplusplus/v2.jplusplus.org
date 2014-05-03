@@ -1,4 +1,5 @@
 @import "variables.less";
+@import "sprite.less";
 
 .container-fluid > .footer {
 	z-index             : 1;
@@ -29,17 +30,18 @@
 					margin-bottom: 10px;
 					margin-right: 10px;
 					&:hover {cursor: pointer;}
+					.sprite;
 					&.facebook {
-						         background-image: url("{{ STATIC_URL }}img/pic_facebook.png");
-						&:hover {background-image: url("{{ STATIC_URL }}img/pic_facebook-hover.png");}
+						         .pic_facebook;
+						&:hover {.pic_facebook-hover;}
 					}
 					&.github {
-						         background-image: url("{{ STATIC_URL }}img/pic_github.png");
-						&:hover {background-image: url("{{ STATIC_URL }}img/pic_github-hover.png");}
+						         .pic_github;
+						&:hover {.pic_github-hover;}
 					}
 					&.twitter {
-						         background-image: url("{{ STATIC_URL }}img/pic_twitter.png");
-						&:hover {background-image: url("{{ STATIC_URL }}img/pic_twitter-hover.png");}
+						         .pic_twitter;
+						&:hover {.pic_twitter-hover;}
 					}
 				}
 			}
@@ -50,15 +52,19 @@
 			margin-top : 20px;
 			bottom     : 0px;
 			&:before {
-				content      : url("{{ STATIC_URL }}img/pic_contact.png");
+				content      : "";
 				margin-right : 5px;
 				top          : 2px;
-				position     : relative;
+				position: relative;
+				float: left;
+				.sprite;
+				.pic_contact;
 			}
 			&:hover {
 				color: #928B84;
 				&:before {
-					content : url("{{ STATIC_URL }}img/pic_contact-on.png");
+					.sprite;
+					.pic_contact-on;
 				}
 			}
 		}
@@ -79,9 +85,10 @@
 			li {
 				display: list-item;
 				.follow-us__illustration {
-					&.facebook {background-image: url("{{ STATIC_URL }}img/pic_facebook2.png")}
-					&.github   {background-image: url("{{ STATIC_URL }}img/pic_github2.png")}
-					&.twitter  {background-image: url("{{ STATIC_URL }}img/pic_twitter2.png")}
+					.sprite;
+					&.facebook {.pic_facebook2;}
+					&.github   {.pic_github2;}
+					&.twitter  {.pic_twitter2;}
 				}
 			}
 		}
