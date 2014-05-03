@@ -55,9 +55,9 @@ class window.Navigation
 		@uis.map
 			.find(".wrapper")
 				.css
-					"width"     : window_width
-					"height"    : window_width / 3.282051282 # ratio of map picture
-					"font-size" : "#{Math.min(window_width/1280, 1)}em"
+					"width"      : window_width
+					"min-height" : window_width / 3.282051282 # ratio of map picture
+					"font-size"  : "#{Math.min(window_width/1280, 1)}em"
 			.find("img")
 				.css("width", window_width)
 		# refresh scrollspy
