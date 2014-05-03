@@ -36,8 +36,8 @@ class window.Navigation
 			$(window).scroll(@onFirstPageScroll)
 			@onFirstPageScroll() 
 		$(document).on('heightHasChanged', @relayout) # from mosaic for instance
-		# $("a[href^=#]").on("click", (e) -> that.onTitleClick($(this).attr("href").split("&")[0]))
-		@uis.titles.on("click", (e) -> that.onTitleClick($(this).find("a").attr("href").split("&")[0]))
+		$("a[href^=#]").on("click", (e) -> that.onTitleClick($(this).attr("href").split("&")[0]))
+		# @uis.titles.on("click", (e) -> that.onTitleClick($(this).find("a").attr("href").split("&")[0]))
 		# hack for z-index
 		$(".header .dropdown.languages")
 			.on("show.bs.dropdown", => @uis.header.css("z-index", 3))
