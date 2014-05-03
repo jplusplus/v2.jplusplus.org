@@ -8,13 +8,14 @@
 # License : proprietary journalism++
 # -----------------------------------------------------------------------------
 # Creation : 17-Apr-2014
-# Last mod : 23-Apr-2014
+# Last mod : 03-May-2014
 # -----------------------------------------------------------------------------
 
 from rest_framework import viewsets, serializers
 from jplusplus.models import Project, Office
 from cms.models import CMSPlugin
 from rest_framework.exceptions import ParseError
+from django.utils.translation import get_language
 
 # -----------------------------------------------------------------------------
 #
@@ -44,6 +45,7 @@ class ProjectSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model  = Project
         fields = ("slug", "tags", "url", "offices", "date", "image", "order", "highlighted", "link", "title", "description")
+
     def transform_image(self, obj, value):
         if obj.image:
             return obj.image.url
@@ -80,7 +82,7 @@ class ProjectViewSet(viewsets.ModelViewSet):
         Optionally restricts the returned purchases to a given user,
         by filtering against a `username` query parameter in the URL.
         """
-        queryset = Project.objects.all()
+        queryset = Project.objects.language(get_language()).all()
         plugin_instance = self.request.QUERY_PARAMS.get('plugin_instance', None)
         if plugin_instance is not None:
             plugin_instance  = CMSPlugin.objects.get(pk=plugin_instance)
