@@ -10,40 +10,40 @@
 	<div class="body container">
 		<div class="row" style="position:relative;">
 			<div class="col-md-5">
-				Hi, my name is <input type="text" value="" placeholder="your name" />,<br/>
-				and I work for <input type="text" value="" placeholder="my company" />.
+				{% trans "Hi, my name is" %} <input type="text" value="" placeholder="{% trans "your name" %}" />,<br/>
+				{% trans "and I work for" %} <input type="text" value="" placeholder="{% trans "my company" %}" />.
 				<br/>
-				We are specifically looking for 
+				{% trans "We are specifically looking for" %} 
 				<select>
-					<option value="1" selected>a service</option>
-					<option value="3">code and development</option>
-					<option value="4">investigation</option>
-					<option value="5">consulting</option>
-					<option value="6">design</option>
-					<option value="2">evangelization and training</option>
-					<option value="7">all</option>
+					<option value="1" selected>{% trans "a service" %}</option>
+					<option value="3">{% trans "code and development" %}</option>
+					<option value="4">{% trans "investigation" %}</option>
+					<option value="5">{% trans "consulting" %}</option>
+					<option value="6">{% trans "design" %}</option>
+					<option value="2">{% trans "evangelization and training" %}</option>
+					<option value="7">{% trans "all" %}</option>
 				</select>
 				<br/>
-				and have a budget of <input type="text" value="" placeholder="your budget"/>
+				{% trans "and have a budget of" %} <input type="text" value="" placeholder="{% trans "your budget" %}"/>
 				,
 				<br/>
-				our ideal timeframe to implement this is 
+				{% trans "our ideal timeframe to implement this is" %}
 				<select>
-					<option value="1">less than a month</option>
-					<option value="2" selected>1 month</option>
-					<option value="3">2 months</option>
-					<option value="4">3 months or more</option>
+					<option value="1">{% trans "less than a month" %}</option>
+					<option value="2" selected>{% trans "1 month" %}</option>
+					<option value="3">{% trans "2 months" %}</option>
+					<option value="4">{% trans "3 months or more" %}</option>
 				</select>.
 				<br/>
-				Please contact me at <input type="text" value="" placeholder="email"/>.
+				{% trans "Please contact me at" %} <input type="text" value="" placeholder="{% trans "email" %}"/>.
 			</div>
 			<div class="col-md-2 hidden-xs" style="position: absolute; bottom: 0; left: 460px;"> {# FIXME #}
-				<a class="nl-submit btn btn-outline-inverse btn-sm" type="submit">SEND</a>
+				<a class="nl-submit btn btn-outline-inverse btn-sm" type="submit">{% trans "SEND" %}</a>
 			</div>
 		</div>
 		<div class="row visible-xs">
 			<div class="col-md-2">
-				<a class="nl-submit btn btn-outline-inverse btn-sm" type="submit">SEND</a>
+				<a class="nl-submit btn btn-outline-inverse btn-sm" type="submit">{% trans "SEND" %}</a>
 			</div>
 		</div>
 	</div>
