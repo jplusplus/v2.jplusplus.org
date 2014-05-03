@@ -1,4 +1,5 @@
 @import "variables.less";
+@import "sprite.less";
 
 // Global settings
 body .container-fluid {
@@ -85,10 +86,8 @@ body > .container-fluid > .body {
 			cursor          : pointer;
 			position        : absolute;
 			bottom          : 20px;
-			background-image   : url({{ STATIC_URL }}img/next-home.png);
-			background-position: center;
-			background-repeat  : no-repeat;
-			&:hover         {background-image: url({{ STATIC_URL }}img/next-home-hover.png);}
+			.sprite; .next-home;
+			&:hover {.sprite; .next-home-hover;}
 		}
 	}
 }
