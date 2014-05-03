@@ -212,92 +212,92 @@ msgstr ""
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:13
 msgid "Hi, my name is"
-msgstr ""
+msgstr "Bonjour, je m'appelle"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:13
 msgid "your name"
-msgstr ""
+msgstr "votre nom"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:14
 msgid "and I work for"
-msgstr ""
+msgstr "et je travaille pour"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:14
 msgid "my company"
-msgstr ""
+msgstr "ma société"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:16
 msgid "We are specifically looking for"
-msgstr ""
+msgstr "Nos besoins concernent particulièrement"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:18
 msgid "a service"
-msgstr ""
+msgstr "un service"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:19
 msgid "code and development"
-msgstr ""
+msgstr "code et développement"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:20
 msgid "investigation"
-msgstr ""
+msgstr "enquête"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:21
 msgid "consulting"
-msgstr ""
+msgstr "consulting"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:22
 msgid "design"
-msgstr ""
+msgstr "design"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:23
 msgid "evangelization and training"
-msgstr ""
+msgstr "formation"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:24
 msgid "all"
-msgstr ""
+msgstr "tout"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:27
 msgid "and have a budget of"
-msgstr ""
+msgstr "et avons un budget de"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:27
 msgid "your budget"
-msgstr ""
+msgstr "votre budget"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:30
 msgid "our ideal timeframe to implement this is"
-msgstr ""
+msgstr "nos délais sont idéalement de"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:32
 msgid "less than a month"
-msgstr ""
+msgstr "moins d'un mois"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:33
 msgid "1 month"
-msgstr ""
+msgstr "1 mois"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:34
 msgid "2 months"
-msgstr ""
+msgstr "2 mois"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:35
 msgid "3 months or more"
-msgstr ""
+msgstr "3 mois au plus"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:38
 msgid "Please contact me at"
-msgstr ""
+msgstr "Veuillez me contacter à l'adresse"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:38
 msgid "email"
-msgstr ""
+msgstr "e-mail"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:41
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:46
 msgid "SEND"
-msgstr ""
+msgstr "ENVOYER"
 
 #: sources/jplusplus/templates/jplusplus/partials/what_we_do.html:18
 msgid "See projects"
@@ -313,7 +313,7 @@ msgstr "contactez-nous"
 
 #: templates/navigation.html:18 templates/navigation_chapter.html:13
 msgid "Journalism++ home"
-msgstr ""
+msgstr "Journalism++ accueil"
 
 #: templates/navigation.html:20
 msgid "WHAT WE STAND FOR"
@@ -345,4 +345,4 @@ msgstr "Notre équipe"
 
 #: templates/menu/language_chooser.html:7
 msgid "Change to language:"
-msgstr ""
+msgstr "Changer de langue:"
