@@ -8,11 +8,11 @@
 {% addtoblock "css" %}<link rel="stylesheet" type="text/less" href="{{STATIC_URL}}jplusplus/less/contact_form.less">{% endaddtoblock %}
 
 <div class="contact-form" id="nlform_{{instance.id}}">
-	<div <div class="success-message container">
+	<div <div class="success-message container hidden">
 			<p>{% trans "Your message was sent" %}</p>
 			<a href="#" class="btn btn-xs">{% trans "back" %}</a>
 	</div>
-	<form name="nlform" class="nl-form hidden" method="post" action="{% url "jplusplus_contact" %}">
+	<form name="nlform" class="nl-form" method="post" action="{% url "jplusplus_contact" %}">
 		{% csrf_token %}
 		<div class="body container">
 			<div class="row" style="position:relative;">
