@@ -28,18 +28,26 @@ class window.Navigation
 			titles        : $(".title", ".header"       , @ui)
 			body_content  : $("> .body"                 , @ui)
 			map           : $(".map"                    , @ui)
-		# set elements size 
+		# set elements size
 		@relayout()
 		# bind event
+		# scrollspy from bootstrap
 		$('body').scrollspy({ target: ".navbar-menu", offset: @CONFIG.offsetScroll + @uis.header.offset().top +  @CONFIG.headerHeight })
+		# window resize
 		lazy_relayout = _.debounce(@relayout, 500)
 		$(window).resize(lazy_relayout)
+		# listen scroll only for first page
 		if @uis.firstPage.length > 0
-			$(window).scroll(@onFirstPageScroll)
-			@onFirstPageScroll() 
-		$(document).on('heightHasChanged', @relayout) # from mosaic for instance
-		$("a[href^=#]").on("click", (e) -> that.onTitleClick($(this).attr("href").split("&")[0]))
-		# @uis.titles.on("click", (e) -> that.onTitleClick($(this).find("a").attr("href").split("&")[0]))
+			throttled = _.throttle(@onFirstPageScroll, 100)
+			$(window).scroll(throttled)
+			@onFirstPageScroll()
+		# when some widgets says that the height has changed (from mosaic for instance)
+		$(document).on('heightHasChanged', @relayout)
+		# on all anchor links, bind the onTitleClick function and give the #id as parameter
+		$("a[href^=#]").on("click", (e) -> e.preventDefault(); that.onTitleClick($(this).attr("href").split("&")[0]))
+		# scroll to the anchor if provided in the url
+		target = location.hash
+		setTimeout((->that.scrollTo(target)), 500) if target
 		# hack for z-index
 		$(".header .dropdown.languages")
 			.on("show.bs.dropdown", => @uis.header.css("z-index", 3))
@@ -77,9 +85,14 @@ class window.Navigation
 		if scroll_top > @CONFIG.headerHeight then @uis.header.removeClass("intro") else @uis.header.addClass("intro")
 		if scroll_top >= $(document).height() - $(window).height() then @uis.footer.removeClass("white")
 
-	onTitleClick: (anchor) =>
-		offset = $(anchor).offset().top - (@CONFIG.headerHeight + @uis.header.offset().top - @CONFIG.offsetScroll)
+	scrollTo: (target_id) =>
+		offset = $(target_id).offset().top - (@CONFIG.headerHeight + @uis.header.offset().top - @CONFIG.offsetScroll)
 		$('html, body').animate({scrollTop: offset}, 'slow')
+
+	onTitleClick: (anchor) =>
+		@scrollTo(anchor)
+		# update the url
+		window.history.pushState(null, null, anchor);
 		return false
 
 # EOF

@@ -40,7 +40,7 @@ class window.jplusplus.Mosaïc
 		# bind events
 		@uis.filters.click (e) ->
 			that.onFilterSelected($(this).data('filter'))
-		$(window).resize(@relayout)
+		$(window).resize(_.debounce(@relayout, 500))
 
 	relayout: =>
 		that  = this
