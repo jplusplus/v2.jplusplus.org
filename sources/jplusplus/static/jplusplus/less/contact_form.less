@@ -1,6 +1,6 @@
 @import "variables.less";
 
-.nl-form {
+.contact-form {
 	width            : 100%;
 	margin           : 0.3em auto 0 auto;
 	font-size        : 1.2em;
@@ -10,23 +10,28 @@
 	box-shadow       : 0  1px 24px -10px rgba(0, 0, 0, 0.7) inset,
 		               0 -1px 24px -10px rgba(0, 0, 0, 0.7) inset;
 	padding          : 20px 0px;
-	a, a:hover {
-		color           : white;
-		text-decoration : none;
+	.success-message {
+		a {background-color: #3F3F3F;}
 	}
-	.nl-submit {
-		border-color : white;
-		// position     : absolute;
-		// bottom       : 20px;
-	}
-	.nl-field-toggle,
-	.nl-form input,
-	.nl-form select  {
-		line-height   : inherit;
-		display       : inline-block;
-		color         : white;
-		cursor        : pointer;
-		border-bottom : 1px solid white;
-		line-height   : 1.2em;
+	.nl-form {
+		a, a:hover {
+			color           : white;
+			text-decoration : none;
+		}
+		.nl-submit {
+			border-color : white;
+			// position     : absolute;
+			// bottom       : 20px;
+		}
+		.nl-field-toggle,
+		.nl-form input,
+		.nl-form select  {
+			line-height   : inherit;
+			display       : inline-block;
+			color         : white;
+			cursor        : pointer;
+			border-bottom : 1px solid white;
+			line-height   : 1.2em;
+		}
 	}
 }

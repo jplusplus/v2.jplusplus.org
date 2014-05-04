@@ -15,27 +15,40 @@ window.jplusplus = {} if not window.jplusplus
 class window.jplusplus.ContactForm
 
 
-	constructor: (form_ui) ->
-		@ui  = $(form_ui)
+	constructor: (scope) ->
+		@ui  = $(scope)
 		@uis =
-			submitBtn : $('.nl-submit', @ui)
+			form           : $("form", @ui)
+			successMessage : $(".success-message", @ui)
+			backToFormBtn  : $(".success-message a", @ui)
+			submitBtn      : $('.nl-submit', @ui)
 
-		new NLForm(@ui.get(0))
+		new NLForm(@uis.form.get(0))
 		# bind event
 		@uis.submitBtn.on("click", @onSubmitClick)
+		@uis.backToFormBtn.on("click", @backToForm)
 
 	onSubmitClick: (e) =>
-		data = @ui.serialize()
+		data = @uis.form.serialize()
 		$.ajax
-			url      : @ui.attr("action")
+			url      : @uis.form.attr("action")
 			type     : "post"
-			dataType : '"json'
 			data     : data
 			success  : =>
-				console.log "success"
+				# fix he height of the element before removing content
+				@ui.css('min-height', @ui.outerHeight(true))
+				@uis.successMessage.removeClass("hidden")
+				@uis.form.addClass("hidden")
 		# prevent the page reload
 		e.preventDefault()
 		return false
 
+	backToForm: (e) =>
+		# reset dynamic height
+		@ui.css('min-height', '')
+		@uis.successMessage.addClass("hidden")
+		@uis.form.removeClass("hidden")
+		e.preventDefault()
+		return false
 
 # EOF

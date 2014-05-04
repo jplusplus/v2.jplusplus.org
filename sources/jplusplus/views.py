@@ -16,6 +16,14 @@ from .models import Project
 from django.http import HttpResponse
 from django.core.mail import mail_admins
 
+def get_client_ip(request):
+	x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
+	if x_forwarded_for:
+		ip = x_forwarded_for.split(',')[0]
+	else:
+		ip = request.META.get('REMOTE_ADDR')
+	return ip
+
 def projects(request, office=None):
 	projects = Project.objects.all()
 	if office:
@@ -35,6 +43,7 @@ def contact(request):
 		for key, value in request.POST.items():
 			if key == "csrfmiddlewaretoken": continue
 			body += "%s: %s\n" % (key.replace("-", " "), value)
+		body += "ip: %s\n" % (get_client_ip(request))
 		mail_admins('Contact Form', body, fail_silently=False)
 		return HttpResponse("ok")
 	return HttpResponse("pas ok")

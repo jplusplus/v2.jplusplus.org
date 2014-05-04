@@ -90,9 +90,10 @@ class window.Navigation
 		$('html, body').animate({scrollTop: offset}, 'slow')
 
 	onTitleClick: (anchor) =>
-		@scrollTo(anchor)
-		# update the url
-		window.history.pushState(null, null, anchor);
-		return false
+		if anchor != "#"
+			@scrollTo(anchor)
+			# update the url
+			window.history.pushState(null, null, anchor);
+			return false
 
 # EOF
