@@ -14,7 +14,7 @@
         MENU <b class="caret"></b>
       </button>
       <a class="title" href="{{url_prefix}}">
-        {% if root %}
+        {% if root or request.current_page.parent.reverse_id == "home" %}
           {% trans "Journalism++ home" %}
         {% else %}
           {% trans "WHAT WE STAND FOR" %}

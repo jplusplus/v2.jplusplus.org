@@ -90,7 +90,45 @@ body > .container-fluid > .body {
 			&:hover {.sprite; .next-home-hover;}
 		}
 	}
+
+	.manifesto {
+		ol, ul {
+			padding: 0;
+			width: 80%;
+			margin: auto;
+			counter-reset: bullet;
+			li {
+				counter-increment: bullet;
+				margin-bottom: 10px;
+				padding-top: 20px;
+				list-style: none;
+				padding-left: 60px;
+				padding-right: 60px;
+				position: relative;
+				text-align: left;
+
+				&:before {
+					font-family: 'Dinl',sans-serif;
+					position: absolute;
+					top: 50%;
+					left: 0;
+					margin-top: -10px;
+					content: counter(bullet);
+					background: @blue_on_blue;
+					color: white;
+					width: 40px;
+					padding: 15px 0;
+					text-align: center;
+					font-size: 20px;
+					line-height: 10px;
+					border-radius: 50%;
+				}
+			}
+		}
+	}
 }
+
+
 
 // MOBILE
 
