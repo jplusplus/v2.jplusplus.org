@@ -18,14 +18,16 @@ class window.Navigation
 		@CONFIG = 
 			headerHeight  : 70
 			offsetScroll  : 50
+
+		@ui  = $("body > .container-fluid")
 		@uis =
-			firstPage     : $(".first-page")
-			footer        : $(".footer")
-			header        : $(".header")
-			navbar_titles : $(".navbar-menu", ".header")
-			titles        : $(".title", ".header")
-			body_content  : $(".body")
-			map           : $(".map")
+			firstPage     : $(".first-page"             , @ui)
+			footer        : $(".footer"                 , @ui)
+			header        : $(".header"                 , @ui)
+			navbar_titles : $(".navbar-menu", ".header" , @ui)
+			titles        : $(".title", ".header"       , @ui)
+			body_content  : $("> .body"                 , @ui)
+			map           : $(".map"                    , @ui)
 		# set elements size 
 		@relayout()
 		# bind event
@@ -44,6 +46,7 @@ class window.Navigation
 			.on("hide.bs.dropdown", => @uis.header.css("z-index", 2))
 
 	relayout: =>
+		that = this
 		window_height = $(window).height()
 		window_width = $(window).width()
 		if @uis.firstPage.length > 0
@@ -60,10 +63,11 @@ class window.Navigation
 					"font-size"  : "#{Math.min(window_width/1280, 1)}em"
 			.find("img")
 				.css("width", window_width)
-		# refresh scrollspy
+		# refresh scrollspy and show the page if the page was loading
 		setTimeout(->
 			$("body").each(-> $(this).scrollspy('refresh'))
-		, 500) # because of height animation (on first-page for instance)
+			that.ui.removeClass("loading")
+		, 700) # because of height animation (on first-page for instance)
 
 	onFirstPageScroll: =>
 		scroll_top = $(window).scrollTop()
