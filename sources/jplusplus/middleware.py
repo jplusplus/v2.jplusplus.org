@@ -13,8 +13,8 @@
 
 from django.http import HttpResponseRedirect
 from django.contrib.sites.models import get_current_site
-from cms.models import Page
 from django.conf import settings
+from cms.utils.page_resolver import get_page_queryset
 
 class DomainNamesMiddleware(object):
 
@@ -25,7 +25,7 @@ class DomainNamesMiddleware(object):
         host = request.META.get('HTTP_HOST')
         if host in self.from_sites:
             site = get_current_site(request)
-            page = Page.objects.filter(reverse_id=settings.SITES[host])[0]
+            page = get_page_queryset(request).get(reverse_id=settings.SITES[host])
             return HttpResponseRedirect("http://%s/%s" % (site.domain, page.get_path()))
         return None
 
