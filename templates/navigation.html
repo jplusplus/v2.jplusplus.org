@@ -13,13 +13,18 @@
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-menu">
         MENU <b class="caret"></b>
       </button>
-      <a class="title" href="{{url_prefix}}">
         {% if root or request.current_page.parent.reverse_id == "home" %}
-          {% trans "Journalism++ home" %}
+          <a class="title" href="{{url_prefix}}">
+            {% trans "Journalism++ home" %}
+          </a>
         {% else %}
-          {% trans "WHAT WE STAND FOR" %}
+          {% page_url "manifesto" as manifesto_link %}
+          {% if manifesto_link %}
+            <a class="title" href="{{ manifesto_link }}">
+              {% trans "WHAT WE STAND FOR" %}
+            </a>
+          {% endif %}
         {% endif %}
-        </a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbar-collapse-menu">
