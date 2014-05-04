@@ -102,6 +102,11 @@ body > .container-fluid {
 				cursor          : pointer;
 				position        : absolute;
 				bottom          : 20px;
+				-webkit-animation : bounce 0.40s ease infinite alternate;
+				-o-animation      : bounce 0.40s ease infinite alternate;
+				-ms-animation     : bounce 0.40s ease infinite alternate;
+				-moz-animation    : bounce 0.40s ease infinite alternate;
+				animation         : bounce 0.40s ease infinite alternate;
 				.sprite; .next-home;
 				&:hover {.sprite; .next-home-hover;}
 			}
@@ -163,5 +168,30 @@ body > .container-fluid {
 		img, h1 {
 			margin-bottom: 10px;
 		}
+	}
+}
+
+// Animation
+@boucing-offset: -10px;
+
+@-moz-keyframes    bounce{.mixin-bounce;}
+@-o-keyframes      bounce{.mixin-bounce;}
+@-ms-keyframes     bounce{.mixin-bounce;}
+@-webkit-keyframes bounce{.mixin-bounce;}
+@keyframes         bounce{.mixin-bounce;}
+.mixin-bounce() {
+	from {
+		-moz-transform    : translateY(0);
+		-o-transform      : translateY(0);
+		-ms-transform     : translateY(0);
+		-webkit-transform : translateY(0);
+		transform         : translateY(0);
+	}
+	to {
+		-moz-transform    : translateY(@boucing-offset);
+		-o-transform      : translateY(@boucing-offset);
+		-ms-transform     : translateY(@boucing-offset);
+		-webkit-transform : translateY(@boucing-offset);
+		transform         : translateY(@boucing-offset);
 	}
 }
