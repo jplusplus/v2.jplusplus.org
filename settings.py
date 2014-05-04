@@ -140,6 +140,7 @@ LOCALE_PATHS = (
 )
 
 MIDDLEWARE_CLASSES = (
+    'jplusplus.middleware.DomainNamesMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -332,5 +333,11 @@ UUIDUploader     = 'redactor.handlers.DateDirectoryUploader'
 # EMAILS
 EMAIL_SUBJECT_PREFIX  = "[J++] "
 EMAIL_BACKEND         = 'django.core.mail.backends.console.EmailBackend'
+
+# Sites for DomainNamesMiddleware (in `sources/jplusplus/middleware.py`)
+SITES = { # from_url : to_page_reverse_id
+    "porto.jplusplus.dev:8000"  : "porto",
+    "berlin.jplusplus.dev:8000" : "paris-berlin",
+}
 
 # EOF
