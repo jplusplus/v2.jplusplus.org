@@ -45,21 +45,25 @@
 }
 
 @media (max-width: 767px) {
-	.map > .wrapper {
-		font-size: 1em !important;
-		&:before,  &:after{
-			content : none;
-		}
-		> img {
-			display: none;
-		}
-		> .overflow{
-			position: static;
-			.name {
+	.map {
+		box-shadow : none;
+		> .wrapper {
+			font-size: 1em !important;
+			height: auto !important;
+			&:before,  &:after{
+				content : none;
+			}
+			> img {
+				display: none;
+			}
+			> .overflow{
 				position: static;
-				width: 100%;
-				padding: 10px;
-				text-align: center;
+				.name {
+					position: static;
+					width: 100%;
+					padding: 10px;
+					text-align: center;
+				}
 			}
 		}
 	}
