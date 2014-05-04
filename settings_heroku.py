@@ -69,4 +69,10 @@ CACHES = {
     }
 }
 
+# EMAILS
+INSTALLED_APPS      += ('djrill',)
+MANDRILL_API_KEY     = os.getenv('MANDRILL_APIKEY')
+SERVER_EMAIL         = os.getenv('MANDRILL_USERNAME')
+EMAIL_BACKEND        = "djrill.mail.backends.djrill.DjrillBackend"
+
 # EOF

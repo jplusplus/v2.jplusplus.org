@@ -1,5 +1,7 @@
+# requirements file for the heroku instance
 -r requirements_core.txt
 boto==2.27.0
 django-storages==1.1.8
+djrill==1.0.0
 gunicorn==18.0
 psycopg2==2.5.2

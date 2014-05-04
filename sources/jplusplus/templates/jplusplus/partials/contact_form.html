@@ -2,40 +2,42 @@
 
 {% addtoblock "js" %}<script type="text/javascript" src="{{STATIC_URL}}jplusplus/vendors/NaturalLanguageForm/js/modernizr.custom.js"></script>{% endaddtoblock %}
 {% addtoblock "js" %}<script type="text/javascript" src="{{STATIC_URL}}jplusplus/vendors/NaturalLanguageForm/js/nlform.js"></script>{% endaddtoblock %}
+{% addtoblock "js" %}<script type="text/coffeescript" src="{{STATIC_URL}}jplusplus/coffee/contact_form.coffee"></script>{% endaddtoblock %}
 {% addtoblock "css" %}<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}jplusplus/vendors/NaturalLanguageForm/css/default.css">{% endaddtoblock %}
 {% addtoblock "css" %}<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}jplusplus/vendors/NaturalLanguageForm/css/component.css">{% endaddtoblock %}
 {% addtoblock "css" %}<link rel="stylesheet" type="text/less" href="{{STATIC_URL}}jplusplus/less/contact_form.less">{% endaddtoblock %}
 
-<form id="nl-form" class="nl-form" method="post" action="/contact">
+<form id="nlform_{{instance.id}}" name="nlform" class="nl-form" method="post" action="{% url "jplusplus_contact" %}">
+	{% csrf_token %}
 	<div class="body container">
 		<div class="row" style="position:relative;">
 			<div class="col-md-5">
-				{% trans "Hi, my name is" %} <input type="text" value="" placeholder="{% trans "your name" %}" />,<br/>
-				{% trans "and I work for" %} <input type="text" value="" placeholder="{% trans "my company" %}" />.
+				{% trans "Hi, my name is" %} <input type="text" name="name" value="" placeholder="{% trans "your name" %}" />,<br/>
+				{% trans "and I work for" %} <input type="text" name="i-work-for" value="" placeholder="{% trans "my company" %}" />.
 				<br/>
 				{% trans "We are specifically looking for" %} 
-				<select>
-					<option value="1" selected>{% trans "a service" %}</option>
-					<option value="3">{% trans "code and development" %}</option>
-					<option value="4">{% trans "investigation" %}</option>
-					<option value="5">{% trans "consulting" %}</option>
-					<option value="6">{% trans "design" %}</option>
-					<option value="2">{% trans "evangelization and training" %}</option>
-					<option value="7">{% trans "all" %}</option>
+				<select name="looking-for">
+					<option value="a service" selected>{% trans "a service" %}</option>
+					<option value="code and development">{% trans "code and development" %}</option>
+					<option value="investigation">{% trans "investigation" %}</option>
+					<option value="consulting">{% trans "consulting" %}</option>
+					<option value="design">{% trans "design" %}</option>
+					<option value="evangelization and training">{% trans "evangelization and training" %}</option>
+					<option value="all">{% trans "all" %}</option>
 				</select>
 				<br/>
-				{% trans "and have a budget of" %} <input type="text" value="" placeholder="{% trans "your budget" %}"/>
+				{% trans "and have a budget of" %} <input type="text" name="budget-of" value="" placeholder="{% trans "your budget" %}"/>
 				,
 				<br/>
 				{% trans "our ideal timeframe to implement this is" %}
-				<select>
-					<option value="1">{% trans "less than a month" %}</option>
-					<option value="2" selected>{% trans "1 month" %}</option>
-					<option value="3">{% trans "2 months" %}</option>
-					<option value="4">{% trans "3 months or more" %}</option>
+				<select name="timeframe">
+					<option value="less than a month">{% trans "less than a month" %}</option>
+					<option value="1 month" selected>{% trans "1 month" %}</option>
+					<option value="2 months">{% trans "2 months" %}</option>
+					<option value="3 months or more">{% trans "3 months or more" %}</option>
 				</select>.
 				<br/>
-				{% trans "Please contact me at" %} <input type="text" value="" placeholder="{% trans "email" %}"/>.
+				{% trans "Please contact me at" %} <input type="text" name="email" value="" placeholder="{% trans "email" %}"/>.
 			</div>
 			<div class="col-md-2 hidden-xs" style="position: absolute; bottom: 0; left: 460px;"> {# FIXME #}
 				<a class="nl-submit btn btn-outline-inverse btn-sm" type="submit">{% trans "SEND" %}</a>
@@ -52,6 +54,6 @@
 
 {% addtoblock "js" %}
 <script type="text/javascript">
-	new NLForm(document.getElementById('nl-form'));
+	new jplusplus.ContactForm("#nlform_{{instance.id}}");
 </script>
 {% endaddtoblock %}

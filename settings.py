@@ -23,7 +23,7 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    # ('Your Name', 'your_email@example.com'),
+    ('Edouard', 'edouard@jplusplus.org'),
 )
 
 MANAGERS = ADMINS
@@ -328,5 +328,9 @@ COMPRESS_TEMPLATE_FILTER_CONTEXT = {
 REDACTOR_OPTIONS = {'lang': 'en'}
 REDACTOR_UPLOAD  = 'uploads/'
 UUIDUploader     = 'redactor.handlers.DateDirectoryUploader'
+
+# EMAILS
+EMAIL_SUBJECT_PREFIX  = "[J++] "
+EMAIL_BACKEND         = 'django.core.mail.backends.console.EmailBackend'
 
 # EOF
