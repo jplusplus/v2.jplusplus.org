@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-05 10:17+0200\n"
+"POT-Creation-Date: 2014-05-05 11:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -252,10 +252,12 @@ msgid "investigation"
 msgstr ""
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:28
+#: sources/jplusplus/templates/jplusplus/partials/projects.html:19
 msgid "consulting"
 msgstr ""
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:29
+#: sources/jplusplus/templates/jplusplus/partials/projects.html:22
 msgid "design"
 msgstr ""
 
@@ -264,6 +266,7 @@ msgid "evangelization and training"
 msgstr ""
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:31
+#: sources/jplusplus/templates/jplusplus/partials/projects.html:10
 msgid "all"
 msgstr ""
 
@@ -306,6 +309,18 @@ msgstr ""
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:48
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:53
 msgid "SEND"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/projects.html:13
+msgid "code apps"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/projects.html:16
+msgid "investigate"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/projects.html:25
+msgid "evangelize"
 msgstr ""
 
 #: sources/jplusplus/templates/jplusplus/partials/what_we_do.html:18
