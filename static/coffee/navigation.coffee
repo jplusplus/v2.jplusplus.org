@@ -80,10 +80,10 @@ class window.Navigation
 	onFirstPageScroll: =>
 		scroll_top = $(window).scrollTop()
 		# toggle footer
-		if scroll_top == 0 then @uis.footer.removeClass("white") else @uis.footer.addClass("white")
+		if scroll_top == 0 then @uis.footer.removeClass("light") else @uis.footer.addClass("light")
 		# toggle header
 		if scroll_top > @CONFIG.headerHeight then @uis.header.removeClass("intro") else @uis.header.addClass("intro")
-		if scroll_top >= $(document).height() - $(window).height() then @uis.footer.removeClass("white")
+		if scroll_top >= $(document).height() - $(window).height() then @uis.footer.removeClass("light")
 
 	scrollTo: (target_id) =>
 		offset = $(target_id).offset().top - (@CONFIG.headerHeight + @uis.header.offset().top - @CONFIG.offsetScroll)

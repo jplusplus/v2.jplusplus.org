@@ -72,7 +72,7 @@
 		}
 	}
 	// when we leave the first-page mode
-	&.white {
+	&.light {
 		padding: 0px;
 		background-color: transparent;
 		color: @grey;
@@ -98,4 +98,11 @@
 			}
 		}
 	}
+}
+
+@media (max-width: 767px) {
+	.container-fluid > .footer.light {
+		display: none;
+	}
+
 }
