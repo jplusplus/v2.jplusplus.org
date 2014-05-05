@@ -264,7 +264,7 @@ msgstr "Training oder Vorträge"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:31
 msgid "all"
-msgstr "alle J++ Services"
+msgstr "mehrere J++ Dienstleistungen"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:34
 msgid "and have a budget of"
