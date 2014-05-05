@@ -67,6 +67,9 @@ CACHES = {
         'LOCATION': '/tmp/django_cache',
     }
 }
+MIDDLEWARE_CLASSES[:0]  = ['django.middleware.cache.UpdateCacheMiddleware']
+MIDDLEWARE_CLASSES[-1:] = ['django.middleware.cache.FetchFromCacheMiddleware']
+CMS_CACHE_DURATIONS = 60
 
 # EMAILS
 INSTALLED_APPS      += ('djrill',)
