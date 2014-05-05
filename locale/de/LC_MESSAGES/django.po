@@ -213,100 +213,100 @@ msgstr ""
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:12
 msgid "Your message was sent"
-msgstr ""
+msgstr "Ihre Nachricht wurde gesendet"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:13
 msgid "back"
-msgstr ""
+msgstr "zurück"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:20
 msgid "Hi, my name is"
-msgstr ""
+msgstr "Hallo, mein Name ist"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:20
 msgid "your name"
-msgstr ""
+msgstr "Ihr Name"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:21
 msgid "and I work for"
-msgstr ""
+msgstr "und ich arbeite für"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:21
 msgid "my company"
-msgstr ""
+msgstr "Ihr Unternehmen"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:23
 msgid "We are specifically looking for"
-msgstr ""
+msgstr "Wir brauchen"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:25
 msgid "a service"
-msgstr ""
+msgstr "eine Dienstleistung"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:26
 msgid "code and development"
-msgstr ""
+msgstr "Code oder Softwareentwicklung"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:27
 msgid "investigation"
-msgstr ""
+msgstr "Recherche oder Investigation"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:28
 msgid "consulting"
-msgstr ""
+msgstr "Beratung"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:29
 msgid "design"
-msgstr ""
+msgstr "Design"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:30
 msgid "evangelization and training"
-msgstr ""
+msgstr "Training oder Vorträge"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:31
 msgid "all"
-msgstr ""
+msgstr "alle J++ Services"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:34
 msgid "and have a budget of"
-msgstr ""
+msgstr "und ich habe ein Budget von"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:34
 msgid "your budget"
-msgstr ""
+msgstr "Ihr Budget"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:37
 msgid "our ideal timeframe to implement this is"
-msgstr ""
+msgstr "unser idealer Zeitrahmen liegt bei"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:39
 msgid "less than a month"
-msgstr ""
+msgstr "weniger als einem Monat"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:40
 msgid "1 month"
-msgstr ""
+msgstr "1 Monat"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:41
 msgid "2 months"
-msgstr ""
+msgstr "2 Monaten"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:42
 msgid "3 months or more"
-msgstr ""
+msgstr "3 Monaten oder länger"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:45
 msgid "Please contact me at"
-msgstr ""
+msgstr "Bitte kontaktieren Sie mich unter"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:45
 msgid "email"
-msgstr ""
+msgstr "Email"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:48
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:53
 msgid "SEND"
-msgstr ""
+msgstr "SENDEN"
 
 #: sources/jplusplus/templates/jplusplus/partials/what_we_do.html:18
 msgid "See projects"
@@ -314,44 +314,44 @@ msgstr ""
 
 #: templates/footer.html:8
 msgid "follow us"
-msgstr ""
+msgstr "uns folgen"
 
 #: templates/footer.html:16
 msgid "contact us"
-msgstr ""
+msgstr "Kontakt"
 
 #: templates/navigation.html:18 templates/navigation_chapter.html:13
 msgid "Journalism++ home"
-msgstr ""
+msgstr "J++ Homepage"
 
 #: templates/navigation.html:24
 msgid "WHAT WE STAND FOR"
-msgstr ""
+msgstr "Wofür wir stehen"
 
 #: templates/navigation.html:33
 msgid "What we Do"
-msgstr ""
+msgstr "Unsere Kompetenzen"
 
 #: templates/navigation.html:34 templates/navigation_chapter.html:20
 msgid "Our Work"
-msgstr ""
+msgstr "Unser Portfolio"
 
 #: templates/navigation.html:39
 msgid "Who we Are"
-msgstr ""
+msgstr "Wer wir sind"
 
 #: templates/navigation.html:40 templates/navigation_chapter.html:25
 msgid "Let's Talk"
-msgstr ""
+msgstr "Kontaktieren Sie uns"
 
 #: templates/navigation.html:45 templates/navigation_chapter.html:30
 msgid "LANGUAGE"
-msgstr ""
+msgstr "SPRACHE"
 
 #: templates/navigation_chapter.html:19
 msgid "Our Team"
-msgstr ""
+msgstr "Unser Team"
 
 #: templates/menu/language_chooser.html:7
 msgid "Change to language:"
-msgstr ""
+msgstr "Sprache ändern:"
