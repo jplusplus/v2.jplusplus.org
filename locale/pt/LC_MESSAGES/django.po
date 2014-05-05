@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-05 11:43+0200\n"
+"POT-Creation-Date: 2014-05-05 22:44+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,27 +18,23 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: settings.py:235
+#: settings.py:234
 msgid "en"
 msgstr ""
 
-#: settings.py:242
+#: settings.py:241
 msgid "fr"
 msgstr ""
 
-#: settings.py:249
+#: settings.py:248
 msgid "de"
 msgstr ""
 
-#: settings.py:256
+#: settings.py:255
 msgid "pt"
 msgstr ""
 
-#: settings.py:263
-msgid "sv"
-msgstr ""
-
-#: settings.py:290
+#: settings.py:282
 msgid "Container"
 msgstr ""
 
@@ -329,6 +325,10 @@ msgstr ""
 
 #: sources/jplusplus/templates/jplusplus/partials/what_we_do.html:18
 msgid "See projects"
+msgstr ""
+
+#: templates/404.html:4
+msgid "Page not found"
 msgstr ""
 
 #: templates/footer.html:8
