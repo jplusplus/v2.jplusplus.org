@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 from settings import *
-from urlparse import urlparse
 import os
 import dj_database_url
 
