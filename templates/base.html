@@ -4,11 +4,16 @@
   <head>
     <title>{% block title %}{% page_attribute "page_title" %}{% endblock title %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"> -->
-    <!-- {% addtoblock "css" %}<link rel="stylesheet" type="text/less" href="{{STATIC_URL}}css/bootstrap.min.css">{% endaddtoblock %} -->
-    <!-- <link rel="stylesheet" type="text/less" href="{{STATIC_URL}}css/bootstrap.min.css"> -->
+    <link rel="shortcut icon" type="image/png" href="{{ STATIC_URL}}img/favicon.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- <meta name="twitter:description" content=""> -->
+    <meta property="og:image" content="{{ request.build_absolute_uri }}img/share.png"/>
+    <meta property="og:title" content="{% page_attribute "page_title" %}"/>
+    <meta property="og:site_name" content="Journalism++"/>
+    <meta property="og:type" content="website"/>
 
     {% render_block "css" postprocessor "compressor.contrib.sekizai.compress" %}
+    {% addtoblock "css" %}<link rel="stylesheet" type="text/less" href="{{STATIC_URL}}css/bootstrap.min.css">{% endaddtoblock %}
     {% addtoblock "css" %}<link rel="stylesheet" type="text/less" href="{{STATIC_URL}}less/sprite.less">{% endaddtoblock %}
     {% addtoblock "css" %}<link rel="stylesheet" type="text/less" href="{{STATIC_URL}}less/style.less">{% endaddtoblock %}
     <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,400italic,300,800' rel='stylesheet' type='text/css'>
