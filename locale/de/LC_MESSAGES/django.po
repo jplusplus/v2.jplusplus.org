@@ -309,7 +309,7 @@ msgstr "SENDEN"
 
 #: sources/jplusplus/templates/jplusplus/partials/what_we_do.html:18
 msgid "See projects"
-msgstr ""
+msgstr "Projekte ansehen"
 
 #: templates/footer.html:8
 msgid "follow us"
