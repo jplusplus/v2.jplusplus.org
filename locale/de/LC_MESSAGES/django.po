@@ -312,16 +312,15 @@ msgstr "SENDEN"
 
 #: sources/jplusplus/templates/jplusplus/partials/projects.html:13
 msgid "code apps"
-msgstr ""
+msgstr "Software-Entwicklung"
 
 #: sources/jplusplus/templates/jplusplus/partials/projects.html:16
-#, fuzzy
 msgid "investigate"
-msgstr "Recherche oder Investigation"
+msgstr "Investigation"
 
 #: sources/jplusplus/templates/jplusplus/partials/projects.html:25
 msgid "evangelize"
-msgstr ""
+msgstr "Training"
 
 #: sources/jplusplus/templates/jplusplus/partials/what_we_do.html:18
 msgid "See projects"
