@@ -61,12 +61,21 @@ COMPRESS_TEMPLATE_FILTER_CONTEXT = {
 }
 
 # Activate the cache, for true
+os.environ['MEMCACHE_SERVERS'] = os.environ.get('MEMCACHIER_SERVERS', '').replace(',', ';')
+os.environ['MEMCACHE_USERNAME'] = os.environ.get('MEMCACHIER_USERNAME', '')
+os.environ['MEMCACHE_PASSWORD'] = os.environ.get('MEMCACHIER_PASSWORD', '')
 CACHES = {
-    'default': {
-        'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
-        'LOCATION': '/tmp/django_cache',
+  'default': {
+    'BACKEND': 'django_pylibmc.memcached.PyLibMCCache',
+    'TIMEOUT': 1000,
+    'BINARY' : True,
+    'OPTIONS': {
+        'tcp_nodelay'  : True,
+        'remove_failed': 4
     }
+  }
 }
+
 MIDDLEWARE_CLASSES[:0]  = ['django.middleware.cache.UpdateCacheMiddleware']
 MIDDLEWARE_CLASSES[-1:] = ['django.middleware.cache.FetchFromCacheMiddleware']
 CMS_CACHE_DURATIONS = 60
