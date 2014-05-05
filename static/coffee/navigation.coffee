@@ -8,7 +8,7 @@
 # License : proprietary journalism++
 # -----------------------------------------------------------------------------
 # Creation : 24-Apr-2014
-# Last mod : 29-Apr-2014
+# Last mod : 05-May-2014
 # -----------------------------------------------------------------------------
 
 class window.Navigation
@@ -63,14 +63,16 @@ class window.Navigation
 				height: window_height - @uis.body_content.offset().top - @uis.footer.outerHeight(true)
 		# center the title links in the header
 		if @uis.logo.position().left > 0
+			# middle point - (left offset + middle of logo width)
 			@uis.navbar_titles.css("left", window_width/2 - (@uis.logo.position().left + @uis.logo.outerWidth(true)/2))
 		# map responsive
 		@uis.map
 			.find(".wrapper")
+				# FIXME: hard coded
 				.css
-					"width"      : window_width
-					"height" : window_width / 3.282051282 # ratio of map picture
-					"font-size"  : "#{Math.min(window_width/1280, 1)}em"
+					"width"    : window_width
+					"height"   : window_width / 3.282051282 # ratio of map picture
+					"font-size": "#{Math.min(window_width/1280, 1)}em"
 			.find("img")
 				.css("width", window_width)
 		# refresh scrollspy and show the page if the page was loading
