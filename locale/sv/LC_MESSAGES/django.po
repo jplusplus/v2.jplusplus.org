@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-03 14:30+0200\n"
+"POT-Creation-Date: 2014-05-05 10:17+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,27 +18,27 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: settings.py:234
+#: settings.py:235
 msgid "en"
 msgstr ""
 
-#: settings.py:241
+#: settings.py:242
 msgid "fr"
 msgstr ""
 
-#: settings.py:248
+#: settings.py:249
 msgid "de"
 msgstr ""
 
-#: settings.py:255
+#: settings.py:256
 msgid "pt"
 msgstr ""
 
-#: settings.py:262
+#: settings.py:263
 msgid "sv"
 msgstr ""
 
-#: settings.py:289
+#: settings.py:290
 msgid "Container"
 msgstr ""
 
@@ -211,92 +211,100 @@ msgstr ""
 msgid "last name"
 msgstr ""
 
-#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:13
-msgid "Hi, my name is"
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:12
+msgid "Your message was sent"
 msgstr ""
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:13
-msgid "your name"
-msgstr ""
-
-#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:14
-msgid "and I work for"
-msgstr ""
-
-#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:14
-msgid "my company"
-msgstr ""
-
-#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:16
-msgid "We are specifically looking for"
-msgstr ""
-
-#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:18
-msgid "a service"
-msgstr ""
-
-#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:19
-msgid "code and development"
+msgid "back"
 msgstr ""
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:20
-msgid "investigation"
+msgid "Hi, my name is"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:20
+msgid "your name"
 msgstr ""
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:21
-msgid "consulting"
+msgid "and I work for"
 msgstr ""
 
-#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:22
-msgid "design"
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:21
+msgid "my company"
 msgstr ""
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:23
-msgid "evangelization and training"
+msgid "We are specifically looking for"
 msgstr ""
 
-#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:24
-msgid "all"
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:25
+msgid "a service"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:26
+msgid "code and development"
 msgstr ""
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:27
-msgid "and have a budget of"
+msgid "investigation"
 msgstr ""
 
-#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:27
-msgid "your budget"
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:28
+msgid "consulting"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:29
+msgid "design"
 msgstr ""
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:30
-msgid "our ideal timeframe to implement this is"
+msgid "evangelization and training"
 msgstr ""
 
-#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:32
-msgid "less than a month"
-msgstr ""
-
-#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:33
-msgid "1 month"
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:31
+msgid "all"
 msgstr ""
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:34
-msgid "2 months"
+msgid "and have a budget of"
 msgstr ""
 
-#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:35
-msgid "3 months or more"
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:34
+msgid "your budget"
 msgstr ""
 
-#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:38
-msgid "Please contact me at"
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:37
+msgid "our ideal timeframe to implement this is"
 msgstr ""
 
-#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:38
-msgid "email"
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:39
+msgid "less than a month"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:40
+msgid "1 month"
 msgstr ""
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:41
-#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:46
+msgid "2 months"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:42
+msgid "3 months or more"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:45
+msgid "Please contact me at"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:45
+msgid "email"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:48
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:53
 msgid "SEND"
 msgstr ""
 
@@ -316,27 +324,27 @@ msgstr ""
 msgid "Journalism++ home"
 msgstr ""
 
-#: templates/navigation.html:20
+#: templates/navigation.html:24
 msgid "WHAT WE STAND FOR"
 msgstr ""
 
-#: templates/navigation.html:28
+#: templates/navigation.html:33
 msgid "What we Do"
 msgstr ""
 
-#: templates/navigation.html:29 templates/navigation_chapter.html:20
+#: templates/navigation.html:34 templates/navigation_chapter.html:20
 msgid "Our Work"
 msgstr ""
 
-#: templates/navigation.html:34
+#: templates/navigation.html:39
 msgid "Who we Are"
 msgstr ""
 
-#: templates/navigation.html:35 templates/navigation_chapter.html:25
+#: templates/navigation.html:40 templates/navigation_chapter.html:25
 msgid "Let's Talk"
 msgstr ""
 
-#: templates/navigation.html:40 templates/navigation_chapter.html:30
+#: templates/navigation.html:45 templates/navigation_chapter.html:30
 msgid "LANGUAGE"
 msgstr ""
 
