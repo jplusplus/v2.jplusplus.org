@@ -264,15 +264,3 @@ input:focus::-ms-input-placeholder {
 	-moz-transition-delay: 0s;
 	transition-delay: 0s;
 }
-
-@media screen and (max-width: 45em) {
-	.nl-form {
-		font-size: 3em;
-	}
-}
-
-@media screen and (max-width: 25em) {
-	.nl-form {
-		font-size: 2em;
-	}
-}

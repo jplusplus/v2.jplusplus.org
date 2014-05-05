@@ -7,7 +7,7 @@
 {% addtoblock "css" %}<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}jplusplus/vendors/NaturalLanguageForm/css/component.css">{% endaddtoblock %}
 {% addtoblock "css" %}<link rel="stylesheet" type="text/less" href="{{STATIC_URL}}jplusplus/less/contact_form.less">{% endaddtoblock %}
 
-<div class="contact-form" id="nlform_{{instance.id}}">
+<div class="contact-form hidden-xs" id="nlform_{{instance.id}}">
 	<div <div class="success-message container hidden">
 			<p>{% trans "Your message was sent" %}</p>
 			<a href="#" class="btn btn-xs">{% trans "back" %}</a>
