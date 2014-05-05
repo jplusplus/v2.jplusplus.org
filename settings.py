@@ -217,7 +217,6 @@ LANGUAGES = (
     ('fr', u'Français'),
     ('de', u'Deutsch'),
     ('pt', u'Português'),
-    ('sv', u'Svenska'),
 )
 
 CMS_LANGUAGES = {
@@ -256,13 +255,6 @@ CMS_LANGUAGES = {
             'name': gettext('pt'),
             'public': True,
         },
-        {
-            'redirect_on_fallback': True,
-            'code': 'sv',
-            'hide_untranslated': False,
-            'name': gettext('sv'),
-            'public': True,
-        }
     ],
 }
 
