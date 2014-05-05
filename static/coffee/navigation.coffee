@@ -25,6 +25,7 @@ class window.Navigation
 			footer        : $(".footer"                 , @ui)
 			header        : $(".header"                 , @ui)
 			navbar_titles : $(".navbar-menu", ".header" , @ui)
+			logo          : $(".navbar-menu .logo", ".header" , @ui)
 			titles        : $(".title", ".header"       , @ui)
 			body_content  : $("> .body"                 , @ui)
 			map           : $(".map"                    , @ui)
@@ -61,7 +62,8 @@ class window.Navigation
 			@uis.firstPage.css
 				height: window_height - @uis.body_content.offset().top - @uis.footer.outerHeight(true)
 		# center the title links in the header
-		@uis.navbar_titles.css("margin-left", 0 - @uis.navbar_titles.width() / 2)
+		if @uis.logo.position().left > 0
+			@uis.navbar_titles.css("left", window_width/2 - (@uis.logo.position().left + @uis.logo.outerWidth(true)/2))
 		# map responsive
 		@uis.map
 			.find(".wrapper")
