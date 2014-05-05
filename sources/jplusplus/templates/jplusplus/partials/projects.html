@@ -4,25 +4,25 @@
 {% addtoblock "js" %}<script type="text/coffeescript" src="{{STATIC_URL}}jplusplus/coffee/projects_mosaic.coffee"></script>{% endaddtoblock %}
 
 <div class="projects_mosaic projects_mosaic_{{instance}}">
-	<h3>By type</h3>
+	<h3>{% transBy type" %}</h3>
 	<ul class="filters">
 		<li class="filter active" data-filter="all">
-			<div class="body">all</div>
+			<div class="body">{% trans "all" %}</div>
 		</li>
 		<li class="filter" data-filter="code-apps">
-			<div class="body">code apps</div>
+			<div class="body">{% trans "code apps" %}</div>
 		</li>
 		<li class="filter" data-filter="investigate">
-			<div class="body">investigate</div>
+			<div class="body">{% trans "investigate" %}</div>
 		</li>
 		<li class="filter" data-filter="consulting">
-			<div class="body">consulting</div>
+			<div class="body">{% trans "consulting" %}</div>
 		</li>
 		<li class="filter" data-filter="design">
-			<div class="body">design</div>
+			<div class="body">{% trans "design" %}</div>
 		</li>
 		<li class="filter" data-filter="evangelize">
-			<div class="body">evangelize</div>
+			<div class="body">{% trans "evangelize" %}</div>
 		</li>
 	</ul>
 	<ul class="projects">
