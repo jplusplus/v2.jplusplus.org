@@ -7,7 +7,7 @@
 		<img src="{{ STATIC_URL }}img/map.png">
 		<div class='overflow'>
 			{% for office in offices %}
-				<a href="{{ office.get_absolute_url }}"><div class="name" style="top:{{ office.map_top|stringformat:'f' }}%;left:{{ office.map_left|stringformat:'f' }}%;">{{ office.title }}+</div></a>
+				<a href="{{ office.get_absolute_url }}"><div class="name" style="top:{{ office.map_top|stringformat:'f' }}%;left:{{ office.map_left|stringformat:'f' }}%;"><span>{{ office.title }}</span></div></a>
 			{% endfor %}
 		</div>
 	</div>
