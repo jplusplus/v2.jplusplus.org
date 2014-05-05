@@ -1,13 +1,13 @@
-Journalism++ Web Site
+Journalism++ Website
 =====================
 
 ## Requirements
 
-### System dependances
+### System dependencies
 
 	$ sudo apt-get install build-essential python-dev python-pip virtualenv sqlite3
 
-### Node Dependances (coffeescript & Less)
+### Node Dependencies (coffeescript & Less)
 	
 	$ npm install
 
@@ -17,13 +17,13 @@ Journalism++ Web Site
 This script will
 
 - install a virtualenv
-- download all the python dependances inside
+- download all python dependencies inside
 - initialize the database (with sqlite)  
 
 ```
 $ make install
 ```
 
-## Launch the developement server
+## Launch development server
 
 	$ make run
