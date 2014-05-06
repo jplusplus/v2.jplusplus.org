@@ -11,7 +11,7 @@
 # Last mod : 04-May-2014
 # -----------------------------------------------------------------------------
 from django.template.context import RequestContext
-from django.shortcuts import render_to_response
+from django.shortcuts import render_to_response, get_object_or_404
 from .models import Project
 from django.http import HttpResponse
 from django.core.mail import mail_admins
@@ -32,7 +32,7 @@ def projects(request, office=None):
 	return render_to_response("jplusplus/projects.html", context, RequestContext(request))
 
 def project_details(request, slug, office=None):
-	project = Project.objects.get(slug=slug)
+	project = get_object_or_404(Project, slug=slug)
 	# TODO: raise 404 if office isn't related to the project. This is the law.
 	context = {'project':project}
 	return render_to_response("jplusplus/project_details.html", context, RequestContext(request))
