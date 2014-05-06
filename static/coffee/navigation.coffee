@@ -93,7 +93,8 @@ class window.Navigation
 		# - at bottom
 		if scroll_top >= $(document).height() - $(window).height() then @uis.footer.removeClass("light")
 		# toggle header
-		if scroll_top > @CONFIG.headerHeight then @uis.header.removeClass("intro") else @uis.header.addClass("intro")
+		if @uis.firstPage.length > 0
+			if scroll_top > @CONFIG.headerHeight then @uis.header.removeClass("intro") else @uis.header.addClass("intro")
 
 	scrollTo: (target_id) =>
 		offset = $(target_id).offset().top - (@CONFIG.headerHeight + @uis.header.offset().top - @CONFIG.offsetScroll)
