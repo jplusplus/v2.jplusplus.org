@@ -37,11 +37,10 @@ class window.Navigation
 		# window resize
 		lazy_relayout = _.debounce(@relayout, 500)
 		$(window).resize(lazy_relayout)
-		# listen scroll only for first page
-		if @uis.firstPage.length > 0
-			throttled = _.throttle(@onFirstPageScroll, 100)
-			$(window).scroll(throttled)
-			@onFirstPageScroll()
+		# listen scroll
+		throttled = _.throttle(@onScroll, 100)
+		$(window).scroll(throttled)
+		@onScroll()
 		# when some widgets says that the height has changed (from mosaic for instance)
 		$(document).on('heightHasChanged', @relayout)
 		# on all anchor links, bind the onTitleClick function and give the #id as parameter
@@ -82,13 +81,19 @@ class window.Navigation
 			that.ui.removeClass("loading")
 		, 700) # because of height animation (on first-page for instance)
 
-	onFirstPageScroll: =>
+	onScroll: =>
 		scroll_top = $(window).scrollTop()
 		# toggle footer
-		if scroll_top == 0 then @uis.footer.removeClass("light") else @uis.footer.addClass("light")
+		#  - at top
+		if scroll_top == 0
+			if @uis.firstPage.length > 0
+				@uis.footer.removeClass("light")
+		else
+			@uis.footer.addClass("light")
+		# - at bottom
+		if scroll_top >= $(document).height() - $(window).height() then @uis.footer.removeClass("light")
 		# toggle header
 		if scroll_top > @CONFIG.headerHeight then @uis.header.removeClass("intro") else @uis.header.addClass("intro")
-		if scroll_top >= $(document).height() - $(window).height() then @uis.footer.removeClass("light")
 
 	scrollTo: (target_id) =>
 		offset = $(target_id).offset().top - (@CONFIG.headerHeight + @uis.header.offset().top - @CONFIG.offsetScroll)
