@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-05 22:44+0200\n"
+"POT-Creation-Date: 2014-05-06 15:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -307,6 +307,15 @@ msgstr ""
 msgid "SEND"
 msgstr ""
 
+#: sources/jplusplus/templates/jplusplus/partials/project_details.html:14
+msgid "A project by"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/project_details.html:28
+msgctxt "project details: 'for' clients"
+msgid "For"
+msgstr ""
+
 #: sources/jplusplus/templates/jplusplus/partials/projects.html:7
 msgid "By type"
 msgstr ""
@@ -329,6 +338,20 @@ msgstr ""
 
 #: templates/404.html:4
 msgid "Page not found"
+msgstr ""
+
+#: templates/404.html:14
+msgid "We're sorry, we can't find this page."
+msgstr ""
+
+#: templates/500.html:4
+msgid "Page error"
+msgstr ""
+
+#: templates/500.html:14
+msgid ""
+"We're sorry, something wrong appends. But it's not your fault. We are "
+"investigating."
 msgstr ""
 
 #: templates/footer.html:8

@@ -11,7 +11,7 @@
 		</div>
 		<div class="col-sm-2">
 			<div class="project-by">
-				<div class="title">A project by</div>
+				<div class="title">{% trans "A project by" %}</div>
 				<ul>
 				{% for office in project.offices.all %}
 					<li>
@@ -25,7 +25,7 @@
 			</div>
 			{% if project.client %}
 			<div class="client">
-				<div class="title">For</div>
+				<div class="title">{% trans "For" context "project details: 'for' clients" %}</div>
 				{{ project.client }}
 				<div class="separator"> </div>
 			</div>
