@@ -208,11 +208,11 @@ msgstr ""
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:12
 msgid "Your message was sent"
-msgstr ""
+msgstr "Votre message a été envoyé"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:13
 msgid "back"
-msgstr ""
+msgstr "retour"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:20
 msgid "Hi, my name is"
@@ -220,7 +220,7 @@ msgstr "Bonjour, je m'appelle"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:20
 msgid "your name"
-msgstr "votre nom"
+msgstr "mon nom"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:21
 msgid "and I work for"
@@ -240,11 +240,11 @@ msgstr "un service"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:26
 msgid "code and development"
-msgstr "code et développement"
+msgstr "code & développement"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:27
 msgid "investigation"
-msgstr "enquête"
+msgstr "analyse de données"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:28
 #: sources/jplusplus/templates/jplusplus/partials/projects.html:19
@@ -291,7 +291,7 @@ msgstr "2 mois"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:42
 msgid "3 months or more"
-msgstr "3 mois au plus"
+msgstr "3 mois ou plus"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:45
 msgid "Please contact me at"
@@ -308,20 +308,20 @@ msgstr "ENVOYER"
 
 #: sources/jplusplus/templates/jplusplus/partials/projects.html:7
 msgid "By type"
-msgstr ""
+msgstr "Par type"
 
 #: sources/jplusplus/templates/jplusplus/partials/projects.html:13
 msgid "code apps"
-msgstr ""
+msgstr "Code & développement"
 
 #: sources/jplusplus/templates/jplusplus/partials/projects.html:16
 #, fuzzy
 msgid "investigate"
-msgstr "enquête"
+msgstr "Analyse de données"
 
 #: sources/jplusplus/templates/jplusplus/partials/projects.html:25
 msgid "evangelize"
-msgstr ""
+msgstr "Formations"
 
 #: sources/jplusplus/templates/jplusplus/partials/what_we_do.html:18
 msgid "See projects"
@@ -329,7 +329,7 @@ msgstr "Voir les projets"
 
 #: templates/404.html:4
 msgid "Page not found"
-msgstr ""
+msgstr "Page non trouvée"
 
 #: templates/footer.html:8
 msgid "follow us"
