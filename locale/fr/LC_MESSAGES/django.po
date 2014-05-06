@@ -315,7 +315,6 @@ msgid "code apps"
 msgstr "Code & développement"
 
 #: sources/jplusplus/templates/jplusplus/partials/projects.html:16
-#, fuzzy
 msgid "investigate"
 msgstr "Analyse de données"
 
