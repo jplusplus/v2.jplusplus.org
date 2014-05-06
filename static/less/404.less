@@ -1,10 +1,15 @@
 @import "variables.less";
 
-body, body > .container-fluid > .body {
+body.a404, body.a404 > .container-fluid > .body {
 	background-color: @blue_on_blue;
+}
+body.a500, body.a500 > .container-fluid > .body {
+	background-color: @red_jpp;
+}
+body, body > .container-fluid > .body {
 	color : white;
-		text-align: center;
-	.a404 {
+	text-align: center;
+	.a404__code {
 		font-size: 13em;
 		font-weight: 100;
 	}

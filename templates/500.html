@@ -1,17 +1,17 @@
 {% extends "page_with_header.html" %}
 {% load cms_tags staticfiles sekizai_tags menu_tags i18n %}
 
-{% block title %}{% trans 'Page not found' %}{% endblock %}
+{% block title %}{% trans 'Page error' %}{% endblock %}
 
-{% block extra_classes %}a404{% endblock %} 
+{% block extra_classes %}a500{% endblock %} 
 
 {% block content %}
 
 {% addtoblock "css" %}<link rel="stylesheet" type="text/less" href="{{STATIC_URL}}less/404.less">{% endaddtoblock %}
 
 	<div class="container">
-		<div class="a404__code">404</div>
-		{% trans "We're sorry, we can't find this page." %}
+		<div class="a404__code">500</div>
+		{% trans "We're sorry, something wrong appends. But it's not your fault. We are investigating." %}
 	</div>
 
 {% endblock content %}

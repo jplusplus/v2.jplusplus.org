@@ -32,4 +32,5 @@ if settings.DEBUG:
         {'document_root': settings.MEDIA_ROOT, 'show_indexes': True}),
 ) + staticfiles_urlpatterns() + urlpatterns
 
+handler500 = 'jplusplus.views.server_error'
 # EOF

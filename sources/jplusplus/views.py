@@ -11,6 +11,7 @@
 # Last mod : 04-May-2014
 # -----------------------------------------------------------------------------
 from django.template.context import RequestContext
+from django.template import loader, Template, TemplateDoesNotExist
 from django.shortcuts import render_to_response, get_object_or_404
 from .models import Project
 from django.http import HttpResponse
@@ -47,5 +48,16 @@ def contact(request):
 		mail_admins('Contact Form', body, fail_silently=False)
 		return HttpResponse("ok")
 	return HttpResponse("pas ok")
+
+from django.views.decorators.csrf import requires_csrf_token
+from django import http
+
+@requires_csrf_token
+def server_error(request, template_name='500.html'):
+    try:
+        template = loader.get_template(template_name)
+    except TemplateDoesNotExist:
+        template = Template('<h1>Server Error (500)</h1>')
+    return http.HttpResponseNotFound(template.render(RequestContext(request, {'request_path': request.path})))
 
 # EOF

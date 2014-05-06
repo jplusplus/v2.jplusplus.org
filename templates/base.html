@@ -19,7 +19,7 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
   </head>
 
-  <body>
+  <body class="{% block extra_classes %}{% endblock %}">
       <div class="container-fluid loading" style="opacity:0">
         {% cms_toolbar %}
         {% addtoblock "js" %}
