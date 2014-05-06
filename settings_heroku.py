@@ -86,4 +86,15 @@ MANDRILL_API_KEY     = os.getenv('MANDRILL_APIKEY')
 SERVER_EMAIL         = os.getenv('MANDRILL_USERNAME')
 EMAIL_BACKEND        = "djrill.mail.backends.djrill.DjrillBackend"
 
+# Sites for DomainNamesMiddleware (in `sources/jplusplus/middleware.py`)
+SITES = { # from_url : to_page_reverse_id
+    "berlin.jplusplus.org"     : "paris-berlin",
+    "paris.jplusplus.org"      : "paris-berlin",
+    "www.berlin.jplusplus.org" : "paris-berlin",
+    "www.paris.jplusplus.org"  : "paris-berlin",
+    "amsterdam.jplusplus.org"  : "amsterdam",
+    "cologne.jplusplus.org"    : "cologne",
+    "porto.jplusplus.org"      : "porto",
+    "stockholm.jplusplus.org"  : "stockholm"
+}
 # EOF
