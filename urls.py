@@ -17,6 +17,8 @@ from django.contrib import admin
 from django.conf import settings
 from cms.sitemaps import CMSSitemap
 
+handler500 = 'jplusplus.views.server_error'
+
 admin.autodiscover()
 
 urlpatterns = i18n_patterns('',
@@ -32,5 +34,5 @@ if settings.DEBUG:
         {'document_root': settings.MEDIA_ROOT, 'show_indexes': True}),
 ) + staticfiles_urlpatterns() + urlpatterns
 
-handler500 = 'jplusplus.views.server_error'
+
 # EOF
