@@ -58,6 +58,7 @@ class window.Navigation
 		that = this
 		window_height = $(window).height()
 		window_width = $(window).width()
+		# set the height of the first page (with the height of the window)
 		if @uis.firstPage.length > 0
 			@uis.firstPage.css
 				height: window_height - @uis.body_content.offset().top - @uis.footer.outerHeight(true)

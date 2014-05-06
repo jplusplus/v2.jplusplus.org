@@ -182,6 +182,13 @@ body > .container-fluid {
 	.first-page-little-title;
 }
 
+// Mobile: remove the arrow on the home page #46
+@media (max-height: 417px) {
+	body > .container-fluid > .body .first-page .scroll-indicator {
+		display: none;
+	}
+}
+
 // Animation
 @boucing-offset: -10px;
 
