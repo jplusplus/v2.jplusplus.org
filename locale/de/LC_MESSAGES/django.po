@@ -307,14 +307,13 @@ msgid "SEND"
 msgstr "SENDEN"
 
 #: sources/jplusplus/templates/jplusplus/partials/project_details.html:14
-#, fuzzy
 msgid "A project by"
-msgstr "Projekte ansehen"
+msgstr "Ein Projekt von"
 
 #: sources/jplusplus/templates/jplusplus/partials/project_details.html:28
 msgctxt "project details: 'for' clients"
 msgid "For"
-msgstr ""
+msgstr "Für"
 
 #: sources/jplusplus/templates/jplusplus/partials/projects.html:7
 msgid "By type"
