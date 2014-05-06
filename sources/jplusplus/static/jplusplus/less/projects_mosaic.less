@@ -2,30 +2,30 @@
 
 .projects_mosaic {
     .filters {
-        list-style: none;
-        margin : 20px 0;
-        padding: 0;
+        list-style : none;
+        margin     : 20px 0;
+        padding    : 0;
         .filter {
-            display: inline-block;
-            margin-right: 2em;
-            text-transform: uppercase;
-            padding: 0 .3em;
-            cursor: pointer;
+            display        : inline-block;
+            margin-right   : 2em;
+            text-transform : uppercase;
+            padding        : 0 .3em;
+            cursor         : pointer;
             &.active {
                 background-color: #E5E0DA;
             }
         }
     }
     .projects {
-        position : relative;
-        list-style: none;
+        position   : relative;
+        list-style : none;
         .project {
-            position: absolute;
-            cursor: pointer;
-            left: 0;
-            top: 0;
-            transition-property: left, top;
-            transition-duration: .5s;
+            position            : absolute;
+            cursor              : pointer;
+            left                : 0;
+            top                 : 0;
+            transition-property : left, top;
+            transition-duration : .5s;
             .frame {
                 position: relative;
                 box-shadow: 0px 0px 2px 1px rgba(0,0,0,.37);
@@ -54,6 +54,10 @@
             }
             .title {
                 font-size: .9em;
+                max-height: 43px;
+                line-height: 1.1em;
+                padding-top: 2px;
+                overflow: hidden;
             }
         }
     }

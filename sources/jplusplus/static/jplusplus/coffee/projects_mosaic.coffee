@@ -18,7 +18,7 @@ class window.jplusplus.Mosaïc
 		thumbnails_per_row : 4
 		thumbnail_min_width: 100
 		thumbnail_margin   : 20
-		row_margin         : 50
+		row_margin         : 60
 		image_ratio        : 1.666
 
 	constructor: (scope, plugin_instance=undefined) ->
