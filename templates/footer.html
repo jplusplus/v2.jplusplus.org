@@ -1,4 +1,4 @@
-{% load i18n sekizai_tags %}
+{% load i18n sekizai_tags cms_tags %}
 
 {% addtoblock "css" %}<link rel="stylesheet" type="text/less" href="{{STATIC_URL}}less/footer.less">{% endaddtoblock %}
 
@@ -13,7 +13,7 @@
 			</ul>
 		</div>
 		<div class="contact-us pull-right">
-			<a href="/#lets-talk" class="btn btn-xs">{% trans "contact us" %}</a>
+			<a href="{% page_url "home" %}#lets-talk" class="btn btn-xs">{% trans "contact us" %}</a>
 		</div>
 	<!-- </div> -->
 </div>
