@@ -4,12 +4,16 @@
 <div class="trombinoscope">
 	{% for person in trombinoscope %}
 		<div class="item">
-			<div class="image-wrapper" style="background-image:url({{ person.photo.url }});">
-				<div class="header">
-					<div class="first-name">{{ person.first_name }}</div>
-					<div class="last-name" >{{ person.last_name }}</div>
+			<!-- <div class="image-wrapper" style="background-image:url({{ person.photo.url }});"> -->
+			<div class="image-wrapper">
+				<img src="{{ person.photo.url }}" />
+				<div class="text-wrapper">
+					<div class="header">
+						<div class="first-name">{{ person.first_name }}</div>
+						<div class="last-name" >{{ person.last_name }}</div>
+					</div>
+					<div class="footer">{{ person.short_description }}</div>
 				</div>
-				<div class="footer">{{ person.short_description }}</div>
 			</div>
 			<div class="description">{{ person.description | safe }}</div>
 		</div>
