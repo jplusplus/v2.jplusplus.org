@@ -1,5 +1,20 @@
-Journalism++ Website
+Journalism++ Web Site
 =====================
+
+_Copyright © 2014, Journalism++_
+
+
+## Features
+
+- CMS with [Django-CMS 3](https://www.django-cms.org/‎)
+- I18n
+- Mosaïc to present projects
+- Trombinoscope
+- Map
+- Contact form
+
+![screenschot](screenshot.png "Screenshot")
+
 
 ## Requirements
 
@@ -10,7 +25,6 @@ Journalism++ Website
 ### Node Dependencies (coffeescript & Less)
 	
 	$ npm install
-
 
 ## Installation
 
