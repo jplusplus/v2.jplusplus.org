@@ -90,7 +90,6 @@ class ImageWithThumbsFieldFile(ImageFieldFile):
 					split = self.url.rsplit('.',1)
 					thumb_url = '%s.%sx%s.%s' % (split[0],w,h,split[1])
 					return thumb_url
-			print self.url, self.field.sizes
 			for format, size in self.field.sizes.items():
 				(w,h) = size
 				setattr(self, "url_%s" % format, get_size(self, size))
