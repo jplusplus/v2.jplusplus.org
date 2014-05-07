@@ -102,7 +102,7 @@
 			this.getinputWrapper.className = 'nl-ti-input';
 			this.inputsubmit = document.createElement( 'button' );
 			this.inputsubmit.className = 'nl-field-go';
-			this.inputsubmit.innerHTML = 'Go';
+			// this.inputsubmit.innerHTML = 'Go';
 			this.getinputWrapper.appendChild( this.getinput );
 			this.getinputWrapper.appendChild( this.inputsubmit );
 			this.example = document.createElement( 'li' );
