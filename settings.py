@@ -332,4 +332,9 @@ SITES = { # from_url : to_page_reverse_id
     "berlin.jplusplus.dev:8000" : "paris-berlin",
 }
 
+# Thumbnails
+THUMBNAILS_PROJECTS      = {'small':(265, 159), 'normal':(945, 640)}
+THUMBNAILS_TROMBINOSCOPE = {                    'normal':(200, 200)}
+
+
 # EOF

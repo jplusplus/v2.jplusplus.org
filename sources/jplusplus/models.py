@@ -8,7 +8,7 @@
 # License : proprietary journalism++
 # -----------------------------------------------------------------------------
 # Creation : 14-Apr-2014
-# Last mod : 30-Apr-2014
+# Last mod : 07-May-2014
 # -----------------------------------------------------------------------------
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
@@ -18,6 +18,8 @@ from taggit.managers import TaggableManager
 from django.core.urlresolvers import reverse
 from cms.models import Page
 from redactor.fields import RedactorField
+from .fields import ImageWithThumbsField
+from django.conf import settings
 
 class Office(models.Model):
     """
@@ -48,7 +50,7 @@ class Project(TranslatableModel):
     slug         = models.SlugField(unique=True)
     offices      = models.ManyToManyField(Office)
     date         = models.DateField(blank=True, null=True)
-    image        = models.ImageField(_("image"), upload_to="projects")
+    image        = ImageWithThumbsField(_("image"), sizes=settings.THUMBNAILS_PROJECTS, upload_to="projects")
     order        = models.PositiveIntegerField(default=0, blank=False, null=False)
     highlighted  = models.BooleanField(_("highlighted"))
     link         = models.CharField(_('link'), max_length=255, blank=True, null=True)
@@ -125,7 +127,7 @@ class Trombinoscope(TranslatableModel):
     )
     first_name = models.CharField(_('first name'), help_text=_("don't translate"), max_length=255)
     last_name  = models.CharField(_('last name') , help_text=_("don't translate"), max_length=255)
-    photo      = models.ImageField(_('illustration'), help_text=_("don't translate"), max_length=255, upload_to="trombinoscope")
+    photo      = ImageWithThumbsField(_('illustration'), help_text=_("don't translate"), sizes=settings.THUMBNAILS_TROMBINOSCOPE, max_length=255, upload_to="trombinoscope")
     position   = models.PositiveIntegerField(default=0, blank=False, null=False)
     offices    = models.ManyToManyField(Office)
 

@@ -8,7 +8,7 @@
 # License : proprietary journalism++
 # -----------------------------------------------------------------------------
 # Creation : 17-Apr-2014
-# Last mod : 03-May-2014
+# Last mod : 07-May-2014
 # -----------------------------------------------------------------------------
 
 from rest_framework import viewsets, serializers
@@ -48,7 +48,7 @@ class ProjectSerializer(serializers.HyperlinkedModelSerializer):
 
     def transform_image(self, obj, value):
         if obj.image:
-            return obj.image.url
+            return obj.image.url_small
         else:
             return None
 
