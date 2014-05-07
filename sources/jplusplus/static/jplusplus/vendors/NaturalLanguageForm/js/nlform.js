@@ -18,7 +18,7 @@
 		String.prototype.trim=function(){return this.replace(/^\s+|\s+$/g, '');};
 	}
 
-	function NLForm( el ) {	
+	function NLForm( el ) {
 		this.el = el;
 		this.overlay = this.el.querySelector( '.nl-overlay' );
 		this.fields = [];
@@ -37,7 +37,7 @@
 				self.fldOpen++;
 				self.fields.push( new NLField( self, el, 'input', self.fldOpen ) );
 			} );
-			this.overlay.addEventListener( 'click', function(ev) { self._closeFlds(); } );
+			this.overlay.addEventListener( 'click', function(ev) {self._closeFlds(); } );
 			this.overlay.addEventListener( 'touchstart', function(ev) { self._closeFlds(); } );
 		},
 		_closeFlds : function() {
@@ -45,7 +45,7 @@
 				this.fields[ this.fldOpen ].close();
 			}
 		}
-	}
+	};
 
 	function NLField( form, el, type, idx ) {
 		this.form = form;
@@ -59,10 +59,10 @@
 	NLField.prototype = {
 		_create : function() {
 			if( this.type === 'dropdown' ) {
-				this._createDropDown();	
+				this._createDropDown();
 			}
 			else if( this.type === 'input' ) {
-				this._createInput();	
+				this._createInput();
 			}
 		},
 		_createDropDown : function() {
@@ -145,6 +145,7 @@
 			this.open = true;
 			this.form.fldOpen = this.pos;
 			var self = this;
+			setTimeout(function(){$(self.getinput).focus();}, 500);
 			this.fld.className += ' nl-field-open';
 		},
 		close : function( opt, idx ) {
@@ -174,7 +175,7 @@
 				this.elOriginal.value = this.getinput.value;
 			}
 		}
-	}
+	};
 
 	// add to global namespace
 	window.NLForm = NLForm;

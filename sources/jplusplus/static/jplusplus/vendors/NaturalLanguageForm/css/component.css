@@ -111,7 +111,7 @@
 }
 
 /* icons for some elements */
-.nl-dd ul li.nl-dd-checked:before,
+/*.nl-dd ul li.nl-dd-checked:before,
 .nl-submit:before,
 .nl-field-go:before {
 	font-family: 'nlicons';
@@ -121,15 +121,15 @@
 	font-variant: normal;
 	text-transform: none;
 	-webkit-font-smoothing: antialiased;
-}
+}*/
 
-.nl-dd ul li.nl-dd-checked:before {
+/*.nl-dd ul li.nl-dd-checked:before {
 	content: "\e000";
 	position: absolute;
 	right: 1em;
 	font-size: 50%;
 	line-height: 3;
-}
+}*/
 
 .nl-ti-text ul {
 	min-width: 8em;

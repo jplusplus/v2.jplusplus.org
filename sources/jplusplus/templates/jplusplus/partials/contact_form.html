@@ -43,6 +43,7 @@
 					</select>.
 					<br/>
 					{% trans "Please contact me at" %} <input type="text" name="email" value="" placeholder="{% trans "email" %}"/>.
+					<div class="nl-overlay"></div>
 				</div>
 				<div class="col-md-2 hidden-xs" style="position: absolute; bottom: 0; left: 460px;"> {# FIXME #}
 					<a class="nl-submit btn btn-outline-inverse btn-sm" type="submit">{% trans "SEND" %}</a>
@@ -50,11 +51,10 @@
 			</div>
 			<div class="row visible-xs">
 				<div class="col-md-2">
-					<a class="nl-submit btn btn-outline-inverse btn-sm" type="submit">{% trans "SEND" %}</a>
+					<a class="nl-submit btn btn-outline-inverse btn-sm" type="submit">{% trans "SEND" %}></a>
 				</div>
 			</div>
 		</div>
-		<div class="nl-overlay"></div>
 	</form>
 </div>
 

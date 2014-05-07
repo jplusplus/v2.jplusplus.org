@@ -20,18 +20,30 @@
 		}
 		.nl-submit {
 			border-color : white;
-			// position     : absolute;
-			// bottom       : 20px;
+			&:after {
+				content : url(../../img/pic_send.png);
+				padding-left: 10px;
+			}
 		}
 		.nl-field-toggle,
-		.nl-form input,
-		.nl-form select  {
+		 input,
+		 select  {
 			line-height   : inherit;
 			display       : inline-block;
 			color         : white;
 			cursor        : pointer;
 			border-bottom : 1px solid white;
 			line-height   : 1.2em;
+		}
+		.nl-dd ul li.nl-dd-checked:before {
+			content: url(../../jplusplus/img/checked.png);
+			position: absolute;
+			right: 1em;
+		}
+		.nl-field-go:before {
+			content: url(../../jplusplus/img/arrow.png);
+			display: block;
+			padding-top: 6px;
 		}
 	}
 }

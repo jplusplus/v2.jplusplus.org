@@ -14,7 +14,6 @@ window.jplusplus = {} if not window.jplusplus
 
 class window.jplusplus.ContactForm
 
-
 	constructor: (scope) ->
 		@ui  = $(scope)
 		@uis =
