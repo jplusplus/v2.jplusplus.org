@@ -5,7 +5,17 @@
 
 	<div class="first-page">
 		<img src="{{ STATIC_URL }}img/logo.png"/>
-		<h1>Journalism++</h1>
+		<div class="title flip-container">
+			<div class="flipper">
+				<div class="front">
+				<h1>Journalism++</h1>
+				</div>
+				<div class="back">
+					journalism = journalism + 1;
+					<div class="comment">/* We increment journalism */</div>
+				</div>
+			</div>
+		</div>
 		{% placeholder "first-page" %}
 		<a href="#what-we-do"><div class="scroll-indicator"></div></a>
 	</div>
