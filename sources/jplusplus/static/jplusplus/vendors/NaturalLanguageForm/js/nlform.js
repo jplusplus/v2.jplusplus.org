@@ -34,8 +34,10 @@
 				self.fields.push( new NLField( self, el, 'dropdown', self.fldOpen ) );
 			} );
 			Array.prototype.slice.call( this.el.querySelectorAll( 'input' ) ).forEach( function( el, i ) {
-				self.fldOpen++;
-				self.fields.push( new NLField( self, el, 'input', self.fldOpen ) );
+				if (el.getAttribute("type") != "hidden") {
+					self.fldOpen++;
+					self.fields.push( new NLField( self, el, 'input', self.fldOpen ) );
+				}
 			} );
 			this.overlay.addEventListener( 'click', function(ev) {self._closeFlds(); } );
 			this.overlay.addEventListener( 'touchstart', function(ev) { self._closeFlds(); } );
@@ -61,7 +63,7 @@
 			if( this.type === 'dropdown' ) {
 				this._createDropDown();
 			}
-			else if( this.type === 'input' ) {
+			else if( this.type === 'input') {
 				this._createInput();
 			}
 		},
@@ -102,7 +104,7 @@
 			this.getinputWrapper.className = 'nl-ti-input';
 			this.inputsubmit = document.createElement( 'button' );
 			this.inputsubmit.className = 'nl-field-go';
-			// this.inputsubmit.innerHTML = 'Go';
+			// this.inputsubmit.innerHTML = '';
 			this.getinputWrapper.appendChild( this.getinput );
 			this.getinputWrapper.appendChild( this.inputsubmit );
 			this.example = document.createElement( 'li' );
