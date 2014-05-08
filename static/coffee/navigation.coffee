@@ -58,16 +58,7 @@ class window.Navigation
 
 	relayout: =>
 		that = this
-		window_height = $(window).height()
 		window_width = $(window).width()
-		# set the height of the first page (with the height of the window)
-		if @uis.firstPage.length > 0
-			@uis.firstPage.css
-				height: window_height - @uis.body_content.offset().top - @uis.footer.outerHeight(true)
-		# center the title links in the header
-		if @uis.logo.position().left > 0
-			# middle point - (left offset + middle of logo width)
-			@uis.navbar_titles.css("left", window_width/2 - (@uis.logo.position().left + @uis.logo.outerWidth(true)/2))
 		# map responsive
 		@uis.map
 			.find(".wrapper")
@@ -78,6 +69,18 @@ class window.Navigation
 					"font-size": "#{Math.min(window_width/1280, 1)}em"
 			.find("img")
 				.css("width", window_width)
+		# set the height of the first page (with the height of the window)
+		# in a timeout because window_height should ignore the scrollbar witch can disappear
+		if @uis.firstPage.length > 0
+			setTimeout(=>
+				window_height = $(window).height()
+					@uis.firstPage.css
+						height: window_height - @uis.body_content.offset().top - @uis.footer.outerHeight(true)
+			, 300)
+		# center the title links in the header
+		if @uis.logo.position().left > 0
+			# middle point - (left offset + middle of logo width)
+			@uis.navbar_titles.css("left", window_width/2 - (@uis.logo.position().left + @uis.logo.outerWidth(true)/2))
 		# refresh scrollspy and show the page if the page was loading
 		setTimeout(->
 			$("body").each(-> $(this).scrollspy('refresh'))
