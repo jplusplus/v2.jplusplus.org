@@ -336,5 +336,4 @@ SITES = { # from_url : to_page_reverse_id
 THUMBNAILS_PROJECTS      = {'small':(265, 159), 'normal':(945, 640)}
 THUMBNAILS_TROMBINOSCOPE = {                    'normal':(200, 200)}
 
-
 # EOF
