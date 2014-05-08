@@ -29,6 +29,7 @@ class window.Navigation
 			titles        : $(".title", ".header"       , @ui)
 			body_content  : $("> .body"                 , @ui)
 			map           : $(".map"                    , @ui)
+			title_flipper : $(".flip-container"         , @ui)
 		# set elements size
 		@relayout()
 		# bind event
@@ -52,6 +53,8 @@ class window.Navigation
 		$(".header .dropdown.languages")
 			.on("show.bs.dropdown", => @uis.header.css("z-index", 3))
 			.on("hide.bs.dropdown", => @uis.header.css("z-index", 2))
+		if @uis.firstPage.length > 0
+			@uis.title_flipper.on('click', @onTitleFlipperClick)
 
 	relayout: =>
 		that = this
@@ -106,5 +109,9 @@ class window.Navigation
 			# update the url
 			window.history.pushState(null, null, anchor);
 			return false
+
+	onTitleFlipperClick: (e) =>
+		nui = $(e.currentTarget)
+		nui.toggleClass("hover")
 
 # EOF
