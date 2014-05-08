@@ -74,8 +74,8 @@ class window.Navigation
 		if @uis.firstPage.length > 0
 			setTimeout(=>
 				window_height = $(window).height()
-					@uis.firstPage.css
-						height: window_height - @uis.body_content.offset().top - @uis.footer.outerHeight(true)
+				@uis.firstPage.css
+					height: window_height - @uis.body_content.offset().top - @uis.footer.outerHeight(true)
 			, 300)
 		# center the title links in the header
 		if @uis.logo.position().left > 0
