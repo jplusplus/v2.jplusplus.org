@@ -175,6 +175,11 @@ body > .container-fluid {
 				}
 			}
 			.title {
+				// fix for ie9 and older
+				.ie9 & {
+					cursor: auto !important;
+					.back {display: none !important;}
+				}
 				cursor: pointer;
 				.front {
 					h1 {margin:0;}
