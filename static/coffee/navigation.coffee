@@ -53,6 +53,9 @@ class window.Navigation
 		$(".header .dropdown.languages")
 			.on("show.bs.dropdown", => @uis.header.css("z-index", 3))
 			.on("hide.bs.dropdown", => @uis.header.css("z-index", 2))
+		$("#navbar-collapse-menu")
+			.on("show.bs.collapse", => @uis.header.css("z-index", 3))
+			.on("hide.bs.collapse", => @uis.header.css("z-index", 2))
 		if @uis.firstPage.length > 0
 			@uis.title_flipper.on('click', @onTitleFlipperClick)
 
