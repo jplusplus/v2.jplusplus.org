@@ -78,9 +78,11 @@ class window.Navigation
 					height: window_height - @uis.body_content.offset().top - @uis.footer.outerHeight(true)
 			, 300)
 		# center the title links in the header
-		if @uis.logo.position().left > 0
+		@uis.navbar_titles.css("left", "")
+		if @logo_position_left? or @uis.logo.position().left > 0
+			@logo_position_left = @uis.logo.position().left unless @logo_position_left?
 			# middle point - (left offset + middle of logo width)
-			@uis.navbar_titles.css("left", window_width/2 - (@uis.logo.position().left + @uis.logo.outerWidth(true)/2))
+			@uis.navbar_titles.css("left", window_width/2 - (@logo_position_left + @uis.logo.outerWidth(true)/2))
 		# refresh scrollspy and show the page if the page was loading
 		setTimeout(->
 			$("body").each(-> $(this).scrollspy('refresh'))
@@ -100,7 +102,12 @@ class window.Navigation
 		if scroll_top >= $(document).height() - $(window).height() then @uis.footer.removeClass("light")
 		# toggle header
 		if @uis.firstPage.length > 0
-			if scroll_top > @CONFIG.headerHeight then @uis.header.removeClass("intro") else @uis.header.addClass("intro")
+			if scroll_top > @CONFIG.headerHeight + 100
+				if @uis.header.hasClass("intro")
+					@uis.header.removeClass("intro")
+					@relayout()
+			else
+				@uis.header.addClass("intro")
 
 	scrollTo: (target_id) =>
 		offset = $(target_id).offset().top - (@CONFIG.headerHeight + @uis.header.offset().top - @CONFIG.offsetScroll)
