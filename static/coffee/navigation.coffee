@@ -21,15 +21,15 @@ class window.Navigation
 
 		@ui  = $("body > .container-fluid")
 		@uis =
-			firstPage     : $(".first-page"             , @ui)
-			footer        : $(".footer"                 , @ui)
-			header        : $(".header"                 , @ui)
-			navbar_titles : $(".navbar-menu", ".header" , @ui)
-			logo          : $(".navbar-menu .logo", ".header" , @ui)
-			titles        : $(".title", ".header"       , @ui)
-			body_content  : $("> .body"                 , @ui)
-			map           : $(".map"                    , @ui)
-			title_flipper : $(".flip-container"         , @ui)
+			firstPage     : $(".first-page"                , @ui)
+			footer        : $(".footer"                    , @ui)
+			header        : $(".header"                    , @ui)
+			navbar_titles : $(".header .navbar-menu"       , @ui)
+			logo          : $(".header .navbar-menu .logo" , @ui)
+			titles        : $(".title", ".header"          , @ui)
+			body_content  : $("> .body"                    , @ui)
+			map           : $(".map"                       , @ui)
+			title_flipper : $(".flip-container"            , @ui)
 		# set elements size
 		@relayout()
 		# bind event
@@ -81,11 +81,15 @@ class window.Navigation
 					height: window_height - @uis.body_content.offset().top - @uis.footer.outerHeight(true)
 			, 300)
 		# center the title links in the header
-		@uis.navbar_titles.css("left", "")
-		if @logo_position_left? or @uis.logo.position().left > 0
-			@logo_position_left = @uis.logo.position().left
-			# middle point - (left offset + middle of logo width)
-			@uis.navbar_titles.css("left", window_width/2 - (@logo_position_left + @uis.logo.outerWidth(true)/2))
+		# NOTE: need an interval, maybe because of the font which take some time to load
+		center_menu = =>
+			if @uis.logo.position().left > 0
+				if @logo_position_left == @uis.logo.position().left
+					clearInterval(center_menu_interval)
+				@logo_position_left = @uis.logo.position().left
+				# middle point - (left offset + middle of logo width)
+				@uis.navbar_titles.css("left", window_width/2 - (@logo_position_left + @uis.logo.outerWidth(true)/2))
+		center_menu_interval = setInterval(center_menu, 200)
 		# refresh scrollspy and show the page if the page was loading
 		setTimeout(->
 			$("body").each(-> $(this).scrollspy('refresh'))

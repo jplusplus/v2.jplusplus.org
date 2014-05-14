@@ -3,8 +3,7 @@
 // rewrite bootstrap
 .navbar-nav.navbar-right:last-child {margin-right  : 15px;}
 .navbar-nav>li>a                    {padding: 0px; padding-top: 0px;}
-.nav>li>a:hover, .nav>li>a:focus    {background-color: transparent;}
-.nav .open>a, .nav .open>a:hover, .nav .open>a:focus { color: @grey; background-color: transparent;}
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus, .nav>li>a:hover, .nav>li>a:focus    {background-color: transparent;}
 
 .container-fluid > .header {
 	color          : white;
@@ -23,6 +22,9 @@
 			}
 		}
 		#navbar-collapse-menu {
+			.logo {
+				width: 130px;
+			}
 			&.in, &.collapsing {
 				overflow-y: visible;
 				.logo {
@@ -34,12 +36,12 @@
 			}
 			&:not(.in):not(.collapsing) {
 				.navbar-menu {
-					position: absolute;
-					font-weight : bold;
-					left: 0;
+					position            : absolute;
+					font-weight         : bold;
+					left                : 0;
 					transition-propoerty: left;
-					transition-duration: .25s;
-					width: 10000px;
+					transition-duration : .25s;
+					width               : 10000px;
 					li {
 						margin: 0 20px;
 						&.logo {
