@@ -49,7 +49,7 @@ class ProjectAdmin(SortableAdminMixin, TranslatableAdmin):
         super(ProjectAdmin, self).__init__(*args, **kwargs)
         self.prepopulated_fields = {'slug': ('title',)}
 
-    list_display = ("get_title", "highlighted", "link")
+    list_display = ("get_title", "highlighted", "link", "order")
     list_filter  = ('offices__title', 'highlighted')
 
     def get_title(self, obj):

@@ -76,13 +76,13 @@ class ProjectViewSet(viewsets.ModelViewSet):
     """
     queryset = Project.objects.all()
     serializer_class = ProjectSerializer
-
+    ordering = ("order", "-date",)
     def get_queryset(self):
         """
         Optionally restricts the returned purchases to a given user,
         by filtering against a `username` query parameter in the URL.
         """
-        queryset = Project.objects.language(get_language()).all()
+        queryset = Project.objects.language(get_language()).all().order_by(*self.ordering)
         plugin_instance = self.request.QUERY_PARAMS.get('plugin_instance', None)
         if plugin_instance is not None:
             plugin_instance  = CMSPlugin.objects.get(pk=plugin_instance)
