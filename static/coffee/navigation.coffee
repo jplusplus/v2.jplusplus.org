@@ -83,7 +83,7 @@ class window.Navigation
 		# center the title links in the header
 		@uis.navbar_titles.css("left", "")
 		if @logo_position_left? or @uis.logo.position().left > 0
-			@logo_position_left = @uis.logo.position().left unless @logo_position_left?
+			@logo_position_left = @uis.logo.position().left
 			# middle point - (left offset + middle of logo width)
 			@uis.navbar_titles.css("left", window_width/2 - (@logo_position_left + @uis.logo.outerWidth(true)/2))
 		# refresh scrollspy and show the page if the page was loading
