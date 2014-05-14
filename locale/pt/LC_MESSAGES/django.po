@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-06 15:40+0200\n"
+"POT-Creation-Date: 2014-05-14 15:16+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -120,91 +120,100 @@ msgstr ""
 msgid "J++ Trombinoscope"
 msgstr ""
 
-#: sources/jplusplus/models.py:26 sources/jplusplus/models.py:44
-#: sources/jplusplus/models.py:79 sources/jplusplus/models.py:90
-#: sources/jplusplus/models.py:102
+#: sources/jplusplus/models.py:28 sources/jplusplus/models.py:46
+#: sources/jplusplus/models.py:81 sources/jplusplus/models.py:92
+#: sources/jplusplus/models.py:104
 msgid "title"
 msgstr ""
 
-#: sources/jplusplus/models.py:27
+#: sources/jplusplus/models.py:29
 msgid "slug"
 msgstr ""
 
-#: sources/jplusplus/models.py:27
+#: sources/jplusplus/models.py:29
 msgid "should be the same that the office page"
 msgstr ""
 
-#: sources/jplusplus/models.py:28
+#: sources/jplusplus/models.py:30
 msgid "page"
 msgstr ""
 
-#: sources/jplusplus/models.py:29
+#: sources/jplusplus/models.py:31
 msgid "top offset on map"
 msgstr ""
 
-#: sources/jplusplus/models.py:30
+#: sources/jplusplus/models.py:32
 msgid "left offset on map"
 msgstr ""
 
-#: sources/jplusplus/models.py:45 sources/jplusplus/models.py:104
-#: sources/jplusplus/models.py:124
+#: sources/jplusplus/models.py:47 sources/jplusplus/models.py:106
+#: sources/jplusplus/models.py:126
 msgid "description"
 msgstr ""
 
-#: sources/jplusplus/models.py:46
+#: sources/jplusplus/models.py:48
 msgid "client"
 msgstr ""
 
-#: sources/jplusplus/models.py:51
+#: sources/jplusplus/models.py:53
 msgid "image"
 msgstr ""
 
-#: sources/jplusplus/models.py:53
+#: sources/jplusplus/models.py:55
 msgid "highlighted"
 msgstr ""
 
-#: sources/jplusplus/models.py:54
+#: sources/jplusplus/models.py:56
 msgid "link"
 msgstr ""
 
-#: sources/jplusplus/models.py:68 sources/jplusplus/models.py:140
+#: sources/jplusplus/models.py:70 sources/jplusplus/models.py:142
 msgid "filter by office"
 msgstr ""
 
-#: sources/jplusplus/models.py:69
+#: sources/jplusplus/models.py:71
 msgid "show only highlighted projects"
 msgstr ""
 
-#: sources/jplusplus/models.py:79 sources/jplusplus/models.py:102
-#: sources/jplusplus/models.py:103 sources/jplusplus/models.py:104
-#: sources/jplusplus/models.py:123 sources/jplusplus/models.py:124
+#: sources/jplusplus/models.py:81 sources/jplusplus/models.py:104
+#: sources/jplusplus/models.py:105 sources/jplusplus/models.py:106
+#: sources/jplusplus/models.py:125 sources/jplusplus/models.py:126
 msgid "to be translated"
 msgstr ""
 
-#: sources/jplusplus/models.py:81
+#: sources/jplusplus/models.py:83
 msgid "anchor"
 msgstr ""
 
-#: sources/jplusplus/models.py:81 sources/jplusplus/models.py:106
-#: sources/jplusplus/models.py:126 sources/jplusplus/models.py:127
-#: sources/jplusplus/models.py:128
+#: sources/jplusplus/models.py:83 sources/jplusplus/models.py:108
+#: sources/jplusplus/models.py:128 sources/jplusplus/models.py:129
+#: sources/jplusplus/models.py:130
 msgid "don't translate"
 msgstr ""
 
-#: sources/jplusplus/models.py:103 sources/jplusplus/models.py:123
+#: sources/jplusplus/models.py:105 sources/jplusplus/models.py:125
 msgid "short description"
 msgstr ""
 
-#: sources/jplusplus/models.py:106 sources/jplusplus/models.py:128
+#: sources/jplusplus/models.py:108 sources/jplusplus/models.py:130
 msgid "illustration"
 msgstr ""
 
-#: sources/jplusplus/models.py:126
+#: sources/jplusplus/models.py:128
 msgid "first name"
 msgstr ""
 
-#: sources/jplusplus/models.py:127
+#: sources/jplusplus/models.py:129
 msgid "last name"
+msgstr ""
+
+#: sources/jplusplus/views.py:51
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:16
+msgid "Your email is required"
+msgstr ""
+
+#: sources/jplusplus/views.py:59
+msgid "post required"
 msgstr ""
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:12
@@ -212,98 +221,99 @@ msgid "Your message was sent"
 msgstr ""
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:13
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:17
 msgid "back"
 msgstr ""
 
-#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:20
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:24
 msgid "Hi, my name is"
 msgstr ""
 
-#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:20
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:24
 msgid "your name"
 msgstr ""
 
-#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:21
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:25
 msgid "and I work for"
 msgstr ""
 
-#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:21
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:25
 msgid "my company"
 msgstr ""
 
-#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:23
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:27
 msgid "We are specifically looking for"
 msgstr ""
 
-#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:25
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:29
 msgid "a service"
 msgstr ""
 
-#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:26
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:30
 msgid "code and development"
 msgstr ""
 
-#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:27
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:31
 msgid "investigation"
 msgstr ""
 
-#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:28
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:32
 #: sources/jplusplus/templates/jplusplus/partials/projects.html:19
 msgid "consulting"
 msgstr ""
 
-#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:29
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:33
 #: sources/jplusplus/templates/jplusplus/partials/projects.html:22
 msgid "design"
 msgstr ""
 
-#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:30
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:34
 msgid "evangelization and training"
 msgstr ""
 
-#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:31
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:35
 #: sources/jplusplus/templates/jplusplus/partials/projects.html:10
 msgid "all"
 msgstr ""
 
-#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:34
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:38
 msgid "and have a budget of"
 msgstr ""
 
-#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:34
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:38
 msgid "your budget"
 msgstr ""
 
-#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:37
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:41
 msgid "our ideal timeframe to implement this is"
 msgstr ""
 
-#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:39
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:43
 msgid "less than a month"
 msgstr ""
 
-#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:40
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:44
 msgid "1 month"
 msgstr ""
 
-#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:41
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:45
 msgid "2 months"
 msgstr ""
 
-#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:42
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:46
 msgid "3 months or more"
 msgstr ""
 
-#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:45
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:49
 msgid "Please contact me at"
 msgstr ""
 
-#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:45
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:49
 msgid "email"
 msgstr ""
 
-#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:48
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:53
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:58
 msgid "SEND"
 msgstr ""
 
