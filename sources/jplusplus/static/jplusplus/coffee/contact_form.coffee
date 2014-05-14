@@ -19,7 +19,8 @@ class window.jplusplus.ContactForm
 		@uis =
 			form           : $("form", @ui)
 			successMessage : $(".success-message", @ui)
-			backToFormBtn  : $(".success-message a", @ui)
+			errorMessage   : $(".error-message", @ui)
+			backToFormBtn  : $(".success-message a, .error-message a", @ui)
 			submitBtn      : $('.nl-submit', @ui)
 
 		new NLForm(@uis.form.get(0))
@@ -28,24 +29,37 @@ class window.jplusplus.ContactForm
 		@uis.backToFormBtn.on("click", @backToForm)
 
 	onSubmitClick: (e) =>
-		data = @uis.form.serialize()
-		$.ajax
-			url      : @uis.form.attr("action")
-			type     : "post"
-			data     : data
-			success  : =>
-				# fix he height of the element before removing content
-				@ui.css('min-height', @ui.outerHeight(true))
-				@uis.successMessage.removeClass("hidden")
-				@uis.form.addClass("hidden")
+		email = _.find(@uis.form.serializeArray(), (obj) -> obj.name=="email").value
+		if not email? or email == ""
+			@showErrorMessage()
+		else
+			$.ajax
+				url      : @uis.form.attr("action")
+				type     : "post"
+				data     : @uis.form.serialize()
+				dataType : "json"
+				success  : (response) =>
+					# fix he height of the element before removing content
+					@ui.css('min-height', @ui.outerHeight(true))
+					@uis.successMessage.removeClass("hidden")
+					@uis.form.addClass("hidden")
+				error: (xhr, ajaxOptions, thrownError) =>
+					# response = jQuery.parseJSON(xhr.responseText)
+					@showErrorMessage()
 		# prevent the page reload
 		e.preventDefault()
 		return false
+
+	showErrorMessage: () =>
+		@ui.css('min-height', @ui.outerHeight(true))
+		@uis.errorMessage.removeClass("hidden")
+		@uis.form.addClass("hidden")
 
 	backToForm: (e) =>
 		# reset dynamic height
 		@ui.css('min-height', '')
 		@uis.successMessage.addClass("hidden")
+		@uis.errorMessage.addClass("hidden")
 		@uis.form.removeClass("hidden")
 		e.preventDefault()
 		return false

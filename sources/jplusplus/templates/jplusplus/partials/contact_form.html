@@ -12,6 +12,10 @@
 			<p>{% trans "Your message was sent" %}</p>
 			<a href="#" class="btn btn-xs">{% trans "back" %}</a>
 	</div>
+	<div <div class="error-message container hidden">
+			<p class="message">{% trans "Your email is required" %}</p>
+			<a href="#" class="btn btn-xs">{% trans "back" %}</a>
+	</div>
 	<form name="nlform" class="nl-form" method="post" action="{% url "jplusplus_contact" %}">
 		{% csrf_token %}
 		<div class="body container">
