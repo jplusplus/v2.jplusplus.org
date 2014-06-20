@@ -59,10 +59,8 @@ class window.jplusplus.Mosaïc
 		rows_number        = Math.ceil(thumbnails_number  / thumbnails_per_row)
 		# size
 		new_widget_height  = rows_number * (thumbnail_height + row_margin)
-		# only if new size is greater than the previous
-		if parseFloat(@uis.projects_list.css("height").replace("px", "")) < new_widget_height
-			@uis.projects_list.css
-				height: new_widget_height
+		@uis.projects_list.css
+			height: new_widget_height
 			$(document).trigger("heightHasChanged")
 		$(".project:not(.template) .frame").css
 			width  : thumbnail_width
