@@ -4,10 +4,12 @@
 <div class="project-details">
 	<h3>{{ project.title }}</h3>
 	<div class="separator"></div>
-	<div class="link"><a href="{{ project.link }}" target="_blank">{{ project.link }}</a></div>
+	<div class="link"><a href="{{ project.link }}" alt="{{ project.title }}" target="_blank">{{ project.link }}</a></div>
 	<div class="about row">
 		<div class="col-sm-10">
-			<div class="illustration" style="background-image:url({{project.image.url_normal}})"></div>
+			<a href="{{ project.link }}" alt="{{ project.title }}" target="_blank">
+				<div class="illustration" style="background-image:url({{project.image.url_normal}})"></div>
+			</a>
 		</div>
 		<div class="col-sm-2">
 			<div class="project-by">
