@@ -8,7 +8,7 @@
 # License : proprietary journalism++
 # -----------------------------------------------------------------------------
 # Creation : 24-Apr-2014
-# Last mod : 05-May-2014
+# Last mod : 20-Jun-2014
 # -----------------------------------------------------------------------------
 
 class window.Navigation
@@ -45,10 +45,17 @@ class window.Navigation
 		# when some widgets says that the height has changed (from mosaic for instance)
 		$(document).on('heightHasChanged', @relayout)
 		# on all anchor links, bind the onTitleClick function and give the #id as parameter
-		$("a[href^=#]").on("click", (e) -> e.preventDefault(); that.onTitleClick($(this).attr("href").split("&")[0]))
+		$("a[href^=#]").on "click", (e) ->
+			hash   = $(this).attr("href").split("&")
+			if "=" not in hash[0]
+				id = hash[0]
+			if id? and id != "#"
+				that.scrollTo(id)
+				# update the url
+				window.history.pushState(null, null, hash)
 		# scroll to the anchor if provided in the url
-		target = location.hash
-		setTimeout((->that.scrollTo(target)), 500) if target
+		target = location.hash.split("&")[0]
+		setTimeout((->that.scrollTo(target)), 500) if target? and "=" not in target
 		# hack for z-index
 		$(".header .dropdown.languages")
 			.on("show.bs.dropdown", => @uis.header.css("z-index", 3))
@@ -119,13 +126,6 @@ class window.Navigation
 	scrollTo: (target_id) =>
 		offset = $(target_id).offset().top - (@CONFIG.headerHeight + @uis.header.offset().top - @CONFIG.offsetScroll)
 		$('html, body').animate({scrollTop: offset}, 'slow')
-
-	onTitleClick: (anchor) =>
-		if anchor != "#"
-			@scrollTo(anchor)
-			# update the url
-			window.history.pushState(null, null, anchor);
-			return false
 
 	onTitleFlipperClick: (e) =>
 		nui = $(e.currentTarget)

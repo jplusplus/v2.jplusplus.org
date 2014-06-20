@@ -8,7 +8,7 @@
 # License : proprietary journalism++
 # -----------------------------------------------------------------------------
 # Creation : 23-Apr-2014
-# Last mod : 23-Apr-2014
+# Last mod : 20-Jun-2014
 # -----------------------------------------------------------------------------
 window.jplusplus = {} if not window.jplusplus
 
@@ -39,8 +39,9 @@ class window.jplusplus.Mosaïc
 		$.getJSON(url, @onDataLoaded)
 		# bind events
 		@uis.filters.click (e) ->
-			that.onFilterSelected($(this).data('filter'))
+			that.selectFilter($(this).data('filter'))
 		$(window).resize(_.debounce(@relayout, 500))
+		$(window).on('hashchange', @onHashChange)
 
 	relayout: =>
 		that  = this
@@ -78,6 +79,8 @@ class window.jplusplus.Mosaïc
 		# set size of elements
 		@data = data
 		@showProjects(@data)
+		# init from url hash
+		@onHashChange()
 
 	showProjects: (projects) =>
 		# removing older projects
@@ -103,7 +106,7 @@ class window.jplusplus.Mosaïc
 		@projects = new_projects_mapping
 		@relayout()
 
-	onFilterSelected: (filter) =>
+	selectFilter: (filter) =>
 		#select the filter on screen
 		@uis.filters.removeClass("active")
 		@uis.filters.filter("[data-filter=#{filter}]").addClass("active")
@@ -111,6 +114,33 @@ class window.jplusplus.Mosaïc
 		if filter == "all"
 			@showProjects(@data)
 		else
-			@showProjects(@data.filter((e) -> filter in e.tags))		
+			@showProjects(@data.filter((e) -> filter in e.tags))
+		@updateHashParams({"mosaic_filter":filter})
+
+	updateHashParams: (params) =>
+		hash = window.location.hash.split("&")
+		if "=" not in hash[0]
+			id = hash.shift().replace("#", "")
+		old_params = @getHashParams()
+		params = _.extend(old_params, params)
+		url  = "#"
+		url += "#{id}&" if id?
+		url += "#{pairs[0]}=#{pairs[1]}&" for pairs in _.pairs(params)
+		window.history.pushState(null, null, url)
+
+	onHashChange: =>
+		filter_selected = @getHashParams().mosaic_filter
+		if filter_selected?
+			@selectFilter(filter_selected)
+
+	getHashParams: =>
+		hash = window.location.hash.split("&")
+		hash.shift() if not "=" in hash[0]
+		params = {}
+		for p in hash[1..]
+			key_val = p.split("=")
+			params[key_val[0]] = key_val[1] if key_val[0]
+		return params
+
 
 # EOF
