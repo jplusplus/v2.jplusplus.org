@@ -1,0 +1,409 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-05-14 15:16+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: settings.py:234
+msgid "en"
+msgstr ""
+
+#: settings.py:241
+msgid "fr"
+msgstr ""
+
+#: settings.py:248
+msgid "de"
+msgstr ""
+
+#: settings.py:255
+msgid "pt"
+msgstr ""
+
+#: settings.py:282
+msgid "Container"
+msgstr ""
+
+#: sources/adminsortable/admin.py:127
+#: sources/adminsortable/templates/adminsortable/tabular-1.5.html:9
+#: sources/adminsortable/templates/adminsortable/tabular-1.6.html:9
+msgid "Sort"
+msgstr ""
+
+#: sources/adminsortable/admin.py:151
+msgid "Move selected to previous page"
+msgstr ""
+
+#: sources/adminsortable/admin.py:155
+msgid "Move selected to next page"
+msgstr ""
+
+#: sources/adminsortable/admin.py:159
+msgid "Move selected to first page"
+msgstr ""
+
+#: sources/adminsortable/admin.py:163
+msgid "Move selected to last page"
+msgstr ""
+
+#: sources/adminsortable/templates/adminsortable/stacked-1.5.html:10
+#: sources/adminsortable/templates/adminsortable/stacked-1.6.html:10
+#: sources/adminsortable/templates/adminsortable/tabular-1.5.html:31
+#: sources/adminsortable/templates/adminsortable/tabular-1.6.html:31
+msgid "View on site"
+msgstr ""
+
+#: sources/adminsortable/templates/adminsortable/stacked-1.5.html:28
+#: sources/adminsortable/templates/adminsortable/stacked-1.6.html:28
+#: sources/adminsortable/templates/adminsortable/tabular-1.5.html:78
+#: sources/adminsortable/templates/adminsortable/tabular-1.6.html:77
+msgid "Remove"
+msgstr ""
+
+#: sources/adminsortable/templates/adminsortable/stacked-1.5.html:29
+#: sources/adminsortable/templates/adminsortable/stacked-1.6.html:29
+#: sources/adminsortable/templates/adminsortable/tabular-1.5.html:77
+#: sources/adminsortable/templates/adminsortable/tabular-1.6.html:76
+#, python-format
+msgid "Add another %(verbose_name)s"
+msgstr ""
+
+#: sources/adminsortable/templates/adminsortable/tabular-1.5.html:17
+#: sources/adminsortable/templates/adminsortable/tabular-1.6.html:17
+msgid "Delete?"
+msgstr ""
+
+#: sources/jplusplus/admin.py:33 sources/jplusplus/admin.py:40
+#: sources/jplusplus/admin.py:57
+msgid "Title"
+msgstr ""
+
+#: sources/jplusplus/cms_app.py:18
+msgid "J++ App"
+msgstr ""
+
+#: sources/jplusplus/cms_plugins.py:20
+msgid "J++ Projects Mosaic"
+msgstr ""
+
+#: sources/jplusplus/cms_plugins.py:30
+msgid "J++ Contact"
+msgstr ""
+
+#: sources/jplusplus/cms_plugins.py:40
+msgid "J++ Titles"
+msgstr ""
+
+#: sources/jplusplus/cms_plugins.py:52
+msgid "J++ Map"
+msgstr ""
+
+#: sources/jplusplus/cms_plugins.py:64
+msgid "J++ WhatWeDo"
+msgstr ""
+
+#: sources/jplusplus/cms_plugins.py:75
+msgid "J++ Trombinoscope"
+msgstr ""
+
+#: sources/jplusplus/models.py:28 sources/jplusplus/models.py:46
+#: sources/jplusplus/models.py:81 sources/jplusplus/models.py:92
+#: sources/jplusplus/models.py:104
+msgid "title"
+msgstr ""
+
+#: sources/jplusplus/models.py:29
+msgid "slug"
+msgstr ""
+
+#: sources/jplusplus/models.py:29
+msgid "should be the same that the office page"
+msgstr ""
+
+#: sources/jplusplus/models.py:30
+msgid "page"
+msgstr ""
+
+#: sources/jplusplus/models.py:31
+msgid "top offset on map"
+msgstr ""
+
+#: sources/jplusplus/models.py:32
+msgid "left offset on map"
+msgstr ""
+
+#: sources/jplusplus/models.py:47 sources/jplusplus/models.py:106
+#: sources/jplusplus/models.py:126
+msgid "description"
+msgstr ""
+
+#: sources/jplusplus/models.py:48
+msgid "client"
+msgstr ""
+
+#: sources/jplusplus/models.py:53
+msgid "image"
+msgstr ""
+
+#: sources/jplusplus/models.py:55
+msgid "highlighted"
+msgstr ""
+
+#: sources/jplusplus/models.py:56
+msgid "link"
+msgstr ""
+
+#: sources/jplusplus/models.py:70 sources/jplusplus/models.py:142
+msgid "filter by office"
+msgstr ""
+
+#: sources/jplusplus/models.py:71
+msgid "show only highlighted projects"
+msgstr ""
+
+#: sources/jplusplus/models.py:81 sources/jplusplus/models.py:104
+#: sources/jplusplus/models.py:105 sources/jplusplus/models.py:106
+#: sources/jplusplus/models.py:125 sources/jplusplus/models.py:126
+msgid "to be translated"
+msgstr ""
+
+#: sources/jplusplus/models.py:83
+msgid "anchor"
+msgstr ""
+
+#: sources/jplusplus/models.py:83 sources/jplusplus/models.py:108
+#: sources/jplusplus/models.py:128 sources/jplusplus/models.py:129
+#: sources/jplusplus/models.py:130
+msgid "don't translate"
+msgstr ""
+
+#: sources/jplusplus/models.py:105 sources/jplusplus/models.py:125
+msgid "short description"
+msgstr ""
+
+#: sources/jplusplus/models.py:108 sources/jplusplus/models.py:130
+msgid "illustration"
+msgstr ""
+
+#: sources/jplusplus/models.py:128
+msgid "first name"
+msgstr ""
+
+#: sources/jplusplus/models.py:129
+msgid "last name"
+msgstr ""
+
+#: sources/jplusplus/views.py:51
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:16
+msgid "Your email is required"
+msgstr ""
+
+#: sources/jplusplus/views.py:59
+msgid "post required"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:12
+msgid "Your message was sent"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:13
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:17
+msgid "back"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:24
+msgid "Hi, my name is"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:24
+msgid "your name"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:25
+msgid "and I work for"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:25
+msgid "my company"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:27
+msgid "We are specifically looking for"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:29
+msgid "a service"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:30
+msgid "code and development"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:31
+msgid "investigation"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:32
+#: sources/jplusplus/templates/jplusplus/partials/projects.html:19
+msgid "consulting"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:33
+#: sources/jplusplus/templates/jplusplus/partials/projects.html:22
+msgid "design"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:34
+msgid "evangelization and training"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:35
+#: sources/jplusplus/templates/jplusplus/partials/projects.html:10
+msgid "all"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:38
+msgid "and have a budget of"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:38
+msgid "your budget"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:41
+msgid "our ideal timeframe to implement this is"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:43
+msgid "less than a month"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:44
+msgid "1 month"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:45
+msgid "2 months"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:46
+msgid "3 months or more"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:49
+msgid "Please contact me at"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:49
+msgid "email"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:53
+#: sources/jplusplus/templates/jplusplus/partials/contact_form.html:58
+msgid "SEND"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/project_details.html:14
+msgid "A project by"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/project_details.html:28
+msgctxt "project details: 'for' clients"
+msgid "For"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/projects.html:7
+msgid "By type"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/projects.html:13
+msgid "code apps"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/projects.html:16
+msgid "investigate"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/projects.html:25
+msgid "evangelize"
+msgstr ""
+
+#: sources/jplusplus/templates/jplusplus/partials/what_we_do.html:18
+msgid "See projects"
+msgstr ""
+
+#: templates/404.html:4
+msgid "Page not found"
+msgstr ""
+
+#: templates/404.html:14
+msgid "We're sorry, we can't find this page."
+msgstr ""
+
+#: templates/500.html:4
+msgid "Page error"
+msgstr ""
+
+#: templates/500.html:14
+msgid ""
+"We're sorry, something wrong appends. But it's not your fault. We are "
+"investigating."
+msgstr ""
+
+#: templates/footer.html:8
+msgid "follow us"
+msgstr ""
+
+#: templates/footer.html:16
+msgid "contact us"
+msgstr ""
+
+#: templates/navigation.html:18 templates/navigation_chapter.html:13
+msgid "Journalism++ home"
+msgstr ""
+
+#: templates/navigation.html:24
+msgid "WHAT WE STAND FOR"
+msgstr ""
+
+#: templates/navigation.html:33
+msgid "What we Do"
+msgstr ""
+
+#: templates/navigation.html:34 templates/navigation_chapter.html:20
+msgid "Our Work"
+msgstr ""
+
+#: templates/navigation.html:39
+msgid "Who we Are"
+msgstr ""
+
+#: templates/navigation.html:40 templates/navigation_chapter.html:25
+msgid "Let's Talk"
+msgstr ""
+
+#: templates/navigation.html:45 templates/navigation_chapter.html:30
+msgid "LANGUAGE"
+msgstr ""
+
+#: templates/navigation_chapter.html:19
+msgid "Our Team"
+msgstr ""
+
+#: templates/menu/language_chooser.html:7
+msgid "Change to language:"
+msgstr ""
