@@ -15,7 +15,7 @@ class window.Navigation
 
 	constructor: ->
 		that = this
-		@CONFIG = 
+		@CONFIG =
 			headerHeight  : 70
 			offsetScroll  : 50
 
@@ -74,11 +74,7 @@ class window.Navigation
 			.find(".wrapper")
 				# FIXME: hard coded
 				.css
-					"width"    : window_width
-					"height"   : window_width / 3.282051282 # ratio of map picture
 					"font-size": "#{Math.min(window_width/1280, 1)}em"
-			.find("img")
-				.css("width", window_width)
 		# set the height of the first page (with the height of the window)
 		# in a timeout because window_height should ignore the scrollbar witch can disappear
 		if @uis.firstPage.length > 0
