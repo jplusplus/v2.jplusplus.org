@@ -23,7 +23,7 @@ class OfficeAdmin(admin.ModelAdmin):
         super(OfficeAdmin, self).__init__(*args, **kwargs)
         self.prepopulated_fields = {'slug': ('title',)}
 
-    list_display = ("title", "slug")
+    list_display = ("title", "slug", "map_left", "map_top")
 
 class TitleAdmin(TranslatableAdmin):
     list_display = ("get_title", "anchor")
