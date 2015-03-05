@@ -3,20 +3,20 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: pt_PT Translation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-05-14 15:16+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2015-03-04 17:04+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language-Team: LANGUAGE <porto@jplusplus.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.5.4\n"
+"Language: Português\n"
 
 #: settings.py:234
 msgid "en"
@@ -210,7 +210,7 @@ msgstr ""
 #: sources/jplusplus/views.py:51
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:16
 msgid "Your email is required"
-msgstr ""
+msgstr "Precisamos do seu email para enviar a mensagem"
 
 #: sources/jplusplus/views.py:59
 msgid "post required"
@@ -218,145 +218,145 @@ msgstr ""
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:12
 msgid "Your message was sent"
-msgstr ""
+msgstr "A sua mensagem foi enviada"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:13
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:17
 msgid "back"
-msgstr ""
+msgstr "retroceder"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:24
 msgid "Hi, my name is"
-msgstr ""
+msgstr "Olá, chamo-me"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:24
 msgid "your name"
-msgstr ""
+msgstr "nome"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:25
 msgid "and I work for"
-msgstr ""
+msgstr "e trabalho para"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:25
 msgid "my company"
-msgstr ""
+msgstr "a minha empresa"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:27
 msgid "We are specifically looking for"
-msgstr ""
+msgstr "Estamos especificamente à procura de"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:29
 msgid "a service"
-msgstr ""
+msgstr "um serviço"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:30
 msgid "code and development"
-msgstr ""
+msgstr "código e desenvolvimento"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:31
 msgid "investigation"
-msgstr ""
+msgstr "investigação"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:32
 #: sources/jplusplus/templates/jplusplus/partials/projects.html:19
 msgid "consulting"
-msgstr ""
+msgstr "consuladoria"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:33
 #: sources/jplusplus/templates/jplusplus/partials/projects.html:22
 msgid "design"
-msgstr ""
+msgstr "design"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:34
 msgid "evangelization and training"
-msgstr ""
+msgstr "divulgação e formação"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:35
 #: sources/jplusplus/templates/jplusplus/partials/projects.html:10
 msgid "all"
-msgstr ""
+msgstr "tudo"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:38
 msgid "and have a budget of"
-msgstr ""
+msgstr "e tenho um orçamento de"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:38
 msgid "your budget"
-msgstr ""
+msgstr "o seu orçamento"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:41
 msgid "our ideal timeframe to implement this is"
-msgstr ""
+msgstr "o nosso prazo ideal é"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:43
 msgid "less than a month"
-msgstr ""
+msgstr "menos de um mês"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:44
 msgid "1 month"
-msgstr ""
+msgstr "1 mês"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:45
 msgid "2 months"
-msgstr ""
+msgstr "2 meses"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:46
 msgid "3 months or more"
-msgstr ""
+msgstr "3 meses ou mais"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:49
 msgid "Please contact me at"
-msgstr ""
+msgstr "Por favor entre em contacto comigo"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:49
 msgid "email"
-msgstr ""
+msgstr "email"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:53
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:58
 msgid "SEND"
-msgstr ""
+msgstr "ENVIAR"
 
 #: sources/jplusplus/templates/jplusplus/partials/project_details.html:14
 msgid "A project by"
-msgstr ""
+msgstr "Agência"
 
 #: sources/jplusplus/templates/jplusplus/partials/project_details.html:28
 msgctxt "project details: 'for' clients"
 msgid "For"
-msgstr ""
+msgstr "Cliente"
 
 #: sources/jplusplus/templates/jplusplus/partials/projects.html:7
 msgid "By type"
-msgstr ""
+msgstr "Por tipo"
 
 #: sources/jplusplus/templates/jplusplus/partials/projects.html:13
 msgid "code apps"
-msgstr ""
+msgstr "código/apps"
 
 #: sources/jplusplus/templates/jplusplus/partials/projects.html:16
 msgid "investigate"
-msgstr ""
+msgstr "investigação"
 
 #: sources/jplusplus/templates/jplusplus/partials/projects.html:25
 msgid "evangelize"
-msgstr ""
+msgstr "divulgação"
 
 #: sources/jplusplus/templates/jplusplus/partials/what_we_do.html:18
 msgid "See projects"
-msgstr ""
+msgstr "Ver projectos"
 
 #: templates/404.html:4
 msgid "Page not found"
-msgstr ""
+msgstr "Página não encontrada"
 
 #: templates/404.html:14
 msgid "We're sorry, we can't find this page."
-msgstr ""
+msgstr "Pedimos desculpa mas não conseguimos encontrar a página em questão."
 
 #: templates/500.html:4
 msgid "Page error"
-msgstr ""
+msgstr "Erro na página"
 
 #: templates/500.html:14
 msgid ""
@@ -366,11 +366,11 @@ msgstr ""
 
 #: templates/footer.html:8
 msgid "follow us"
-msgstr ""
+msgstr "siga-nos"
 
 #: templates/footer.html:16
 msgid "contact us"
-msgstr ""
+msgstr "contacte-nos"
 
 #: templates/navigation.html:18 templates/navigation_chapter.html:13
 msgid "Journalism++ home"
@@ -378,32 +378,32 @@ msgstr ""
 
 #: templates/navigation.html:24
 msgid "WHAT WE STAND FOR"
-msgstr ""
+msgstr "Princípios"
 
 #: templates/navigation.html:33
 msgid "What we Do"
-msgstr ""
+msgstr "O que fazemos"
 
 #: templates/navigation.html:34 templates/navigation_chapter.html:20
 msgid "Our Work"
-msgstr ""
+msgstr "O nosso trabalho"
 
 #: templates/navigation.html:39
 msgid "Who we Are"
-msgstr ""
+msgstr "Quem somos"
 
 #: templates/navigation.html:40 templates/navigation_chapter.html:25
 msgid "Let's Talk"
-msgstr ""
+msgstr "Contacto"
 
 #: templates/navigation.html:45 templates/navigation_chapter.html:30
 msgid "LANGUAGE"
-msgstr ""
+msgstr "LÍNGUA"
 
 #: templates/navigation_chapter.html:19
 msgid "Our Team"
-msgstr ""
+msgstr "A nossa equipa"
 
 #: templates/menu/language_chooser.html:7
 msgid "Change to language:"
-msgstr ""
+msgstr "Mudar de língua"
