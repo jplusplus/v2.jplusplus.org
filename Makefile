@@ -39,4 +39,11 @@ update_i18n:
 compile_i18n:
 	. $(VENV) ; django-admin.py compilemessages
 
+clone_db:
+	rm development.db
+	heroku run python manage.py dumpdata --indent=2 --format=json --app jplusplus2 > /tmp/jpp_initial_data.json.tmp
+	sed '1d' /tmp/jpp_initial_data.json.tmp > /tmp/jpp_initial_data.json
+	make init_db
+	. $(VENV) ; $(PYTHON) manage.py loaddata /tmp/jpp_initial_data.json
+
 # EOF
