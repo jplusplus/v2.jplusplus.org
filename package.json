@@ -1,15 +1,16 @@
 {
   "name": "jplusplus-v2",
   "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
+  "description": "Journalism++ Web Site",
   "dependencies": {
     "coffee-script": "^1.7.1",
     "less": "^1.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jplusplus/v2.jplusplus.org.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jplusplus/v2.jplusplus.org/issues"
   }
 }
