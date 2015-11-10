@@ -1,0 +1,10 @@
+{% extends "page_with_header.html" %}
+{% load cms_tags staticfiles sekizai_tags menu_tags %}
+
+{% block content %}
+	<div class="container">
+    <h3>{{ page.title }}</h3>
+    <div class="separator"></div>
+		{% placeholder "content" %}
+	</div>
+{% endblock content %}
