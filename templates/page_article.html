@@ -3,7 +3,7 @@
 
 {% block content %}
 	<div class="container">
-    <h3>{{ page.title }}</h3>
+    <h3>{% page_attribute "page_title" request.current_page %}</h3>
     <div class="separator"></div>
 		{% placeholder "content" %}
 	</div>
