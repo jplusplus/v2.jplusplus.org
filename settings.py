@@ -273,6 +273,7 @@ CMS_TEMPLATES = (
     # ('chapter.html', 'Chapter'),
     # ('page.html', 'Page'),
     ('page_with_header.html', 'Page with header'),
+    ('page_article.html', 'Article with header'),
     ('chapter.html', 'Chapter'),
     ('chapter_paris_berlin.html', 'Chapter Paris/Berlin'),
 )
