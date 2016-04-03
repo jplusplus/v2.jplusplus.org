@@ -260,7 +260,7 @@ msgstr "investigação"
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:32
 #: sources/jplusplus/templates/jplusplus/partials/projects.html:19
 msgid "consulting"
-msgstr "consuladoria"
+msgstr "consultadoria"
 
 #: sources/jplusplus/templates/jplusplus/partials/contact_form.html:33
 #: sources/jplusplus/templates/jplusplus/partials/projects.html:22
