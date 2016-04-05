@@ -81,10 +81,9 @@ MIDDLEWARE_CLASSES[-1:] = ['django.middleware.cache.FetchFromCacheMiddleware']
 CMS_CACHE_DURATIONS = 60
 
 # EMAILS
-INSTALLED_APPS      += ('djrill',)
-MANDRILL_API_KEY     = os.getenv('MANDRILL_APIKEY')
-SERVER_EMAIL         = os.getenv('MANDRILL_USERNAME')
-EMAIL_BACKEND        = "djrill.mail.backends.djrill.DjrillBackend"
+EMAIL_BACKEND        = "sgbackend.SendGridBackend"
+SENDGRID_USER        = os.getenv('SENDGRID_USERNAME')
+SENDGRID_PASSWORD    = os.getenv('SENDGRID_PASSWORD')
 
 # Sites for DomainNamesMiddleware (in `sources/jplusplus/middleware.py`)
 SITES = { # from_url : to_page_reverse_id
