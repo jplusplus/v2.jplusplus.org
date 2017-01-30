@@ -115,21 +115,16 @@ LOGGING = {
         }
     },
     'handlers': {
-        'console':{
-            'level': 'DEBUG',
-            'filters': ['require_debug_true'],
-            'class': 'logging.StreamHandler',
-        },
         'null': {
             'class': 'django.utils.log.NullHandler',
         }
     },
     'loggers': {
         'django': {
-            'handlers': ['console'],
+            'handlers': ['null'],
         },
         'django.request': {
-            'handlers': ['console'],
+            'handlers': ['null'],
             'level': 'ERROR',
             'propagate': False,
         }
